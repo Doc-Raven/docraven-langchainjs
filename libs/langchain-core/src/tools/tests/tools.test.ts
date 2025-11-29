@@ -417,6 +417,35 @@ Details: [
 ]`);
 });
 
+test("Tool informs about progress", async () => {
+  const weatherSchema = z.object({
+    location: z.string(),
+  });
+
+  const toolName = "string_tool";
+  let wasCalled = false;
+  const stringTool = tool(
+    (input) => {
+      return JSON.stringify(input);
+    },
+    {
+      name: toolName,
+      description: "A tool that appends 'a' to the input string",
+      schema: weatherSchema,
+      verboseParsingErrors: true,
+    },
+    async (name, task) => {
+      wasCalled = true;
+      expect(name).toStrictEqual(toolName);
+      expect(task).toStrictEqual({ location: "San Francisco" });
+    }
+  );
+
+  await stringTool.invoke({ location: "San Francisco" });
+
+  expect(wasCalled).toBe(true);
+});
+
 describe("isStructuredToolParams", () => {
   test("returns true for a tool with a zod schema", () => {
     const zodToolParams: StructuredToolParams = {

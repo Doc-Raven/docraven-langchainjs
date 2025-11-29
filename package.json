@@ -42,9 +42,11 @@
     "@types/jest": "^29.5.3",
     "@types/semver": "^7",
     "commander": "^11.1.0",
+    "cross-env": "^10.1.0",
     "dotenv": "^16.0.3",
     "lint-staged": "^13.1.1",
     "prettier": "^2.8.3",
+    "rolldown": "1.0.0-beta.51",
     "semver": "^7.5.4",
     "tsdown": "^0.15.12",
     "tsx": "^4.20.3",
@@ -55,8 +57,11 @@
     "overrides": {
       "@doc-raven/langchain-core": "workspace:*",
       "protobufjs": "^7.2.5",
-      "rolldown": "1.0.0-beta.30"
+      "rolldown": "1.0.0-beta.51"
     }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "lint-staged": {
     "**/*.{ts,tsx}": [

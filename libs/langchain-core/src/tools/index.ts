@@ -557,6 +557,8 @@ interface ToolWrapperParams<RunInput = ToolInputSchemaBase | undefined>
   returnDirect?: boolean;
 }
 
+type ToolInfoFn = <T extends string | ToolInputSchemaOutputType<JSONSchema>>(toolName: string, toolTask?: T) => Promise<void>
+
 /**
  * Creates a new StructuredTool instance with the provided function, name, description, and schema.
  *
@@ -580,7 +582,8 @@ export function tool<SchemaT extends ZodStringV3, ToolOutputT = ToolOutputType>(
     ToolOutputT,
     ToolRunnableConfig
   >,
-  fields: ToolWrapperParams<SchemaT>
+  fields: ToolWrapperParams<SchemaT>,
+  infoFn?: ToolInfoFn
 ): DynamicTool<ToolOutputT>;
 
 export function tool<SchemaT extends ZodStringV4, ToolOutputT = ToolOutputType>(
@@ -589,7 +592,8 @@ export function tool<SchemaT extends ZodStringV4, ToolOutputT = ToolOutputType>(
     ToolOutputT,
     ToolRunnableConfig
   >,
-  fields: ToolWrapperParams<SchemaT>
+  fields: ToolWrapperParams<SchemaT>,
+  infoFn?: ToolInfoFn
 ): DynamicTool<ToolOutputT>;
 
 export function tool<
@@ -599,7 +603,8 @@ export function tool<
   ToolOutputT = ToolOutputType
 >(
   func: RunnableFunc<SchemaOutputT, ToolOutputT, ToolRunnableConfig>,
-  fields: ToolWrapperParams<SchemaT>
+  fields: ToolWrapperParams<SchemaT>,
+  infoFn?: ToolInfoFn
 ): DynamicStructuredTool<SchemaT, SchemaOutputT, SchemaInputT, ToolOutputT>;
 
 export function tool<
@@ -609,7 +614,8 @@ export function tool<
   ToolOutputT = ToolOutputType
 >(
   func: RunnableFunc<SchemaOutputT, ToolOutputT, ToolRunnableConfig>,
-  fields: ToolWrapperParams<SchemaT>
+  fields: ToolWrapperParams<SchemaT>,
+  infoFn?: ToolInfoFn
 ): DynamicStructuredTool<SchemaT, SchemaOutputT, SchemaInputT, ToolOutputT>;
 
 export function tool<
@@ -623,7 +629,8 @@ export function tool<
     ToolOutputT,
     ToolRunnableConfig
   >,
-  fields: ToolWrapperParams<SchemaT>
+  fields: ToolWrapperParams<SchemaT>,
+  infoFn?: ToolInfoFn
 ): DynamicStructuredTool<SchemaT, SchemaOutputT, SchemaInputT, ToolOutputT>;
 
 export function tool<
@@ -636,7 +643,8 @@ export function tool<
   ToolOutputT = ToolOutputType
 >(
   func: RunnableFunc<SchemaOutputT, ToolOutputT, ToolRunnableConfig>,
-  fields: ToolWrapperParams<SchemaT>
+  fields: ToolWrapperParams<SchemaT>,
+  infoFn?: ToolInfoFn
 ):
   | DynamicStructuredTool<SchemaT, SchemaOutputT, SchemaInputT, ToolOutputT>
   | DynamicTool<ToolOutputT>;
@@ -652,7 +660,8 @@ export function tool<
     input: InferInteropZodOutput<SchemaT>,
     runtime: ToolRuntime<TState, TContext>
   ) => ToolOutputT | Promise<ToolOutputT>,
-  fields: ToolWrapperParams<SchemaT>
+  fields: ToolWrapperParams<SchemaT>,
+  infoFn?: ToolInfoFn
 ): DynamicTool<ToolOutputT>;
 
 export function tool<
@@ -665,7 +674,8 @@ export function tool<
     input: InferInteropZodOutput<SchemaT>,
     runtime: ToolRuntime<TState, TContext>
   ) => ToolOutputT | Promise<ToolOutputT>,
-  fields: ToolWrapperParams<SchemaT>
+  fields: ToolWrapperParams<SchemaT>,
+  infoFn?: ToolInfoFn
 ): DynamicTool<ToolOutputT>;
 
 export function tool<
@@ -680,7 +690,8 @@ export function tool<
     input: SchemaOutputT,
     runtime: ToolRuntime<TState, TContext>
   ) => ToolOutputT | Promise<ToolOutputT>,
-  fields: ToolWrapperParams<SchemaT>
+  fields: ToolWrapperParams<SchemaT>,
+  infoFn?: ToolInfoFn
 ): DynamicStructuredTool<SchemaT, SchemaOutputT, SchemaInputT, ToolOutputT>;
 
 export function tool<
@@ -695,7 +706,8 @@ export function tool<
     input: SchemaOutputT,
     runtime: ToolRuntime<TState, TContext>
   ) => ToolOutputT | Promise<ToolOutputT>,
-  fields: ToolWrapperParams<SchemaT>
+  fields: ToolWrapperParams<SchemaT>,
+  infoFn?: ToolInfoFn
 ): DynamicStructuredTool<SchemaT, SchemaOutputT, SchemaInputT, ToolOutputT>;
 
 export function tool<
@@ -710,7 +722,8 @@ export function tool<
     input: Parameters<DynamicStructuredToolInput<SchemaT>["func"]>[0],
     runtime: ToolRuntime<TState, TContext>
   ) => ToolOutputT | Promise<ToolOutputT>,
-  fields: ToolWrapperParams<SchemaT>
+  fields: ToolWrapperParams<SchemaT>,
+  infoFn?: ToolInfoFn
 ): DynamicStructuredTool<SchemaT, SchemaOutputT, SchemaInputT, ToolOutputT>;
 
 export function tool<
@@ -728,7 +741,8 @@ export function tool<
     input: SchemaOutputT,
     runtime: ToolRuntime<TState, TContext>
   ) => ToolOutputT | Promise<ToolOutputT>,
-  fields: ToolWrapperParams<SchemaT>
+  fields: ToolWrapperParams<SchemaT>,
+  infoFn?: ToolInfoFn
 ):
   | DynamicStructuredTool<SchemaT, SchemaOutputT, SchemaInputT, ToolOutputT>
   | DynamicTool<ToolOutputT> {
@@ -739,15 +753,19 @@ export function tool<
   if (!fields.schema || isSimpleStringSchema || isStringJSONSchema) {
     return new DynamicTool<ToolOutputT>({
       ...fields,
-      description:
-        fields.description ??
-        (fields.schema as { description?: string } | undefined)?.description ??
-        `${fields.name} tool`,
+      description: fields.description ?? (fields.schema as { description?: string } | undefined)?.description ?? `${fields.name} tool`,
       func: async (input, runManager, config) => {
+        // fields.name
+        
         return new Promise<ToolOutputT>((resolve, reject) => {
+          if (infoFn) {
+            infoFn(fields.name, input);
+          }
+          
           const childConfig = patchConfig(config, {
             callbacks: runManager?.getChild(),
           });
+          
           // eslint-disable-next-line no-void
           void AsyncLocalStorageProviderSingleton.runWithConfig(
             pickRunnableConfigKeys(childConfig),
@@ -783,6 +801,11 @@ export function tool<
     schema,
     func: async (input, runManager, config) => {
       return new Promise<ToolOutputT>((resolve, reject) => {
+        // Informs regard tool usage
+        if (infoFn) {
+          infoFn(fields.name, input);
+        }
+        
         let listener: (() => void) | undefined;
         const cleanup = () => {
           if (config?.signal && listener) {
