@@ -10,9 +10,9 @@
   "types": "./dist/index.d.cts",
   "repository": {
     "type": "git",
-    "url": "git@github.com:langchain-ai/langchainjs.git"
+    "url": "git+https://github.com/Doc-Raven/docraven-langchainjs.git"
   },
-  "homepage": "https://github.com/langchain-ai/langchainjs/tree/main/langchain-core/",
+  "homepage": "git+https://github.com/Doc-Raven/docraven-langchainjs/tree/main/langchain-core/",
   "scripts": {
     "build": "turbo build:compile --filter @doc-raven/langchain-core --output-logs new-only",
     "build:compile": "tsdown",
@@ -58,7 +58,7 @@
     "web-streams-polyfill": "^4.0.0"
   },
   "publishConfig": {
-    "access": "public"
+    "registry": "https://npm.pkg.github.com/"
   },
   "keywords": [
     "llm",
