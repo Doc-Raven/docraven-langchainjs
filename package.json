@@ -3,10 +3,10 @@
   "author": "DocRaven version of LangChain",
   "license": "MIT",
   "private": true,
-  "homepage": "https://github.com/langchain-ai/langchainjs/tree/main/",
+  "homepage": "https://github.com/Doc-Raven/docraven-langchainjs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/langchain-ai/langchainjs.git"
+    "url": "git+https://github.com/Doc-Raven/docraven-langchainjs.git"
   },
   "packageManager": "pnpm@10.14.0",
   "scripts": {

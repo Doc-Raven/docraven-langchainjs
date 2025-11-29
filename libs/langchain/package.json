@@ -13,44 +13,24 @@
     "CHANGELOG.md",
     "README.md",
     "LICENSE",
-    "load\\serializable.d.cts",
-    "load\\serializable.cjs",
-    "load\\serializable.d.ts",
-    "load\\serializable.js",
-    "hub.d.cts",
-    "hub.cjs",
-    "hub.d.ts",
-    "hub.js",
-    "hub\\node.d.cts",
-    "hub\\node.cjs",
-    "hub\\node.d.ts",
-    "hub\\node.js",
+    "storage",
+    "load",
     "load.d.cts",
     "load.cjs",
     "load.d.ts",
     "load.js",
-    "storage\\file_system.d.cts",
-    "storage\\file_system.cjs",
-    "storage\\file_system.d.ts",
-    "storage\\file_system.js",
-    "chat_models\\universal.d.cts",
-    "chat_models\\universal.cjs",
-    "chat_models\\universal.d.ts",
-    "chat_models\\universal.js",
-    "storage\\encoder_backed.d.cts",
-    "storage\\encoder_backed.cjs",
-    "storage\\encoder_backed.d.ts",
-    "storage\\encoder_backed.js",
-    "storage\\in_memory.d.cts",
-    "storage\\in_memory.cjs",
-    "storage\\in_memory.d.ts",
-    "storage\\in_memory.js"
+    "hub",
+    "chat_models",
+    "hub.d.cts",
+    "hub.cjs",
+    "hub.d.ts",
+    "hub.js"
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/langchain-ai/langchainjs.git"
+    "url": "git+https://github.com/Doc-Raven/docraven-langchainjs.git"
   },
-  "homepage": "https://github.com/langchain-ai/langchainjs/tree/main/libs/langchain/",
+  "homepage": "https://github.com/Doc-Raven/docraven-langchainjs/tree/main/libs/langchain/",
   "scripts": {
     "build": "turbo build:compile --filter langchain --output-logs new-only",
     "build:compile": "tsdown",
@@ -106,7 +86,7 @@
     "zod": "^3.25.76 || ^4"
   },
   "publishConfig": {
-    "access": "public"
+    "registry": "https://npm.pkg.github.com/"
   },
   "keywords": [
     "llm",
@@ -126,102 +106,102 @@
   "types": "./dist/index.d.cts",
   "exports": {
     ".": {
-      "input": "./src/index.ts",
+      "input": "./src\\index.ts",
       "require": {
-        "types": "./dist/index.d.cts",
-        "default": "./dist/index.cjs"
+        "types": "./dist\\index.d.cts",
+        "default": "./dist\\index.cjs"
       },
       "import": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.js"
+        "types": "./dist\\index.d.ts",
+        "default": "./dist\\index.js"
       }
     },
     "./chat_models/universal": {
-      "input": "./src/chat_models/universal.ts",
+      "input": "./src\\chat_models\\universal.ts",
       "require": {
-        "types": "./dist/chat_models/universal.d.cts",
-        "default": "./dist/chat_models/universal.cjs"
+        "types": "./dist\\chat_models\\universal.d.cts",
+        "default": "./dist\\chat_models\\universal.cjs"
       },
       "import": {
-        "types": "./dist/chat_models/universal.d.ts",
-        "default": "./dist/chat_models/universal.js"
+        "types": "./dist\\chat_models\\universal.d.ts",
+        "default": "./dist\\chat_models\\universal.js"
       }
     },
     "./hub": {
-      "input": "./src/hub/index.ts",
+      "input": "./src\\hub\\index.ts",
       "require": {
-        "types": "./dist/hub/index.d.cts",
-        "default": "./dist/hub/index.cjs"
+        "types": "./dist\\hub\\index.d.cts",
+        "default": "./dist\\hub\\index.cjs"
       },
       "import": {
-        "types": "./dist/hub/index.d.ts",
-        "default": "./dist/hub/index.js"
+        "types": "./dist\\hub\\index.d.ts",
+        "default": "./dist\\hub\\index.js"
       }
     },
     "./hub/node": {
-      "input": "./src/hub/node.ts",
+      "input": "./src\\hub\\node.ts",
       "require": {
-        "types": "./dist/hub/node.d.cts",
-        "default": "./dist/hub/node.cjs"
+        "types": "./dist\\hub\\node.d.cts",
+        "default": "./dist\\hub\\node.cjs"
       },
       "import": {
-        "types": "./dist/hub/node.d.ts",
-        "default": "./dist/hub/node.js"
+        "types": "./dist\\hub\\node.d.ts",
+        "default": "./dist\\hub\\node.js"
       }
     },
     "./load": {
-      "input": "./src/load/index.ts",
+      "input": "./src\\load\\index.ts",
       "require": {
-        "types": "./dist/load/index.d.cts",
-        "default": "./dist/load/index.cjs"
+        "types": "./dist\\load\\index.d.cts",
+        "default": "./dist\\load\\index.cjs"
       },
       "import": {
-        "types": "./dist/load/index.d.ts",
-        "default": "./dist/load/index.js"
+        "types": "./dist\\load\\index.d.ts",
+        "default": "./dist\\load\\index.js"
       }
     },
     "./load/serializable": {
-      "input": "./src/load/serializable.ts",
+      "input": "./src\\load\\serializable.ts",
       "require": {
-        "types": "./dist/load/serializable.d.cts",
-        "default": "./dist/load/serializable.cjs"
+        "types": "./dist\\load\\serializable.d.cts",
+        "default": "./dist\\load\\serializable.cjs"
       },
       "import": {
-        "types": "./dist/load/serializable.d.ts",
-        "default": "./dist/load/serializable.js"
+        "types": "./dist\\load\\serializable.d.ts",
+        "default": "./dist\\load\\serializable.js"
       }
     },
     "./storage/encoder_backed": {
-      "input": "./src/storage/encoder_backed.ts",
+      "input": "./src\\storage\\encoder_backed.ts",
       "require": {
-        "types": "./dist/storage/encoder_backed.d.cts",
-        "default": "./dist/storage/encoder_backed.cjs"
+        "types": "./dist\\storage\\encoder_backed.d.cts",
+        "default": "./dist\\storage\\encoder_backed.cjs"
       },
       "import": {
-        "types": "./dist/storage/encoder_backed.d.ts",
-        "default": "./dist/storage/encoder_backed.js"
+        "types": "./dist\\storage\\encoder_backed.d.ts",
+        "default": "./dist\\storage\\encoder_backed.js"
       }
     },
     "./storage/file_system": {
-      "input": "./src/storage/file_system.ts",
+      "input": "./src\\storage\\file_system.ts",
       "require": {
-        "types": "./dist/storage/file_system.d.cts",
-        "default": "./dist/storage/file_system.cjs"
+        "types": "./dist\\storage\\file_system.d.cts",
+        "default": "./dist\\storage\\file_system.cjs"
       },
       "import": {
-        "types": "./dist/storage/file_system.d.ts",
-        "default": "./dist/storage/file_system.js"
+        "types": "./dist\\storage\\file_system.d.ts",
+        "default": "./dist\\storage\\file_system.js"
       }
     },
     "./storage/in_memory": {
-      "input": "./src/storage/in_memory.ts",
+      "input": "./src\\storage\\in_memory.ts",
       "require": {
-        "types": "./dist/storage/in_memory.d.cts",
-        "default": "./dist/storage/in_memory.cjs"
+        "types": "./dist\\storage\\in_memory.d.cts",
+        "default": "./dist\\storage\\in_memory.cjs"
       },
       "import": {
-        "types": "./dist/storage/in_memory.d.ts",
-        "default": "./dist/storage/in_memory.js"
+        "types": "./dist\\storage\\in_memory.d.ts",
+        "default": "./dist\\storage\\in_memory.js"
       }
     },
     "./package.json": "./package.json"
