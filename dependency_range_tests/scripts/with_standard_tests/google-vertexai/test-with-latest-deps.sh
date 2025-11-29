@@ -37,5 +37,5 @@ cd "$monorepo_vertexai_dir"
 
 # Clean and reinstall to avoid dependency conflicts
 pnpm install --no-frozen-lockfile
-pnpm add @langchain/core @langchain/google-gauth
+pnpm add @doc-raven/langchain-core @langchain/google-gauth
 pnpm test

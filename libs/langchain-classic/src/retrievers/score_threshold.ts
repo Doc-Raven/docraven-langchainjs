@@ -1,9 +1,9 @@
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import {
   VectorStore,
   VectorStoreRetriever,
   VectorStoreRetrieverInput,
-} from "@langchain/core/vectorstores";
+} from "@doc-raven/langchain-core/vectorstores";
 
 export type ScoreThresholdRetrieverInput<V extends VectorStore> = Omit<
   VectorStoreRetrieverInput<V>,

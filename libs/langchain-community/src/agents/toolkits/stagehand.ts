@@ -3,7 +3,7 @@ import {
   BaseToolkit as Toolkit,
   StructuredTool,
   StructuredToolInterface,
-} from "@langchain/core/tools";
+} from "@doc-raven/langchain-core/tools";
 import { Stagehand } from "@browserbasehq/stagehand";
 import { z } from "zod/v3";
 

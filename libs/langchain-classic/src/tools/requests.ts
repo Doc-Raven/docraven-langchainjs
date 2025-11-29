@@ -1,4 +1,4 @@
-import { Tool } from "@langchain/core/tools";
+import { Tool } from "@doc-raven/langchain-core/tools";
 
 export interface Headers {
   [key: string]: string;

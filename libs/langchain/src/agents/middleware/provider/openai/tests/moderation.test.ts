@@ -8,7 +8,7 @@ import {
   afterEach,
   type MockInstance,
 } from "vitest";
-import { HumanMessage, AIMessage, ToolMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage, ToolMessage } from "@doc-raven/langchain-core/messages";
 import { ChatOpenAI } from "@langchain/openai";
 
 import {
@@ -949,7 +949,7 @@ describe("openAIModerationMiddleware", () => {
         .mockResolvedValueOnce(flaggedToolResponse);
 
       const toolMock = vi.fn().mockResolvedValue("Inappropriate tool result");
-      const { tool } = await import("@langchain/core/tools");
+      const { tool } = await import("@doc-raven/langchain-core/tools");
       const { z } = await import("zod/v3");
 
       const testTool = tool(toolMock, {
@@ -1040,7 +1040,7 @@ describe("openAIModerationMiddleware", () => {
         .mockResolvedValueOnce(flaggedToolResponse);
 
       const toolMock = vi.fn().mockResolvedValue("Self-harm related content");
-      const { tool } = await import("@langchain/core/tools");
+      const { tool } = await import("@doc-raven/langchain-core/tools");
       const { z } = await import("zod/v3");
 
       const testTool = tool(toolMock, {

@@ -1,11 +1,11 @@
-import { BaseMessage, BaseMessageLike } from "@langchain/core/messages";
-import { LanguageModelLike } from "@langchain/core/language_models/base";
+import { BaseMessage, BaseMessageLike } from "@doc-raven/langchain-core/messages";
+import { LanguageModelLike } from "@doc-raven/langchain-core/language_models/base";
 import {
   Runnable,
   RunnableLambda,
   RunnableSequence,
   type RunnableConfig,
-} from "@langchain/core/runnables";
+} from "@doc-raven/langchain-core/runnables";
 
 import {
   AgentNameMode,

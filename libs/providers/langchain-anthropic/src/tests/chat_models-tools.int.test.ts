@@ -6,12 +6,12 @@ import {
   AIMessageChunk,
   HumanMessage,
   ToolMessage,
-} from "@langchain/core/messages";
-import { StructuredTool, tool } from "@langchain/core/tools";
-import { concat } from "@langchain/core/utils/stream";
+} from "@doc-raven/langchain-core/messages";
+import { StructuredTool, tool } from "@doc-raven/langchain-core/tools";
+import { concat } from "@doc-raven/langchain-core/utils/stream";
 import { z } from "zod/v3";
-import { toJsonSchema } from "@langchain/core/utils/json_schema";
-import { RunnableLambda } from "@langchain/core/runnables";
+import { toJsonSchema } from "@doc-raven/langchain-core/utils/json_schema";
+import { RunnableLambda } from "@doc-raven/langchain-core/runnables";
 import { ChatAnthropic } from "../chat_models.js";
 import { AnthropicToolResponse } from "../types.js";
 import { _convertMessagesToAnthropicPayload } from "../utils/message_inputs.js";

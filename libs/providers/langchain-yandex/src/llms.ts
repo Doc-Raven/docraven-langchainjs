@@ -1,5 +1,5 @@
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { LLM, type BaseLLMParams } from "@langchain/core/language_models/llms";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
+import { LLM, type BaseLLMParams } from "@doc-raven/langchain-core/language_models/llms";
 
 const apiUrl =
   "https://llm.api.cloud.yandex.net/foundationModels/v1/completion";

@@ -1,7 +1,7 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import type { BaseRetrieverInterface } from "@langchain/core/retrievers";
-import { ChainValues } from "@langchain/core/utils/types";
-import { CallbackManagerForChainRun } from "@langchain/core/callbacks/manager";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
+import type { BaseRetrieverInterface } from "@doc-raven/langchain-core/retrievers";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
+import { CallbackManagerForChainRun } from "@doc-raven/langchain-core/callbacks/manager";
 import { BaseChain, ChainInputs } from "./base.js";
 import { SerializedVectorDBQAChain } from "./serde.js";
 import {
@@ -28,7 +28,7 @@ export interface RetrievalQAChainInput extends Omit<ChainInputs, "memory"> {
  * @example
  * ```typescript
  * import { createStuffDocumentsChain } from "@langchain/classic/chains/combine_documents";
- * import { ChatPromptTemplate } from "@langchain/core/prompts";
+ * import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
  * import { createRetrievalChain } from "@langchain/classic/chains/retrieval";
  * import { MemoryVectorStore } from "@langchain/classic/vectorstores/memory";
  *

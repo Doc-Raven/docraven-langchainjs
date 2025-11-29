@@ -1,9 +1,9 @@
 import { z } from "zod/v3";
 import { calendar_v3 } from "googleapis";
 import type { GaxiosResponse } from "googleapis-common";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { CallbackManagerForToolRun } from "@langchain/core/callbacks/manager";
-import { BaseLanguageModel } from "@langchain/core/language_models/base";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { CallbackManagerForToolRun } from "@doc-raven/langchain-core/callbacks/manager";
+import { BaseLanguageModel } from "@doc-raven/langchain-core/language_models/base";
 import { CREATE_EVENT_PROMPT } from "../prompts/index.js";
 import { getTimezoneOffsetInHours } from "../utils/get-timezone-offset-in-hours.js";
 

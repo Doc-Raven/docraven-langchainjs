@@ -1,21 +1,21 @@
-import type { BaseOutputParser } from "@langchain/core/output_parsers";
-import type { BasePromptTemplate } from "@langchain/core/prompts";
-import type { Runnable, RunnableInterface } from "@langchain/core/runnables";
+import type { BaseOutputParser } from "@doc-raven/langchain-core/output_parsers";
+import type { BasePromptTemplate } from "@doc-raven/langchain-core/prompts";
+import type { Runnable, RunnableInterface } from "@doc-raven/langchain-core/runnables";
 import type {
   BaseFunctionCallOptions,
   BaseLanguageModelInput,
   FunctionDefinition,
-} from "@langchain/core/language_models/base";
+} from "@doc-raven/langchain-core/language_models/base";
 import {
   isInteropZodSchema,
   type InputValues,
   InteropZodObject,
-} from "@langchain/core/utils/types";
-import type { BaseMessage } from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/utils/types";
+import type { BaseMessage } from "@doc-raven/langchain-core/messages";
 import {
   toJsonSchema,
   type JsonSchema7Type,
-} from "@langchain/core/utils/json_schema";
+} from "@doc-raven/langchain-core/utils/json_schema";
 import { JsonOutputFunctionsParser } from "../../output_parsers/openai_functions.js";
 
 /**
@@ -166,7 +166,7 @@ export type CreateStructuredOutputRunnableConfig<
  * ```typescript
  * import { createStructuredOutputRunnable } from "@langchain/classic/chains/openai_functions";
  * import { ChatOpenAI } from "@langchain/openai";
- * import { ChatPromptTemplate } from "@langchain/core/prompts";
+ * import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
  * import { JsonOutputFunctionsParser } from "@langchain/classic/output_parsers";
  *
  * const jsonSchema = {

@@ -10,8 +10,8 @@ import {
   HumanMessage,
   AIMessage,
   SystemMessage,
-} from "@langchain/core/messages";
-import type { LanguageModelLike } from "@langchain/core/language_models/base";
+} from "@doc-raven/langchain-core/messages";
+import type { LanguageModelLike } from "@doc-raven/langchain-core/language_models/base";
 import { ChatOpenAI } from "@langchain/openai";
 
 import { anthropicPromptCachingMiddleware } from "../promptCaching.js";

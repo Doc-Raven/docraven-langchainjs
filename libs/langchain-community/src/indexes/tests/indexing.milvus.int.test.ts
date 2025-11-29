@@ -1,6 +1,6 @@
-import { Document } from "@langchain/core/documents";
-import { index } from "@langchain/core/indexing";
-import { BaseDocumentLoader } from "@langchain/core/document_loaders/base";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { index } from "@doc-raven/langchain-core/indexing";
+import { BaseDocumentLoader } from "@doc-raven/langchain-core/document_loaders/base";
 
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { InMemoryRecordManager } from "../memory.js";

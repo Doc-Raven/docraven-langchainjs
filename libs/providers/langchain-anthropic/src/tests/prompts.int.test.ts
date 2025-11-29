@@ -1,6 +1,6 @@
 import { test, expect } from "vitest";
 import Anthropic from "@anthropic-ai/sdk";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 import { convertPromptToAnthropic } from "../utils/prompts.js";
 

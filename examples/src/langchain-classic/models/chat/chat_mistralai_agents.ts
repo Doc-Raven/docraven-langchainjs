@@ -1,13 +1,13 @@
 import { z } from "zod";
 
 import { ChatMistralAI } from "@langchain/mistralai";
-import { tool } from "@langchain/core/tools";
+import { tool } from "@doc-raven/langchain-core/tools";
 import {
   AgentExecutor,
   createToolCallingAgent,
 } from "@langchain/classic/agents";
 
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 const llm = new ChatMistralAI({
   temperature: 0,

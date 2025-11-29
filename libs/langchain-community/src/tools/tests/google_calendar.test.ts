@@ -1,6 +1,6 @@
 import { jest, expect, describe } from "@jest/globals";
-import { BaseChatModel } from "@langchain/core/language_models/chat_models";
-import { ChatResult } from "@langchain/core/outputs";
+import { BaseChatModel } from "@doc-raven/langchain-core/language_models/chat_models";
+import { ChatResult } from "@doc-raven/langchain-core/outputs";
 import {
   GoogleCalendarCreateTool,
   GoogleCalendarViewTool,
@@ -14,7 +14,7 @@ jest.mock("googleapis", () => ({
   },
 }));
 
-jest.mock("@langchain/core/utils/env", () => ({
+jest.mock("@doc-raven/langchain-core/utils/env", () => ({
   getEnvironmentVariable: () => "key",
 }));
 

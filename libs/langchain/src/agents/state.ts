@@ -1,4 +1,4 @@
-import type { InteropZodObject } from "@langchain/core/utils/types";
+import type { InteropZodObject } from "@doc-raven/langchain-core/utils/types";
 import type { RunnableCallable } from "./RunnableCallable.js";
 import type { AgentMiddleware } from "./middleware/types.js";
 

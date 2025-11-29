@@ -1,3 +1,3 @@
-import { awaitAllCallbacks } from "@langchain/core/callbacks/promises";
+import { awaitAllCallbacks } from "@doc-raven/langchain-core/callbacks/promises";
 
 await awaitAllCallbacks();

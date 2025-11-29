@@ -1,11 +1,11 @@
-import { BaseChatMessageHistory } from "@langchain/core/chat_history";
+import { BaseChatMessageHistory } from "@doc-raven/langchain-core/chat_history";
 import {
   AIMessage,
   BaseMessage,
   HumanMessage,
   StoredMessage,
   mapStoredMessagesToChatMessages,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import PostgresEngine from "./engine.js";
 
 export interface PostgresChatMessageHistoryInput {

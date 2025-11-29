@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { RunnableSequence } from "@langchain/core/runnables";
+import { RunnableSequence } from "@doc-raven/langchain-core/runnables";
 import { load } from "../index.js";
 
 test("Should load and invoke real-world serialized chain", async () => {

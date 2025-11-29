@@ -10,7 +10,7 @@ import {
 } from "@jest/globals";
 import { Cluster, ISearchIndex } from "couchbase";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { faker } from "@faker-js/faker";
 import {
   CouchbaseSearchVectorStore,

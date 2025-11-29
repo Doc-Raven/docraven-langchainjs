@@ -1,4 +1,4 @@
-import type { MessageContent } from "@langchain/core/messages";
+import type { MessageContent } from "@doc-raven/langchain-core/messages";
 import { ChatAnthropic } from "@langchain/anthropic";
 
 import * as fs from "fs";

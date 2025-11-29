@@ -1,14 +1,14 @@
 import { test, expect } from "vitest";
 
-import { LLMResult } from "@langchain/core/outputs";
-import { StringPromptValue } from "@langchain/core/prompt_values";
-import { CallbackManager } from "@langchain/core/callbacks/manager";
-import { NewTokenIndices } from "@langchain/core/callbacks/base";
+import { LLMResult } from "@doc-raven/langchain-core/outputs";
+import { StringPromptValue } from "@doc-raven/langchain-core/prompt_values";
+import { CallbackManager } from "@doc-raven/langchain-core/callbacks/manager";
+import { NewTokenIndices } from "@doc-raven/langchain-core/callbacks/base";
 import {
   ClientSecretCredential,
   getBearerTokenProvider,
 } from "@azure/identity";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 
 import { AzureOpenAI } from "../llms.js";
 

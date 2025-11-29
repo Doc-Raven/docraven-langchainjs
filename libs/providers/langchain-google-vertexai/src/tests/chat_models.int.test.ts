@@ -1,7 +1,7 @@
 import { expect, test } from "@jest/globals";
 import fs from "fs/promises";
-import { BaseLanguageModelInput } from "@langchain/core/language_models/base";
-import { ChatPromptValue } from "@langchain/core/prompt_values";
+import { BaseLanguageModelInput } from "@doc-raven/langchain-core/language_models/base";
+import { ChatPromptValue } from "@doc-raven/langchain-core/prompt_values";
 import {
   AIMessage,
   AIMessageChunk,
@@ -13,14 +13,14 @@ import {
   MessageContentComplex,
   SystemMessage,
   ToolMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import {
   BlobStoreGoogleCloudStorage,
   ChatGoogle,
 } from "@langchain/google-gauth";
-import { tool } from "@langchain/core/tools";
+import { tool } from "@doc-raven/langchain-core/tools";
 import { z } from "zod/v3";
-import { concat } from "@langchain/core/utils/stream";
+import { concat } from "@doc-raven/langchain-core/utils/stream";
 import {
   BackedBlobStore,
   MediaBlob,
@@ -32,9 +32,9 @@ import { GoogleCloudStorageUri } from "@langchain/google-common/experimental/med
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
-import { InMemoryStore } from "@langchain/core/stores";
-import { BaseCallbackHandler } from "@langchain/core/callbacks/base";
+} from "@doc-raven/langchain-core/prompts";
+import { InMemoryStore } from "@doc-raven/langchain-core/stores";
+import { BaseCallbackHandler } from "@doc-raven/langchain-core/callbacks/base";
 import {
   GoogleRequestLogger,
   GoogleRequestRecorder,

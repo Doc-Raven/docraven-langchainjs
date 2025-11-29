@@ -2,7 +2,7 @@
 
 import type { expect as JestExpect } from "@jest/globals";
 import type { expect as VitestExpect } from "vitest";
-import { BaseChatModelCallOptions } from "@langchain/core/language_models/chat_models";
+import { BaseChatModelCallOptions } from "@doc-raven/langchain-core/language_models/chat_models";
 import {
   AIMessage,
   AIMessageChunk,
@@ -12,19 +12,19 @@ import {
   ToolMessage,
   UsageMetadata,
   getBufferString,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import { z } from "zod/v3";
-import { toJsonSchema } from "@langchain/core/utils/json_schema";
+import { toJsonSchema } from "@doc-raven/langchain-core/utils/json_schema";
 import {
   StructuredTool,
   StructuredToolParams,
   tool,
-} from "@langchain/core/tools";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { RunnableLambda } from "@langchain/core/runnables";
-import { concat } from "@langchain/core/utils/stream";
-import { StreamEvent } from "@langchain/core/tracers/log_stream";
-import { InferInteropZodOutput } from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/tools";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { RunnableLambda } from "@doc-raven/langchain-core/runnables";
+import { concat } from "@doc-raven/langchain-core/utils/stream";
+import { StreamEvent } from "@doc-raven/langchain-core/tracers/log_stream";
+import { InferInteropZodOutput } from "@doc-raven/langchain-core/utils/types";
 import {
   BaseChatModelsTests,
   BaseChatModelsTestsFields,

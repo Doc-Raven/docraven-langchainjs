@@ -7,11 +7,11 @@ import {
   AIMessage,
   HumanMessage,
   ToolMessage,
-} from "@langchain/core/messages";
-import type { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import type { ChatResult } from "@langchain/core/outputs";
-import { StructuredTool, tool } from "@langchain/core/tools";
-import { RunnableLambda } from "@langchain/core/runnables";
+} from "@doc-raven/langchain-core/messages";
+import type { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
+import type { ChatResult } from "@doc-raven/langchain-core/outputs";
+import { StructuredTool, tool } from "@doc-raven/langchain-core/tools";
+import { RunnableLambda } from "@doc-raven/langchain-core/runnables";
 import {
   Command,
   getCurrentTaskInput,

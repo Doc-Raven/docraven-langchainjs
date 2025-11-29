@@ -37,5 +37,5 @@ cd "$monorepo_cohere_dir"
 
 # Clean and reinstall to avoid dependency conflicts
 pnpm install --no-frozen-lockfile
-pnpm add @langchain/core
+pnpm add @doc-raven/langchain-core
 pnpm test

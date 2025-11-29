@@ -1,6 +1,6 @@
 import Mexp from "math-expression-evaluator";
 
-import { Tool } from "@langchain/core/tools";
+import { Tool } from "@doc-raven/langchain-core/tools";
 
 /**
  * The Calculator class is a tool used to evaluate mathematical

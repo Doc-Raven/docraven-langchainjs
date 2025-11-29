@@ -1,5 +1,5 @@
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { BaseLLM, BaseLLMParams } from "@langchain/core/language_models/llms";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
+import { BaseLLM, BaseLLMParams } from "@doc-raven/langchain-core/language_models/llms";
 import { Stream, WatsonXAI } from "@ibm-cloud/watsonx-ai";
 import {
   RequestCallbacks,
@@ -13,9 +13,9 @@ import {
   Generation,
   LLMResult,
   GenerationChunk,
-} from "@langchain/core/outputs";
-import { BaseLanguageModelCallOptions } from "@langchain/core/language_models/base";
-import { AsyncCaller } from "@langchain/core/utils/async_caller";
+} from "@doc-raven/langchain-core/outputs";
+import { BaseLanguageModelCallOptions } from "@doc-raven/langchain-core/language_models/base";
+import { AsyncCaller } from "@doc-raven/langchain-core/utils/async_caller";
 import {
   CreateCompletionsParams,
   Gateway,

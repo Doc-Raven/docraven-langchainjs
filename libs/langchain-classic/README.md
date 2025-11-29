@@ -28,10 +28,10 @@ See the [LangChain v1.0 release notes](https://docs.langchain.com/oss/javascript
 npm install @langchain/classic
 ```
 
-This package requires `@langchain/core` as a peer dependency:
+This package requires `@doc-raven/langchain-core` as a peer dependency:
 
 ```bash npm2yarn
-npm install @langchain/core
+npm install @doc-raven/langchain-core
 ```
 
 ## What's included
@@ -104,7 +104,7 @@ Example migration from `LLMChain`:
 // Before (using LLMChain)
 import { LLMChain } from "@langchain/classic/chains";
 import { ChatOpenAI } from "@langchain/openai";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 const model = new ChatOpenAI({ model: "gpt-4" });
 const prompt = PromptTemplate.fromTemplate(
@@ -150,7 +150,7 @@ This package is in **maintenance mode**. For new features and active development
 ```typescript
 import { LLMChain } from "@langchain/classic/chains";
 import { ChatOpenAI } from "@langchain/openai";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 const model = new ChatOpenAI({ model: "gpt-4" });
 

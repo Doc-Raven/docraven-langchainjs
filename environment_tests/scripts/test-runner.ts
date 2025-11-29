@@ -21,7 +21,7 @@ interface PackageJson {
 // In Docker, packages are mounted at specific paths
 const dockerPackages: WorkspacePackage[] = [
   { pkg: { name: "langchain" }, path: "/langchain" },
-  { pkg: { name: "@langchain/core" }, path: "/langchain-core" },
+  { pkg: { name: "@doc-raven/langchain-core" }, path: "/langchain-core" },
   { pkg: { name: "@langchain/classic" }, path: "/langchain-classic" },
   { pkg: { name: "@langchain/openai" }, path: "/langchain-openai" },
   { pkg: { name: "@langchain/anthropic" }, path: "/langchain-anthropic" },
@@ -144,7 +144,7 @@ class EnvironmentTestRunner {
           packageJson[depType]![depName] = "workspace:*";
         } else if (depVersion === "workspace:*") {
           // Only replace workspace:* with npm version if package is NOT available locally
-          if (depName === "@langchain/core") {
+          if (depName === "@doc-raven/langchain-core") {
             packageJson[depType]![depName] = ">=0.3.58 <0.4.0";
           } else if (depName === "langchain") {
             packageJson[depType]![depName] = "^0.3.30";

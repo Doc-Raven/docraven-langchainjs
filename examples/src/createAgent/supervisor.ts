@@ -15,7 +15,7 @@
  */
 
 import { ChatAnthropic } from "@langchain/anthropic";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 import {
   Command,
   getCurrentTaskInput,

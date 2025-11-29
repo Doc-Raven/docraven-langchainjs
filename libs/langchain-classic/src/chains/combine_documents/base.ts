@@ -1,6 +1,6 @@
-import { Document } from "@langchain/core/documents";
-import { BasePromptTemplate, PromptTemplate } from "@langchain/core/prompts";
-import { RunnableConfig } from "@langchain/core/runnables";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { BasePromptTemplate, PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { RunnableConfig } from "@doc-raven/langchain-core/runnables";
 
 export const DEFAULT_DOCUMENT_SEPARATOR = "\n\n";
 

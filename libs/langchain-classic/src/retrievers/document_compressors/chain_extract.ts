@@ -1,7 +1,7 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { type DocumentInterface, Document } from "@langchain/core/documents";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { BaseOutputParser } from "@langchain/core/output_parsers";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
+import { type DocumentInterface, Document } from "@doc-raven/langchain-core/documents";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { BaseOutputParser } from "@doc-raven/langchain-core/output_parsers";
 import { LLMChain } from "../../chains/llm_chain.js";
 import { BaseDocumentCompressor } from "./index.js";
 import { PROMPT_TEMPLATE } from "./chain_extract_prompt.js";

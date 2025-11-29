@@ -1,7 +1,7 @@
-import { Serialized } from "@langchain/core/load/serializable";
-import { BaseCallbackHandler } from "@langchain/core/callbacks/base";
-import { AgentAction, AgentFinish } from "@langchain/core/agents";
-import { ChainValues } from "@langchain/core/utils/types";
+import { Serialized } from "@doc-raven/langchain-core/load/serializable";
+import { BaseCallbackHandler } from "@doc-raven/langchain-core/callbacks/base";
+import { AgentAction, AgentFinish } from "@doc-raven/langchain-core/agents";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
 
 export class MyCallbackHandler extends BaseCallbackHandler {
   name = "MyCallbackHandler";

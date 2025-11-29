@@ -1,7 +1,7 @@
 import { calendar_v3 } from "googleapis";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { BaseLanguageModel } from "@langchain/core/language_models/base";
-import { CallbackManagerForToolRun } from "@langchain/core/callbacks/manager";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { BaseLanguageModel } from "@doc-raven/langchain-core/language_models/base";
+import { CallbackManagerForToolRun } from "@doc-raven/langchain-core/callbacks/manager";
 import { z } from "zod/v3";
 
 import { VIEW_EVENTS_PROMPT } from "../prompts/index.js";

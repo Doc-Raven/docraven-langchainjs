@@ -1,13 +1,13 @@
-import type { StructuredToolInterface } from "@langchain/core/tools";
+import type { StructuredToolInterface } from "@doc-raven/langchain-core/tools";
 import type {
   BaseChatModel,
   BaseChatModelCallOptions,
-} from "@langchain/core/language_models/chat_models";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { RunnablePassthrough } from "@langchain/core/runnables";
+} from "@doc-raven/langchain-core/language_models/chat_models";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { RunnablePassthrough } from "@doc-raven/langchain-core/runnables";
 import { OpenAIClient } from "@langchain/openai";
-import { convertToOpenAITool } from "@langchain/core/utils/function_calling";
-import { ToolDefinition } from "@langchain/core/language_models/base";
+import { convertToOpenAITool } from "@doc-raven/langchain-core/utils/function_calling";
+import { ToolDefinition } from "@doc-raven/langchain-core/language_models/base";
 import { formatToOpenAIToolMessages } from "../format_scratchpad/openai_tools.js";
 import {
   OpenAIToolsAgentOutputParser,
@@ -57,8 +57,8 @@ export type CreateOpenAIToolsAgentParams = {
  * ```typescript
  * import { AgentExecutor, createOpenAIToolsAgent } from "langchain/agents";
  * import { pull } from "langchain/hub";
- * import type { ChatPromptTemplate } from "@langchain/core/prompts";
- * import { AIMessage, HumanMessage } from "@langchain/core/messages";
+ * import type { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
+ * import { AIMessage, HumanMessage } from "@doc-raven/langchain-core/messages";
  *
  * import { ChatOpenAI } from "@langchain/openai";
  *

@@ -819,11 +819,11 @@ export abstract class Runnable<
    * Here's an example:
    *
    * ```ts
-   * import { RunnableLambda } from "@langchain/core/runnables";
-   * import { dispatchCustomEvent } from "@langchain/core/callbacks/dispatch";
+   * import { RunnableLambda } from "@doc-raven/langchain-core/runnables";
+   * import { dispatchCustomEvent } from "@doc-raven/langchain-core/callbacks/dispatch";
    * // Use this import for web environments that don't support "async_hooks"
    * // and manually pass config to child runs.
-   * // import { dispatchCustomEvent } from "@langchain/core/callbacks/dispatch/web";
+   * // import { dispatchCustomEvent } from "@doc-raven/langchain-core/callbacks/dispatch/web";
    *
    * const slowThing = RunnableLambda.from(async (someInput: string) => {
    *   // Placeholder for some slow operation
@@ -1222,7 +1222,7 @@ export type RunnableBindingArgs<
  * import {
  *   type RunnableConfig,
  *   RunnableLambda,
- * } from "@langchain/core/runnables";
+ * } from "@doc-raven/langchain-core/runnables";
  *
  * const enhanceProfile = (
  *   profile: Record<string, any>,
@@ -1505,7 +1505,7 @@ export class RunnableBinding<
  * with each element of the input sequence.
  * @example
  * ```typescript
- * import { RunnableEach, RunnableLambda } from "@langchain/core/runnables";
+ * import { RunnableEach, RunnableLambda } from "@doc-raven/langchain-core/runnables";
  *
  * const toUpperCase = (input: string): string => input.toUpperCase();
  * const addGreeting = (input: string): string => `Hello, ${input}!`;
@@ -1609,7 +1609,7 @@ export class RunnableEach<
  * import {
  *   RunnableLambda,
  *   RunnableRetry,
- * } from "@langchain/core/runnables";
+ * } from "@doc-raven/langchain-core/runnables";
  *
  * // Simulate an API call that fails
  * const simulateApiCall = (input: string): string => {
@@ -2428,7 +2428,7 @@ function assertNonTraceableFunction<
  * A runnable that wraps an arbitrary function that takes a single argument.
  * @example
  * ```typescript
- * import { RunnableLambda } from "@langchain/core/runnables";
+ * import { RunnableLambda } from "@doc-raven/langchain-core/runnables";
  *
  * const add = (input: { x: number; y: number }) => input.x + input.y;
  *
@@ -2741,7 +2741,7 @@ export class RunnableLambda<
  * import {
  *   RunnableLambda,
  *   RunnableParallel,
- * } from "@langchain/core/runnables";
+ * } from "@doc-raven/langchain-core/runnables";
  *
  * const addYears = (age: number): number => age + 5;
  * const yearsToFifty = (age: number): number => 50 - age;
@@ -2792,7 +2792,7 @@ export class RunnableParallel<RunInput> extends RunnableMap<RunInput> {}
  * import {
  *   RunnableLambda,
  *   RunnableWithFallbacks,
- * } from "@langchain/core/runnables";
+ * } from "@doc-raven/langchain-core/runnables";
  *
  * const primaryOperation = (input: string): string => {
  *   if (input !== "safe") {
@@ -3101,7 +3101,7 @@ export interface RunnableAssignFields<RunInput> {
  *   RunnableAssign,
  *   RunnableLambda,
  *   RunnableParallel,
- * } from "@langchain/core/runnables";
+ * } from "@doc-raven/langchain-core/runnables";
  *
  * const calculateAge = (x: { birthYear: number }): { age: number } => {
  *   const currentYear = new Date().getFullYear();
@@ -3240,7 +3240,7 @@ export interface RunnablePickFields {
  * Useful for streaming, can be automatically created and chained by calling `runnable.pick();`.
  * @example
  * ```typescript
- * import { RunnablePick } from "@langchain/core/runnables";
+ * import { RunnablePick } from "@doc-raven/langchain-core/runnables";
  *
  * const inputData = {
  *   name: "John",

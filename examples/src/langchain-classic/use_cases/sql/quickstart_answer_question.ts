@@ -3,12 +3,12 @@ import { createSqlQueryChain } from "@langchain/classic/chains/sql_db";
 import { SqlDatabase } from "@langchain/classic/sql_db";
 import { DataSource } from "typeorm";
 import { QuerySqlTool } from "@langchain/classic/tools/sql";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
 import {
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
+} from "@doc-raven/langchain-core/runnables";
 
 const datasource = new DataSource({
   type: "sqlite",

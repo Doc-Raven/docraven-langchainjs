@@ -1,5 +1,5 @@
 import { test } from "@jest/globals";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { SpiderLoader } from "../web/spider.js";
 
 test("Test SpiderLoader load method with scrape mode", async () => {

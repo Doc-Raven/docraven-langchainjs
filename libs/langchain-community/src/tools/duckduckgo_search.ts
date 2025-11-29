@@ -1,4 +1,4 @@
-import { Tool, ToolParams } from "@langchain/core/tools";
+import { Tool, ToolParams } from "@doc-raven/langchain-core/tools";
 import { search, type SearchOptions } from "duck-duck-scrape";
 
 export {

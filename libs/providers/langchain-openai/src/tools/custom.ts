@@ -2,9 +2,9 @@ import {
   patchConfig,
   pickRunnableConfigKeys,
   RunnableFunc,
-} from "@langchain/core/runnables";
-import { AsyncLocalStorageProviderSingleton } from "@langchain/core/singletons";
-import { DynamicTool, ToolRunnableConfig } from "@langchain/core/tools";
+} from "@doc-raven/langchain-core/runnables";
+import { AsyncLocalStorageProviderSingleton } from "@doc-raven/langchain-core/singletons";
+import { DynamicTool, ToolRunnableConfig } from "@doc-raven/langchain-core/tools";
 import OpenAI from "openai";
 
 export type CustomToolFields = Omit<OpenAI.Responses.CustomTool, "type">;

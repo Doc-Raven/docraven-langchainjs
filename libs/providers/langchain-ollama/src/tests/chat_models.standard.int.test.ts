@@ -1,8 +1,8 @@
 import { test, expect } from "vitest";
 import { ChatModelIntegrationTests } from "@langchain/standard-tests/vitest";
-import { AIMessageChunk } from "@langchain/core/messages";
-import { RunnableLambda } from "@langchain/core/runnables";
-import { toJsonSchema } from "@langchain/core/utils/json_schema";
+import { AIMessageChunk } from "@doc-raven/langchain-core/messages";
+import { RunnableLambda } from "@doc-raven/langchain-core/runnables";
+import { toJsonSchema } from "@doc-raven/langchain-core/utils/json_schema";
 import { z } from "zod/v3";
 import { ChatOllama, ChatOllamaCallOptions } from "../chat_models.js";
 

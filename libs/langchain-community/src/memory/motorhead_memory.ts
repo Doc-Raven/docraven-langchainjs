@@ -4,12 +4,12 @@ import {
   MemoryVariables,
   getInputValue,
   getOutputValue,
-} from "@langchain/core/memory";
-import { getBufferString } from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/memory";
+import { getBufferString } from "@doc-raven/langchain-core/messages";
 import {
   AsyncCaller,
   AsyncCallerParams,
-} from "@langchain/core/utils/async_caller";
+} from "@doc-raven/langchain-core/utils/async_caller";
 import { BaseChatMemory, BaseChatMemoryInput } from "./chat_memory.js";
 
 /**

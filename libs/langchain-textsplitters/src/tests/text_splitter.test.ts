@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import {
   CharacterTextSplitter,
   LatexTextSplitter,

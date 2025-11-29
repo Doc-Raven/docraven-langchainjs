@@ -3,7 +3,7 @@ import { ChatOpenAI } from "@langchain/openai";
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
+} from "@doc-raven/langchain-core/prompts";
 import { BufferMemory } from "@langchain/classic/memory";
 
 const chat = new ChatOpenAI({ model: "gpt-4o-mini", temperature: 0 });

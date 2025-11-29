@@ -5,14 +5,14 @@ import {
   VectorizeVectorMetadata,
   VectorizeVectorMetadataFilter,
 } from "@cloudflare/workers-types";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { VectorStore } from "@langchain/core/vectorstores";
-import { Document } from "@langchain/core/documents";
+import type { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
+import { VectorStore } from "@doc-raven/langchain-core/vectorstores";
+import { Document } from "@doc-raven/langchain-core/documents";
 import {
   AsyncCaller,
   type AsyncCallerParams,
-} from "@langchain/core/utils/async_caller";
-import { chunkArray } from "@langchain/core/utils/chunk_array";
+} from "@doc-raven/langchain-core/utils/async_caller";
+import { chunkArray } from "@doc-raven/langchain-core/utils/chunk_array";
 
 export interface VectorizeLibArgs extends AsyncCallerParams {
   index: VectorizeIndex;

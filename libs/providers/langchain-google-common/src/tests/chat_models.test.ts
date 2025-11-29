@@ -9,13 +9,13 @@ import {
   ContentBlock,
   SystemMessage,
   ToolMessage,
-} from "@langchain/core/messages";
-import { InMemoryStore } from "@langchain/core/stores";
-import { CallbackHandlerMethods } from "@langchain/core/callbacks/base";
-import { Serialized } from "@langchain/core/load/serializable";
-import { tool } from "@langchain/core/tools";
+} from "@doc-raven/langchain-core/messages";
+import { InMemoryStore } from "@doc-raven/langchain-core/stores";
+import { CallbackHandlerMethods } from "@doc-raven/langchain-core/callbacks/base";
+import { Serialized } from "@doc-raven/langchain-core/load/serializable";
+import { tool } from "@doc-raven/langchain-core/tools";
 import { z } from "zod/v3";
-import { toJsonSchema } from "@langchain/core/utils/json_schema";
+import { toJsonSchema } from "@doc-raven/langchain-core/utils/json_schema";
 import { ChatGoogleBase, ChatGoogleBaseInput } from "../chat_models.js";
 import {
   authOptions,

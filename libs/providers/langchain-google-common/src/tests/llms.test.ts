@@ -3,8 +3,8 @@ import {
   BaseMessage,
   HumanMessageChunk,
   ContentBlock,
-} from "@langchain/core/messages";
-import { ChatPromptValue } from "@langchain/core/prompt_values";
+} from "@doc-raven/langchain-core/messages";
+import { ChatPromptValue } from "@doc-raven/langchain-core/prompt_values";
 import { GoogleBaseLLM, GoogleBaseLLMInput } from "../llms.js";
 import {
   authOptions,

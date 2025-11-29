@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { z } from "zod/v3";
-import { AIMessage, ToolMessage, ToolCall } from "@langchain/core/messages";
+import { AIMessage, ToolMessage, ToolCall } from "@doc-raven/langchain-core/messages";
 import {
   InferInteropZodInput,
   interopParse,
-} from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/types";
 import { interrupt } from "@langchain/langgraph";
 
 import { createMiddleware } from "../middleware.js";

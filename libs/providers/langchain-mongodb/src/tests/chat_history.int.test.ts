@@ -1,6 +1,6 @@
 import { test, expect, beforeAll, beforeEach, afterAll } from "vitest";
 import { Collection, MongoClient, ObjectId } from "mongodb";
-import { AIMessage, HumanMessage } from "@langchain/core/messages";
+import { AIMessage, HumanMessage } from "@doc-raven/langchain-core/messages";
 import { MongoDBChatMessageHistory } from "../chat_history.js";
 import { uri } from "./utils.js";
 

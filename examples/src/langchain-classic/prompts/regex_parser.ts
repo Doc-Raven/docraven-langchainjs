@@ -1,6 +1,6 @@
 import { OpenAI } from "@langchain/openai";
 import { RegexParser } from "@langchain/classic/output_parsers";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 export const run = async () => {
   const parser = new RegexParser(

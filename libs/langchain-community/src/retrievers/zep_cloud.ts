@@ -5,8 +5,8 @@ import {
   MemorySearchResult,
   NotFoundError,
 } from "@getzep/zep-cloud/api";
-import { BaseRetriever, BaseRetrieverInput } from "@langchain/core/retrievers";
-import { Document } from "@langchain/core/documents";
+import { BaseRetriever, BaseRetrieverInput } from "@doc-raven/langchain-core/retrievers";
+import { Document } from "@doc-raven/langchain-core/documents";
 
 /**
  * Configuration interface for the ZepRetriever class. Extends the

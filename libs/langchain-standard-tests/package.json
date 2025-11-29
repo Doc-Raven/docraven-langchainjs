@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@jest/globals": "^29.5.0",
-    "@langchain/core": "workspace:*",
+    "@doc-raven/langchain-core": "workspace:*",
     "zod": "^3.25.76 || ^4"
   },
   "devDependencies": {
@@ -58,25 +58,25 @@
   "types": "./dist/index.d.cts",
   "exports": {
     ".": {
-      "input": "./src/index.ts",
+      "input": "./src\\index.ts",
       "require": {
-        "types": "./dist/index.d.cts",
-        "default": "./dist/index.cjs"
+        "types": "./dist\\index.d.cts",
+        "default": "./dist\\index.cjs"
       },
       "import": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.js"
+        "types": "./dist\\index.d.ts",
+        "default": "./dist\\index.js"
       }
     },
     "./vitest": {
-      "input": "./src/vitest.ts",
+      "input": "./src\\vitest.ts",
       "require": {
-        "types": "./dist/vitest.d.cts",
-        "default": "./dist/vitest.cjs"
+        "types": "./dist\\vitest.d.cts",
+        "default": "./dist\\vitest.cjs"
       },
       "import": {
-        "types": "./dist/vitest.d.ts",
-        "default": "./dist/vitest.js"
+        "types": "./dist\\vitest.d.ts",
+        "default": "./dist\\vitest.js"
       }
     },
     "./package.json": "./package.json"

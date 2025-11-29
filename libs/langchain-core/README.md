@@ -1,19 +1,19 @@
-# 🦜🍎️ @langchain/core
+# 🦜🍎️ @doc-raven/langchain-core
 
-![npm](https://img.shields.io/npm/dm/@langchain/core) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/langchainai.svg?style=social&label=Follow%20%40LangChainAI)](https://twitter.com/langchainai)
+![npm](https://img.shields.io/npm/dm/@doc-raven/langchain-core) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/langchainai.svg?style=social&label=Follow%20%40LangChainAI)](https://twitter.com/langchainai)
 
-`@langchain/core` contains the core abstractions and schemas of LangChain.js, including base classes for language models,
+`@doc-raven/langchain-core` contains the core abstractions and schemas of LangChain.js, including base classes for language models,
 chat models, vectorstores, retrievers, and runnables.
 
 ## 💾 Quick Install
 
 ```bash
-pnpm install @langchain/core
+pnpm install @doc-raven/langchain-core
 ```
 
 ## 🤔 What is this?
 
-`@langchain/core` contains the base abstractions that power the rest of the LangChain ecosystem.
+`@doc-raven/langchain-core` contains the base abstractions that power the rest of the LangChain ecosystem.
 These abstractions are designed to be as modular and simple as possible.
 Examples of these abstractions include those for language models, document loaders, embedding models, vectorstores, retrievers, and more.
 The benefit of having these abstractions is that any provider can implement the required interface and then easily be used in the rest of the LangChain ecosystem.
@@ -27,8 +27,8 @@ pnpm install @langchain/openai
 And use them as follows:
 
 ```typescript
-import { StringOutputParser } from "@langchain/core/output_parsers";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
 import { ChatOpenAI } from "@langchain/openai";
 
 const prompt = ChatPromptTemplate.fromTemplate(
@@ -69,15 +69,15 @@ leigh
 */
 ```
 
-Note that for compatibility, all used LangChain packages (including the base LangChain package, which itself depends on core!) must share the same version of `@langchain/core`.
-This means that you may need to install/resolve a specific version of `@langchain/core` that matches the dependencies of your used packages.
+Note that for compatibility, all used LangChain packages (including the base LangChain package, which itself depends on core!) must share the same version of `@doc-raven/langchain-core`.
+This means that you may need to install/resolve a specific version of `@doc-raven/langchain-core` that matches the dependencies of your used packages.
 
 ## 📦 Creating your own package
 
 Other LangChain packages should add this package as a dependency and extend the classes within.
 For an example, see the [@langchain/anthropic](https://github.com/langchain-ai/langchainjs/tree/main/libs/providers/langchain-anthropic) in this repo.
 
-Because all used packages must share the same version of core, packages should never directly depend on `@langchain/core`. Instead they should have core as a peer dependency and a dev dependency. We suggest using a tilde dependency to allow for different (backwards-compatible) patch versions:
+Because all used packages must share the same version of core, packages should never directly depend on `@doc-raven/langchain-core`. Instead they should have core as a peer dependency and a dev dependency. We suggest using a tilde dependency to allow for different (backwards-compatible) patch versions:
 
 ```json
 {
@@ -91,10 +91,10 @@ Because all used packages must share the same version of core, packages should n
     "@anthropic-ai/sdk": "^0.10.0"
   },
   "peerDependencies": {
-    "@langchain/core": "~0.3.0"
+    "@doc-raven/langchain-core": "~0.3.0"
   },
   "devDependencies": {
-    "@langchain/core": "~0.3.0"
+    "@doc-raven/langchain-core": "~0.3.0"
   }
 }
 ```
@@ -104,7 +104,7 @@ We suggest making all packages cross-compatible with ESM and CJS using a build s
 
 ## 💁 Contributing
 
-Because `@langchain/core` is a low-level package whose abstractions will change infrequently, most contributions should be made in the higher-level LangChain package.
+Because `@doc-raven/langchain-core` is a low-level package whose abstractions will change infrequently, most contributions should be made in the higher-level LangChain package.
 
 Bugfixes or suggestions should be made using the same guidelines as the main package.
 See [here](https://github.com/langchain-ai/langchainjs/tree/main/CONTRIBUTING.md) for detailed information.

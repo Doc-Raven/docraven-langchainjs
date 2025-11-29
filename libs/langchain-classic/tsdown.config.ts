@@ -114,7 +114,7 @@ export default getBuildConfig({
         {
           modules: ["StringOutputParser"],
           alias: ["schema", "output_parser"],
-          path: "@langchain/core/output_parsers",
+          path: "@doc-raven/langchain-core/output_parsers",
         },
       ],
     }),

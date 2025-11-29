@@ -1,13 +1,13 @@
 import { v4 as uuidv4 } from "uuid";
-import { type DocumentInterface, Document } from "@langchain/core/documents";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
+import { type DocumentInterface, Document } from "@doc-raven/langchain-core/documents";
+import type { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
 import {
   AsyncCaller,
   AsyncCallerParams,
-} from "@langchain/core/utils/async_caller";
-import { chunkArray } from "@langchain/core/utils/chunk_array";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { VectorStore } from "@langchain/core/vectorstores";
+} from "@doc-raven/langchain-core/utils/async_caller";
+import { chunkArray } from "@doc-raven/langchain-core/utils/chunk_array";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
+import { VectorStore } from "@doc-raven/langchain-core/vectorstores";
 
 export type TurbopufferDistanceMetric = "cosine_distance" | "euclidean_squared";
 

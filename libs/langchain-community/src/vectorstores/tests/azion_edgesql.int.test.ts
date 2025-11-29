@@ -1,5 +1,5 @@
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { jest, test, expect, describe, beforeAll } from "@jest/globals";
 
 import { AzionVectorStore } from "../azion_edgesql.js";

@@ -1,10 +1,10 @@
-import type { BaseRetrieverInterface } from "@langchain/core/retrievers";
+import type { BaseRetrieverInterface } from "@doc-raven/langchain-core/retrievers";
 import { z } from "zod/v3";
-import { CallbackManagerForToolRun } from "@langchain/core/callbacks/manager";
+import { CallbackManagerForToolRun } from "@doc-raven/langchain-core/callbacks/manager";
 import {
   DynamicStructuredTool,
   type DynamicStructuredToolInput,
-} from "@langchain/core/tools";
+} from "@doc-raven/langchain-core/tools";
 import { formatDocumentsAsString } from "../util/document.js";
 
 export function createRetrieverTool(

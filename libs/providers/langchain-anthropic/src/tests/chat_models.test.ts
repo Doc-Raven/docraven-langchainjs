@@ -4,9 +4,9 @@ import {
   HumanMessage,
   ToolMessage,
   AIMessageChunk,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import { z } from "zod";
-import { OutputParserException } from "@langchain/core/output_parsers";
+import { OutputParserException } from "@doc-raven/langchain-core/output_parsers";
 import { ChatAnthropic } from "../chat_models.js";
 import { _convertMessagesToAnthropicPayload } from "../utils/message_inputs.js";
 

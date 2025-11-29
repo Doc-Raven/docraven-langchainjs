@@ -1,11 +1,11 @@
 import {
   JsonOutputParser,
   StructuredOutputParser,
-} from "@langchain/core/output_parsers";
+} from "@doc-raven/langchain-core/output_parsers";
 import {
   InferInteropZodOutput,
   InteropZodType,
-} from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/types";
 
 const stripThinkTags = (text: string): string => {
   return text.replace(/<think>[\s\S]*?<\/think>\s*/g, "").trim();

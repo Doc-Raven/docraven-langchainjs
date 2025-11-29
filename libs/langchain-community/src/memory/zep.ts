@@ -10,7 +10,7 @@ import {
   MemoryVariables,
   getInputValue,
   getOutputValue,
-} from "@langchain/core/memory";
+} from "@doc-raven/langchain-core/memory";
 import {
   getBufferString,
   AIMessage,
@@ -18,7 +18,7 @@ import {
   ChatMessage,
   HumanMessage,
   SystemMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import { BaseChatMemory, BaseChatMemoryInput } from "./chat_memory.js";
 
 // Simple type for processed Zep memory data

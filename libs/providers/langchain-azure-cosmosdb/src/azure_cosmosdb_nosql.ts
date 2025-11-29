@@ -1,11 +1,11 @@
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
+import type { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
 import {
   MaxMarginalRelevanceSearchOptions,
   VectorStore,
-} from "@langchain/core/vectorstores";
-import { Document, DocumentInterface } from "@langchain/core/documents";
-import { maximalMarginalRelevance } from "@langchain/core/utils/math";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@doc-raven/langchain-core/vectorstores";
+import { Document, DocumentInterface } from "@doc-raven/langchain-core/documents";
+import { maximalMarginalRelevance } from "@doc-raven/langchain-core/utils/math";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 import {
   Container,
   ContainerRequest,

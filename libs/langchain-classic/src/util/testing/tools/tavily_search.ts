@@ -1,6 +1,6 @@
-import { CallbackManagerForToolRun } from "@langchain/core/callbacks/manager";
-import { Tool, type ToolParams } from "@langchain/core/tools";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { CallbackManagerForToolRun } from "@doc-raven/langchain-core/callbacks/manager";
+import { Tool, type ToolParams } from "@doc-raven/langchain-core/tools";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 
 /**
  * Options for the TavilySearchResults tool.

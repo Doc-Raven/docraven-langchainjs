@@ -1,7 +1,7 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { ChainValues } from "@langchain/core/utils/types";
-import { BasePromptTemplate } from "@langchain/core/prompts";
-import { CallbackManagerForChainRun } from "@langchain/core/callbacks/manager";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
+import { BasePromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { CallbackManagerForChainRun } from "@doc-raven/langchain-core/callbacks/manager";
 import { LLMChain } from "../llm_chain.js";
 import { BaseChain, ChainInputs } from "../base.js";
 import { CYPHER_GENERATION_PROMPT, CYPHER_QA_PROMPT } from "./prompts.js";

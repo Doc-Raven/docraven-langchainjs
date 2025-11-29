@@ -1,7 +1,7 @@
 import { z } from "zod/v3";
-import { CallbackManagerForToolRun } from "@langchain/core/callbacks/manager";
-import { StructuredTool, ToolParams } from "@langchain/core/tools";
-import { InferInteropZodOutput } from "@langchain/core/utils/types";
+import { CallbackManagerForToolRun } from "@doc-raven/langchain-core/callbacks/manager";
+import { StructuredTool, ToolParams } from "@doc-raven/langchain-core/tools";
+import { InferInteropZodOutput } from "@doc-raven/langchain-core/utils/types";
 import { TavilySearchAPIWrapper, type TavilySearchResponse } from "./utils.js";
 
 export type SearchDepth = "basic" | "advanced";

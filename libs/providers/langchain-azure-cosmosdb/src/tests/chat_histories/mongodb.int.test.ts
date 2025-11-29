@@ -1,6 +1,6 @@
 import { test, expect, afterAll } from "vitest";
 import { MongoClient, ObjectId } from "mongodb";
-import { AIMessage, HumanMessage } from "@langchain/core/messages";
+import { AIMessage, HumanMessage } from "@doc-raven/langchain-core/messages";
 import {
   AzureCosmosDBMongoChatMessageHistory,
   AzureCosmosDBMongoChatHistoryDBConfig,

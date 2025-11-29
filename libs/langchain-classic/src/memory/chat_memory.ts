@@ -1,14 +1,14 @@
 import {
   BaseChatMessageHistory,
   InMemoryChatMessageHistory as ChatMessageHistory,
-} from "@langchain/core/chat_history";
+} from "@doc-raven/langchain-core/chat_history";
 import {
   BaseMemory,
   InputValues,
   OutputValues,
   getInputValue,
   getOutputValue,
-} from "@langchain/core/memory";
+} from "@doc-raven/langchain-core/memory";
 
 /**
  * Interface for the input parameters of the BaseChatMemory class.

@@ -5,13 +5,13 @@ import {
   ErrorResponse,
 } from "@azure/cosmos";
 import { DefaultAzureCredential, TokenCredential } from "@azure/identity";
-import { BaseListChatMessageHistory } from "@langchain/core/chat_history";
+import { BaseListChatMessageHistory } from "@doc-raven/langchain-core/chat_history";
 import {
   BaseMessage,
   mapChatMessagesToStoredMessages,
   mapStoredMessagesToChatMessages,
-} from "@langchain/core/messages";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@doc-raven/langchain-core/messages";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 
 const USER_AGENT_SUFFIX = "langchainjs-cdbnosql-chathistory-javascript";
 const DEFAULT_DATABASE_NAME = "chatHistoryDB";

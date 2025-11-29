@@ -1,4 +1,4 @@
-import { BaseMessage, HumanMessage } from "@langchain/core/messages";
+import { BaseMessage, HumanMessage } from "@doc-raven/langchain-core/messages";
 
 /**
  * Contains the chunk of messages, along with the

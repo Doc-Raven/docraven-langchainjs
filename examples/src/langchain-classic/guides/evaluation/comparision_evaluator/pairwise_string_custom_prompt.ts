@@ -1,5 +1,5 @@
 import { loadEvaluator } from "@langchain/classic/evaluation";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
 import { ChatOpenAI } from "@langchain/openai";
 
 const promptTemplate = PromptTemplate.fromTemplate(

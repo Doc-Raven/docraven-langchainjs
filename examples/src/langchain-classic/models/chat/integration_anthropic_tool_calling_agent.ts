@@ -1,13 +1,13 @@
 import { z } from "zod";
 
 import { ChatAnthropic } from "@langchain/anthropic";
-import { tool } from "@langchain/core/tools";
+import { tool } from "@doc-raven/langchain-core/tools";
 import {
   AgentExecutor,
   createToolCallingAgent,
 } from "@langchain/classic/agents";
 
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 const llm = new ChatAnthropic({
   model: "claude-3-sonnet-20240229",

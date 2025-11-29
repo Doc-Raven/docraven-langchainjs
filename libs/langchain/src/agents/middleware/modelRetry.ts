@@ -2,7 +2,7 @@
  * Model retry middleware for agents.
  */
 import { z } from "zod/v3";
-import { AIMessage } from "@langchain/core/messages";
+import { AIMessage } from "@doc-raven/langchain-core/messages";
 
 import { createMiddleware } from "../middleware.js";
 import type { AgentMiddleware } from "./types.js";

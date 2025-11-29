@@ -3,11 +3,11 @@ import {
   InteropZodType,
   isZodSchemaV3,
   isZodSchemaV4,
-} from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/types";
 import { toJSONSchema as toJSONSchemaV4, parse as parseV4 } from "zod/v4/core";
 import { ResponseFormatJSONSchema } from "openai/resources";
 import { zodResponseFormat } from "openai/helpers/zod";
-import { ContentBlock, UsageMetadata } from "@langchain/core/messages";
+import { ContentBlock, UsageMetadata } from "@doc-raven/langchain-core/messages";
 
 const SUPPORTED_METHODS = [
   "jsonSchema",

@@ -1,7 +1,7 @@
 import { test, expect } from "vitest";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { BaseLLM } from "@langchain/core/language_models/llms";
-import { LLMResult } from "@langchain/core/outputs";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { BaseLLM } from "@doc-raven/langchain-core/language_models/llms";
+import { LLMResult } from "@doc-raven/langchain-core/outputs";
 import { ConstitutionalChain } from "../constitutional_ai/constitutional_chain.js";
 import { ConstitutionalPrinciple } from "../constitutional_ai/constitutional_principle.js";
 import { LLMChain } from "../llm_chain.js";

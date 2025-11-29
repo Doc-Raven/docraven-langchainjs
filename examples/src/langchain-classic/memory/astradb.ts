@@ -1,9 +1,9 @@
-import { RunnableWithMessageHistory } from "@langchain/core/runnables";
+import { RunnableWithMessageHistory } from "@doc-raven/langchain-core/runnables";
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+} from "@doc-raven/langchain-core/prompts";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
 import { ChatOpenAI } from "@langchain/openai";
 import { AstraDBChatMessageHistory } from "@langchain/community/stores/message/astradb";
 

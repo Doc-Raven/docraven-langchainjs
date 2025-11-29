@@ -1,5 +1,5 @@
 import pg from "pg";
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@doc-raven/langchain-core/messages";
 import { DsqlSigner } from "@aws-sdk/dsql-signer";
 import { AuroraDsqlChatMessageHistory } from "../message/aurora_dsql.js";
 

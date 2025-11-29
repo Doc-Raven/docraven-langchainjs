@@ -1,7 +1,7 @@
 import { expect, test } from "vitest";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { FakeRetriever } from "@langchain/core/utils/testing";
-import { Document } from "@langchain/core/documents";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { FakeRetriever } from "@doc-raven/langchain-core/utils/testing";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { FakeListLLM } from "../../util/testing/llms/fake.js";
 import { createHistoryAwareRetriever } from "../history_aware_retriever.js";
 

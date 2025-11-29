@@ -8,9 +8,9 @@ import {
   NotFoundError,
   ZepClient,
 } from "@getzep/zep-js";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { Document } from "@langchain/core/documents";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import type { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { FakeEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 import { IZepConfig, ZepVectorStore } from "../zep.js";
 
 jest.mock("@getzep/zep-js");

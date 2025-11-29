@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@doc-raven/langchain-core/messages";
 import { ChatAnthropic } from "../chat_models.js";
 
 const model = new ChatAnthropic({

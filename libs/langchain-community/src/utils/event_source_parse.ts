@@ -4,7 +4,7 @@
 // due to a packaging issue in the original.
 // MIT License
 import { type Readable } from "stream";
-import { IterableReadableStream } from "@langchain/core/utils/stream";
+import { IterableReadableStream } from "@doc-raven/langchain-core/utils/stream";
 
 export const EventStreamContentType = "text/event-stream";
 

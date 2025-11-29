@@ -3,23 +3,23 @@ import {
   AIMessageChunk,
   UsageMetadata,
   type BaseMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import {
   BaseLanguageModelInput,
   StructuredOutputMethodOptions,
-} from "@langchain/core/language_models/base";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+} from "@doc-raven/langchain-core/language_models/base";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
 import {
   type BaseChatModelParams,
   BaseChatModel,
   LangSmithParams,
   BaseChatModelCallOptions,
   BindToolsInput,
-} from "@langchain/core/language_models/chat_models";
+} from "@doc-raven/langchain-core/language_models/chat_models";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore CJS type resolution workaround
 import { Ollama } from "ollama/browser";
-import { ChatGenerationChunk, ChatResult } from "@langchain/core/outputs";
+import { ChatGenerationChunk, ChatResult } from "@doc-raven/langchain-core/outputs";
 import type {
   ChatRequest as OllamaChatRequest,
   ChatResponse as OllamaChatResponse,
@@ -31,19 +31,19 @@ import {
   RunnableLambda,
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
-import { convertToOpenAITool } from "@langchain/core/utils/function_calling";
-import { concat } from "@langchain/core/utils/stream";
+} from "@doc-raven/langchain-core/runnables";
+import { convertToOpenAITool } from "@doc-raven/langchain-core/utils/function_calling";
+import { concat } from "@doc-raven/langchain-core/utils/stream";
 import {
   JsonOutputParser,
   StructuredOutputParser,
-} from "@langchain/core/output_parsers";
+} from "@doc-raven/langchain-core/output_parsers";
 import {
   InteropZodType,
   isInteropZodSchema,
   interopParseAsync,
-} from "@langchain/core/utils/types";
-import { toJsonSchema } from "@langchain/core/utils/json_schema";
+} from "@doc-raven/langchain-core/utils/types";
+import { toJsonSchema } from "@doc-raven/langchain-core/utils/json_schema";
 import {
   convertOllamaMessagesToLangChain,
   convertToOllamaMessages,

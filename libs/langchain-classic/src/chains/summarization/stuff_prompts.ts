@@ -1,4 +1,4 @@
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 const template = `Write a concise summary of the following:
 

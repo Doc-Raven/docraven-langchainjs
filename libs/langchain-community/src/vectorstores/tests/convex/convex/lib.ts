@@ -1,5 +1,5 @@
 import { v } from "convex/values";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { FakeEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 import { ConvexVectorStore } from "../../../convex.js";
 import { action, mutation } from "./_generated/server.js";
 

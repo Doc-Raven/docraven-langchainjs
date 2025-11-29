@@ -2,7 +2,7 @@
 import type {
   InteropZodObject,
   InteropZodType,
-} from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/types";
 
 import type { ResponseFormatUndefined } from "./responses.js";
 import type { CreateAgentParams } from "./types.js";

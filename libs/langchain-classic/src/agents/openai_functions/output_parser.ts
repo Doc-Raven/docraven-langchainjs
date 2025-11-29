@@ -1,8 +1,8 @@
 import type { OpenAIClient } from "@langchain/openai";
-import { AgentAction, AgentFinish } from "@langchain/core/agents";
-import { BaseMessage, isBaseMessage } from "@langchain/core/messages";
-import { ChatGeneration } from "@langchain/core/outputs";
-import { OutputParserException } from "@langchain/core/output_parsers";
+import { AgentAction, AgentFinish } from "@doc-raven/langchain-core/agents";
+import { BaseMessage, isBaseMessage } from "@doc-raven/langchain-core/messages";
+import { ChatGeneration } from "@doc-raven/langchain-core/outputs";
+import { OutputParserException } from "@doc-raven/langchain-core/output_parsers";
 import { AgentActionOutputParser } from "../types.js";
 
 /**

@@ -1,7 +1,7 @@
 import { z } from "zod/v3";
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import type { BaseRetrieverInterface } from "@langchain/core/retrievers";
-import { interpolateFString, PromptTemplate } from "@langchain/core/prompts";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
+import type { BaseRetrieverInterface } from "@doc-raven/langchain-core/retrievers";
+import { interpolateFString, PromptTemplate } from "@doc-raven/langchain-core/prompts";
 import { MultiRouteChain, MultiRouteChainInput } from "./multi_route.js";
 import { BaseChain } from "../../chains/base.js";
 import { LLMRouterChain } from "./llm_router.js";

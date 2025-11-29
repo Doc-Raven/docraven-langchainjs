@@ -11,10 +11,10 @@ import {
 import { Collection, MongoClient } from "mongodb";
 import { setTimeout } from "timers/promises";
 import { OpenAIEmbeddings, AzureOpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { Document as BSONDocument } from "bson";
 
-import { EmbeddingsInterface } from "@langchain/core/embeddings";
+import { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
 import { MongoDBAtlasVectorSearch } from "../vectorstores.js";
 import { isUsingLocalAtlas, uri, waitForIndexToBeQueryable } from "./utils.js";
 

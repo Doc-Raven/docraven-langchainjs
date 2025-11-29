@@ -1,5 +1,5 @@
 import { ChatModelUnitTests } from "@langchain/standard-tests/vitest";
-import { AIMessageChunk } from "@langchain/core/messages";
+import { AIMessageChunk } from "@doc-raven/langchain-core/messages";
 
 import { ChatOpenAI, ChatOpenAICallOptions } from "../index.js";
 

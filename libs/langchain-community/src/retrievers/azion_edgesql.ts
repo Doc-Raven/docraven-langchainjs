@@ -1,9 +1,9 @@
 import { QueryResult, useQuery } from "azion/sql";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { Document } from "@langchain/core/documents";
-import { BaseRetriever, BaseRetrieverInput } from "@langchain/core/retrievers";
-import { SystemMessage, HumanMessage } from "@langchain/core/messages";
-import { BaseChatModel } from "@langchain/core/language_models/chat_models";
+import type { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { BaseRetriever, BaseRetrieverInput } from "@doc-raven/langchain-core/retrievers";
+import { SystemMessage, HumanMessage } from "@doc-raven/langchain-core/messages";
+import { BaseChatModel } from "@doc-raven/langchain-core/language_models/chat_models";
 
 /**
  * Represents a filter condition for querying the Azion database

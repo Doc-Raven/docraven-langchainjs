@@ -1,10 +1,10 @@
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { LLMResult } from "@langchain/core/outputs";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
+import { LLMResult } from "@doc-raven/langchain-core/outputs";
 import {
   BaseLLM,
   BaseLLMCallOptions,
   BaseLLMParams,
-} from "@langchain/core/language_models/llms";
+} from "@doc-raven/langchain-core/language_models/llms";
 
 export interface AdvancedCustomLLMCallOptions extends BaseLLMCallOptions {}
 

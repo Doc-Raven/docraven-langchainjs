@@ -1,4 +1,4 @@
-import { DynamicTool, DynamicToolInput } from "@langchain/core/tools";
+import { DynamicTool, DynamicToolInput } from "@doc-raven/langchain-core/tools";
 
 /**
  * Interface for the configuration of the AWS Lambda function.

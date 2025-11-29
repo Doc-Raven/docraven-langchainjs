@@ -1,6 +1,6 @@
 import { AzureOpenAI as AzureOpenAIClient, type ClientOptions } from "openai";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import type { Serialized } from "@langchain/core/load/serializable";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
+import type { Serialized } from "@doc-raven/langchain-core/load/serializable";
 import { ChatOpenAICallOptions } from "../../chat_models/index.js";
 import {
   OpenAIEndpointConfig,

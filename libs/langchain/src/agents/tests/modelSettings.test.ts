@@ -1,5 +1,5 @@
 import { ChatAnthropic } from "@langchain/anthropic";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 import { describe, expect, it, vi } from "vitest";
 import { createAgent, createMiddleware } from "../index.js";
 

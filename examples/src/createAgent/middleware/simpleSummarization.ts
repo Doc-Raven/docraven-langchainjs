@@ -5,7 +5,7 @@ import {
   HumanMessage,
   AIMessage,
 } from "langchain";
-import { RemoveMessage } from "@langchain/core/messages";
+import { RemoveMessage } from "@doc-raven/langchain-core/messages";
 import { REMOVE_ALL_MESSAGES } from "@langchain/langgraph";
 
 // Simple summarization middleware that summarizes long conversations

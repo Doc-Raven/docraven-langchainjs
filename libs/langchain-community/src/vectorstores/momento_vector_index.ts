@@ -11,13 +11,13 @@ import {
   VectorSearchAndFetchVectors,
 } from "@gomomento/sdk-core";
 import * as uuid from "uuid";
-import { Document } from "@langchain/core/documents";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
+import { Document } from "@doc-raven/langchain-core/documents";
+import type { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
 import {
   MaxMarginalRelevanceSearchOptions,
   VectorStore,
-} from "@langchain/core/vectorstores";
-import { maximalMarginalRelevance } from "@langchain/core/utils/math";
+} from "@doc-raven/langchain-core/vectorstores";
+import { maximalMarginalRelevance } from "@doc-raven/langchain-core/utils/math";
 
 export interface DocumentProps {
   ids: string[];

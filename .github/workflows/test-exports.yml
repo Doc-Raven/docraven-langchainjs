@@ -50,7 +50,7 @@ jobs:
         run: >
           pnpm build
           --filter langchain
-          --filter @langchain/core
+          --filter @doc-raven/langchain-core
           --filter @langchain/anthropic
           --filter @langchain/community
           --filter @langchain/openai
@@ -80,7 +80,7 @@ jobs:
         run: >
           pnpm build
           --filter langchain
-          --filter @langchain/core
+          --filter @doc-raven/langchain-core
           --filter @langchain/anthropic
           --filter @langchain/community
           --filter @langchain/openai
@@ -110,7 +110,7 @@ jobs:
         run: >
           pnpm build
           --filter langchain
-          --filter @langchain/core
+          --filter @doc-raven/langchain-core
           --filter @langchain/anthropic
           --filter @langchain/community
           --filter @langchain/openai
@@ -140,7 +140,7 @@ jobs:
         run: >
           pnpm build
           --filter langchain
-          --filter @langchain/core
+          --filter @doc-raven/langchain-core
           --filter @langchain/anthropic
           --filter @langchain/community
           --filter @langchain/openai
@@ -170,7 +170,7 @@ jobs:
         run: >
           pnpm build
           --filter langchain
-          --filter @langchain/core
+          --filter @doc-raven/langchain-core
           --filter @langchain/anthropic
           --filter @langchain/community
           --filter @langchain/openai
@@ -200,7 +200,7 @@ jobs:
         run: >
           pnpm build
           --filter langchain
-          --filter @langchain/core
+          --filter @doc-raven/langchain-core
           --filter @langchain/anthropic
           --filter @langchain/community
           --filter @langchain/openai
@@ -230,7 +230,7 @@ jobs:
         run: >
           pnpm build
           --filter langchain
-          --filter @langchain/core
+          --filter @doc-raven/langchain-core
           --filter @langchain/anthropic
           --filter @langchain/community
           --filter @langchain/openai
@@ -260,7 +260,7 @@ jobs:
         run: >
           pnpm build
           --filter langchain
-          --filter @langchain/core
+          --filter @doc-raven/langchain-core
           --filter @langchain/classic
           --filter @langchain/anthropic
           --filter @langchain/community
@@ -291,7 +291,7 @@ jobs:
         run: >
           pnpm build
           --filter langchain
-          --filter @langchain/core
+          --filter @doc-raven/langchain-core
           --filter @langchain/anthropic
           --filter @langchain/community
           --filter @langchain/openai

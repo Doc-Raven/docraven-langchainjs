@@ -1,9 +1,9 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
 import type {
   StructuredToolInterface,
   ToolInterface,
-} from "@langchain/core/tools";
-import { CallbackManager } from "@langchain/core/callbacks/manager";
+} from "@doc-raven/langchain-core/tools";
+import { CallbackManager } from "@doc-raven/langchain-core/callbacks/manager";
 import { BufferMemory } from "../memory/buffer_memory.js";
 import { ChatAgent } from "./chat/index.js";
 import { ChatConversationalAgent } from "./chat_convo/index.js";

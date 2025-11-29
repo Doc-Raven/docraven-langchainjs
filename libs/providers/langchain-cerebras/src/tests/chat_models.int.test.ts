@@ -4,10 +4,10 @@ import {
   AIMessageChunk,
   HumanMessage,
   ToolMessage,
-} from "@langchain/core/messages";
-import { tool } from "@langchain/core/tools";
+} from "@doc-raven/langchain-core/messages";
+import { tool } from "@doc-raven/langchain-core/tools";
 import { z } from "zod/v3";
-import { concat } from "@langchain/core/utils/stream";
+import { concat } from "@doc-raven/langchain-core/utils/stream";
 import { ChatCerebras } from "../chat_models.js";
 
 test("invoke", async () => {

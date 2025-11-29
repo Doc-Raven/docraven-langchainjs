@@ -5,19 +5,19 @@ import {
   ChatMessage,
   HumanMessage,
   SystemMessage,
-} from "@langchain/core/messages";
-import { ChatGeneration, LLMResult } from "@langchain/core/outputs";
-import { ChatPromptValue } from "@langchain/core/prompt_values";
+} from "@doc-raven/langchain-core/messages";
+import { ChatGeneration, LLMResult } from "@doc-raven/langchain-core/outputs";
+import { ChatPromptValue } from "@doc-raven/langchain-core/prompt_values";
 import {
   PromptTemplate,
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
   SystemMessagePromptTemplate,
-} from "@langchain/core/prompts";
-import { CallbackManager } from "@langchain/core/callbacks/manager";
-import { NewTokenIndices } from "@langchain/core/callbacks/base";
-import { InMemoryCache } from "@langchain/core/caches";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@doc-raven/langchain-core/prompts";
+import { CallbackManager } from "@doc-raven/langchain-core/callbacks/manager";
+import { NewTokenIndices } from "@doc-raven/langchain-core/callbacks/base";
+import { InMemoryCache } from "@doc-raven/langchain-core/caches";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 import {
   ClientSecretCredential,
   getBearerTokenProvider,

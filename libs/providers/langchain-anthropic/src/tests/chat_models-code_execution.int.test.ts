@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach } from "vitest";
 import Anthropic from "@anthropic-ai/sdk";
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@doc-raven/langchain-core/messages";
 import { ChatAnthropic } from "../chat_models.js";
 import { extractGeneratedFiles } from "../utils/extractGeneratedFiles.js";
 import fs from "fs";

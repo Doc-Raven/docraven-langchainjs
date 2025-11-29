@@ -1,6 +1,6 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import type { VectorStoreInterface } from "@langchain/core/vectorstores";
-import { ToolInterface, BaseToolkit } from "@langchain/core/tools";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
+import type { VectorStoreInterface } from "@doc-raven/langchain-core/vectorstores";
+import { ToolInterface, BaseToolkit } from "@doc-raven/langchain-core/tools";
 import { VectorStoreQATool } from "../../../tools/vectorstore.js";
 import { ZeroShotCreatePromptArgs, ZeroShotAgent } from "../../mrkl/index.js";
 import { VECTOR_PREFIX, VECTOR_ROUTER_PREFIX } from "./prompt.js";

@@ -15,7 +15,7 @@
     "url": "https://github.com/langchain-ai/langchainjs/issues"
   },
   "scripts": {
-    "build": "turbo build:compile build:examples --filter @langchain/core --output-logs new-only",
+    "build": "turbo build:compile build:examples --filter @doc-raven/langchain-core --output-logs new-only",
     "build:compile": "tsdown",
     "build:examples": "tsc -p ./examples/tsconfig.json",
     "clean": "rm -rf dist/ dist-cjs/ .turbo/",
@@ -42,11 +42,11 @@
     "zod": "^3.25.76 || ^4"
   },
   "peerDependencies": {
-    "@langchain/core": "^1.0.0",
+    "@doc-raven/langchain-core": "^1.0.0",
     "@langchain/langgraph": "^1.0.0"
   },
   "peerDependenciesMeta": {
-    "@langchain/core": {
+    "@doc-raven/langchain-core": {
       "optional": false
     },
     "@langchain/langgraph": {
@@ -58,7 +58,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
-    "@langchain/core": "workspace:*",
+    "@doc-raven/langchain-core": "workspace:*",
     "@langchain/eslint": "workspace:*",
     "@langchain/langgraph": "^1.0.0",
     "@langchain/openai": "workspace:*",
@@ -72,7 +72,7 @@
     "eslint": "^9.36.0",
     "eventsource": "^3.0.7",
     "express": "^5.1.0",
-    "langchain": "workspace:*",
+    "@doc-raven/langchain": "workspace:*",
     "npm-run-all2": "^8.0.4",
     "prettier": "^3.6.2",
     "rollup": "^4.52.3",

@@ -3,11 +3,11 @@ import type { expect as VitestExpect } from "vitest";
 import {
   BaseChatModelCallOptions,
   LangSmithParams,
-} from "@langchain/core/language_models/chat_models";
-import { BaseMessageChunk } from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/language_models/chat_models";
+import { BaseMessageChunk } from "@doc-raven/langchain-core/messages";
 import { z } from "zod/v3";
-import { InferInteropZodOutput } from "@langchain/core/utils/types";
-import { StructuredTool } from "@langchain/core/tools";
+import { InferInteropZodOutput } from "@doc-raven/langchain-core/utils/types";
+import { StructuredTool } from "@doc-raven/langchain-core/tools";
 import {
   BaseChatModelsTests,
   BaseChatModelsTestsFields,

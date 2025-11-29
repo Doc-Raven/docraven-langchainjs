@@ -3,8 +3,8 @@ import weaviate, { Filters, WeaviateClient } from "weaviate-client";
 import dotenv from "dotenv";
 
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { FakeEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 import { WeaviateStore } from "../vectorstores.js";
 
 dotenv.config();

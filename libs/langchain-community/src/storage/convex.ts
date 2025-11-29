@@ -9,7 +9,7 @@ import {
   makeFunctionReference,
 } from "convex/server";
 import { Value } from "convex/values";
-import { BaseStore } from "@langchain/core/stores";
+import { BaseStore } from "@doc-raven/langchain-core/stores";
 
 /**
  * Type that defines the config required to initialize the

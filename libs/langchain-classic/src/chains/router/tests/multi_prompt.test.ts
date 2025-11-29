@@ -1,6 +1,6 @@
 import { test, expect } from "vitest";
-import { BaseLLM } from "@langchain/core/language_models/llms";
-import { LLMResult } from "@langchain/core/outputs";
+import { BaseLLM } from "@doc-raven/langchain-core/language_models/llms";
+import { LLMResult } from "@doc-raven/langchain-core/outputs";
 import { MultiPromptChain } from "../multi_prompt.js";
 
 let pickedPrompt: string;

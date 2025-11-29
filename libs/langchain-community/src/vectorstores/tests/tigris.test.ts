@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { jest, test, expect } from "@jest/globals";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { FakeEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 
 import { TigrisVectorStore } from "../tigris.js";
 

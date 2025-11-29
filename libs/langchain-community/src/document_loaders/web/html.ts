@@ -1,10 +1,10 @@
 import {
   AsyncCaller,
   AsyncCallerParams,
-} from "@langchain/core/utils/async_caller";
-import { BaseDocumentLoader } from "@langchain/core/document_loaders/base";
-import { Document } from "@langchain/core/documents";
-import type { DocumentLoader } from "@langchain/core/document_loaders/base";
+} from "@doc-raven/langchain-core/utils/async_caller";
+import { BaseDocumentLoader } from "@doc-raven/langchain-core/document_loaders/base";
+import { Document } from "@doc-raven/langchain-core/documents";
+import type { DocumentLoader } from "@doc-raven/langchain-core/document_loaders/base";
 
 /**
  * Represents the parameters for configuring WebBaseLoaders. It extends the

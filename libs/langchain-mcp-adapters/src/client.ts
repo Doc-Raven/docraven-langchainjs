@@ -8,7 +8,7 @@ import {
   type StreamableHTTPError,
 } from "@modelcontextprotocol/sdk/client/streamableHttp.js";
 import type { OAuthClientProvider } from "@modelcontextprotocol/sdk/client/auth.js";
-import type { DynamicStructuredTool } from "@langchain/core/tools";
+import type { DynamicStructuredTool } from "@doc-raven/langchain-core/tools";
 import type { LoggingLevel } from "@modelcontextprotocol/sdk/types.js";
 
 import { z } from "zod/v3";

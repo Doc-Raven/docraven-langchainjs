@@ -1,12 +1,12 @@
 import {
   BaseLanguageModelInput,
   StructuredOutputMethodOptions,
-} from "@langchain/core/language_models/base";
-import { ModelProfile } from "@langchain/core/language_models/profile";
-import { BaseMessage } from "@langchain/core/messages";
-import { Runnable } from "@langchain/core/runnables";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { InteropZodType } from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/language_models/base";
+import { ModelProfile } from "@doc-raven/langchain-core/language_models/profile";
+import { BaseMessage } from "@doc-raven/langchain-core/messages";
+import { Runnable } from "@doc-raven/langchain-core/runnables";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
+import { InteropZodType } from "@doc-raven/langchain-core/utils/types";
 import {
   ChatOpenAICallOptions,
   ChatOpenAICompletions,
@@ -282,8 +282,8 @@ export interface ChatDeepSeekInput extends ChatOpenAIFields {
  * <summary><strong>Aggregate Streamed Chunks</strong></summary>
  *
  * ```typescript
- * import { AIMessageChunk } from '@langchain/core/messages';
- * import { concat } from '@langchain/core/utils/stream';
+ * import { AIMessageChunk } from '@doc-raven/langchain-core/messages';
+ * import { concat } from '@doc-raven/langchain-core/utils/stream';
  *
  * const stream = await llm.stream(input);
  * let full: AIMessageChunk | undefined;

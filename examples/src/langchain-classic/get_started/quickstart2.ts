@@ -33,7 +33,7 @@ const vectorstore = await MemoryVectorStore.fromDocuments(
 );
 
 import { createStuffDocumentsChain } from "@langchain/classic/chains/combine_documents";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 const prompt =
   ChatPromptTemplate.fromTemplate(`Answer the following question based only on the provided context:
@@ -49,7 +49,7 @@ const documentChain = await createStuffDocumentsChain({
   prompt,
 });
 
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 
 console.log(
   await documentChain.invoke({
@@ -79,7 +79,7 @@ console.log(
 );
 
 import { createHistoryAwareRetriever } from "@langchain/classic/chains/history_aware_retriever";
-import { MessagesPlaceholder } from "@langchain/core/prompts";
+import { MessagesPlaceholder } from "@doc-raven/langchain-core/prompts";
 
 const historyAwarePrompt = ChatPromptTemplate.fromMessages([
   new MessagesPlaceholder("chat_history"),
@@ -96,7 +96,7 @@ const historyAwareRetrieverChain = await createHistoryAwareRetriever({
   rephrasePrompt: historyAwarePrompt,
 });
 
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@doc-raven/langchain-core/messages";
 
 const chatHistory = [
   new HumanMessage("Can LangSmith help test my LLM applications?"),

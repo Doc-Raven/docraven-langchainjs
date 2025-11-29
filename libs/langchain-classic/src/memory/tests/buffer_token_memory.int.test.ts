@@ -1,8 +1,8 @@
 import { test, expect } from "vitest";
 
 import { OpenAI } from "@langchain/openai";
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
-import { InMemoryChatMessageHistory as ChatMessageHistory } from "@langchain/core/chat_history";
+import { HumanMessage, AIMessage } from "@doc-raven/langchain-core/messages";
+import { InMemoryChatMessageHistory as ChatMessageHistory } from "@doc-raven/langchain-core/chat_history";
 
 import { ConversationTokenBufferMemory } from "../buffer_token_memory.js";
 

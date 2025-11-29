@@ -1,7 +1,7 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { ChainValues } from "@langchain/core/utils/types";
-import { Tool, DynamicStructuredTool } from "@langchain/core/tools";
-import { CallbackManagerForChainRun } from "@langchain/core/callbacks/manager";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
+import { Tool, DynamicStructuredTool } from "@doc-raven/langchain-core/tools";
+import { CallbackManagerForChainRun } from "@doc-raven/langchain-core/callbacks/manager";
 import { BaseChain, ChainInputs } from "../../chains/base.js";
 import {
   BasePlanner,

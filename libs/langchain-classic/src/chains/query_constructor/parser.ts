@@ -6,7 +6,7 @@ import {
   Operation,
   Operator,
   Operators,
-} from "@langchain/core/structured_query";
+} from "@doc-raven/langchain-core/structured_query";
 import {
   CallExpressionType,
   ExpressionParser,

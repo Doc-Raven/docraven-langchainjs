@@ -1,6 +1,6 @@
 /* eslint-disable no-instanceof/no-instanceof */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { InteropZodObject } from "@langchain/core/utils/types";
+import { InteropZodObject } from "@doc-raven/langchain-core/utils/types";
 
 import {
   StateGraph,
@@ -16,11 +16,11 @@ import {
   type PregelOptions,
 } from "@langchain/langgraph";
 import type { CheckpointListOptions } from "@langchain/langgraph-checkpoint";
-import { ToolMessage, AIMessage } from "@langchain/core/messages";
-import { IterableReadableStream } from "@langchain/core/utils/stream";
-import type { Runnable, RunnableConfig } from "@langchain/core/runnables";
-import type { StreamEvent } from "@langchain/core/tracers/log_stream";
-import type { ClientTool, ServerTool } from "@langchain/core/tools";
+import { ToolMessage, AIMessage } from "@doc-raven/langchain-core/messages";
+import { IterableReadableStream } from "@doc-raven/langchain-core/utils/stream";
+import type { Runnable, RunnableConfig } from "@doc-raven/langchain-core/runnables";
+import type { StreamEvent } from "@doc-raven/langchain-core/tracers/log_stream";
+import type { ClientTool, ServerTool } from "@doc-raven/langchain-core/tools";
 
 import { createAgentAnnotationConditional } from "./annotation.js";
 import {

@@ -37,9 +37,9 @@ cd "$monorepo_community_dir"
 # Approve builds for transient dependencies 
 pnpm approve-builds
 
-# Read the @langchain/core version from peerDependencies
-core_version=$(node -p "require('./package.json').peerDependencies?.['@langchain/core']")
+# Read the @doc-raven/langchain-core version from peerDependencies
+core_version=$(node -p "require('./package.json').peerDependencies?.['@doc-raven/langchain-core']")
 
-# Install @langchain/core at the specified version
-pnpm add @langchain/core@$core_version
+# Install @doc-raven/langchain-core at the specified version
+pnpm add @doc-raven/langchain-core@$core_version
 pnpm test

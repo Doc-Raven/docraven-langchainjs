@@ -3,7 +3,7 @@ import weaviate from "weaviate-client";
 import { OpenAIEmbeddings, OpenAI } from "@langchain/openai";
 import { SelfQueryRetriever } from "@langchain/classic/retrievers/self_query";
 import { WeaviateStore, WeaviateTranslator } from "@langchain/weaviate";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { AttributeInfo } from "@langchain/classic/chains/query_constructor";
 
 /**

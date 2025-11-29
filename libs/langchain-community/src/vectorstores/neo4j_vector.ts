@@ -4,9 +4,9 @@ import neo4j, {
   type Path as Neo4jPath,
 } from "neo4j-driver";
 import * as uuid from "uuid";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { VectorStore } from "@langchain/core/vectorstores";
-import { Document } from "@langchain/core/documents";
+import type { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
+import { VectorStore } from "@doc-raven/langchain-core/vectorstores";
+import { Document } from "@doc-raven/langchain-core/documents";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type Any = any;

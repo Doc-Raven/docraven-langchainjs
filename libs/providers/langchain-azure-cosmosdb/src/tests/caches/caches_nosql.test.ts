@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { vi, it, describe, expect } from "vitest";
-import { FakeEmbeddings, FakeLLM } from "@langchain/core/utils/testing";
+import { FakeEmbeddings, FakeLLM } from "@doc-raven/langchain-core/utils/testing";
 import { AzureCosmosDBNoSQLSemanticCache } from "../../index.js";
 
 // Create the mock Cosmos DB client

@@ -1,4 +1,4 @@
-import { AgentStep } from "@langchain/core/agents";
+import { AgentStep } from "@doc-raven/langchain-core/agents";
 
 /**
  * Construct the scratchpad that lets the agent continue its thought process.

@@ -7,7 +7,7 @@ import {
   SystemMessage,
   ToolMessage,
   UsageMetadata,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import type {
   Message as OllamaMessage,
   ToolCall as OllamaToolCall,

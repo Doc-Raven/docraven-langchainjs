@@ -2,17 +2,17 @@
 import type {
   InteropZodObject,
   InteropZodType,
-} from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/types";
 import type { START, END, StateGraph } from "@langchain/langgraph";
 
-import type { LanguageModelLike } from "@langchain/core/language_models/base";
-import type { BaseMessage, SystemMessage } from "@langchain/core/messages";
+import type { LanguageModelLike } from "@doc-raven/langchain-core/language_models/base";
+import type { BaseMessage, SystemMessage } from "@doc-raven/langchain-core/messages";
 import type {
   BaseCheckpointSaver,
   BaseStore,
 } from "@langchain/langgraph-checkpoint";
 import type { Messages } from "@langchain/langgraph/";
-import type { ClientTool, ServerTool } from "@langchain/core/tools";
+import type { ClientTool, ServerTool } from "@doc-raven/langchain-core/tools";
 
 import type {
   ResponseFormat,
@@ -247,7 +247,7 @@ export type CreateAgentParams<
    *
    * @example Using SystemMessage with cache control (Anthropic)
    * ```ts
-   * import { SystemMessage } from "@langchain/core/messages";
+   * import { SystemMessage } from "@doc-raven/langchain-core/messages";
    *
    * const agent = createAgent({
    *   model: "anthropic:claude-3-5-sonnet",
@@ -270,7 +270,7 @@ export type CreateAgentParams<
    *
    * @example Using SystemMessage (simple)
    * ```ts
-   * import { SystemMessage } from "@langchain/core/messages";
+   * import { SystemMessage } from "@doc-raven/langchain-core/messages";
    *
    * const agent = createAgent({
    *   model: "anthropic:claude-3-5-sonnet",

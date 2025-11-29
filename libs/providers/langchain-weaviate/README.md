@@ -5,7 +5,7 @@ This package contains the LangChain.js integrations for Weaviate with the `weavi
 ## Installation
 
 ```bash npm2yarn
-npm install @langchain/weaviate @langchain/core
+npm install @langchain/weaviate @doc-raven/langchain-core
 ```
 
 ## Vectorstore

@@ -1,5 +1,5 @@
 import { ChatOpenAI } from "@langchain/openai";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 
 const model = new ChatOpenAI({ model: "gpt-4o-mini", temperature: 1 });
 const controller = new AbortController();

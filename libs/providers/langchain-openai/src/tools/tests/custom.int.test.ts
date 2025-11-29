@@ -4,8 +4,8 @@ import {
   BaseMessage,
   HumanMessage,
   ToolMessage,
-} from "@langchain/core/messages";
-import { ToolCall } from "@langchain/core/messages/tool";
+} from "@doc-raven/langchain-core/messages";
+import { ToolCall } from "@doc-raven/langchain-core/messages/tool";
 import { customTool } from "../custom.js";
 import { ChatOpenAI } from "../../chat_models.js";
 

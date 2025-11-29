@@ -1,9 +1,9 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import type { BaseRetrieverInterface } from "@langchain/core/retrievers";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { BaseMessage, HumanMessage, AIMessage } from "@langchain/core/messages";
-import { ChainValues } from "@langchain/core/utils/types";
-import { CallbackManagerForChainRun } from "@langchain/core/callbacks/manager";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
+import type { BaseRetrieverInterface } from "@doc-raven/langchain-core/retrievers";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { BaseMessage, HumanMessage, AIMessage } from "@doc-raven/langchain-core/messages";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
+import { CallbackManagerForChainRun } from "@doc-raven/langchain-core/callbacks/manager";
 import { SerializedChatVectorDBQAChain } from "./serde.js";
 import { BaseChain, ChainInputs } from "./base.js";
 import { LLMChain } from "./llm_chain.js";
@@ -42,8 +42,8 @@ export interface ConversationalRetrievalQAChainInput extends ChainInputs {
  * import {
  *   ChatPromptTemplate,
  *   MessagesPlaceholder,
- * } from "@langchain/core/prompts";
- * import { BaseMessage } from "@langchain/core/messages";
+ * } from "@doc-raven/langchain-core/prompts";
+ * import { BaseMessage } from "@doc-raven/langchain-core/messages";
  * import { createStuffDocumentsChain } from "@langchain/classic/chains/combine_documents";
  * import { createHistoryAwareRetriever } from "@langchain/classic/chains/history_aware_retriever";
  * import { createRetrievalChain } from "@langchain/classic/chains/retrieval";

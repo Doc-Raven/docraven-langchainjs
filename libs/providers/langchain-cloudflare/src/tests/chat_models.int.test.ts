@@ -1,13 +1,13 @@
 import { describe, test, expect } from "vitest";
-import { ChatMessage, HumanMessage } from "@langchain/core/messages";
+import { ChatMessage, HumanMessage } from "@doc-raven/langchain-core/messages";
 import {
   PromptTemplate,
   ChatPromptTemplate,
   AIMessagePromptTemplate,
   HumanMessagePromptTemplate,
   SystemMessagePromptTemplate,
-} from "@langchain/core/prompts";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@doc-raven/langchain-core/prompts";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 import { ChatCloudflareWorkersAI } from "../chat_models.js";
 
 // Save the original value of the 'LANGCHAIN_CALLBACKS_BACKGROUND' environment variable

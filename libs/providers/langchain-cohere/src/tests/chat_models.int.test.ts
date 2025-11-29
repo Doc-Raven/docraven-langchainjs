@@ -3,9 +3,9 @@ import {
   AIMessageChunk,
   HumanMessage,
   ToolMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import { z } from "zod/v3";
-import { DynamicStructuredTool } from "@langchain/core/tools";
+import { DynamicStructuredTool } from "@doc-raven/langchain-core/tools";
 import { ChatCohere } from "../chat_models.js";
 
 test("ChatCohere can invoke", async () => {

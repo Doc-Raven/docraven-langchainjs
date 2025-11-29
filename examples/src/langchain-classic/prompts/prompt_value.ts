@@ -3,7 +3,7 @@ import {
   HumanMessagePromptTemplate,
   PromptTemplate,
   SystemMessagePromptTemplate,
-} from "@langchain/core/prompts";
+} from "@doc-raven/langchain-core/prompts";
 
 export const run = async () => {
   const template = "What is a good name for a company that makes {product}?";

@@ -1,14 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable no-instanceof/no-instanceof */
-import { BaseMessage, ToolMessage, AIMessage } from "@langchain/core/messages";
-import { RunnableConfig, RunnableToolLike } from "@langchain/core/runnables";
+import { BaseMessage, ToolMessage, AIMessage } from "@doc-raven/langchain-core/messages";
+import { RunnableConfig, RunnableToolLike } from "@doc-raven/langchain-core/runnables";
 import {
   DynamicTool,
   StructuredToolInterface,
   ToolInputParsingException,
-} from "@langchain/core/tools";
-import type { ToolCall } from "@langchain/core/messages/tool";
-import type { InteropZodObject } from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/tools";
+import type { ToolCall } from "@doc-raven/langchain-core/messages/tool";
+import type { InteropZodObject } from "@doc-raven/langchain-core/utils/types";
 import {
   isCommand,
   Command,

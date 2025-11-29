@@ -1,7 +1,7 @@
-import { Document } from "@langchain/core/documents";
-import { ChainValues } from "@langchain/core/utils/types";
-import { CallbackManagerForChainRun } from "@langchain/core/callbacks/manager";
-import { BasePromptTemplate, PromptTemplate } from "@langchain/core/prompts";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
+import { CallbackManagerForChainRun } from "@doc-raven/langchain-core/callbacks/manager";
+import { BasePromptTemplate, PromptTemplate } from "@doc-raven/langchain-core/prompts";
 import type {
   SerializedStuffDocumentsChain,
   SerializedMapReduceDocumentsChain,

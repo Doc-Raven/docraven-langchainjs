@@ -7,13 +7,13 @@
  * with any LangChain chat model.
  */
 
-import type { BaseMessage } from "@langchain/core/messages";
-import type { BaseLanguageModel } from "@langchain/core/language_models/base";
+import type { BaseMessage } from "@doc-raven/langchain-core/messages";
+import type { BaseLanguageModel } from "@doc-raven/langchain-core/language_models/base";
 import {
   AIMessage,
   ToolMessage,
   SystemMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 
 import { countTokensApproximately } from "./utils.js";
 import { createMiddleware } from "../middleware.js";
@@ -879,7 +879,7 @@ export interface ContextEditingMiddlewareConfig {
  * @example Custom editing strategy
  * ```ts
  * import { contextEditingMiddleware, type ContextEdit, type TokenCounter } from "langchain";
- * import type { BaseMessage } from "@langchain/core/messages";
+ * import type { BaseMessage } from "@doc-raven/langchain-core/messages";
  *
  * class CustomEdit implements ContextEdit {
  *   async apply(params: {

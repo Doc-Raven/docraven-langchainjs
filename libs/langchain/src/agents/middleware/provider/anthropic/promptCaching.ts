@@ -1,6 +1,6 @@
 import { z } from "zod/v3";
-import { ContentBlock } from "@langchain/core/messages";
-import { InferInteropZodInput } from "@langchain/core/utils/types";
+import { ContentBlock } from "@doc-raven/langchain-core/messages";
+import { InferInteropZodInput } from "@doc-raven/langchain-core/utils/types";
 
 import { ConfigurableModel } from "../../../../chat_models/universal.js";
 import { createMiddleware } from "../../../middleware.js";

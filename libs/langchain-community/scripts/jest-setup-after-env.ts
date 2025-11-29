@@ -1,4 +1,4 @@
-const { awaitAllCallbacks } = require("@langchain/core/callbacks/promises");
+const { awaitAllCallbacks } = require("@doc-raven/langchain-core/callbacks/promises");
 
 afterAll(awaitAllCallbacks);
 

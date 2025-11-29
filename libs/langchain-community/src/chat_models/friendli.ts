@@ -1,9 +1,9 @@
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
 import {
   BaseChatModel,
   BaseChatModelCallOptions,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
+} from "@doc-raven/langchain-core/language_models/chat_models";
 import {
   BaseMessage,
   AIMessage,
@@ -14,13 +14,13 @@ import {
   AIMessageChunk,
   SystemMessageChunk,
   ChatMessageChunk,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import {
   ChatGeneration,
   ChatGenerationChunk,
   ChatResult,
-} from "@langchain/core/outputs";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@doc-raven/langchain-core/outputs";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 import { convertEventStreamToIterableReadableDataStream } from "../utils/event_source_parse.js";
 
 /**

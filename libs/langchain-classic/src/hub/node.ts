@@ -1,4 +1,4 @@
-import { Runnable } from "@langchain/core/runnables";
+import { Runnable } from "@doc-raven/langchain-core/runnables";
 import {
   basePull,
   generateModelImportMap,

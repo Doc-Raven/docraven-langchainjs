@@ -4,9 +4,9 @@ import { ChatOpenAI } from "@langchain/openai";
 import {
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+} from "@doc-raven/langchain-core/runnables";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
 
 const datasource = new DataSource({
   type: "sqlite",

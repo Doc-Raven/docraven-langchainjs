@@ -1,4 +1,4 @@
-import { BaseStore } from "@langchain/core/stores";
+import { BaseStore } from "@doc-raven/langchain-core/stores";
 
 import {
   CassandraClientArgs,

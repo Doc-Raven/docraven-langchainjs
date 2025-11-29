@@ -1,7 +1,7 @@
 import { type ClientOptions, OpenAI as OpenAIClient } from "openai";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { Embeddings, type EmbeddingsParams } from "@langchain/core/embeddings";
-import { chunkArray } from "@langchain/core/utils/chunk_array";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
+import { Embeddings, type EmbeddingsParams } from "@doc-raven/langchain-core/embeddings";
+import { chunkArray } from "@doc-raven/langchain-core/utils/chunk_array";
 import type { OpenAIApiKey } from "./types.js";
 import {
   getEndpoint,

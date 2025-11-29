@@ -1,5 +1,5 @@
-import { LLM, type BaseLLMParams } from "@langchain/core/language_models/llms";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { LLM, type BaseLLMParams } from "@doc-raven/langchain-core/language_models/llms";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 
 /**
  * Type definition for AI21 penalty data.

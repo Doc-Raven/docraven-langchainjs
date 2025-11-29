@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { XMLParser } from "fast-xml-parser";
 
 import { PDFLoader } from "../document_loaders/fs/pdf.js";

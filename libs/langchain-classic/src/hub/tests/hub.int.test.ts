@@ -1,12 +1,12 @@
 import { expect, test } from "vitest";
 
-import { ChatPromptTemplate, PromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate, PromptTemplate } from "@doc-raven/langchain-core/prompts";
 import {
   AIMessage,
   HumanMessage,
   SystemMessage,
-} from "@langchain/core/messages";
-import { ChatPromptValue } from "@langchain/core/prompt_values";
+} from "@doc-raven/langchain-core/messages";
+import { ChatPromptValue } from "@doc-raven/langchain-core/prompt_values";
 import { ChatAnthropic } from "@langchain/anthropic";
 
 import * as hub from "../index.js";

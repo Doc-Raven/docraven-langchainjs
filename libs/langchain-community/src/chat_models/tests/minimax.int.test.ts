@@ -3,15 +3,15 @@ import {
   ChatMessage,
   HumanMessage,
   SystemMessage,
-} from "@langchain/core/messages";
-import { LLMResult } from "@langchain/core/outputs";
-import { CallbackManager } from "@langchain/core/callbacks/manager";
+} from "@doc-raven/langchain-core/messages";
+import { LLMResult } from "@doc-raven/langchain-core/outputs";
+import { CallbackManager } from "@doc-raven/langchain-core/callbacks/manager";
 import {
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
   PromptTemplate,
   SystemMessagePromptTemplate,
-} from "@langchain/core/prompts";
+} from "@doc-raven/langchain-core/prompts";
 import { ChatMinimax } from "../minimax.js";
 
 test.skip("Test ChatMinimax", async () => {

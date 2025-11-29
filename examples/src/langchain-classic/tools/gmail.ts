@@ -7,7 +7,7 @@ import {
   GmailSearch,
   GmailSendMessage,
 } from "@langchain/community/tools/gmail";
-import { StructuredTool } from "@langchain/core/tools";
+import { StructuredTool } from "@doc-raven/langchain-core/tools";
 
 export async function run() {
   const model = new OpenAI({

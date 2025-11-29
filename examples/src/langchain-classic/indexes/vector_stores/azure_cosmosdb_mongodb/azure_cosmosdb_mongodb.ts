@@ -2,7 +2,7 @@ import {
   AzureCosmosDBMongoDBVectorStore,
   AzureCosmosDBMongoDBSimilarityType,
 } from "@langchain/azure-cosmosdb";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
 import { ChatOpenAI, OpenAIEmbeddings } from "@langchain/openai";
 import { createStuffDocumentsChain } from "@langchain/classic/chains/combine_documents";
 import { createRetrievalChain } from "@langchain/classic/chains/retrieval";

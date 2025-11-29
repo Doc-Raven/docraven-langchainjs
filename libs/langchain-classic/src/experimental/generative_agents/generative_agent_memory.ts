@@ -1,12 +1,12 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { Document } from "@langchain/core/documents";
-import { ChainValues } from "@langchain/core/utils/types";
-import { BaseMemory, InputValues, OutputValues } from "@langchain/core/memory";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
+import { BaseMemory, InputValues, OutputValues } from "@doc-raven/langchain-core/memory";
 import {
   CallbackManagerForChainRun,
   Callbacks,
-} from "@langchain/core/callbacks/manager";
+} from "@doc-raven/langchain-core/callbacks/manager";
 import { TimeWeightedVectorStoreRetriever } from "../../retrievers/time_weighted.js";
 import { BaseChain } from "../../chains/base.js";
 import { LLMChain } from "../../chains/llm_chain.js";

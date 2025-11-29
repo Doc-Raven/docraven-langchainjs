@@ -1,6 +1,6 @@
 import { beforeEach, expect, test } from "@jest/globals";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { SyntheticEmbeddings } from "@langchain/core/utils/testing";
+import type { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
+import { SyntheticEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 import { InMemoryDocstore } from "../../stores/doc/in_memory.js";
 import { MatchingEngineArgs, MatchingEngine } from "../googlevertexai.js";
 

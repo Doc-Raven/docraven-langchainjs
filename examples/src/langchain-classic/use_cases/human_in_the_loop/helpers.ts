@@ -1,11 +1,11 @@
 import { ChatOpenAI } from "@langchain/openai";
-import { StructuredTool } from "@langchain/core/tools";
+import { StructuredTool } from "@doc-raven/langchain-core/tools";
 import { z } from "zod/v3";
 import {
   Runnable,
   RunnableLambda,
   RunnablePassthrough,
-} from "@langchain/core/runnables";
+} from "@doc-raven/langchain-core/runnables";
 
 const countEmailsSchema = z.object({
   lastNDays: z.number(),

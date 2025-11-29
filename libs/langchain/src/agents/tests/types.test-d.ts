@@ -1,6 +1,6 @@
 import { describe, it, expectTypeOf } from "vitest";
 import { z } from "zod/v3";
-import { tool } from "@langchain/core/tools";
+import { tool } from "@doc-raven/langchain-core/tools";
 import type { BaseStore } from "@langchain/langgraph";
 
 import { createAgent } from "../index.js";

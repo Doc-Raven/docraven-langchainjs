@@ -1,7 +1,7 @@
 import "@tensorflow/tfjs-backend-cpu";
 import { TensorFlowEmbeddings } from "@langchain/community/embeddings/tensorflow";
 import { MemoryVectorStore } from "@langchain/classic/vectorstores/memory";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 
 const embeddings = new TensorFlowEmbeddings();
 const store = new MemoryVectorStore(embeddings);

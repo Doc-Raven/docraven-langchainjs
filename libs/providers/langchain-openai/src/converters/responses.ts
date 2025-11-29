@@ -11,22 +11,22 @@ import {
   isDataContentBlock,
   convertToProviderContentBlock,
   ContentBlock,
-} from "@langchain/core/messages";
-import { ChatGenerationChunk } from "@langchain/core/outputs";
+} from "@doc-raven/langchain-core/messages";
+import { ChatGenerationChunk } from "@doc-raven/langchain-core/outputs";
 import {
   makeInvalidToolCall,
   parseToolCall,
-} from "@langchain/core/output_parsers/openai_tools";
+} from "@doc-raven/langchain-core/output_parsers/openai_tools";
 import type {
   ToolCall,
   ToolCallChunk,
   ToolMessage,
-} from "@langchain/core/messages/tool";
+} from "@doc-raven/langchain-core/messages/tool";
 import { ResponseInputMessageContentList } from "openai/resources/responses/responses.js";
 import { ChatOpenAIReasoningSummary } from "../types.js";
 import { isCustomToolCall, parseCustomToolCall } from "../utils/tools.js";
 import { iife, isReasoningModel, messageToOpenAIRole } from "../utils/misc.js";
-import { Converter } from "@langchain/core/utils/format";
+import { Converter } from "@doc-raven/langchain-core/utils/format";
 import { completionsApiContentBlockConverter } from "./completions.js";
 
 const _FUNCTION_CALL_IDS_MAP_KEY = "__openai_function_call_ids__";

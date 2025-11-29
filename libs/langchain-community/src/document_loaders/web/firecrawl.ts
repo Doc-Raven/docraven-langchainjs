@@ -1,7 +1,7 @@
 import FirecrawlApp from "@mendable/firecrawl-js";
-import { Document, type DocumentInterface } from "@langchain/core/documents";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { BaseDocumentLoader } from "@langchain/core/document_loaders/base";
+import { Document, type DocumentInterface } from "@doc-raven/langchain-core/documents";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
+import { BaseDocumentLoader } from "@doc-raven/langchain-core/document_loaders/base";
 
 /**
  * Interface representing the parameters for the Firecrawl loader. It

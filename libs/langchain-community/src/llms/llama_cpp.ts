@@ -11,9 +11,9 @@ import {
   LLM,
   type BaseLLMCallOptions,
   type BaseLLMParams,
-} from "@langchain/core/language_models/llms";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { GenerationChunk } from "@langchain/core/outputs";
+} from "@doc-raven/langchain-core/language_models/llms";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
+import { GenerationChunk } from "@doc-raven/langchain-core/outputs";
 
 import {
   LlamaBaseCppInputs,

@@ -1,6 +1,6 @@
 import { ChatModelUnitTests } from "@langchain/standard-tests/vitest";
-import { AIMessageChunk } from "@langchain/core/messages";
-import { LangSmithParams } from "@langchain/core/language_models/chat_models";
+import { AIMessageChunk } from "@doc-raven/langchain-core/messages";
+import { LangSmithParams } from "@doc-raven/langchain-core/language_models/chat_models";
 import { ChatMistralAI, ChatMistralAICallOptions } from "../chat_models.js";
 
 class ChatMistralAIStandardUnitTests extends ChatModelUnitTests<

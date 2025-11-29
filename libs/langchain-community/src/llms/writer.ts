@@ -1,7 +1,7 @@
 import { Writer as WriterClient } from "@writerai/writer-sdk";
 
-import { type BaseLLMParams, LLM } from "@langchain/core/language_models/llms";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { type BaseLLMParams, LLM } from "@doc-raven/langchain-core/language_models/llms";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 
 /**
  * Interface for the input parameters specific to the Writer model.

@@ -1,7 +1,7 @@
 import { TokenTextSplitter } from "@langchain/textsplitters";
 import fs from "fs";
 import path from "path";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 
 export const run = async () => {
   /* Split text */

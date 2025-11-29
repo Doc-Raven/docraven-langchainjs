@@ -8,12 +8,12 @@ import {
   HumanMessage,
   SystemMessage,
   ToolMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
-import { StructuredTool, tool } from "@langchain/core/tools";
+} from "@doc-raven/langchain-core/prompts";
+import { StructuredTool, tool } from "@doc-raven/langchain-core/tools";
 import { z } from "zod/v3";
 import {
   CodeExecutionTool,
@@ -21,7 +21,7 @@ import {
   SchemaType as FunctionDeclarationSchemaType,
   GoogleSearchRetrievalTool,
 } from "@google/generative-ai";
-import { concat } from "@langchain/core/utils/stream";
+import { concat } from "@doc-raven/langchain-core/utils/stream";
 import { ChatGoogleGenerativeAI } from "../chat_models.js";
 import { _FUNCTION_CALL_THOUGHT_SIGNATURES_MAP_KEY } from "../utils/common.js";
 

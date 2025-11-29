@@ -1,7 +1,7 @@
 import { z } from "zod/v3";
 import { Command } from "@langchain/langgraph";
-import { tool } from "@langchain/core/tools";
-import { ToolMessage } from "@langchain/core/messages";
+import { tool } from "@doc-raven/langchain-core/tools";
+import { ToolMessage } from "@doc-raven/langchain-core/messages";
 
 import { createMiddleware } from "../index.js";
 

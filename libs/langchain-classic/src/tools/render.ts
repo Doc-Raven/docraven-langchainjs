@@ -1,13 +1,13 @@
-import { StructuredToolInterface } from "@langchain/core/tools";
+import { StructuredToolInterface } from "@doc-raven/langchain-core/tools";
 import {
   ToolDefinition,
   isOpenAITool,
-} from "@langchain/core/language_models/base";
+} from "@doc-raven/langchain-core/language_models/base";
 import {
   toJsonSchema,
   type JsonSchema7Type,
-} from "@langchain/core/utils/json_schema";
-import { isInteropZodSchema } from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/json_schema";
+import { isInteropZodSchema } from "@doc-raven/langchain-core/utils/types";
 
 /**
  * Render the tool name and description in plain text.

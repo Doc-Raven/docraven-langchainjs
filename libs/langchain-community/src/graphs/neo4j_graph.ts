@@ -4,7 +4,7 @@ import neo4j, {
   type Record as Neo4jRecord,
   type Path as Neo4jPath,
 } from "neo4j-driver";
-import { sha256 } from "@langchain/core/utils/hash";
+import { sha256 } from "@doc-raven/langchain-core/utils/hash";
 import { GraphDocument } from "./document.js";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

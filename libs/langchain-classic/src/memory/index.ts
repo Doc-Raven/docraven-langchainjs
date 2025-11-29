@@ -5,9 +5,9 @@ export {
   type InputValues,
   type OutputValues,
   type MemoryVariables,
-} from "@langchain/core/memory";
-export { getBufferString } from "@langchain/core/messages";
-export { InMemoryChatMessageHistory as ChatMessageHistory } from "@langchain/core/chat_history";
+} from "@doc-raven/langchain-core/memory";
+export { getBufferString } from "@doc-raven/langchain-core/messages";
+export { InMemoryChatMessageHistory as ChatMessageHistory } from "@doc-raven/langchain-core/chat_history";
 
 export { BufferMemory, type BufferMemoryInput } from "./buffer_memory.js";
 export {

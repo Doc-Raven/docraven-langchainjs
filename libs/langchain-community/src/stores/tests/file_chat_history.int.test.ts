@@ -1,6 +1,6 @@
 import { expect } from "@jest/globals";
 import { promises as fs } from "node:fs";
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@doc-raven/langchain-core/messages";
 import { v4 as uuid } from "uuid";
 import {
   FILE_HISTORY_DEFAULT_FILE_PATH,

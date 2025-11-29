@@ -1,8 +1,8 @@
 import { SelfQueryRetriever } from "@langchain/classic/retrievers/self_query";
 import { OpenAI } from "@langchain/openai";
 import { VectaraStore } from "@langchain/community/vectorstores/vectara";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
-import { Document } from "@langchain/core/documents";
+import { FakeEmbeddings } from "@doc-raven/langchain-core/utils/testing";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { VectaraTranslator } from "@langchain/community/structured_query/vectara";
 import type { AttributeInfo } from "@langchain/classic/chains/query_constructor";
 

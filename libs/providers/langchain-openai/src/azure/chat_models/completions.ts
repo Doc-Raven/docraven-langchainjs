@@ -1,5 +1,5 @@
-import { LangSmithParams } from "@langchain/core/language_models/chat_models";
-import { Serialized } from "@langchain/core/load/serializable";
+import { LangSmithParams } from "@doc-raven/langchain-core/language_models/chat_models";
+import { Serialized } from "@doc-raven/langchain-core/load/serializable";
 import {
   ChatOpenAICompletions,
   ChatOpenAICompletionsCallOptions,

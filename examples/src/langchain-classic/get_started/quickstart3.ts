@@ -33,7 +33,7 @@ const vectorstore = await MemoryVectorStore.fromDocuments(
 );
 
 import { createStuffDocumentsChain } from "@langchain/classic/chains/combine_documents";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 const prompt =
   ChatPromptTemplate.fromTemplate(`Answer the following question based only on the provided context:
@@ -49,7 +49,7 @@ const documentChain = await createStuffDocumentsChain({
   prompt,
 });
 
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 
 console.log(
   await documentChain.invoke({
@@ -84,7 +84,7 @@ import {
   createOpenAIFunctionsAgent,
   AgentExecutor,
 } from "@langchain/classic/agents";
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@doc-raven/langchain-core/messages";
 
 // Get the prompt to use - you can modify this!
 // If you want to see the prompt in full, you can at:

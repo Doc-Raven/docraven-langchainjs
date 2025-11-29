@@ -1,7 +1,7 @@
 import * as fs from "node:fs/promises";
 
 import { ChatAnthropic } from "@langchain/anthropic";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 
 const imageData = await fs.readFile("./hotdog.jpg");
 const chat = new ChatAnthropic({

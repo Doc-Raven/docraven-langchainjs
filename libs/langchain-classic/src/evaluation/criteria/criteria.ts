@@ -1,12 +1,12 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { BaseLLMOutputParser } from "@langchain/core/output_parsers";
-import { ChainValues } from "@langchain/core/utils/types";
-import { ChatGeneration, Generation, RUN_KEY } from "@langchain/core/outputs";
-import { BasePromptTemplate } from "@langchain/core/prompts";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
+import { BaseLLMOutputParser } from "@doc-raven/langchain-core/output_parsers";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
+import { ChatGeneration, Generation, RUN_KEY } from "@doc-raven/langchain-core/outputs";
+import { BasePromptTemplate } from "@doc-raven/langchain-core/prompts";
 import {
   Callbacks,
   BaseCallbackConfig,
-} from "@langchain/core/callbacks/manager";
+} from "@doc-raven/langchain-core/callbacks/manager";
 import {
   eqSet,
   EvalOutputType,

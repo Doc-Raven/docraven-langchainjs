@@ -1,7 +1,7 @@
-import { Document } from "@langchain/core/documents";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import type { DocumentInterface } from "@langchain/core/documents";
-import { VectorStore } from "@langchain/core/vectorstores";
+import { Document } from "@doc-raven/langchain-core/documents";
+import type { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
+import type { DocumentInterface } from "@doc-raven/langchain-core/documents";
+import { VectorStore } from "@doc-raven/langchain-core/vectorstores";
 
 const IdColumnSymbol = Symbol("id");
 const ContentColumnSymbol = Symbol("content");

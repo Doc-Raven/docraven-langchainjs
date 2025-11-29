@@ -1,16 +1,16 @@
 import {
   BaseChatModel,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
+} from "@doc-raven/langchain-core/language_models/chat_models";
 import {
   AIMessage,
   type BaseMessage,
   ChatMessage,
   AIMessageChunk,
-} from "@langchain/core/messages";
-import { ChatGenerationChunk, type ChatResult } from "@langchain/core/outputs";
-import { type CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@doc-raven/langchain-core/messages";
+import { ChatGenerationChunk, type ChatResult } from "@doc-raven/langchain-core/outputs";
+import { type CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 
 import { encodeApiKey } from "../utils/zhipuai.js";
 import { convertEventStreamToIterableReadableDataStream } from "../utils/event_source_parse.js";

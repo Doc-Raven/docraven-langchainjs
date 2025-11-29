@@ -2,9 +2,9 @@ import { expect, test } from "vitest";
 import { z } from "zod";
 
 import { ChatOpenAI } from "@langchain/openai";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { toJsonSchema } from "@langchain/core/utils/json_schema";
-import { isInteropZodSchema } from "@langchain/core/utils/types";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { toJsonSchema } from "@doc-raven/langchain-core/utils/json_schema";
+import { isInteropZodSchema } from "@doc-raven/langchain-core/utils/types";
 
 import { JsonOutputToolsParser } from "../openai_tools.js";
 

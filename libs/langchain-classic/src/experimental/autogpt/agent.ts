@@ -1,16 +1,16 @@
-import type { VectorStoreRetrieverInterface } from "@langchain/core/vectorstores";
-import { Tool } from "@langchain/core/tools";
+import type { VectorStoreRetrieverInterface } from "@doc-raven/langchain-core/vectorstores";
+import { Tool } from "@doc-raven/langchain-core/tools";
 import {
   AIMessage,
   BaseMessage,
   HumanMessage,
   SystemMessage,
-} from "@langchain/core/messages";
-import { BaseChatModel } from "@langchain/core/language_models/chat_models";
+} from "@doc-raven/langchain-core/messages";
+import { BaseChatModel } from "@doc-raven/langchain-core/language_models/chat_models";
 import {
   getEmbeddingContextSize,
   getModelContextSize,
-} from "@langchain/core/language_models/base";
+} from "@doc-raven/langchain-core/language_models/base";
 import { LLMChain } from "../../chains/llm_chain.js";
 
 import { AutoGPTOutputParser } from "./output_parser.js";

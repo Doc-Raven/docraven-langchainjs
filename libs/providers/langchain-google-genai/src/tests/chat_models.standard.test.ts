@@ -1,6 +1,6 @@
 import { test, expect } from "@jest/globals";
 import { ChatModelUnitTests } from "@langchain/standard-tests";
-import { AIMessageChunk } from "@langchain/core/messages";
+import { AIMessageChunk } from "@doc-raven/langchain-core/messages";
 import {
   ChatGoogleGenerativeAI,
   GoogleGenerativeAIChatCallOptions,

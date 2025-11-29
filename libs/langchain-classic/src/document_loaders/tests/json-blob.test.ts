@@ -4,7 +4,7 @@ import fs from "node:fs/promises";
 
 import { test, expect } from "vitest";
 
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { JSONLoader } from "../fs/json.js";
 
 test("Test JSON loader from blob", async () => {

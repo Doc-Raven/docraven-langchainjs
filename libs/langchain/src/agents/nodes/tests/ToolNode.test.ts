@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { StructuredTool, tool } from "@langchain/core/tools";
+import { StructuredTool, tool } from "@doc-raven/langchain-core/tools";
 
 import {
   AIMessage,
@@ -7,11 +7,11 @@ import {
   HumanMessage,
   RemoveMessage,
   ToolMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import { z } from "zod/v3";
-import { RunnableLambda } from "@langchain/core/runnables";
-import { CallbackManager } from "@langchain/core/callbacks/manager";
-import { BaseCallbackHandler } from "@langchain/core/callbacks/base";
+import { RunnableLambda } from "@doc-raven/langchain-core/runnables";
+import { CallbackManager } from "@doc-raven/langchain-core/callbacks/manager";
+import { BaseCallbackHandler } from "@doc-raven/langchain-core/callbacks/base";
 import {
   Annotation,
   Command,
@@ -944,7 +944,7 @@ describe("ToolNode error handling", () => {
   });
 
   /**
-   * fails in dep test as it is relying on `@langchain/core` changes
+   * fails in dep test as it is relying on `@doc-raven/langchain-core` changes
    */
   if (!process.env.LC_DEPENDENCY_RANGE_TESTS) {
     it("should use send error tool message if model creates wrong args", async () => {

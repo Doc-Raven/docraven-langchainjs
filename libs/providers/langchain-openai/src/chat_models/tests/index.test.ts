@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { it, test, expect, describe, beforeAll, afterAll, vi } from "vitest";
 import { z } from "zod/v3";
-import { toJsonSchema } from "@langchain/core/utils/json_schema";
-import { load } from "@langchain/core/load";
-import { tool } from "@langchain/core/tools";
+import { toJsonSchema } from "@doc-raven/langchain-core/utils/json_schema";
+import { load } from "@doc-raven/langchain-core/load";
+import { tool } from "@doc-raven/langchain-core/tools";
 import { ChatOpenAI } from "../index.js";
 import { _convertOpenAIResponsesUsageToLangChainUsage } from "../../utils/output.js";
 

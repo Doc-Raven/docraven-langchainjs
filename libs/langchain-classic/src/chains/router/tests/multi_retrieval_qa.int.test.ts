@@ -1,6 +1,6 @@
 import { test } from "vitest";
 import { OpenAIEmbeddings, ChatOpenAI } from "@langchain/openai";
-import { ConsoleCallbackHandler } from "@langchain/core/tracers/console";
+import { ConsoleCallbackHandler } from "@doc-raven/langchain-core/tracers/console";
 import { MultiRetrievalQAChain } from "../multi_retrieval_qa.js";
 import { MemoryVectorStore } from "../../../vectorstores/memory.js";
 

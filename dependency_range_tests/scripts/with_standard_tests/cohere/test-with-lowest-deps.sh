@@ -38,10 +38,10 @@ pnpm install --no-frozen-lockfile
 # not try to build the package/its workspace dependencies.
 cd "$monorepo_cohere_dir"
 
-# Read the @langchain/core version from peerDependencies
-core_version=$(node -p "require('./package.json').peerDependencies?.['@langchain/core']")
+# Read the @doc-raven/langchain-core version from peerDependencies
+core_version=$(node -p "require('./package.json').peerDependencies?.['@doc-raven/langchain-core']")
 
-# Install @langchain/core at the specified version
+# Install @doc-raven/langchain-core at the specified version
 pnpm install --no-frozen-lockfile
-pnpm install @langchain/core@$core_version
+pnpm install @doc-raven/langchain-core@$core_version
 pnpm test

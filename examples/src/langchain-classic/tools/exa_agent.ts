@@ -1,7 +1,7 @@
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
+} from "@doc-raven/langchain-core/prompts";
 import { ChatOpenAI } from "@langchain/openai";
 import Exa from "exa-js";
 import {

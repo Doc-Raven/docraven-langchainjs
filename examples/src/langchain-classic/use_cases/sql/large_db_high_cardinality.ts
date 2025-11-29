@@ -1,9 +1,9 @@
-import { DocumentInterface } from "@langchain/core/documents";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { DocumentInterface } from "@doc-raven/langchain-core/documents";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
 import {
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
+} from "@doc-raven/langchain-core/runnables";
 import { ChatOpenAI, OpenAIEmbeddings } from "@langchain/openai";
 import { createSqlQueryChain } from "@langchain/classic/chains/sql_db";
 import { SqlDatabase } from "@langchain/classic/sql_db";

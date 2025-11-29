@@ -1,7 +1,7 @@
 import { z } from "zod/v3";
 import { describe, it, expect } from "vitest";
-import { tool, ToolRuntime } from "@langchain/core/tools";
-import { HumanMessage, ToolMessage } from "@langchain/core/messages";
+import { tool, ToolRuntime } from "@doc-raven/langchain-core/tools";
+import { HumanMessage, ToolMessage } from "@doc-raven/langchain-core/messages";
 import { InMemoryStore } from "@langchain/langgraph";
 
 import { createAgent } from "../index.js";

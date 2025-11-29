@@ -2,8 +2,8 @@
 import type {
   InteropZodObject,
   InferInteropZodOutput,
-} from "@langchain/core/utils/types";
-import type { ClientTool, ServerTool } from "@langchain/core/tools";
+} from "@doc-raven/langchain-core/utils/types";
+import type { ClientTool, ServerTool } from "@doc-raven/langchain-core/tools";
 
 import type {
   AgentMiddleware,

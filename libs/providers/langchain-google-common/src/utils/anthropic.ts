@@ -2,7 +2,7 @@ import {
   ChatGeneration,
   ChatGenerationChunk,
   ChatResult,
-} from "@langchain/core/outputs";
+} from "@doc-raven/langchain-core/outputs";
 import {
   BaseMessage,
   BaseMessageChunk,
@@ -23,12 +23,12 @@ import {
   convertToProviderContentBlock,
   parseBase64DataUrl,
   UsageMetadata,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import {
   ToolCall,
   ToolCallChunk,
   ToolMessage,
-} from "@langchain/core/messages/tool";
+} from "@doc-raven/langchain-core/messages/tool";
 import {
   AnthropicAPIConfig,
   AnthropicCacheControl,

@@ -5,8 +5,8 @@ import {
   ToolMessage,
   BaseMessage,
   BaseMessageChunk,
-} from "@langchain/core/messages";
-import { concat } from "@langchain/core/utils/stream";
+} from "@doc-raven/langchain-core/messages";
+import { concat } from "@doc-raven/langchain-core/utils/stream";
 import {
   ConversationRole as BedrockConversationRole,
   BedrockRuntimeClient,
@@ -18,7 +18,7 @@ import { describe, expect, test, it, vi } from "vitest";
 import { convertToConverseMessages } from "../utils/message_inputs.js";
 import { handleConverseStreamContentBlockDelta } from "../utils/message_outputs.js";
 import { ChatBedrockConverse } from "../chat_models.js";
-import { load } from "@langchain/core/load";
+import { load } from "@doc-raven/langchain-core/load";
 
 describe("convertToConverseMessages", () => {
   const testCases: {

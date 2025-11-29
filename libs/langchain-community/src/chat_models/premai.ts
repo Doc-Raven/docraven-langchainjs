@@ -5,31 +5,31 @@ import {
   ChatMessage,
   ChatMessageChunk,
   HumanMessageChunk,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import {
   type BaseLanguageModelCallOptions,
   TokenUsage,
-} from "@langchain/core/language_models/base";
+} from "@doc-raven/langchain-core/language_models/base";
 
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
 import {
   type BaseChatModelParams,
   BaseChatModel,
-} from "@langchain/core/language_models/chat_models";
+} from "@doc-raven/langchain-core/language_models/chat_models";
 
 import Prem, {
   ChatCompletionStreamingCompletionData,
   CreateChatCompletionRequest,
   CreateChatCompletionResponse,
 } from "@premai/prem-sdk";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 import {
   ChatGeneration,
   ChatGenerationChunk,
   ChatResult,
-} from "@langchain/core/outputs";
+} from "@doc-raven/langchain-core/outputs";
 
-import { NewTokenIndices } from "@langchain/core/callbacks/base";
+import { NewTokenIndices } from "@doc-raven/langchain-core/callbacks/base";
 
 export type RoleEnum = "user" | "assistant";
 

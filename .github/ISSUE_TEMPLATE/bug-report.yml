@@ -59,7 +59,7 @@ body:
         The following code: 
 
         ```typescript
-        import { RunnableLambda } from "@langchain/core/runnables"
+        import { RunnableLambda } from "@doc-raven/langchain-core/runnables"
 
         const badCode = (inputs: Record<string, any>) => {
           throw new Error('For demo purposes');

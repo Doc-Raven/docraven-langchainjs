@@ -1,4 +1,4 @@
-import { SyntheticEmbeddings } from "@langchain/core/utils/testing";
+import { SyntheticEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 import { GoogleCloudStorageDocstore } from "@langchain/community/stores/doc/gcs";
 import {
   MatchingEngineArgs,
@@ -6,7 +6,7 @@ import {
   IdDocument,
   Restriction,
 } from "@langchain/community/vectorstores/googlevertexai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 
 export const run = async () => {
   if (

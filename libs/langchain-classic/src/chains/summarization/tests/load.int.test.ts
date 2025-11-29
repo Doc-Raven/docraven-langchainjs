@@ -1,6 +1,6 @@
 import { test } from "vitest";
 import { OpenAI } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { loadSummarizationChain } from "../load.js";
 
 test("Test loadSummzationChain stuff", async () => {

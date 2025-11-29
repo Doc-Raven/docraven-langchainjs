@@ -1,25 +1,25 @@
-import { RunnableInterface } from "@langchain/core/runnables";
+import { RunnableInterface } from "@doc-raven/langchain-core/runnables";
 import {
   BaseRetriever,
   type BaseRetrieverInput,
-} from "@langchain/core/retrievers";
-import { Document } from "@langchain/core/documents";
-import { VectorStore } from "@langchain/core/vectorstores";
+} from "@doc-raven/langchain-core/retrievers";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { VectorStore } from "@doc-raven/langchain-core/vectorstores";
 import {
   BaseTranslator,
   StructuredQuery,
-} from "@langchain/core/structured_query";
-import { CallbackManagerForRetrieverRun } from "@langchain/core/callbacks/manager";
+} from "@doc-raven/langchain-core/structured_query";
+import { CallbackManagerForRetrieverRun } from "@doc-raven/langchain-core/callbacks/manager";
 import {
   loadQueryConstructorRunnable,
   QueryConstructorRunnableOptions,
 } from "../../chains/query_constructor/index.js";
 
-export { BaseTranslator } from "@langchain/core/structured_query";
+export { BaseTranslator } from "@doc-raven/langchain-core/structured_query";
 export {
   BasicTranslator,
   FunctionalTranslator,
-} from "@langchain/core/structured_query";
+} from "@doc-raven/langchain-core/structured_query";
 
 /**
  * Interface for the arguments required to create a SelfQueryRetriever

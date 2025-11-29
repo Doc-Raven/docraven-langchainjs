@@ -1,5 +1,5 @@
 import { ChatModelIntegrationTests } from "@langchain/standard-tests/vitest";
-import { AIMessageChunk } from "@langchain/core/messages";
+import { AIMessageChunk } from "@doc-raven/langchain-core/messages";
 import { ChatDeepSeek, ChatDeepSeekCallOptions } from "../chat_models.js";
 
 class ChatDeepSeekStandardIntegrationTests extends ChatModelIntegrationTests<

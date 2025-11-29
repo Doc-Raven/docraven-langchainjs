@@ -1,5 +1,5 @@
-import { AIMessage } from "@langchain/core/messages";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { AIMessage } from "@doc-raven/langchain-core/messages";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
 
 const outputParser = new StringOutputParser();
 const message = new AIMessage(

@@ -239,7 +239,7 @@ export abstract class BaseMessage<
    * For example:
    *
    * ```ts
-   * import { isAIMessage } from "@langchain/core/messages";
+   * import { isAIMessage } from "@doc-raven/langchain-core/messages";
    *
    * const message = new AIMessage("Hello!");
    * isAIMessage(message); // true

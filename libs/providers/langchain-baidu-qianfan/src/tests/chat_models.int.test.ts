@@ -1,6 +1,6 @@
 import { test, expect } from "vitest";
 
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 import { ChatBaiduQianfan } from "../chat_models.js";
 
 test("invoke", async () => {

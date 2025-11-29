@@ -4,7 +4,7 @@ import {
   AIMessage,
   SystemMessage,
   ToolMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import { convertToCerebrasMessageParams } from "../utils.js";
 
 describe("convertToCerebrasMessageParams", () => {

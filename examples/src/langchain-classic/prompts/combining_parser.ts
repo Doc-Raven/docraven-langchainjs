@@ -3,8 +3,8 @@ import {
   RegexParser,
   CombiningOutputParser,
 } from "@langchain/classic/output_parsers";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { StructuredOutputParser } from "@langchain/core/output_parsers";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { StructuredOutputParser } from "@doc-raven/langchain-core/output_parsers";
 
 const answerParser = StructuredOutputParser.fromNamesAndDescriptions({
   answer: "answer to the user's question",

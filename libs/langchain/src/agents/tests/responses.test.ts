@@ -3,7 +3,7 @@ import { z } from "zod/v3";
 
 import { ChatOpenAI } from "@langchain/openai";
 import { ChatAnthropic } from "@langchain/anthropic";
-import { AIMessage } from "@langchain/core/messages";
+import { AIMessage } from "@doc-raven/langchain-core/messages";
 
 import { createAgent, toolStrategy, providerStrategy } from "../index.js";
 import { FakeToolCallingModel, FakeToolCallingChatModel } from "./utils.js";

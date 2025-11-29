@@ -7,9 +7,9 @@ import {
   beforeEach,
   type MockInstance,
 } from "vitest";
-import { tool } from "@langchain/core/tools";
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
-import { BaseChatModel } from "@langchain/core/language_models/chat_models";
+import { tool } from "@doc-raven/langchain-core/tools";
+import { HumanMessage, AIMessage } from "@doc-raven/langchain-core/messages";
+import { BaseChatModel } from "@doc-raven/langchain-core/language_models/chat_models";
 
 import { llmToolSelectorMiddleware } from "../llmToolSelector.js";
 import { createAgent } from "../../index.js";

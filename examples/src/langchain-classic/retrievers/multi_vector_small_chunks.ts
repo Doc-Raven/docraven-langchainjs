@@ -4,9 +4,9 @@ import { MultiVectorRetriever } from "@langchain/classic/retrievers/multi_vector
 import { FaissStore } from "@langchain/community/vectorstores/faiss";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
-import { InMemoryStore } from "@langchain/core/stores";
+import { InMemoryStore } from "@doc-raven/langchain-core/stores";
 import { TextLoader } from "@langchain/classic/document_loaders/fs/text";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 
 const textLoader = new TextLoader("../examples/state_of_the_union.txt");
 const parentDocuments = await textLoader.load();

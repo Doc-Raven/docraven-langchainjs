@@ -1,14 +1,14 @@
 import {
   BaseLLMOutputParser,
   OutputParserException,
-} from "@langchain/core/output_parsers";
-import { ChatGeneration } from "@langchain/core/outputs";
-import { ToolCall } from "@langchain/core/messages/tool";
+} from "@doc-raven/langchain-core/output_parsers";
+import { ChatGeneration } from "@doc-raven/langchain-core/outputs";
+import { ToolCall } from "@doc-raven/langchain-core/messages/tool";
 import {
   InteropZodType,
   interopSafeParseAsync,
-} from "@langchain/core/utils/types";
-import { JsonOutputKeyToolsParserParamsInterop } from "@langchain/core/output_parsers/openai_tools";
+} from "@doc-raven/langchain-core/utils/types";
+import { JsonOutputKeyToolsParserParamsInterop } from "@doc-raven/langchain-core/output_parsers/openai_tools";
 
 interface GoogleGenerativeAIToolsOutputParserParams<
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

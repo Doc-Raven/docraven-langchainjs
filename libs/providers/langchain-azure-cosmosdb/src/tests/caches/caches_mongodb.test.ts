@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { vi, it, describe, expect } from "vitest";
-import { FakeEmbeddings, FakeLLM } from "@langchain/core/utils/testing";
-import { Document } from "@langchain/core/documents";
+import { FakeEmbeddings, FakeLLM } from "@doc-raven/langchain-core/utils/testing";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { MongoClient } from "mongodb";
 import { AzureCosmosDBMongoDBSemanticCache } from "../../index.js";
 

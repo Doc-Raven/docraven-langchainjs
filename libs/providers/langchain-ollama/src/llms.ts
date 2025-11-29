@@ -1,8 +1,8 @@
-import type { BaseLanguageModelCallOptions } from "@langchain/core/language_models/base";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { GenerationChunk } from "@langchain/core/outputs";
-import type { StringWithAutocomplete } from "@langchain/core/utils/types";
-import { LLM, type BaseLLMParams } from "@langchain/core/language_models/llms";
+import type { BaseLanguageModelCallOptions } from "@doc-raven/langchain-core/language_models/base";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
+import { GenerationChunk } from "@doc-raven/langchain-core/outputs";
+import type { StringWithAutocomplete } from "@doc-raven/langchain-core/utils/types";
+import { LLM, type BaseLLMParams } from "@doc-raven/langchain-core/language_models/llms";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore CJS type resolution workaround
 import { Ollama as OllamaClient } from "ollama/browser";

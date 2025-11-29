@@ -1,4 +1,4 @@
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 
 /**
  * Abstract class for a document store. All document stores should extend

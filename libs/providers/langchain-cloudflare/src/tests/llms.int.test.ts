@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 import { CloudflareWorkersAI } from "../llms.js";
 
 // Save the original value of the 'LANGCHAIN_CALLBACKS_BACKGROUND' environment variable

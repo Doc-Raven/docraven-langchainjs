@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { expect } from "@jest/globals";
-import { BaseChatModelCallOptions } from "@langchain/core/language_models/chat_models";
-import { BaseMessageChunk } from "@langchain/core/messages";
+import { BaseChatModelCallOptions } from "@doc-raven/langchain-core/language_models/chat_models";
+import { BaseMessageChunk } from "@doc-raven/langchain-core/messages";
 import { RecordStringAny } from "../base.js";
 import {
   ChatModelIntegrationTestsFields,

@@ -2,9 +2,9 @@ import fs from "node:fs";
 import path from "node:path";
 
 import { ChatModelIntegrationTests } from "@langchain/standard-tests/vitest";
-import { AIMessage, AIMessageChunk } from "@langchain/core/messages";
-import { concat } from "@langchain/core/utils/stream";
-import { BaseLanguageModelInput } from "@langchain/core/language_models/base";
+import { AIMessage, AIMessageChunk } from "@doc-raven/langchain-core/messages";
+import { concat } from "@doc-raven/langchain-core/utils/stream";
+import { BaseLanguageModelInput } from "@doc-raven/langchain-core/language_models/base";
 import { ChatOpenAI, ChatOpenAICallOptions } from "../index.js";
 
 const REPO_ROOT_DIR = process.cwd();

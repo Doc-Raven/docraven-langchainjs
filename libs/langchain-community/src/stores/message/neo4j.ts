@@ -1,10 +1,10 @@
 import neo4j, { Driver, Record, auth, type ServerInfo } from "neo4j-driver";
 import { v4 as uuidv4 } from "uuid";
-import { BaseListChatMessageHistory } from "@langchain/core/chat_history";
+import { BaseListChatMessageHistory } from "@doc-raven/langchain-core/chat_history";
 import {
   BaseMessage,
   mapStoredMessagesToChatMessages,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 
 export type Neo4jChatMessageHistoryConfigInput = {
   sessionId?: string | number;

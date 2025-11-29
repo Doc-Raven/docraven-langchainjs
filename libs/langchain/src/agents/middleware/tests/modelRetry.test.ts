@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { describe, it, expect, vi } from "vitest";
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@doc-raven/langchain-core/messages";
 import { MemorySaver } from "@langchain/langgraph-checkpoint";
-import { StructuredTool } from "@langchain/core/tools";
-import { RunnableBinding } from "@langchain/core/runnables";
+import { StructuredTool } from "@doc-raven/langchain-core/tools";
+import { RunnableBinding } from "@doc-raven/langchain-core/runnables";
 
 import { createAgent } from "../../index.js";
 import { modelRetryMiddleware } from "../modelRetry.js";

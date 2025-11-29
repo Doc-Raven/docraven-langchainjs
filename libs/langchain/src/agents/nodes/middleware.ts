@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { z } from "zod/v3";
 import { LangGraphRunnableConfig, Command } from "@langchain/langgraph";
-import { interopParse } from "@langchain/core/utils/types";
+import { interopParse } from "@doc-raven/langchain-core/utils/types";
 
 import { RunnableCallable, RunnableCallableArgs } from "../RunnableCallable.js";
 import type { JumpToTarget } from "../constants.js";

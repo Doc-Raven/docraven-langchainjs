@@ -13,9 +13,9 @@ import {
   VectorIndexNames,
   makeFunctionReference,
 } from "convex/server";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { VectorStore } from "@langchain/core/vectorstores";
-import { Document } from "@langchain/core/documents";
+import type { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
+import { VectorStore } from "@doc-raven/langchain-core/vectorstores";
+import { Document } from "@doc-raven/langchain-core/documents";
 
 /**
  * Type that defines the config required to initialize the

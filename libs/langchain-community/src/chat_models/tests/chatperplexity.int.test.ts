@@ -1,5 +1,5 @@
 import { describe, test, expect } from "@jest/globals";
-import { HumanMessage, SystemMessage } from "@langchain/core/messages";
+import { HumanMessage, SystemMessage } from "@doc-raven/langchain-core/messages";
 import { z } from "zod/v3";
 
 import { ChatPerplexity } from "../perplexity.js";

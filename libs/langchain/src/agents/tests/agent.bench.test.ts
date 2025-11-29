@@ -2,8 +2,8 @@ import { z } from "zod/v3";
 
 import { describe, it, expect, beforeAll, afterAll } from "vitest";
 import { Bench, type TaskResult } from "tinybench";
-import { AIMessage, HumanMessage } from "@langchain/core/messages";
-import { tool } from "@langchain/core/tools";
+import { AIMessage, HumanMessage } from "@doc-raven/langchain-core/messages";
+import { tool } from "@doc-raven/langchain-core/tools";
 
 import { FakeToolCallingChatModel } from "./utils.js";
 import { createAgent, createMiddleware } from "../index.js";

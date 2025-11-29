@@ -3,18 +3,18 @@ import {
   type JsonSchema7ObjectType,
   type JsonSchema7ArrayType,
   type JsonSchema7Type,
-} from "@langchain/core/utils/json_schema";
+} from "@doc-raven/langchain-core/utils/json_schema";
 import type { OpenAPIV3_1 } from "openapi-types";
 
-import { ChainValues } from "@langchain/core/utils/types";
-import { BaseChatModel } from "@langchain/core/language_models/chat_models";
-import { BaseFunctionCallOptions } from "@langchain/core/language_models/base";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
+import { BaseChatModel } from "@doc-raven/langchain-core/language_models/chat_models";
+import { BaseFunctionCallOptions } from "@doc-raven/langchain-core/language_models/base";
 import {
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
   BasePromptTemplate,
-} from "@langchain/core/prompts";
-import { CallbackManagerForChainRun } from "@langchain/core/callbacks/manager";
+} from "@doc-raven/langchain-core/prompts";
+import { CallbackManagerForChainRun } from "@doc-raven/langchain-core/callbacks/manager";
 import { OpenAPISpec } from "../../util/openapi.js";
 import { BaseChain } from "../base.js";
 import { LLMChain, LLMChainInput } from "../llm_chain.js";

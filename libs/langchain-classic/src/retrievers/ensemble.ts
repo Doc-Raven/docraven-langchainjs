@@ -1,6 +1,6 @@
-import { BaseRetriever, BaseRetrieverInput } from "@langchain/core/retrievers";
-import { Document, DocumentInterface } from "@langchain/core/documents";
-import { CallbackManagerForRetrieverRun } from "@langchain/core/callbacks/manager";
+import { BaseRetriever, BaseRetrieverInput } from "@doc-raven/langchain-core/retrievers";
+import { Document, DocumentInterface } from "@doc-raven/langchain-core/documents";
+import { CallbackManagerForRetrieverRun } from "@doc-raven/langchain-core/callbacks/manager";
 
 export interface EnsembleRetrieverInput extends BaseRetrieverInput {
   /** A list of retrievers to ensemble. */

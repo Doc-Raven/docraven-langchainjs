@@ -1,14 +1,14 @@
-import type { LanguageModelLike } from "@langchain/core/language_models/base";
+import type { LanguageModelLike } from "@doc-raven/langchain-core/language_models/base";
 import {
   type Runnable,
   type RunnableInterface,
   RunnableSequence,
   RunnableBranch,
-} from "@langchain/core/runnables";
-import { type BasePromptTemplate } from "@langchain/core/prompts";
-import { StringOutputParser } from "@langchain/core/output_parsers";
-import type { DocumentInterface } from "@langchain/core/documents";
-import type { BaseMessage } from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/runnables";
+import { type BasePromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
+import type { DocumentInterface } from "@doc-raven/langchain-core/documents";
+import type { BaseMessage } from "@doc-raven/langchain-core/messages";
 
 /**
  * Params for the createHistoryAwareRetriever method.

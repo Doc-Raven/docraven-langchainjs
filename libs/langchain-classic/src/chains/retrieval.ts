@@ -1,12 +1,12 @@
-import type { BaseRetrieverInterface } from "@langchain/core/retrievers";
+import type { BaseRetrieverInterface } from "@doc-raven/langchain-core/retrievers";
 import {
   type Runnable,
   RunnableSequence,
   type RunnableInterface,
   RunnablePassthrough,
-} from "@langchain/core/runnables";
-import type { BaseMessage } from "@langchain/core/messages";
-import type { DocumentInterface, Document } from "@langchain/core/documents";
+} from "@doc-raven/langchain-core/runnables";
+import type { BaseMessage } from "@doc-raven/langchain-core/messages";
+import type { DocumentInterface, Document } from "@doc-raven/langchain-core/documents";
 
 /**
  * Parameters for the createRetrievalChain method.

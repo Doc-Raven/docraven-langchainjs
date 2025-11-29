@@ -4,7 +4,7 @@ import {
   AIMessage,
   HumanMessage,
   SystemMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import { OpenAI } from "@langchain/openai";
 
 import { BufferMemory } from "../buffer_memory.js";

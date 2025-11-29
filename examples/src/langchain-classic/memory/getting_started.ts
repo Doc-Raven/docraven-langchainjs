@@ -1,5 +1,5 @@
 import { BufferMemory } from "@langchain/classic/memory";
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@doc-raven/langchain-core/messages";
 
 const memory = new BufferMemory();
 
@@ -27,7 +27,7 @@ await messageMemory.chatHistory.addMessage(new AIMessage("What's up?"));
 console.log(await messageMemory.loadMemoryVariables({}));
 
 import { OpenAI } from "@langchain/openai";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
 import { LLMChain } from "@langchain/classic/chains";
 
 const llm = new OpenAI({ temperature: 0 });
@@ -59,7 +59,7 @@ import { ChatOpenAI } from "@langchain/openai";
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
+} from "@doc-raven/langchain-core/prompts";
 
 const chatModel = new ChatOpenAI({ model: "gpt-4o-mini", temperature: 0 });
 const chatPrompt = ChatPromptTemplate.fromMessages([

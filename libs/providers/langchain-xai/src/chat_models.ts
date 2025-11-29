@@ -1,19 +1,19 @@
 import {
   BaseLanguageModelInput,
   StructuredOutputMethodOptions,
-} from "@langchain/core/language_models/base";
+} from "@doc-raven/langchain-core/language_models/base";
 import {
   BaseChatModelCallOptions,
   BindToolsInput,
   LangSmithParams,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
-import { ModelProfile } from "@langchain/core/language_models/profile";
-import { Serialized } from "@langchain/core/load/serializable";
-import { AIMessageChunk, BaseMessage } from "@langchain/core/messages";
-import { Runnable } from "@langchain/core/runnables";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { InteropZodType } from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/language_models/chat_models";
+import { ModelProfile } from "@doc-raven/langchain-core/language_models/profile";
+import { Serialized } from "@doc-raven/langchain-core/load/serializable";
+import { AIMessageChunk, BaseMessage } from "@doc-raven/langchain-core/messages";
+import { Runnable } from "@doc-raven/langchain-core/runnables";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
+import { InteropZodType } from "@doc-raven/langchain-core/utils/types";
 import {
   type OpenAICoreRequestOptions,
   type OpenAIClient,
@@ -273,8 +273,8 @@ export interface ChatXAIInput extends BaseChatModelParams {
  * <summary><strong>Aggregate Streamed Chunks</strong></summary>
  *
  * ```typescript
- * import { AIMessageChunk } from '@langchain/core/messages';
- * import { concat } from '@langchain/core/utils/stream';
+ * import { AIMessageChunk } from '@doc-raven/langchain-core/messages';
+ * import { concat } from '@doc-raven/langchain-core/utils/stream';
  *
  * const stream = await llm.stream(input);
  * let full: AIMessageChunk | undefined;

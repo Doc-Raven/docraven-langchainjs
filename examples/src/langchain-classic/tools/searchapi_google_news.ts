@@ -1,9 +1,9 @@
 import { ChatOpenAI } from "@langchain/openai";
 import { AgentExecutor } from "@langchain/classic/agents";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { RunnableSequence } from "@langchain/core/runnables";
-import { AgentFinish, AgentAction } from "@langchain/core/agents";
-import { BaseMessageChunk } from "@langchain/core/messages";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { RunnableSequence } from "@doc-raven/langchain-core/runnables";
+import { AgentFinish, AgentAction } from "@doc-raven/langchain-core/agents";
+import { BaseMessageChunk } from "@doc-raven/langchain-core/messages";
 import { SearchApi } from "@langchain/community/tools/searchapi";
 
 const model = new ChatOpenAI({

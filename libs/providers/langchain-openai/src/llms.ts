@@ -1,14 +1,14 @@
 import type { TiktokenModel } from "js-tiktoken/lite";
 import { type ClientOptions, OpenAI as OpenAIClient } from "openai";
-import { calculateMaxTokens } from "@langchain/core/language_models/base";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { GenerationChunk, type LLMResult } from "@langchain/core/outputs";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { calculateMaxTokens } from "@doc-raven/langchain-core/language_models/base";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
+import { GenerationChunk, type LLMResult } from "@doc-raven/langchain-core/outputs";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 import {
   BaseLLM,
   type BaseLLMParams,
-} from "@langchain/core/language_models/llms";
-import { chunkArray } from "@langchain/core/utils/chunk_array";
+} from "@doc-raven/langchain-core/language_models/llms";
+import { chunkArray } from "@doc-raven/langchain-core/utils/chunk_array";
 import type {
   OpenAIApiKey,
   OpenAICallOptions,

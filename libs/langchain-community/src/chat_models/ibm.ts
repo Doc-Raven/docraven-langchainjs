@@ -10,25 +10,25 @@ import {
   ToolMessageChunk,
   UsageMetadata,
   type BaseMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import {
   BaseLanguageModelInput,
   FunctionDefinition,
   StructuredOutputMethodOptions,
-} from "@langchain/core/language_models/base";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+} from "@doc-raven/langchain-core/language_models/base";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
 import {
   BaseChatModel,
   BindToolsInput,
   LangSmithParams,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
+} from "@doc-raven/langchain-core/language_models/chat_models";
 import {
   ChatGeneration,
   ChatGenerationChunk,
   ChatResult,
-} from "@langchain/core/outputs";
-import { AsyncCaller } from "@langchain/core/utils/async_caller";
+} from "@doc-raven/langchain-core/outputs";
+import { AsyncCaller } from "@doc-raven/langchain-core/utils/async_caller";
 import {
   DeploymentsTextChatParams,
   RequestCallbacks,
@@ -48,27 +48,27 @@ import {
   convertLangChainToolCallToOpenAI,
   makeInvalidToolCall,
   parseToolCall,
-} from "@langchain/core/output_parsers/openai_tools";
-import { ToolCallChunk } from "@langchain/core/messages/tool";
+} from "@doc-raven/langchain-core/output_parsers/openai_tools";
+import { ToolCallChunk } from "@doc-raven/langchain-core/messages/tool";
 import {
   Runnable,
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
+} from "@doc-raven/langchain-core/runnables";
 import {
   BaseLLMOutputParser,
   JsonOutputParser,
   StructuredOutputParser,
-} from "@langchain/core/output_parsers";
+} from "@doc-raven/langchain-core/output_parsers";
 import {
   InteropZodType,
   isInteropZodSchema,
-} from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/types";
 import {
   JsonSchema7Type,
   toJsonSchema,
-} from "@langchain/core/utils/json_schema";
-import { NewTokenIndices } from "@langchain/core/callbacks/base";
+} from "@doc-raven/langchain-core/utils/json_schema";
+import { NewTokenIndices } from "@doc-raven/langchain-core/callbacks/base";
 import {
   ChatObjectStream,
   ChatsChoice,

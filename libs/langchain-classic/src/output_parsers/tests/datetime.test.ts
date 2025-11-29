@@ -1,6 +1,6 @@
 import { test, expect } from "vitest";
 
-import { OutputParserException } from "@langchain/core/output_parsers";
+import { OutputParserException } from "@doc-raven/langchain-core/output_parsers";
 
 import { DatetimeOutputParser } from "../datetime.js";
 

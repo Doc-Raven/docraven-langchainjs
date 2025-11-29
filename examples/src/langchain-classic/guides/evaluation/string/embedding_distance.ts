@@ -1,5 +1,5 @@
 import { loadEvaluator } from "@langchain/classic/evaluation";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { FakeEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 import { ChatOpenAI } from "@langchain/openai";
 
 const chain = await loadEvaluator("embedding_distance", {

@@ -1,5 +1,5 @@
 import { loadEvaluator } from "@langchain/classic/evaluation";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
 import { ChatOpenAI } from "@langchain/openai";
 
 const template = `Respond Y or N based on how well the following response follows the specified rubric. Grade only based on the rubric and expected response:

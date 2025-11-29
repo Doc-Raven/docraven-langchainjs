@@ -1,5 +1,5 @@
 import { test, expect, beforeEach, afterEach } from "@jest/globals";
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@doc-raven/langchain-core/messages";
 import { DynamoDBChatMessageHistory } from "../message/dynamodb.js";
 
 describe("DynamoDB message history store", () => {

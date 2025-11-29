@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { StructuredTool } from "@langchain/core/tools";
+import { StructuredTool } from "@doc-raven/langchain-core/tools";
 import { AgentExecutor } from "../../../agents/executor.js";
 import { OpenAIAssistantRunnable } from "../index.js";
 

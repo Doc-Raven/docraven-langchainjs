@@ -1,6 +1,6 @@
 import { test, expectTypeOf } from "vitest";
-import { ToolMessage } from "@langchain/core/messages";
-import { RunnableConfig } from "@langchain/core/runnables";
+import { ToolMessage } from "@doc-raven/langchain-core/messages";
+import { RunnableConfig } from "@doc-raven/langchain-core/runnables";
 import { MultiServerMCPClient } from "../client.js";
 import type {
   ResolvedStreamableHTTPConnection,

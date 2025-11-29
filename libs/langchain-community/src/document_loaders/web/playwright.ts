@@ -1,8 +1,8 @@
 import type { LaunchOptions, Page, Browser, Response } from "playwright";
 
-import { Document } from "@langchain/core/documents";
-import { BaseDocumentLoader } from "@langchain/core/document_loaders/base";
-import type { DocumentLoader } from "@langchain/core/document_loaders/base";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { BaseDocumentLoader } from "@doc-raven/langchain-core/document_loaders/base";
+import type { DocumentLoader } from "@doc-raven/langchain-core/document_loaders/base";
 
 export { Page, Browser, Response };
 

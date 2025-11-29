@@ -3,21 +3,21 @@ import {
   type ToolInterface,
   ToolInputParsingException,
   Tool,
-} from "@langchain/core/tools";
+} from "@doc-raven/langchain-core/tools";
 import {
   Runnable,
   type RunnableConfig,
   patchConfig,
-} from "@langchain/core/runnables";
-import { AgentAction, AgentFinish, AgentStep } from "@langchain/core/agents";
-import { ChainValues } from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/runnables";
+import { AgentAction, AgentFinish, AgentStep } from "@doc-raven/langchain-core/agents";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
 import {
   CallbackManager,
   CallbackManagerForChainRun,
   Callbacks,
-} from "@langchain/core/callbacks/manager";
-import { OutputParserException } from "@langchain/core/output_parsers";
-import { Serializable } from "@langchain/core/load/serializable";
+} from "@doc-raven/langchain-core/callbacks/manager";
+import { OutputParserException } from "@doc-raven/langchain-core/output_parsers";
+import { Serializable } from "@doc-raven/langchain-core/load/serializable";
 import { SerializedLLMChain } from "../chains/serde.js";
 import { StoppingMethod } from "./types.js";
 import {

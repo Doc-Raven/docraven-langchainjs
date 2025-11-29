@@ -3,7 +3,7 @@ import url from "node:url";
 import path from "node:path";
 
 import { test } from "vitest";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 
 import { ChatOpenAI } from "../index.js";
 

@@ -2,7 +2,7 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import * as ts from "typescript";
 import prettier from "prettier";
-import type { ModelProfile } from "@langchain/core/language_models/profile";
+import type { ModelProfile } from "@doc-raven/langchain-core/language_models/profile";
 import type { Model, ProviderMap } from "./api-schema.js";
 import { type ModelProfileOverride, applyOverrides } from "./config.js";
 import { validatePathInMonorepo } from "./config.js";
@@ -103,7 +103,7 @@ function generateTypeScript(models: Record<string, ModelProfile>): string {
     )
   );
 
-  // Create import: import type { ModelProfile } from "@langchain/core/language_models/profile";
+  // Create import: import type { ModelProfile } from "@doc-raven/langchain-core/language_models/profile";
   const importSpecifier = ts.factory.createImportSpecifier(
     false, // Specifier itself is not type-only (clause handles it)
     undefined,
@@ -116,7 +116,7 @@ function generateTypeScript(models: Record<string, ModelProfile>): string {
       undefined,
       ts.factory.createNamedImports([importSpecifier])
     ),
-    ts.factory.createStringLiteral("@langchain/core/language_models/profile")
+    ts.factory.createStringLiteral("@doc-raven/langchain-core/language_models/profile")
   );
 
   // Create export: export default models;

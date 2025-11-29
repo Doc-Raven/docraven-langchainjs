@@ -3,8 +3,8 @@ import { test, expect } from "vitest";
 import { v4 as uuidV4 } from "uuid";
 
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
-import { SyntheticEmbeddings } from "@langchain/core/utils/testing";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { SyntheticEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 
 import { MatryoshkaRetriever } from "../matryoshka_retriever.js";
 import { MemoryVectorStore } from "../../vectorstores/memory.js";

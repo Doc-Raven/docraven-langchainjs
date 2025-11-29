@@ -1,7 +1,7 @@
 import { test, expect } from "vitest";
 import { stringify } from "yaml";
 import { z } from "zod/v3";
-import { RunnableSequence } from "@langchain/core/runnables";
+import { RunnableSequence } from "@doc-raven/langchain-core/runnables";
 import { OpenAI, ChatOpenAI, AzureChatOpenAI } from "@langchain/openai";
 import {
   HumanMessagePromptTemplate,
@@ -9,11 +9,11 @@ import {
   ChatPromptTemplate,
   FewShotPromptTemplate,
   PromptTemplate,
-} from "@langchain/core/prompts";
-import { LengthBasedExampleSelector } from "@langchain/core/example_selectors";
-import { Serializable } from "@langchain/core/load/serializable";
-import { ConsoleCallbackHandler } from "@langchain/core/tracers/console";
-import { CommaSeparatedListOutputParser } from "@langchain/core/output_parsers";
+} from "@doc-raven/langchain-core/prompts";
+import { LengthBasedExampleSelector } from "@doc-raven/langchain-core/example_selectors";
+import { Serializable } from "@doc-raven/langchain-core/load/serializable";
+import { ConsoleCallbackHandler } from "@doc-raven/langchain-core/tracers/console";
+import { CommaSeparatedListOutputParser } from "@doc-raven/langchain-core/output_parsers";
 
 import { LLMChain } from "../../chains/llm_chain.js";
 import { StructuredOutputParser } from "../../output_parsers/structured.js";

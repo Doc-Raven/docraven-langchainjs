@@ -12,11 +12,11 @@ import type {
   ListToolsResult,
 } from "@modelcontextprotocol/sdk/types.js";
 import type { RequestOptions } from "@modelcontextprotocol/sdk/shared/protocol.js";
-import { DynamicStructuredTool } from "@langchain/core/tools";
-import type { ContentBlock } from "@langchain/core/messages";
-import { RunnableConfig } from "@langchain/core/runnables";
-import type { CallbackManagerForToolRun } from "@langchain/core/callbacks/manager";
-import { ToolMessage } from "@langchain/core/messages";
+import { DynamicStructuredTool } from "@doc-raven/langchain-core/tools";
+import type { ContentBlock } from "@doc-raven/langchain-core/messages";
+import { RunnableConfig } from "@doc-raven/langchain-core/runnables";
+import type { CallbackManagerForToolRun } from "@doc-raven/langchain-core/callbacks/manager";
+import { ToolMessage } from "@doc-raven/langchain-core/messages";
 import { Command, getCurrentTaskInput } from "@langchain/langgraph";
 
 import type { Notifications } from "./types.js";

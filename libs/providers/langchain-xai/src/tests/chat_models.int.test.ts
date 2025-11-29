@@ -6,9 +6,9 @@ import {
   AIMessageChunk,
   HumanMessage,
   ToolMessage,
-} from "@langchain/core/messages";
-import { tool } from "@langchain/core/tools";
-import { concat } from "@langchain/core/utils/stream";
+} from "@doc-raven/langchain-core/messages";
+import { tool } from "@doc-raven/langchain-core/tools";
+import { concat } from "@doc-raven/langchain-core/utils/stream";
 
 import { ChatXAI } from "../chat_models.js";
 

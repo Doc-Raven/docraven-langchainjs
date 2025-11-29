@@ -1,4 +1,4 @@
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
 import { ChatOpenAI } from "@langchain/openai";
 
 const model = new ChatOpenAI({

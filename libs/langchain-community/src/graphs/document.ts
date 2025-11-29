@@ -1,5 +1,5 @@
-import { Serializable } from "@langchain/core/load/serializable";
-import { Document } from "@langchain/core/documents";
+import { Serializable } from "@doc-raven/langchain-core/load/serializable";
+import { Document } from "@doc-raven/langchain-core/documents";
 
 export class Node extends Serializable {
   id: string | number;

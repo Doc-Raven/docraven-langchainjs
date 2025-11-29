@@ -1,8 +1,8 @@
 import { describe, it, expect, vi } from "vitest";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 import { z } from "zod/v3";
 import { ChatOpenAI } from "@langchain/openai";
-import { tool } from "@langchain/core/tools";
+import { tool } from "@doc-raven/langchain-core/tools";
 import { ChatAnthropic } from "@langchain/anthropic";
 
 import { createAgent } from "../../index.js";

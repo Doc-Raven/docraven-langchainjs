@@ -7,9 +7,9 @@ import {
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
   SystemMessagePromptTemplate,
-} from "@langchain/core/prompts";
-import { StringOutputParser } from "@langchain/core/output_parsers";
-import { RunnableSequence } from "@langchain/core/runnables";
+} from "@doc-raven/langchain-core/prompts";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
+import { RunnableSequence } from "@doc-raven/langchain-core/runnables";
 
 const text = fs.readFileSync("state_of_the_union.txt", "utf8");
 

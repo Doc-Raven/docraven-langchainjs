@@ -2,7 +2,7 @@ import url from "node:url";
 import path from "node:path";
 
 import { test, expect } from "vitest";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 
 import { JSONLinesLoader } from "../fs/json.js";
 

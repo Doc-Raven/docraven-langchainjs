@@ -1,22 +1,22 @@
 import { z } from "zod/v3";
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
 import {
   Example,
   interpolateFString,
   FewShotPromptTemplate,
-} from "@langchain/core/prompts";
+} from "@doc-raven/langchain-core/prompts";
 import {
   InferInteropZodOutput,
   InputValues,
-} from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/types";
 import {
   Comparator,
   Comparators,
   Operator,
   Operators,
   StructuredQuery,
-} from "@langchain/core/structured_query";
-import { Runnable, RunnableConfig } from "@langchain/core/runnables";
+} from "@doc-raven/langchain-core/structured_query";
+import { Runnable, RunnableConfig } from "@doc-raven/langchain-core/runnables";
 import { QueryTransformer, TraverseType } from "./parser.js";
 import {
   DEFAULT_EXAMPLES,

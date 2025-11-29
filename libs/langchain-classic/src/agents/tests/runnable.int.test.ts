@@ -3,14 +3,14 @@ import { ChatOpenAI } from "@langchain/openai";
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
+} from "@doc-raven/langchain-core/prompts";
 import {
   AIMessage,
   BaseMessage,
   FunctionMessage,
-} from "@langchain/core/messages";
-import { AgentStep } from "@langchain/core/agents";
-import { RunnableSequence } from "@langchain/core/runnables";
+} from "@doc-raven/langchain-core/messages";
+import { AgentStep } from "@doc-raven/langchain-core/agents";
+import { RunnableSequence } from "@doc-raven/langchain-core/runnables";
 import { AgentExecutor } from "../executor.js";
 import { SerpAPI } from "../../util/testing/tools/serpapi.js";
 import { Calculator } from "../../util/testing/tools/calculator.js";

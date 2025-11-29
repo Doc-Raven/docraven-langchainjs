@@ -1,4 +1,4 @@
-import { getEnv } from "@langchain/core/utils/env";
+import { getEnv } from "@doc-raven/langchain-core/utils/env";
 import { iife } from "./misc.js";
 
 export interface OpenAIEndpointConfig {

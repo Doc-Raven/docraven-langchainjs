@@ -8,7 +8,7 @@ This package contains the LangChain.js integrations for the [Mixedbread AI API](
 npm install @langchain/mixedbread-ai
 ```
 
-This package, along with the main LangChain package, depends on [`@langchain/core`](https://npmjs.com/package/@langchain/core/). If you are using this package with other LangChain packages, you should make sure that all of the packages depend on the same instance of `@langchain/core`.
+This package, along with the main LangChain package, depends on [`@doc-raven/langchain-core`](https://npmjs.com/package/@doc-raven/langchain-core/). If you are using this package with other LangChain packages, you should make sure that all of the packages depend on the same instance of `@doc-raven/langchain-core`.
 
 ## Authentication
 

@@ -19,13 +19,13 @@ import {
   ContentBlock,
   iife,
   convertToProviderContentBlock,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import {
   convertLangChainToolCallToOpenAI,
   makeInvalidToolCall,
   parseToolCall,
-} from "@langchain/core/output_parsers/openai_tools";
-import { Converter } from "@langchain/core/utils/format";
+} from "@doc-raven/langchain-core/output_parsers/openai_tools";
+import { Converter } from "@doc-raven/langchain-core/utils/format";
 import type {
   ChatCompletionContentPartText,
   ChatCompletionContentPartImage,

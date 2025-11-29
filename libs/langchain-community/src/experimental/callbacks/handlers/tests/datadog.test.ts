@@ -1,8 +1,8 @@
 import { test, jest, expect } from "@jest/globals";
 import * as uuid from "uuid";
-import { Run } from "@langchain/core/tracers/base";
+import { Run } from "@doc-raven/langchain-core/tracers/base";
 
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@doc-raven/langchain-core/messages";
 import {
   DatadogLLMObsRequestBody,
   DatadogLLMObsSpan,

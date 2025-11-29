@@ -1,7 +1,7 @@
 import { createAgent } from "langchain";
 import { modelCallLimitMiddleware } from "langchain";
 import { MemorySaver } from "@langchain/langgraph";
-import { tool } from "@langchain/core/tools";
+import { tool } from "@doc-raven/langchain-core/tools";
 import { z } from "zod";
 
 /**

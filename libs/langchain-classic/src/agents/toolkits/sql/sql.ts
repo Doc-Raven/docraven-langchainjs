@@ -1,6 +1,6 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { type ToolInterface, BaseToolkit } from "@langchain/core/tools";
-import { renderTemplate } from "@langchain/core/prompts";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
+import { type ToolInterface, BaseToolkit } from "@doc-raven/langchain-core/tools";
+import { renderTemplate } from "@doc-raven/langchain-core/prompts";
 import {
   InfoSqlTool,
   ListTablesSqlTool,

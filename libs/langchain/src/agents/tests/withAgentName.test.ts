@@ -5,9 +5,9 @@ import {
   HumanMessage,
   BaseMessage,
   MessageContent,
-} from "@langchain/core/messages";
-import { BaseChatModel } from "@langchain/core/language_models/chat_models";
-import { ChatResult } from "@langchain/core/outputs";
+} from "@doc-raven/langchain-core/messages";
+import { BaseChatModel } from "@doc-raven/langchain-core/language_models/chat_models";
+import { ChatResult } from "@doc-raven/langchain-core/outputs";
 
 import { withAgentName } from "../withAgentName.js";
 import { _addInlineAgentName, _removeInlineAgentName } from "../utils.js";

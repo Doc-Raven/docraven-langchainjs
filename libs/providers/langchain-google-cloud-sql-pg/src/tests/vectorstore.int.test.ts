@@ -1,9 +1,9 @@
 import { test } from "@jest/globals";
-import { Document, DocumentInterface } from "@langchain/core/documents";
-import { SyntheticEmbeddings } from "@langchain/core/utils/testing";
+import { Document, DocumentInterface } from "@doc-raven/langchain-core/documents";
+import { SyntheticEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 import { v4 as uuidv4 } from "uuid";
 
-import { MaxMarginalRelevanceSearchOptions } from "@langchain/core/vectorstores";
+import { MaxMarginalRelevanceSearchOptions } from "@doc-raven/langchain-core/vectorstores";
 import {
   PostgreSqlContainer,
   StartedPostgreSqlContainer,

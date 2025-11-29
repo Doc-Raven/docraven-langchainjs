@@ -1,7 +1,7 @@
-import { Document } from "@langchain/core/documents";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
-import { index } from "@langchain/core/indexing";
-import { BaseDocumentLoader } from "@langchain/core/document_loaders/base";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { FakeEmbeddings } from "@doc-raven/langchain-core/utils/testing";
+import { index } from "@doc-raven/langchain-core/indexing";
+import { BaseDocumentLoader } from "@doc-raven/langchain-core/document_loaders/base";
 
 import { InMemoryRecordManager } from "../memory.js";
 import { PGVectorStore } from "../../vectorstores/pgvector.js";

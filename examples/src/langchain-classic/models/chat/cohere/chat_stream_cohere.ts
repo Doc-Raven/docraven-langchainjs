@@ -1,6 +1,6 @@
 import { ChatCohere } from "@langchain/cohere";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
 
 const model = new ChatCohere({
   apiKey: process.env.COHERE_API_KEY, // Default

@@ -5,13 +5,13 @@ import url from "node:url";
 import path from "node:path";
 
 import { z } from "zod/v3";
-import { AIMessage, HumanMessage } from "@langchain/core/messages";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { AIMessage, HumanMessage } from "@doc-raven/langchain-core/messages";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
 import {
   BytesOutputParser,
   StringOutputParser,
-} from "@langchain/core/output_parsers";
-import { tool } from "@langchain/core/tools";
+} from "@doc-raven/langchain-core/output_parsers";
+import { tool } from "@doc-raven/langchain-core/tools";
 
 import { ChatOllama } from "../chat_models.js";
 

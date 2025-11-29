@@ -1,8 +1,8 @@
 import { ChatMistralAI } from "@langchain/mistralai";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { JsonOutputKeyToolsParser } from "@langchain/core/output_parsers/openai_tools";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { JsonOutputKeyToolsParser } from "@doc-raven/langchain-core/output_parsers/openai_tools";
 import { z } from "zod/v3";
-import { StructuredTool } from "@langchain/core/tools";
+import { StructuredTool } from "@doc-raven/langchain-core/tools";
 
 const calculatorSchema = z.object({
   operation: z

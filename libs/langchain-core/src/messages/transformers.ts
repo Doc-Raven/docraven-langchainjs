@@ -105,7 +105,7 @@ export interface FilterMessagesFields {
  *
  * @example
  * ```typescript
- * import { filterMessages, AIMessage, HumanMessage, SystemMessage } from "@langchain/core/messages";
+ * import { filterMessages, AIMessage, HumanMessage, SystemMessage } from "@doc-raven/langchain-core/messages";
  *
  * const messages = [
  *   new SystemMessage("you're a good assistant."),
@@ -207,7 +207,7 @@ function _filterMessages(
  *
  * @example
  * ```typescript
- * import { mergeMessageRuns, AIMessage, HumanMessage, SystemMessage, ToolCall } from "@langchain/core/messages";
+ * import { mergeMessageRuns, AIMessage, HumanMessage, SystemMessage, ToolCall } from "@doc-raven/langchain-core/messages";
  *
  * const messages = [
  *   new SystemMessage("you're a good assistant."),
@@ -375,7 +375,7 @@ export interface TrimMessagesFields {
  *
  * @example
  * ```typescript
- * import { trimMessages, AIMessage, BaseMessage, HumanMessage, SystemMessage } from "@langchain/core/messages";
+ * import { trimMessages, AIMessage, BaseMessage, HumanMessage, SystemMessage } from "@doc-raven/langchain-core/messages";
  *
  * const messages = [
  *   new SystemMessage("This is a 4 token text. The full message is 10 tokens."),

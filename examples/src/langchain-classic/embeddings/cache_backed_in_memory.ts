@@ -1,6 +1,6 @@
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { CacheBackedEmbeddings } from "@langchain/classic/embeddings/cache_backed";
-import { InMemoryStore } from "@langchain/core/stores";
+import { InMemoryStore } from "@doc-raven/langchain-core/stores";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
 import { FaissStore } from "@langchain/community/vectorstores/faiss";
 import { TextLoader } from "@langchain/classic/document_loaders/fs/text";

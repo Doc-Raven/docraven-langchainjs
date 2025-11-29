@@ -1,14 +1,14 @@
 import {
   BaseLLMOutputParser,
   OutputParserException,
-} from "@langchain/core/output_parsers";
-import { JsonOutputKeyToolsParserParamsInterop } from "@langchain/core/output_parsers/openai_tools";
-import { ChatGeneration } from "@langchain/core/outputs";
-import { ToolCall } from "@langchain/core/messages/tool";
+} from "@doc-raven/langchain-core/output_parsers";
+import { JsonOutputKeyToolsParserParamsInterop } from "@doc-raven/langchain-core/output_parsers/openai_tools";
+import { ChatGeneration } from "@doc-raven/langchain-core/outputs";
+import { ToolCall } from "@doc-raven/langchain-core/messages/tool";
 import {
   interopSafeParseAsync,
   InteropZodType,
-} from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/types";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 interface AnthropicToolsOutputParserParams<T extends Record<string, any>>

@@ -1,12 +1,12 @@
-import type { VectorStoreRetrieverInterface } from "@langchain/core/vectorstores";
-import { Document } from "@langchain/core/documents";
+import type { VectorStoreRetrieverInterface } from "@doc-raven/langchain-core/vectorstores";
+import { Document } from "@doc-raven/langchain-core/documents";
 import {
   BaseMemory,
   getInputValue,
   InputValues,
   MemoryVariables,
   OutputValues,
-} from "@langchain/core/memory";
+} from "@doc-raven/langchain-core/memory";
 import { formatDocumentsAsString } from "../util/document.js";
 
 type Metadata = Record<string, unknown>;

@@ -1,1 +1,1 @@
-export { InMemoryChatMessageHistory as ChatMessageHistory } from "@langchain/core/chat_history";
+export { InMemoryChatMessageHistory as ChatMessageHistory } from "@doc-raven/langchain-core/chat_history";

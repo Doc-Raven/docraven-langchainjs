@@ -6,7 +6,7 @@ export {
   type Tool,
   type ToolParams,
   type StructuredTool,
-} from "@langchain/core/tools";
+} from "@doc-raven/langchain-core/tools";
 
 export { ChainTool, type ChainToolInput } from "./chain.js";
 export {
@@ -22,4 +22,4 @@ export { ReadFileTool, WriteFileTool } from "./fs.js";
 export {
   convertToOpenAIFunction as formatToOpenAIFunction,
   convertToOpenAITool as formatToOpenAITool,
-} from "@langchain/core/utils/function_calling";
+} from "@doc-raven/langchain-core/utils/function_calling";

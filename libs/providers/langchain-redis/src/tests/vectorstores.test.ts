@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { vi, test, expect, describe } from "vitest";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { FakeEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 import { SchemaFieldTypes } from "redis";
 
 import { RedisVectorStore, RedisVectorStoreConfig } from "../vectorstores.js";

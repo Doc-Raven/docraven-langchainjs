@@ -1,7 +1,7 @@
 import { describe, expect, vi, test } from "vitest";
 
-import { Document } from "@langchain/core/documents";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { FakeEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 
 import { MemoryVectorStore } from "../../vectorstores/memory.js";
 import {

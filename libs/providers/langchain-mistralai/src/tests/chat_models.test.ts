@@ -1,5 +1,5 @@
 import { test, expect, describe } from "vitest";
-import { AIMessage, HumanMessage, ToolMessage } from "@langchain/core/messages";
+import { AIMessage, HumanMessage, ToolMessage } from "@doc-raven/langchain-core/messages";
 import {
   ChatMistralAI,
   convertMessagesToMistralMessages,

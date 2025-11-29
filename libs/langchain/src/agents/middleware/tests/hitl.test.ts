@@ -1,12 +1,12 @@
 import { z } from "zod/v3";
 import { describe, it, expect, vi, beforeEach } from "vitest";
-import { tool } from "@langchain/core/tools";
+import { tool } from "@doc-raven/langchain-core/tools";
 import {
   AIMessage,
   BaseMessage,
   HumanMessage,
   ToolMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import { Command } from "@langchain/langgraph";
 import { MemorySaver } from "@langchain/langgraph-checkpoint";
 

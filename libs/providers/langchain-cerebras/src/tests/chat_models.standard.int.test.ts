@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { test, expect } from "@jest/globals";
 import { ChatModelIntegrationTests } from "@langchain/standard-tests";
-import { AIMessageChunk } from "@langchain/core/messages";
+import { AIMessageChunk } from "@doc-raven/langchain-core/messages";
 import { ChatCerebras, ChatCerebrasCallOptions } from "../chat_models.js";
 
 class ChatCerebrasStandardIntegrationTests extends ChatModelIntegrationTests<

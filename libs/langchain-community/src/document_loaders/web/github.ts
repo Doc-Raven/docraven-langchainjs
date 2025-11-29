@@ -1,13 +1,13 @@
 import ignore, { Ignore } from "ignore";
 import binaryExtensions from "binary-extensions";
 
-import { Document } from "@langchain/core/documents";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 import {
   AsyncCaller,
   AsyncCallerParams,
-} from "@langchain/core/utils/async_caller";
-import { BaseDocumentLoader } from "@langchain/core/document_loaders/base";
+} from "@doc-raven/langchain-core/utils/async_caller";
+import { BaseDocumentLoader } from "@doc-raven/langchain-core/document_loaders/base";
 import { UnknownHandling } from "@langchain/classic/document_loaders/fs/directory";
 import { extname } from "../../utils/extname.js";
 

@@ -1,7 +1,7 @@
 import {
   AsyncCaller,
   AsyncCallerParams,
-} from "@langchain/core/utils/async_caller";
+} from "@doc-raven/langchain-core/utils/async_caller";
 
 import {
   Client,

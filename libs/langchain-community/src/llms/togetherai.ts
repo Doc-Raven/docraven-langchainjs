@@ -1,11 +1,11 @@
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
 import {
   LLM,
   type BaseLLMCallOptions,
   type BaseLLMParams,
-} from "@langchain/core/language_models/llms";
-import { GenerationChunk } from "@langchain/core/outputs";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@doc-raven/langchain-core/language_models/llms";
+import { GenerationChunk } from "@doc-raven/langchain-core/outputs";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 import { convertEventStreamToIterableReadableDataStream } from "../utils/event_source_parse.js";
 
 interface TogetherAIInferenceResult {

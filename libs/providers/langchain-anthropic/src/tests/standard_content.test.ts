@@ -1,6 +1,6 @@
 import { Buffer } from "node:buffer";
 import { describe, expect, it } from "vitest";
-import type { BaseMessage, ContentBlock } from "@langchain/core/messages";
+import type { BaseMessage, ContentBlock } from "@doc-raven/langchain-core/messages";
 import { _formatStandardContent } from "../utils/standard.js";
 
 function createAnthropicMessage(blocks: ContentBlock.Standard[]): BaseMessage {

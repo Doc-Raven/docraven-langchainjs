@@ -1,7 +1,7 @@
 import { z } from "zod/v3";
 import { OpenAI } from "@langchain/openai";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { StructuredOutputParser } from "@langchain/core/output_parsers";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { StructuredOutputParser } from "@doc-raven/langchain-core/output_parsers";
 
 // We can use zod to define a schema for the output using the `fromZodSchema` method of `StructuredOutputParser`.
 const parser = StructuredOutputParser.fromZodSchema(

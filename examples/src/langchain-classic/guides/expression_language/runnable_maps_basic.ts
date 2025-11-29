@@ -1,5 +1,5 @@
-import { PromptTemplate } from "@langchain/core/prompts";
-import { RunnableMap } from "@langchain/core/runnables";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { RunnableMap } from "@doc-raven/langchain-core/runnables";
 import { ChatAnthropic } from "@langchain/anthropic";
 
 const model = new ChatAnthropic({});

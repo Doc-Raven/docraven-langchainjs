@@ -1,4 +1,4 @@
-import { BaseOutputParser } from "@langchain/core/output_parsers";
+import { BaseOutputParser } from "@doc-raven/langchain-core/output_parsers";
 import { AutoGPTAction } from "./schema.js";
 
 /**

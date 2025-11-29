@@ -1,4 +1,4 @@
-import { StructuredToolInterface } from "@langchain/core/tools";
+import { StructuredToolInterface } from "@doc-raven/langchain-core/tools";
 import { ChatOpenAI } from "@langchain/openai";
 import { ConversationSummaryBufferMemory } from "../../../memory/summary_buffer.js";
 import { initializeAgentExecutorWithOptions } from "../../initialize.js";

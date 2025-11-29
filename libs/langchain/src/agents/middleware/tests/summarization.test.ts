@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { describe, it, expect, vi } from "vitest";
-import { HumanMessage, AIMessage, ToolMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage, ToolMessage } from "@doc-raven/langchain-core/messages";
 
 import { summarizationMiddleware } from "../summarization.js";
 import { createAgent } from "../../index.js";

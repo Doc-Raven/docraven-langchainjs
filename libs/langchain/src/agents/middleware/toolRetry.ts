@@ -2,8 +2,8 @@
  * Tool retry middleware for agents.
  */
 import { z } from "zod/v3";
-import { ToolMessage } from "@langchain/core/messages";
-import type { ClientTool, ServerTool } from "@langchain/core/tools";
+import { ToolMessage } from "@doc-raven/langchain-core/messages";
+import type { ClientTool, ServerTool } from "@doc-raven/langchain-core/tools";
 
 import { createMiddleware } from "../middleware.js";
 import type { AgentMiddleware } from "./types.js";
@@ -119,7 +119,7 @@ export type ToolRetryMiddlewareConfig = z.input<
  *
  * @example Apply to specific tools using BaseTool instances
  * ```ts
- * import { tool } from "@langchain/core/tools";
+ * import { tool } from "@doc-raven/langchain-core/tools";
  * import { z } from "zod";
  *
  * const searchDatabase = tool(

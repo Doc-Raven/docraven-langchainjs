@@ -1,5 +1,5 @@
 import { loadPyodide, type PyodideInterface } from "pyodide";
-import { Tool, ToolParams } from "@langchain/core/tools";
+import { Tool, ToolParams } from "@doc-raven/langchain-core/tools";
 
 export type PythonInterpreterToolParams = Parameters<typeof loadPyodide>[0] &
   ToolParams & {

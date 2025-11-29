@@ -1,4 +1,4 @@
-import { Document, type DocumentInterface } from "@langchain/core/documents";
+import { Document, type DocumentInterface } from "@doc-raven/langchain-core/documents";
 import {
   RemoteRetriever,
   RemoteRetrieverValues,

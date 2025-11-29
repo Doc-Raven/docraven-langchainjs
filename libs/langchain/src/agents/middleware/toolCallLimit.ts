@@ -1,8 +1,8 @@
-import { AIMessage, ToolMessage } from "@langchain/core/messages";
+import { AIMessage, ToolMessage } from "@doc-raven/langchain-core/messages";
 import { z as z4 } from "zod/v4";
 import { z } from "zod/v3";
-import type { InferInteropZodInput } from "@langchain/core/utils/types";
-import type { ToolCall } from "@langchain/core/messages/tool";
+import type { InferInteropZodInput } from "@doc-raven/langchain-core/utils/types";
+import type { ToolCall } from "@doc-raven/langchain-core/messages/tool";
 
 import { createMiddleware } from "../middleware.js";
 

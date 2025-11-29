@@ -23,15 +23,15 @@ import {
   OutputTokenDetails,
   ModalitiesTokenDetails,
   HumanMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import {
   ChatGeneration,
   ChatGenerationChunk,
   ChatResult,
-} from "@langchain/core/outputs";
-import { StructuredToolParams } from "@langchain/core/tools";
-import { isLangChainTool } from "@langchain/core/utils/function_calling";
-import { concat } from "@langchain/core/utils/stream";
+} from "@doc-raven/langchain-core/outputs";
+import { StructuredToolParams } from "@doc-raven/langchain-core/tools";
+import { isLangChainTool } from "@doc-raven/langchain-core/utils/function_calling";
+import { concat } from "@doc-raven/langchain-core/utils/stream";
 import {
   GoogleLLMResponse,
   GoogleAIModelParams,

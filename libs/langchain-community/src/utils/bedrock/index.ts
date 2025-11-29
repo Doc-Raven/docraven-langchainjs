@@ -3,9 +3,9 @@ import {
   AIMessage,
   AIMessageChunk,
   BaseMessage,
-} from "@langchain/core/messages";
-import { StructuredToolInterface } from "@langchain/core/tools";
-import { ChatGeneration, ChatGenerationChunk } from "@langchain/core/outputs";
+} from "@doc-raven/langchain-core/messages";
+import { StructuredToolInterface } from "@doc-raven/langchain-core/tools";
+import { ChatGeneration, ChatGenerationChunk } from "@doc-raven/langchain-core/outputs";
 import {
   _makeMessageChunkFromAnthropicEvent,
   extractToken,

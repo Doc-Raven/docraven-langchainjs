@@ -8,8 +8,8 @@ import {
   BaseMessage,
   ToolMessage,
   ToolCall,
-} from "@langchain/core/messages";
-import { tool } from "@langchain/core/tools";
+} from "@doc-raven/langchain-core/messages";
+import { tool } from "@doc-raven/langchain-core/tools";
 import { Command } from "@langchain/langgraph";
 
 import { createAgent, createMiddleware, toolStrategy } from "../index.js";
@@ -18,7 +18,7 @@ import { FakeToolCallingChatModel, FakeToolCallingModel } from "./utils.js";
 describe("middleware", () => {
   it("should propagate state schema to middleware hooks and result", async () => {
     /**
-     * skip as test requires primitives from `@langchain/core` that aren't released yet
+     * skip as test requires primitives from `@doc-raven/langchain-core` that aren't released yet
      * and fails in dependency range tests, remove after next release
      */
     if (process.env.LC_DEPENDENCY_RANGE_TESTS) {

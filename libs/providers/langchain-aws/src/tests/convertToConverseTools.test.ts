@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { convertToConverseTools } from "../utils/tools.js";
-import { tool } from "@langchain/core/tools";
+import { tool } from "@doc-raven/langchain-core/tools";
 import { z } from "zod/v3";
 
 describe("convertToConverseTools", () => {

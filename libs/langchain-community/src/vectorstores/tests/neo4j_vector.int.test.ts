@@ -1,5 +1,5 @@
-import { Document } from "@langchain/core/documents";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { FakeEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 import {
   DOCUMENTS,
   TYPE_1_FILTERING_TEST_CASES,

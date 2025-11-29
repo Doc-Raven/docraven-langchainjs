@@ -6,9 +6,9 @@ import {
   AIMessage,
   AIMessageChunk,
   UsageMetadata,
-} from "@langchain/core/messages";
-import type { ToolCallChunk } from "@langchain/core/messages/tool";
-import { ChatGeneration } from "@langchain/core/outputs";
+} from "@doc-raven/langchain-core/messages";
+import type { ToolCallChunk } from "@doc-raven/langchain-core/messages/tool";
+import { ChatGeneration } from "@doc-raven/langchain-core/outputs";
 import { AnthropicMessageResponse } from "../types.js";
 import { extractToolCalls } from "../output_parsers.js";
 

@@ -3,7 +3,7 @@ import {
   ListKeyOptions,
   RecordManagerInterface,
   UpdateOptions,
-} from "@langchain/core/indexing";
+} from "@doc-raven/langchain-core/indexing";
 
 export type PostgresRecordManagerOptions = {
   postgresConnectionOptions?: PoolConfig;

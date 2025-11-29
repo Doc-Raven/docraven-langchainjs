@@ -1,13 +1,13 @@
 import * as uuid from "uuid";
-import { Document } from "@langchain/core/documents";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { VectorStore } from "@langchain/core/vectorstores";
+import { Document } from "@doc-raven/langchain-core/documents";
+import type { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
+import { VectorStore } from "@doc-raven/langchain-core/vectorstores";
 import {
   BaseCallbackConfig,
   Callbacks,
-} from "@langchain/core/callbacks/manager";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+} from "@doc-raven/langchain-core/callbacks/manager";
+import { FakeEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 
 /**
  * Interface for the arguments required to initialize a VectaraStore

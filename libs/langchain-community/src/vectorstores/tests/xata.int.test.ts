@@ -1,6 +1,6 @@
 import { BaseClient } from "@xata.io/client";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 
 import { XataVectorSearch } from "../xata.js";
 

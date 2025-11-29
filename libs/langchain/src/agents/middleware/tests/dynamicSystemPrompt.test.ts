@@ -5,8 +5,8 @@ import {
   HumanMessage,
   AIMessage,
   SystemMessage,
-} from "@langchain/core/messages";
-import { LanguageModelLike } from "@langchain/core/language_models/base";
+} from "@doc-raven/langchain-core/messages";
+import { LanguageModelLike } from "@doc-raven/langchain-core/language_models/base";
 import { dynamicSystemPromptMiddleware } from "../dynamicSystemPrompt.js";
 import { createAgent } from "../../index.js";
 

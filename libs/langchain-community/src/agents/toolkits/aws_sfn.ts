@@ -1,6 +1,6 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { Toolkit, ToolInterface } from "@langchain/core/tools";
-import { renderTemplate } from "@langchain/core/prompts";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
+import { Toolkit, ToolInterface } from "@doc-raven/langchain-core/tools";
+import { renderTemplate } from "@doc-raven/langchain-core/prompts";
 import { LLMChain } from "@langchain/classic/chains";
 import {
   AgentExecutor,

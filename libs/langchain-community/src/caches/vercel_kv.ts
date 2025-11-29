@@ -1,12 +1,12 @@
 import { kv, type VercelKV } from "@vercel/kv";
 
-import { Generation } from "@langchain/core/outputs";
+import { Generation } from "@doc-raven/langchain-core/outputs";
 import {
   BaseCache,
   deserializeStoredGeneration,
   serializeGeneration,
-} from "@langchain/core/caches";
-import { StoredGeneration } from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/caches";
+import { StoredGeneration } from "@doc-raven/langchain-core/messages";
 
 export type VercelKVCacheProps = {
   /**

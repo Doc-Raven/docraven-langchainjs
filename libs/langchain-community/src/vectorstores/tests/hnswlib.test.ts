@@ -1,7 +1,7 @@
 import { test, expect } from "@jest/globals";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { FakeEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 import { HNSWLib } from "../hnswlib.js";
 
 // Helper function to check if hnswlib-node is available

@@ -1,11 +1,11 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import type { ToolInterface } from "@langchain/core/tools";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
+import type { ToolInterface } from "@doc-raven/langchain-core/tools";
 import {
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
   SystemMessagePromptTemplate,
-} from "@langchain/core/prompts";
-import type { AgentStep } from "@langchain/core/agents";
+} from "@doc-raven/langchain-core/prompts";
+import type { AgentStep } from "@doc-raven/langchain-core/agents";
 import { LLMChain } from "../../chains/llm_chain.js";
 import { Optional } from "../../types/type-utils.js";
 import { Agent, AgentArgs, OutputParserArgs } from "../agent.js";

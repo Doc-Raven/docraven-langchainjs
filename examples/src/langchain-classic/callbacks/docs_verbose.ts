@@ -1,6 +1,6 @@
 import { LLMChain } from "@langchain/classic/chains";
 import { OpenAI } from "@langchain/openai";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 const chain = new LLMChain({
   llm: new OpenAI({ temperature: 0 }),

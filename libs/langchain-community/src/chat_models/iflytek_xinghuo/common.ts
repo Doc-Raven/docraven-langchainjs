@@ -1,12 +1,12 @@
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { AIMessage, BaseMessage, ChatMessage } from "@langchain/core/messages";
-import { ChatGeneration, ChatResult } from "@langchain/core/outputs";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { IterableReadableStream } from "@langchain/core/utils/stream";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
+import { AIMessage, BaseMessage, ChatMessage } from "@doc-raven/langchain-core/messages";
+import { ChatGeneration, ChatResult } from "@doc-raven/langchain-core/outputs";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
+import { IterableReadableStream } from "@doc-raven/langchain-core/utils/stream";
 import {
   BaseChatModel,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
+} from "@doc-raven/langchain-core/language_models/chat_models";
 import {
   BaseWebSocketStream,
   WebSocketStreamOptions,

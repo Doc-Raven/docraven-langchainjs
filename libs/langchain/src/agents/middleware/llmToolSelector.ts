@@ -1,8 +1,8 @@
 import { z } from "zod/v3";
-import { BaseLanguageModel } from "@langchain/core/language_models/base";
-import type { InferInteropZodInput } from "@langchain/core/utils/types";
-import { HumanMessage } from "@langchain/core/messages";
-import type { StructuredToolInterface } from "@langchain/core/tools";
+import { BaseLanguageModel } from "@doc-raven/langchain-core/language_models/base";
+import type { InferInteropZodInput } from "@doc-raven/langchain-core/utils/types";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
+import type { StructuredToolInterface } from "@doc-raven/langchain-core/tools";
 
 import { createMiddleware } from "../middleware.js";
 import { initChatModel } from "../../chat_models/universal.js";

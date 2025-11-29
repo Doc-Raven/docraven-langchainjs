@@ -37,5 +37,5 @@ jobs:
           cache: "pnpm"
       - name: Install dependencies
         run: pnpm install
-      - name: Build `@langchain/core`
-        run: pnpm build --filter @langchain/core
+      - name: Build `@doc-raven/langchain-core`
+        run: pnpm build --filter @doc-raven/langchain-core

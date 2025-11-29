@@ -448,7 +448,7 @@ export function isLangChainTool(tool?: unknown): tool is StructuredToolParams {
  *
  * @example
  * ```typescript
- * import { tool, ToolRuntime } from "@langchain/core/tools";
+ * import { tool, ToolRuntime } from "@doc-raven/langchain-core/tools";
  * import { z } from "zod";
  *
  * const stateSchema = z.object({

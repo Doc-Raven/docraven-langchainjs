@@ -1,12 +1,12 @@
 import { describe, it, expect } from "vitest";
 import z from "zod/v3";
-import { AIMessage, HumanMessage } from "@langchain/core/messages";
-import { tool } from "@langchain/core/tools";
+import { AIMessage, HumanMessage } from "@doc-raven/langchain-core/messages";
+import { tool } from "@doc-raven/langchain-core/tools";
 import {
   Runnable,
   RunnableLambda,
   RunnableSequence,
-} from "@langchain/core/runnables";
+} from "@doc-raven/langchain-core/runnables";
 
 import {
   _addInlineAgentName,

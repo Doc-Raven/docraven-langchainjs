@@ -12,8 +12,8 @@ import {
   parseBase64DataUrl,
   ContentBlock,
   isAIMessage,
-} from "@langchain/core/messages";
-import { ToolCall } from "@langchain/core/messages/tool";
+} from "@doc-raven/langchain-core/messages";
+import { ToolCall } from "@doc-raven/langchain-core/messages/tool";
 import {
   AnthropicImageBlockParam,
   AnthropicMessageCreateParams,

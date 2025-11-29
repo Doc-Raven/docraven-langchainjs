@@ -1,6 +1,6 @@
 import { OpenAI } from "@langchain/openai";
 import { loadQAStuffChain } from "@langchain/classic/chains";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 
 // This first example uses the `StuffDocumentsChain`.
 const llmA = new OpenAI({});

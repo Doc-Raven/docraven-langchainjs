@@ -1,4 +1,4 @@
-import { AIMessage, ContentBlock } from "@langchain/core/messages";
+import { AIMessage, ContentBlock } from "@doc-raven/langchain-core/messages";
 import type * as Bedrock from "@aws-sdk/client-bedrock-runtime";
 
 // see `/libs/langchain-core/src/messages/block_translators/bedrock_converse.ts:convertFileFormatToMimeType`

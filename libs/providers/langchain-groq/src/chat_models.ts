@@ -1,16 +1,16 @@
 import {
   JsonSchema7Type,
   toJsonSchema,
-} from "@langchain/core/utils/json_schema";
-import { NewTokenIndices } from "@langchain/core/callbacks/base";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+} from "@doc-raven/langchain-core/utils/json_schema";
+import { NewTokenIndices } from "@doc-raven/langchain-core/callbacks/base";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
 import {
   BaseChatModel,
   BaseChatModelCallOptions,
   BindToolsInput,
   LangSmithParams,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
+} from "@doc-raven/langchain-core/language_models/chat_models";
 import * as ChatCompletionsAPI from "groq-sdk/resources/chat/completions";
 import * as CompletionsAPI from "groq-sdk/resources/completions";
 import {
@@ -28,17 +28,17 @@ import {
   UsageMetadata,
   FunctionMessageChunk,
   ToolMessageChunk,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import {
   ChatGeneration,
   ChatGenerationChunk,
   ChatResult,
-} from "@langchain/core/outputs";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@doc-raven/langchain-core/outputs";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 import {
   InteropZodType,
   isInteropZodSchema,
-} from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/types";
 import Groq from "groq-sdk";
 import type {
   ChatCompletion,
@@ -52,26 +52,26 @@ import {
   Runnable,
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
+} from "@doc-raven/langchain-core/runnables";
 import {
   BaseLanguageModelInput,
   FunctionDefinition,
   StructuredOutputMethodOptions,
-} from "@langchain/core/language_models/base";
-import { ModelProfile } from "@langchain/core/language_models/profile";
+} from "@doc-raven/langchain-core/language_models/base";
+import { ModelProfile } from "@doc-raven/langchain-core/language_models/profile";
 import {
   BaseLLMOutputParser,
   JsonOutputParser,
   StructuredOutputParser,
-} from "@langchain/core/output_parsers";
+} from "@doc-raven/langchain-core/output_parsers";
 import {
   JsonOutputKeyToolsParser,
   parseToolCall,
   makeInvalidToolCall,
   convertLangChainToolCallToOpenAI,
-} from "@langchain/core/output_parsers/openai_tools";
-import { convertToOpenAITool } from "@langchain/core/utils/function_calling";
-import { ToolCallChunk } from "@langchain/core/messages/tool";
+} from "@doc-raven/langchain-core/output_parsers/openai_tools";
+import { convertToOpenAITool } from "@doc-raven/langchain-core/utils/function_calling";
+import { ToolCallChunk } from "@doc-raven/langchain-core/messages/tool";
 
 import PROFILES from "./profiles.js";
 
@@ -801,8 +801,8 @@ function _oldConvertDeltaToMessageChunk(
  * <summary><strong>Aggregate Streamed Chunks</strong></summary>
  *
  * ```typescript
- * import { AIMessageChunk } from '@langchain/core/messages';
- * import { concat } from '@langchain/core/utils/stream';
+ * import { AIMessageChunk } from '@doc-raven/langchain-core/messages';
+ * import { concat } from '@doc-raven/langchain-core/utils/stream';
  *
  * const stream = await llm.stream(input);
  * let full: AIMessageChunk | undefined;

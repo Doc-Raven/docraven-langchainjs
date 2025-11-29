@@ -1,4 +1,4 @@
-import type { ChatPromptTemplate } from "@langchain/core/prompts";
+import type { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
 import { pull } from "langchain/hub";
 import {
   AgentExecutor,

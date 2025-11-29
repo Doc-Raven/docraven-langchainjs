@@ -1,9 +1,9 @@
-import { isOpenAITool } from "@langchain/core/language_models/base";
+import { isOpenAITool } from "@doc-raven/langchain-core/language_models/base";
 import type { Tool as BedrockTool } from "@aws-sdk/client-bedrock-runtime";
 import type { DocumentType as __DocumentType } from "@smithy/types";
-import { isLangChainTool } from "@langchain/core/utils/function_calling";
-import { isInteropZodSchema } from "@langchain/core/utils/types";
-import { toJsonSchema } from "@langchain/core/utils/json_schema";
+import { isLangChainTool } from "@doc-raven/langchain-core/utils/function_calling";
+import { isInteropZodSchema } from "@doc-raven/langchain-core/utils/types";
+import { toJsonSchema } from "@doc-raven/langchain-core/utils/json_schema";
 import { ChatBedrockConverseToolType, BedrockToolChoice } from "../types.js";
 
 export function isBedrockTool(tool: unknown): tool is BedrockTool {

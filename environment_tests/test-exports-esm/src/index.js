@@ -1,11 +1,11 @@
 import assert from "assert";
 import { OpenAI } from "@langchain/openai";
 import { LLMChain } from "@langchain/classic/chains";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
 import { MemoryVectorStore } from "@langchain/classic/vectorstores/memory";
 import { HuggingFaceTransformersEmbeddings } from "@langchain/community/embeddings/huggingface_transformers";
-import { Document } from "@langchain/core/documents";
-import { CallbackManager } from "@langchain/core/callbacks/manager";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { CallbackManager } from "@doc-raven/langchain-core/callbacks/manager";
 
 // Test exports
 assert(typeof OpenAI === "function");

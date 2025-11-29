@@ -5,7 +5,7 @@ This package contains the LangChain.js integrations for Ollama via the `ollama` 
 ## Installation
 
 ```bash npm2yarn
-npm install @langchain/ollama @langchain/core
+npm install @langchain/ollama @doc-raven/langchain-core
 ```
 
 TODO: add setup instructions for Ollama locally

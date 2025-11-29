@@ -3,7 +3,7 @@ import {
   InvokeEndpointCommand,
   SageMakerRuntimeClientConfig,
 } from "@aws-sdk/client-sagemaker-runtime";
-import { Embeddings, EmbeddingsParams } from "@langchain/core/embeddings";
+import { Embeddings, EmbeddingsParams } from "@doc-raven/langchain-core/embeddings";
 
 export interface SageMakerEndpointEmbeddingsParams extends EmbeddingsParams {
   /**

@@ -1,5 +1,5 @@
 import { test, expect } from "@jest/globals";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 
 import { ClickHouseStore } from "../clickhouse.js";
 // Import OpenAIEmbeddings if you have a valid OpenAI API key

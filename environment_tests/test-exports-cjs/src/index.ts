@@ -3,11 +3,11 @@ import { OpenAI } from "@langchain/openai";
 import { LLMChain } from "@langchain/classic/chains";
 import { ChatOllama } from "@langchain/ollama";
 import { ChatGoogle } from "@langchain/google-gauth";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
 import { MemoryVectorStore } from "@langchain/classic/vectorstores/memory";
 import { HuggingFaceTransformersEmbeddings } from "@langchain/community/embeddings/huggingface_transformers";
-import { Document } from "@langchain/core/documents";
-import { RunnableLambda } from "@langchain/core/runnables";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { RunnableLambda } from "@doc-raven/langchain-core/runnables";
 
 async function test(useAzure: boolean = false) {
   // Test exports

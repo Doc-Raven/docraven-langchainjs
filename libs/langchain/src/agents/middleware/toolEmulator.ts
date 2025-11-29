@@ -1,6 +1,6 @@
-import { HumanMessage, ToolMessage } from "@langchain/core/messages";
-import type { BaseChatModel } from "@langchain/core/language_models/chat_models";
-import type { ClientTool, ServerTool } from "@langchain/core/tools";
+import { HumanMessage, ToolMessage } from "@doc-raven/langchain-core/messages";
+import type { BaseChatModel } from "@doc-raven/langchain-core/language_models/chat_models";
+import type { ClientTool, ServerTool } from "@doc-raven/langchain-core/tools";
 import { initChatModel } from "../../chat_models/universal.js";
 import { createMiddleware } from "../middleware.js";
 

@@ -1,5 +1,5 @@
 import { test, expect, describe } from "@jest/globals";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { FakeEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 import { NeonPostgres } from "../neon.js";
 
 describe("NeonPostgres schemaName handling", () => {

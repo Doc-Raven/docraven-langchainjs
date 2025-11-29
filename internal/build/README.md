@@ -118,7 +118,7 @@ Generates a TypeScript file containing an array of optional import entrypoints. 
 
 **Package name handling:**
 
-- `@langchain/core` → `langchain/...`
+- `@doc-raven/langchain-core` → `langchain/...`
 - `@langchain/community` → `langchain_community/...`
 - `@langchain/openai` → `langchain_openai/...`
 

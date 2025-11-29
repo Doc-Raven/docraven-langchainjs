@@ -1,7 +1,7 @@
 import { z } from "zod/v3";
 import { zodToJsonSchema } from "zod-to-json-schema";
 import { ChatMinimax } from "@langchain/community/chat_models/minimax";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 
 const extractionFunctionZodSchema = z.object({
   location: z.string().describe(" The location to get the weather"),

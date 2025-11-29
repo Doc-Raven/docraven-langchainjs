@@ -1,6 +1,6 @@
 import fs from "fs";
 import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 
 // Multi-modal
 const vision = new ChatGoogleGenerativeAI({

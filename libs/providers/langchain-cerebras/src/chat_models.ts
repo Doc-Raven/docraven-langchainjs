@@ -5,8 +5,8 @@ import {
   AIMessageChunk,
   UsageMetadata,
   type BaseMessage,
-} from "@langchain/core/messages";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+} from "@doc-raven/langchain-core/messages";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
 import {
   BaseChatModel,
   BaseChatModelCallOptions,
@@ -14,28 +14,28 @@ import {
   BindToolsInput,
   LangSmithParams,
   ToolChoice,
-} from "@langchain/core/language_models/chat_models";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { ChatGenerationChunk, ChatResult } from "@langchain/core/outputs";
+} from "@doc-raven/langchain-core/language_models/chat_models";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
+import { ChatGenerationChunk, ChatResult } from "@doc-raven/langchain-core/outputs";
 import {
   Runnable,
   RunnableLambda,
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
+} from "@doc-raven/langchain-core/runnables";
 import {
   BaseLanguageModelInput,
   StructuredOutputMethodOptions,
   ToolDefinition,
-} from "@langchain/core/language_models/base";
-import { convertToOpenAITool } from "@langchain/core/utils/function_calling";
-import { concat } from "@langchain/core/utils/stream";
+} from "@doc-raven/langchain-core/language_models/base";
+import { convertToOpenAITool } from "@doc-raven/langchain-core/utils/function_calling";
+import { concat } from "@doc-raven/langchain-core/utils/stream";
 import {
   getSchemaDescription,
   InteropZodType,
   isInteropZodSchema,
-} from "@langchain/core/utils/types";
-import { toJsonSchema } from "@langchain/core/utils/json_schema";
+} from "@doc-raven/langchain-core/utils/types";
+import { toJsonSchema } from "@doc-raven/langchain-core/utils/json_schema";
 
 import {
   convertToCerebrasMessageParams,
@@ -289,8 +289,8 @@ export interface ChatCerebrasCallOptions
  * <summary><strong>Aggregate Streamed Chunks</strong></summary>
  *
  * ```typescript
- * import { AIMessageChunk } from '@langchain/core/messages';
- * import { concat } from '@langchain/core/utils/stream';
+ * import { AIMessageChunk } from '@doc-raven/langchain-core/messages';
+ * import { concat } from '@doc-raven/langchain-core/utils/stream';
  *
  * const stream = await llm.stream(input);
  * let full: AIMessageChunk | undefined;

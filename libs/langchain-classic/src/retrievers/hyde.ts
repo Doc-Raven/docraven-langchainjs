@@ -1,16 +1,16 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { Document } from "@langchain/core/documents";
-import { PromptTemplate, BasePromptTemplate } from "@langchain/core/prompts";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { PromptTemplate, BasePromptTemplate } from "@doc-raven/langchain-core/prompts";
 import {
   StringPromptValue,
   BasePromptValue,
-} from "@langchain/core/prompt_values";
+} from "@doc-raven/langchain-core/prompt_values";
 import {
   VectorStore,
   VectorStoreRetriever,
   VectorStoreRetrieverInput,
-} from "@langchain/core/vectorstores";
-import { CallbackManagerForRetrieverRun } from "@langchain/core/callbacks/manager";
+} from "@doc-raven/langchain-core/vectorstores";
+import { CallbackManagerForRetrieverRun } from "@doc-raven/langchain-core/callbacks/manager";
 
 /**
  * A string that corresponds to a specific prompt template.

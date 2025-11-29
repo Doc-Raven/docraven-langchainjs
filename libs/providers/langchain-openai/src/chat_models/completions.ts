@@ -1,5 +1,5 @@
 import { OpenAI as OpenAIClient } from "openai";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
 import {
   AIMessage,
   AIMessageChunk,
@@ -8,13 +8,13 @@ import {
   type UsageMetadata,
   type BaseMessageFields,
   BaseMessageChunk,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import {
   ChatGenerationChunk,
   type ChatGeneration,
   type ChatResult,
-} from "@langchain/core/outputs";
-import { NewTokenIndices } from "@langchain/core/callbacks/base";
+} from "@doc-raven/langchain-core/outputs";
+import { NewTokenIndices } from "@doc-raven/langchain-core/callbacks/base";
 import { wrapOpenAIClientError } from "../utils/client.js";
 import {
   OpenAIToolChoice,

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { describe, it, expect, vi } from "vitest";
-import { tool } from "@langchain/core/tools";
-import { HumanMessage } from "@langchain/core/messages";
+import { tool } from "@doc-raven/langchain-core/tools";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 import z from "zod/v3";
 
 import { createAgent } from "../index.js";

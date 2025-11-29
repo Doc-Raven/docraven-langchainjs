@@ -1,5 +1,5 @@
 import { test, expect } from "@jest/globals";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 import { ChatOllama } from "../chat_models.js";
 
 test("test deep seek model with think=false", async () => {

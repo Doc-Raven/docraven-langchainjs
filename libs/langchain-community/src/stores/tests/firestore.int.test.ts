@@ -1,6 +1,6 @@
 import { test, expect } from "@jest/globals";
 
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@doc-raven/langchain-core/messages";
 import admin from "firebase-admin";
 import { FirestoreChatMessageHistory } from "../message/firestore.js";
 

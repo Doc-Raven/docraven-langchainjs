@@ -1,10 +1,10 @@
 import { Redis, RedisOptions } from "ioredis";
-import { BaseListChatMessageHistory } from "@langchain/core/chat_history";
+import { BaseListChatMessageHistory } from "@doc-raven/langchain-core/chat_history";
 import {
   BaseMessage,
   mapChatMessagesToStoredMessages,
   mapStoredMessagesToChatMessages,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 
 /**
  * Type for the input parameter of the RedisChatMessageHistory

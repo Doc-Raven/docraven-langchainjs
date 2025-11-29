@@ -3,8 +3,8 @@
  */
 
 import { describe, it, expect } from "vitest";
-import { HumanMessage, ToolMessage } from "@langchain/core/messages";
-import { tool } from "@langchain/core/tools";
+import { HumanMessage, ToolMessage } from "@doc-raven/langchain-core/messages";
+import { tool } from "@doc-raven/langchain-core/tools";
 import { z } from "zod/v3";
 import { MemorySaver } from "@langchain/langgraph-checkpoint";
 import { performance } from "node:perf_hooks";

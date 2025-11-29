@@ -2,12 +2,12 @@
 /* eslint-disable dot-notation */
 import { Gateway } from "@ibm-cloud/watsonx-ai/gateway";
 import { jest } from "@jest/globals";
-import { AIMessageChunk } from "@langchain/core/messages";
+import { AIMessageChunk } from "@doc-raven/langchain-core/messages";
 import {
   transformStreamToObjectStream,
   WatsonXAI,
 } from "@ibm-cloud/watsonx-ai";
-import { IterableReadableStream } from "@langchain/core/utils/stream";
+import { IterableReadableStream } from "@doc-raven/langchain-core/utils/stream";
 import { WatsonxLLM, WatsonxInputLLM, WatsonxLLMConstructor } from "../ibm.js";
 import { authenticateAndSetInstance } from "../../utils/ibm.js";
 import {

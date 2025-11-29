@@ -1,4 +1,4 @@
-import type { LanguageModelLike } from "@langchain/core/language_models/base";
+import type { LanguageModelLike } from "@doc-raven/langchain-core/language_models/base";
 import { initChatModel } from "../../chat_models/universal.js";
 import type { AgentMiddleware } from "./types.js";
 import { createMiddleware } from "../middleware.js";

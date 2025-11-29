@@ -6,7 +6,7 @@ import {
   StandardContentBlockConverter,
   ContentBlock,
   ChatMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import {
   AIMessage,
   ToolMessage,
@@ -14,7 +14,7 @@ import {
   parseMimeType,
   convertToProviderContentBlock,
   isDataContentBlock,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import type * as Bedrock from "@aws-sdk/client-bedrock-runtime";
 import type { DocumentType as __DocumentType } from "@smithy/types";
 import {

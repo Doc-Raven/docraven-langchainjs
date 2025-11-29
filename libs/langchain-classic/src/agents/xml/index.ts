@@ -1,18 +1,18 @@
 import type {
   BaseLanguageModel,
   BaseLanguageModelInterface,
-} from "@langchain/core/language_models/base";
-import type { ToolInterface } from "@langchain/core/tools";
-import { RunnablePassthrough } from "@langchain/core/runnables";
-import type { BasePromptTemplate } from "@langchain/core/prompts";
-import { AgentStep, AgentAction, AgentFinish } from "@langchain/core/agents";
-import { ChainValues } from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/language_models/base";
+import type { ToolInterface } from "@doc-raven/langchain-core/tools";
+import { RunnablePassthrough } from "@doc-raven/langchain-core/runnables";
+import type { BasePromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { AgentStep, AgentAction, AgentFinish } from "@doc-raven/langchain-core/agents";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
 import {
   AIMessagePromptTemplate,
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
-} from "@langchain/core/prompts";
-import { CallbackManager } from "@langchain/core/callbacks/manager";
+} from "@doc-raven/langchain-core/prompts";
+import { CallbackManager } from "@doc-raven/langchain-core/callbacks/manager";
 import { LLMChain } from "../../chains/llm_chain.js";
 import {
   AgentArgs,
@@ -156,7 +156,7 @@ export type CreateXmlAgentParams = {
  * ```typescript
  * import { AgentExecutor, createXmlAgent } from "langchain/agents";
  * import { pull } from "langchain/hub";
- * import type { PromptTemplate } from "@langchain/core/prompts";
+ * import type { PromptTemplate } from "@doc-raven/langchain-core/prompts";
  *
  * import { ChatAnthropic } from "@langchain/anthropic";
  *

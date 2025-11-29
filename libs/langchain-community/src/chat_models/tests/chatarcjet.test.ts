@@ -1,7 +1,7 @@
-import { BaseChatModel } from "@langchain/core/language_models/chat_models";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { BaseMessage, MessageType } from "@langchain/core/messages";
-import { ChatGeneration, ChatResult } from "@langchain/core/outputs";
+import { BaseChatModel } from "@doc-raven/langchain-core/language_models/chat_models";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
+import { BaseMessage, MessageType } from "@doc-raven/langchain-core/messages";
+import { ChatGeneration, ChatResult } from "@doc-raven/langchain-core/outputs";
 import { ArcjetRedact } from "../arcjet.js";
 
 class MockChatModel extends BaseChatModel {

@@ -1,5 +1,5 @@
-import { Tool, ToolInterface } from "@langchain/core/tools";
-import { Toolkit } from "@langchain/core/indexing";
+import { Tool, ToolInterface } from "@doc-raven/langchain-core/tools";
+import { Toolkit } from "@doc-raven/langchain-core/indexing";
 import { ConneryService } from "../../../tools/connery.js";
 
 /**

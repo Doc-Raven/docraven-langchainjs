@@ -1,4 +1,4 @@
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { BufferLoader } from "@langchain/classic/document_loaders/fs/buffer";
 
 type DocxLoaderOptions = {

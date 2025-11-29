@@ -1,6 +1,6 @@
 import { test, expect } from "@jest/globals";
 
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@doc-raven/langchain-core/messages";
 import { PlanetScaleChatMessageHistory } from "../message/planetscale.js";
 
 const config = {

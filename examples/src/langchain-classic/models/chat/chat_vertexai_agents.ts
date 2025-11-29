@@ -1,12 +1,12 @@
 import { z } from "zod";
 
-import { tool } from "@langchain/core/tools";
+import { tool } from "@doc-raven/langchain-core/tools";
 import {
   AgentExecutor,
   createToolCallingAgent,
 } from "@langchain/classic/agents";
 
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
 import { ChatVertexAI } from "@langchain/google-vertexai";
 // Uncomment this if you're running inside a web/edge environment.
 // import { ChatVertexAI } from "@langchain/google-vertexai-web";

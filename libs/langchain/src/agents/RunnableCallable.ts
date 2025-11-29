@@ -2,8 +2,8 @@ import {
   mergeConfigs,
   Runnable,
   RunnableConfig,
-} from "@langchain/core/runnables";
-import { AsyncLocalStorageProviderSingleton } from "@langchain/core/singletons";
+} from "@doc-raven/langchain-core/runnables";
+import { AsyncLocalStorageProviderSingleton } from "@doc-raven/langchain-core/singletons";
 
 export interface RunnableCallableArgs<I, O> {
   /**

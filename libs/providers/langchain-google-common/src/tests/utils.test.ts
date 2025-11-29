@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { beforeEach, expect, test } from "@jest/globals";
-import { InMemoryStore } from "@langchain/core/stores";
-import { SerializedConstructor } from "@langchain/core/load/serializable";
-import { load } from "@langchain/core/load";
+import { InMemoryStore } from "@doc-raven/langchain-core/stores";
+import { SerializedConstructor } from "@doc-raven/langchain-core/load/serializable";
+import { load } from "@doc-raven/langchain-core/load";
 import { z } from "zod/v3";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 import { schemaToGeminiParameters } from "../utils/zod_to_gemini_parameters.js";
 import { getGeminiAPI } from "../utils/gemini.js";
 import {

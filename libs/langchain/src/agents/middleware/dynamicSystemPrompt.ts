@@ -1,4 +1,4 @@
-import { SystemMessage } from "@langchain/core/messages";
+import { SystemMessage } from "@doc-raven/langchain-core/messages";
 import { createMiddleware } from "../middleware.js";
 import type { Runtime, AgentBuiltInState } from "../runtime.js";
 

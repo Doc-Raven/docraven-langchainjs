@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import { describe, it, expect, afterAll } from "vitest";
-import { tool } from "@langchain/core/tools";
+import { tool } from "@doc-raven/langchain-core/tools";
 import { createAgent, createMiddleware } from "../index.js";
 import type { JumpToTarget } from "../constants.js";
 

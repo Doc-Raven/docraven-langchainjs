@@ -2,7 +2,7 @@
 import { jest, test, expect } from "@jest/globals";
 
 import { type Collection } from "chromadb";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { FakeEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 import { Chroma } from "../chroma.js";
 
 const mockCollection = {

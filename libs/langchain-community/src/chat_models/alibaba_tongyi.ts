@@ -1,18 +1,18 @@
-import { type CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+import { type CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
 import {
   BaseChatModel,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
+} from "@doc-raven/langchain-core/language_models/chat_models";
 import {
   AIMessage,
   type BaseMessage,
   ChatMessage,
   AIMessageChunk,
-} from "@langchain/core/messages";
-import { type ChatResult } from "@langchain/core/outputs";
-import { ChatGenerationChunk } from "@langchain/core/outputs";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { IterableReadableStream } from "@langchain/core/utils/stream";
+} from "@doc-raven/langchain-core/messages";
+import { type ChatResult } from "@doc-raven/langchain-core/outputs";
+import { ChatGenerationChunk } from "@doc-raven/langchain-core/outputs";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
+import { IterableReadableStream } from "@doc-raven/langchain-core/utils/stream";
 
 /**
  * Type representing the role of a message in the Tongyi chat model.

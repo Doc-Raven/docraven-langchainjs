@@ -3,7 +3,7 @@ import {
   AgentExecutor,
   createToolCallingAgent,
 } from "@langchain/classic/agents";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
 import { TavilySearch } from "@langchain/tavily";
 import { Calculator } from "@langchain/community/tools/calculator";
 

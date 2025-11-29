@@ -6,8 +6,8 @@ import {
   PostgresVectorStoreArgs,
   VectorStoreTableArgs,
 } from "@langchain/google-cloud-sql-pg";
-import { SyntheticEmbeddings } from "@langchain/core/utils/testing";
-import type { Document } from "@langchain/core/documents";
+import { SyntheticEmbeddings } from "@doc-raven/langchain-core/utils/testing";
+import type { Document } from "@doc-raven/langchain-core/documents";
 import { v4 as uuidv4 } from "uuid";
 import * as dotenv from "dotenv";
 

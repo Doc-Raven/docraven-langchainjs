@@ -26,7 +26,7 @@ import { createAgent, tool } from "langchain";
 import {
   getContextVariable,
   setContextVariable,
-} from "@langchain/core/context";
+} from "@doc-raven/langchain-core/context";
 import { z } from "zod";
 
 /**

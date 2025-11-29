@@ -2,7 +2,7 @@ import {
   AIMessage,
   ToolMessage,
   type BaseMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import {
   AfterModelHook,
   AfterAgentHook,

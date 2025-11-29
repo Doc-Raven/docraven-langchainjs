@@ -1,6 +1,6 @@
 import { ChatOpenAI } from "@langchain/openai";
 import { z } from "zod/v3";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 
 const extractionFunctionDefinition = {
   name: "extractor",

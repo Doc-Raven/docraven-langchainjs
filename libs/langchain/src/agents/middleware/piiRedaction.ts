@@ -6,8 +6,8 @@ import {
   ToolMessage,
   RemoveMessage,
   SystemMessage,
-} from "@langchain/core/messages";
-import type { InferInteropZodInput } from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/messages";
+import type { InferInteropZodInput } from "@doc-raven/langchain-core/utils/types";
 
 import { createMiddleware } from "../middleware.js";
 
@@ -285,7 +285,7 @@ function restoreMessage(
  * ```typescript
  * import { piiRedactionMiddleware } from "langchain";
  * import { createAgent } from "langchain";
- * import { tool } from "@langchain/core/tools";
+ * import { tool } from "@doc-raven/langchain-core/tools";
  * import { z } from "zod/v3";
  *
  * const PII_RULES = {

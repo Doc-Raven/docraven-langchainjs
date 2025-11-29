@@ -1,10 +1,10 @@
 import { type ClientOptions, OpenAIClient } from "@langchain/openai";
-import { ChainValues } from "@langchain/core/utils/types";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
 import {
   AsyncCaller,
   AsyncCallerParams,
-} from "@langchain/core/utils/async_caller";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@doc-raven/langchain-core/utils/async_caller";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 import { BaseChain, ChainInputs } from "./base.js";
 
 /**

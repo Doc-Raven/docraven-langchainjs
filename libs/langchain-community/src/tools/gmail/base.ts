@@ -1,6 +1,6 @@
 import { gmail_v1, google } from "googleapis";
-import { StructuredTool } from "@langchain/core/tools";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { StructuredTool } from "@doc-raven/langchain-core/tools";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 
 export interface GmailBaseToolParams {
   credentials?: {

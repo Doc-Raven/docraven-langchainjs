@@ -1,6 +1,6 @@
 import { test, expect, describe } from "@jest/globals";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { CassandraClientFactory } from "../../utils/cassandra.js";
 import { CassandraLibArgs, CassandraStore } from "../cassandra.js";
 

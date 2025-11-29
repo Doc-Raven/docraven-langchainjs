@@ -1,10 +1,10 @@
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 import { OpenAI as OpenAIClient } from "openai";
-import { Tool, ToolParams } from "@langchain/core/tools";
+import { Tool, ToolParams } from "@doc-raven/langchain-core/tools";
 import {
   MessageContentComplex,
   MessageContentImageUrl,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 
 /**
  * @see https://platform.openai.com/docs/api-reference/images/create

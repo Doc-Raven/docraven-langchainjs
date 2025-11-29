@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { MixedbreadAIReranker } from "../reranker.js";
 
 const query = "What is the capital of France?";

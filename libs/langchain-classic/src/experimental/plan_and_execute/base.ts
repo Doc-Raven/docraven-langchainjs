@@ -1,6 +1,6 @@
-import { BaseOutputParser } from "@langchain/core/output_parsers";
-import { ChainValues } from "@langchain/core/utils/types";
-import { CallbackManager } from "@langchain/core/callbacks/manager";
+import { BaseOutputParser } from "@doc-raven/langchain-core/output_parsers";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
+import { CallbackManager } from "@doc-raven/langchain-core/callbacks/manager";
 import { BaseChain } from "../../chains/base.js";
 import { LLMChain } from "../../chains/llm_chain.js";
 

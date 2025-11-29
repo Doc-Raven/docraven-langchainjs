@@ -1,5 +1,5 @@
 import { describe, test, expect } from "@jest/globals";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { GoogleCloudStorageDocstore } from "../gcs.js";
 
 describe.skip("GoogleCloudStorageDocstore", () => {

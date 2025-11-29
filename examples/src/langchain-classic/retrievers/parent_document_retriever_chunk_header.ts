@@ -1,6 +1,6 @@
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { HNSWLib } from "@langchain/community/vectorstores/hnswlib";
-import { InMemoryStore } from "@langchain/core/stores";
+import { InMemoryStore } from "@doc-raven/langchain-core/stores";
 import { ParentDocumentRetriever } from "@langchain/classic/retrievers/parent_document";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
 

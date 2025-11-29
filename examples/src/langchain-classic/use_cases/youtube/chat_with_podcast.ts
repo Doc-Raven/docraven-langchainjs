@@ -4,7 +4,7 @@ import { TokenTextSplitter } from "@langchain/textsplitters";
 import { FaissStore } from "@langchain/community/vectorstores/faiss";
 import { createRetrievalChain } from "@langchain/classic/chains/retrieval";
 import { createStuffDocumentsChain } from "@langchain/classic/chains/combine_documents";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 const loader = new SearchApiLoader({
   engine: "youtube_transcripts",

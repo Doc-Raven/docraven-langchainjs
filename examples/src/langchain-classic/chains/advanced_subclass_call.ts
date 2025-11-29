@@ -1,8 +1,8 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
 import { BaseChain, ChainInputs } from "@langchain/classic/chains";
-import { BasePromptTemplate, PromptTemplate } from "@langchain/core/prompts";
-import { CallbackManagerForChainRun } from "@langchain/core/callbacks/manager";
-import { ChainValues } from "@langchain/core/utils/types";
+import { BasePromptTemplate, PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { CallbackManagerForChainRun } from "@doc-raven/langchain-core/callbacks/manager";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
 
 export interface MyCustomChainInputs extends ChainInputs {
   llm: BaseLanguageModelInterface;

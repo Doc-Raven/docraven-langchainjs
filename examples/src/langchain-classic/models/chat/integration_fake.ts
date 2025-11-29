@@ -1,6 +1,6 @@
-import { FakeListChatModel } from "@langchain/core/utils/testing";
-import { HumanMessage } from "@langchain/core/messages";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { FakeListChatModel } from "@doc-raven/langchain-core/utils/testing";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
 
 /**
  * The FakeListChatModel can be used to simulate ordered predefined responses.

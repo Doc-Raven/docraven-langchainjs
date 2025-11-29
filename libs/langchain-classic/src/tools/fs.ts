@@ -1,6 +1,6 @@
 import { z } from "zod/v3";
-import { StructuredTool, ToolParams } from "@langchain/core/tools";
-import { InferInteropZodOutput } from "@langchain/core/utils/types";
+import { StructuredTool, ToolParams } from "@doc-raven/langchain-core/tools";
+import { InferInteropZodOutput } from "@doc-raven/langchain-core/utils/types";
 import { BaseFileStore } from "../stores/file/base.js";
 
 /**

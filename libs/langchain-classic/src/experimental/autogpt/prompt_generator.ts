@@ -1,8 +1,8 @@
-import { isInteropZodSchema } from "@langchain/core/utils/types";
+import { isInteropZodSchema } from "@doc-raven/langchain-core/utils/types";
 import {
   type JsonSchema7Type,
   toJsonSchema,
-} from "@langchain/core/utils/json_schema";
+} from "@doc-raven/langchain-core/utils/json_schema";
 import { ObjectTool, FINISH_NAME } from "./schema.js";
 
 /**

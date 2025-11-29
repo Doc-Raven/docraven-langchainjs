@@ -22,7 +22,7 @@ import {
   HumanMessage,
   AIMessage,
   SystemMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import dotenv from "dotenv";
 
 import { main as calculatorServerMain } from "./calculator_server_shttp_sse.js";

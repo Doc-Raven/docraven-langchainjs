@@ -1,10 +1,10 @@
 import {
   MaxMarginalRelevanceSearchOptions,
   VectorStore,
-} from "@langchain/core/vectorstores";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { Document, DocumentInterface } from "@langchain/core/documents";
-import { maximalMarginalRelevance } from "@langchain/core/utils/math";
+} from "@doc-raven/langchain-core/vectorstores";
+import type { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
+import { Document, DocumentInterface } from "@doc-raven/langchain-core/documents";
+import { maximalMarginalRelevance } from "@doc-raven/langchain-core/utils/math";
 import { cosine } from "../util/ml-distance/similarities.js";
 
 /**
@@ -63,7 +63,7 @@ export interface MemoryVectorStoreArgs {
  * <summary><strong>Add documents</strong></summary>
  *
  * ```typescript
- * import type { Document } from '@langchain/core/documents';
+ * import type { Document } from '@doc-raven/langchain-core/documents';
  *
  * const document1 = { pageContent: "foo", metadata: { baz: "bar" } };
  * const document2 = { pageContent: "thud", metadata: { bar: "baz" } };

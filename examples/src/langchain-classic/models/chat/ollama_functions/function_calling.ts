@@ -1,5 +1,5 @@
 import { ChatOllama } from "@langchain/ollama";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 
 const model = new ChatOllama({
   temperature: 0.1,

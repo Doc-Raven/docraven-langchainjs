@@ -5,7 +5,7 @@ This package contains the LangChain.js integrations for YandexGPT through their 
 ## Installation
 
 ```bash npm2yarn
-npm install @langchain/yandex @langchain/core
+npm install @langchain/yandex @doc-raven/langchain-core
 ```
 
 ## Setup your environment
@@ -31,7 +31,7 @@ By default, the latest version of `yandexgpt-lite` is used from the folder speci
 
 ```typescript
 import { ChatYandexGPT } from "@langchain/yandex";
-import { HumanMessage, SystemMessage } from "@langchain/core/messages";
+import { HumanMessage, SystemMessage } from "@doc-raven/langchain-core/messages";
 
 const chat = new ChatYandexGPT();
 const response = await chat.invoke([

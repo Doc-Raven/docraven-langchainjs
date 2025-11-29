@@ -1,8 +1,8 @@
 import { z } from "zod/v3";
-import { BaseMessage, HumanMessage } from "@langchain/core/messages";
-import { LanguageModelLike } from "@langchain/core/language_models/base";
+import { BaseMessage, HumanMessage } from "@doc-raven/langchain-core/messages";
+import { LanguageModelLike } from "@doc-raven/langchain-core/language_models/base";
 import { describe, it, expectTypeOf } from "vitest";
-import type { IterableReadableStream } from "@langchain/core/utils/stream";
+import type { IterableReadableStream } from "@doc-raven/langchain-core/utils/stream";
 
 import { type BuiltInState, createAgent } from "../index.js";
 import type { StreamOutputMap } from "@langchain/langgraph";

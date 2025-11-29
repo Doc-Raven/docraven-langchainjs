@@ -1,9 +1,9 @@
 import { DataSource } from "typeorm";
 import { SqlDatabase } from "@langchain/classic/sql_db";
 import { ChatOpenAI } from "@langchain/openai";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { RunnableSequence } from "@langchain/core/runnables";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { RunnableSequence } from "@doc-raven/langchain-core/runnables";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
 
 /**
  * This example uses Chinook database, which is a sample database available for SQL Server, Oracle, MySQL, etc.

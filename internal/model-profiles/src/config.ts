@@ -1,7 +1,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { parse } from "@iarna/toml";
-import type { ModelProfile } from "@langchain/core/language_models/profile";
+import type { ModelProfile } from "@doc-raven/langchain-core/language_models/profile";
 
 /**
  * Configuration for model profile overrides.

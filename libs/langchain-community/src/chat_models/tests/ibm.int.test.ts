@@ -3,19 +3,19 @@ import {
   AIMessageChunk,
   HumanMessage,
   SystemMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import { z } from "zod/v3";
-import { StringOutputParser } from "@langchain/core/output_parsers";
-import { CallbackManager } from "@langchain/core/callbacks/manager";
-import { LLMResult } from "@langchain/core/outputs";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { tool } from "@langchain/core/tools";
-import { NewTokenIndices } from "@langchain/core/callbacks/base";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
+import { CallbackManager } from "@doc-raven/langchain-core/callbacks/manager";
+import { LLMResult } from "@doc-raven/langchain-core/outputs";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { tool } from "@doc-raven/langchain-core/tools";
+import { NewTokenIndices } from "@doc-raven/langchain-core/callbacks/base";
 import {
   BaseChatModel,
   BaseChatModelCallOptions,
-} from "@langchain/core/language_models/chat_models";
-import { concat } from "@langchain/core/utils/stream";
+} from "@doc-raven/langchain-core/language_models/chat_models";
+import { concat } from "@doc-raven/langchain-core/utils/stream";
 import { ChatWatsonx } from "../ibm.js";
 
 const models = ["ibm/granite-3-2-8b-instruct"];

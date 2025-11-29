@@ -4,9 +4,9 @@ import { from as copyFrom } from "pg-copy-streams";
 import { pipeline } from "node:stream/promises";
 import { Readable } from "node:stream";
 
-import { VectorStore } from "@langchain/core/vectorstores";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { Document } from "@langchain/core/documents";
+import { VectorStore } from "@doc-raven/langchain-core/vectorstores";
+import type { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
+import { Document } from "@doc-raven/langchain-core/documents";
 
 const _LANGCHAIN_DEFAULT_COLLECTION_NAME = "langchain_document";
 

@@ -1,10 +1,10 @@
 import { JSDOM, VirtualConsole } from "jsdom";
-import { Document } from "@langchain/core/documents";
-import { AsyncCaller } from "@langchain/core/utils/async_caller";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { AsyncCaller } from "@doc-raven/langchain-core/utils/async_caller";
 import {
   BaseDocumentLoader,
   DocumentLoader,
-} from "@langchain/core/document_loaders/base";
+} from "@doc-raven/langchain-core/document_loaders/base";
 
 const virtualConsole = new VirtualConsole();
 virtualConsole.on("error", () => {});

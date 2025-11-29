@@ -1,7 +1,7 @@
 import { expect, test } from "vitest";
 
 import { OpenAIEmbeddings, OpenAI } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 
 import { MemoryVectorStore } from "../../vectorstores/memory.js";
 import { HydeRetriever } from "../hyde.js";

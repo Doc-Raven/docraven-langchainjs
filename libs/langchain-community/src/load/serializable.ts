@@ -1,1 +1,1 @@
-export * from "@langchain/core/load/serializable";
+export * from "@doc-raven/langchain-core/load/serializable";

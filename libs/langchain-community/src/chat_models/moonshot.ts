@@ -1,15 +1,15 @@
 import {
   BaseChatModel,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
+} from "@doc-raven/langchain-core/language_models/chat_models";
 import {
   AIMessage,
   type BaseMessage,
   ChatMessage,
-} from "@langchain/core/messages";
-import { type ChatResult } from "@langchain/core/outputs";
-import { type CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@doc-raven/langchain-core/messages";
+import { type ChatResult } from "@doc-raven/langchain-core/outputs";
+import { type CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 
 export type MoonshotMessageRole = "system" | "assistant" | "user";
 

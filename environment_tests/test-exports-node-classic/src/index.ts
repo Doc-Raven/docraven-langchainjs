@@ -3,11 +3,11 @@ import assert from "assert";
 // Test imports from langchain
 import { createAgent, initChatModel, BaseMessage, tool } from "langchain";
 
-// Test imports from @langchain/core
-import { Document } from "@langchain/core/documents";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { StringOutputParser } from "@langchain/core/output_parsers";
-import { RunnableSequence } from "@langchain/core/runnables";
+// Test imports from @doc-raven/langchain-core
+import { Document } from "@doc-raven/langchain-core/documents";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
+import { RunnableSequence } from "@doc-raven/langchain-core/runnables";
 
 // Test imports from @langchain/classic
 import { LLMChain } from "@langchain/classic/chains";
@@ -20,7 +20,7 @@ async function test() {
   assert(typeof BaseMessage === "function");
   assert(typeof tool === "function");
 
-  // Test that types are imported correctly from @langchain/core
+  // Test that types are imported correctly from @doc-raven/langchain-core
   assert(typeof ChatPromptTemplate === "function");
   assert(typeof Document === "function");
   assert(typeof StringOutputParser === "function");

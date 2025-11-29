@@ -5,9 +5,9 @@ import {
   AIMessageChunk,
   HumanMessage,
   ToolMessage,
-} from "@langchain/core/messages";
-import { concat } from "@langchain/core/utils/stream";
-import { InMemoryCache } from "@langchain/core/caches";
+} from "@doc-raven/langchain-core/messages";
+import { concat } from "@doc-raven/langchain-core/utils/stream";
+import { InMemoryCache } from "@doc-raven/langchain-core/caches";
 
 import { ChatOpenAI } from "../index.js";
 
@@ -508,7 +508,7 @@ These prompt templates are used to format a single string, and generally are use
 For example, a common way to construct and use a PromptTemplate is as follows:
 
 \`\`\`typescript
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 const promptTemplate = PromptTemplate.fromTemplate(
   "Tell me a joke about {topic}"
@@ -523,7 +523,7 @@ These prompt templates are used to format an array of messages. These "templates
 For example, a common way to construct and use a ChatPromptTemplate is as follows:
 
 \`\`\`typescript
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 const promptTemplate = ChatPromptTemplate.fromMessages([
   ["system", "You are a helpful assistant"],
@@ -550,8 +550,8 @@ This is how you use MessagesPlaceholder.
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
-import { HumanMessage } from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/prompts";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 
 const promptTemplate = ChatPromptTemplate.fromMessages([
   ["system", "You are a helpful assistant"],
@@ -717,10 +717,10 @@ public class User
 });
 
 test("Test ChatOpenAI tool calling with empty schema in streaming vs non-streaming", async () => {
-  const { tool } = await import("@langchain/core/tools");
+  const { tool } = await import("@doc-raven/langchain-core/tools");
   const { z } = await import("zod");
   const { HumanMessage, SystemMessage } = await import(
-    "@langchain/core/messages"
+    "@doc-raven/langchain-core/messages"
   );
 
   const llm = new ChatOpenAI({

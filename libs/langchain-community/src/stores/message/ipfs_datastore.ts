@@ -1,9 +1,9 @@
-import { BaseListChatMessageHistory } from "@langchain/core/chat_history";
+import { BaseListChatMessageHistory } from "@doc-raven/langchain-core/chat_history";
 import {
   type BaseMessage,
   mapChatMessagesToStoredMessages,
   mapStoredMessagesToChatMessages,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import * as cborg from "cborg";
 import { type Datastore, Key } from "interface-datastore";
 import all from "it-all";

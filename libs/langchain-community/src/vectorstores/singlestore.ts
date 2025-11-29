@@ -8,10 +8,10 @@ import type {
 } from "mysql2/promise";
 import { format } from "mysql2";
 import { createPool } from "mysql2/promise";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { VectorStore } from "@langchain/core/vectorstores";
-import { Document, DocumentInterface } from "@langchain/core/documents";
-import { Callbacks } from "@langchain/core/callbacks/manager";
+import type { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
+import { VectorStore } from "@doc-raven/langchain-core/vectorstores";
+import { Document, DocumentInterface } from "@doc-raven/langchain-core/documents";
+import { Callbacks } from "@doc-raven/langchain-core/callbacks/manager";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type Metadata = Record<string, any>;

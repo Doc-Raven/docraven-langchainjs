@@ -1,7 +1,7 @@
 import { MemoryVectorStore } from "@langchain/classic/vectorstores/memory";
-import { SemanticSimilarityExampleSelector } from "@langchain/core/example_selectors";
+import { SemanticSimilarityExampleSelector } from "@doc-raven/langchain-core/example_selectors";
 import { ChatOpenAI, OpenAIEmbeddings } from "@langchain/openai";
-import { FewShotPromptTemplate, PromptTemplate } from "@langchain/core/prompts";
+import { FewShotPromptTemplate, PromptTemplate } from "@doc-raven/langchain-core/prompts";
 import { createSqlQueryChain } from "@langchain/classic/chains/sql_db";
 import { examples } from "./examples.js";
 import { db } from "../db.js";

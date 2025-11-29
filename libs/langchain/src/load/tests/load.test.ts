@@ -1,9 +1,9 @@
 import { test, expect } from "vitest";
 import { stringify } from "yaml";
-import { RunnableSequence } from "@langchain/core/runnables";
+import { RunnableSequence } from "@doc-raven/langchain-core/runnables";
 import { OpenAI, ChatOpenAI } from "@langchain/openai";
-import { ChatPromptTemplate, PromptTemplate } from "@langchain/core/prompts";
-import { Serializable } from "@langchain/core/load/serializable";
+import { ChatPromptTemplate, PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { Serializable } from "@doc-raven/langchain-core/load/serializable";
 
 import { load } from "../index.js";
 

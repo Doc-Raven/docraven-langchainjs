@@ -1,4 +1,4 @@
-import { load as coreLoad } from "@langchain/core/load";
+import { load as coreLoad } from "@doc-raven/langchain-core/load";
 import { type OptionalImportMap } from "./import_type.js";
 import * as importMap from "./import_map.js";
 import { optionalImportEntrypoints } from "./import_constants.js";

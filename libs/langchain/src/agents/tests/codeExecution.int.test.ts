@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { ChatAnthropic } from "@langchain/anthropic";
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@doc-raven/langchain-core/messages";
 
 import { createAgent } from "../index.js";
 

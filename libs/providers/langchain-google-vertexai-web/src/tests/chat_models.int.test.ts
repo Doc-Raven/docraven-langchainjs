@@ -7,10 +7,10 @@ import {
   BaseMessageChunk,
   HumanMessage,
   SystemMessage,
-} from "@langchain/core/messages";
-import { BaseLanguageModelInput } from "@langchain/core/language_models/base";
-import { ChatPromptValue } from "@langchain/core/prompt_values";
-import { StructuredTool } from "@langchain/core/tools";
+} from "@doc-raven/langchain-core/messages";
+import { BaseLanguageModelInput } from "@doc-raven/langchain-core/language_models/base";
+import { ChatPromptValue } from "@doc-raven/langchain-core/prompt_values";
+import { StructuredTool } from "@doc-raven/langchain-core/tools";
 import { ChatVertexAI } from "../chat_models.js";
 
 const weatherToolSchema = z.object({

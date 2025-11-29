@@ -1,10 +1,10 @@
 const assert = require("assert");
 const { OpenAI } = require("@langchain/openai");
 const { LLMChain } = require("@langchain/classic/chains");
-const { ChatPromptTemplate } = require("@langchain/core/prompts");
+const { ChatPromptTemplate } = require("@doc-raven/langchain-core/prompts");
 const { MemoryVectorStore } = require("@langchain/classic/vectorstores/memory");
 const { OpenAIEmbeddings } = require("@langchain/openai");
-const { Document } = require("@langchain/core/documents");
+const { Document } = require("@doc-raven/langchain-core/documents");
 
 async function test() {
   // Test exports

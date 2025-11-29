@@ -1,16 +1,16 @@
-import type { BaseLLMParams } from "@langchain/core/language_models/llms";
+import type { BaseLLMParams } from "@doc-raven/langchain-core/language_models/llms";
 import type {
   BaseChatModelCallOptions,
   BindToolsInput,
-} from "@langchain/core/language_models/chat_models";
+} from "@doc-raven/langchain-core/language_models/chat_models";
 import {
   BaseMessage,
   BaseMessageChunk,
   MessageContent,
-} from "@langchain/core/messages";
-import { ChatGenerationChunk, ChatResult } from "@langchain/core/outputs";
-import { EmbeddingsParams } from "@langchain/core/embeddings";
-import { AsyncCallerCallOptions } from "@langchain/core/utils/async_caller";
+} from "@doc-raven/langchain-core/messages";
+import { ChatGenerationChunk, ChatResult } from "@doc-raven/langchain-core/outputs";
+import { EmbeddingsParams } from "@doc-raven/langchain-core/embeddings";
+import { AsyncCallerCallOptions } from "@doc-raven/langchain-core/utils/async_caller";
 import type { JsonStream } from "./utils/stream.js";
 import { MediaManager } from "./experimental/utils/media_core.js";
 import {

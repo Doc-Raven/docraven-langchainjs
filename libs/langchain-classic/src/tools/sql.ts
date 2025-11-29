@@ -1,6 +1,6 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { Tool } from "@langchain/core/tools";
-import { PromptTemplate } from "@langchain/core/prompts";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
+import { Tool } from "@doc-raven/langchain-core/tools";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
 import { LLMChain } from "../chains/llm_chain.js";
 import type { SqlDatabase } from "../sql_db.js";
 import { SqlTable } from "../util/sql_utils.js";

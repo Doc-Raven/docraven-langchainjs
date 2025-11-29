@@ -1,7 +1,7 @@
 import { z } from "zod/v3";
-import { sha256 } from "@langchain/core/utils/hash";
-import { AIMessage, HumanMessage, ToolMessage } from "@langchain/core/messages";
-import type { InferInteropZodInput } from "@langchain/core/utils/types";
+import { sha256 } from "@doc-raven/langchain-core/utils/hash";
+import { AIMessage, HumanMessage, ToolMessage } from "@doc-raven/langchain-core/messages";
+import type { InferInteropZodInput } from "@doc-raven/langchain-core/utils/types";
 
 import { createMiddleware } from "../middleware.js";
 

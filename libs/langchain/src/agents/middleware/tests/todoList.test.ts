@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, type MockInstance } from "vitest";
-import { AIMessage, HumanMessage } from "@langchain/core/messages";
-import { BaseChatModel } from "@langchain/core/language_models/chat_models";
+import { AIMessage, HumanMessage } from "@doc-raven/langchain-core/messages";
+import { BaseChatModel } from "@doc-raven/langchain-core/language_models/chat_models";
 import { ChatOpenAI } from "@langchain/openai";
 
 import { createAgent } from "../../index.js";

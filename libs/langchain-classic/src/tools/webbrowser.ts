@@ -1,16 +1,16 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { Document } from "@langchain/core/documents";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
+import { Document } from "@doc-raven/langchain-core/documents";
+import type { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
 
 import * as cheerio from "cheerio";
 import {
   CallbackManager,
   CallbackManagerForToolRun,
-} from "@langchain/core/callbacks/manager";
+} from "@doc-raven/langchain-core/callbacks/manager";
 
-import { Tool, ToolParams } from "@langchain/core/tools";
-import { RunnableSequence } from "@langchain/core/runnables";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { Tool, ToolParams } from "@doc-raven/langchain-core/tools";
+import { RunnableSequence } from "@doc-raven/langchain-core/runnables";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
 import {
   RecursiveCharacterTextSplitter,
   TextSplitter,

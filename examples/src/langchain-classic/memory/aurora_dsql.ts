@@ -3,13 +3,13 @@ import pg from "pg";
 import { DsqlSigner } from "@aws-sdk/dsql-signer";
 import { AuroraDsqlChatMessageHistory } from "@langchain/community/stores/message/aurora_dsql";
 import { ChatOpenAI } from "@langchain/openai";
-import { RunnableWithMessageHistory } from "@langchain/core/runnables";
+import { RunnableWithMessageHistory } from "@doc-raven/langchain-core/runnables";
 
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+} from "@doc-raven/langchain-core/prompts";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
 
 async function getPostgresqlPool() {
   const signer = new DsqlSigner({

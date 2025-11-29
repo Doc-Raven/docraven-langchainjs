@@ -1,4 +1,4 @@
-import { type ContentBlock } from "@langchain/core/messages";
+import { type ContentBlock } from "@doc-raven/langchain-core/messages";
 
 export type MessageContentUnknown = Record<string, unknown> & {
   type: string;

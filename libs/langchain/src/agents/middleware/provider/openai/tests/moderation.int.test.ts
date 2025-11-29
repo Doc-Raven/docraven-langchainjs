@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { ChatOpenAI } from "@langchain/openai";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 
 import {
   openAIModerationMiddleware,

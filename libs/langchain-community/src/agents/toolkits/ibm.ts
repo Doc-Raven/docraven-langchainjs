@@ -7,12 +7,12 @@ import {
   BaseToolkit,
   StructuredTool,
   StructuredToolInterface,
-} from "@langchain/core/tools";
+} from "@doc-raven/langchain-core/tools";
 import {
   InteropZodObject,
   ZodObjectV3,
   interopSafeParse,
-} from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/types";
 import {
   authenticateAndSetInstance,
   jsonSchemaToZod,

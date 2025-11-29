@@ -1,7 +1,7 @@
 import { load } from "@tensorflow-models/universal-sentence-encoder";
 import * as tf from "@tensorflow/tfjs-core";
 
-import { Embeddings, type EmbeddingsParams } from "@langchain/core/embeddings";
+import { Embeddings, type EmbeddingsParams } from "@doc-raven/langchain-core/embeddings";
 
 /**
  * Interface that extends EmbeddingsParams and defines additional

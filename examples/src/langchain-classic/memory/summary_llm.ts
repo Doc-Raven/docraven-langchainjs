@@ -1,7 +1,7 @@
 import { OpenAI } from "@langchain/openai";
 import { ConversationSummaryMemory } from "@langchain/classic/memory";
 import { LLMChain } from "@langchain/classic/chains";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 export const run = async () => {
   const memory = new ConversationSummaryMemory({

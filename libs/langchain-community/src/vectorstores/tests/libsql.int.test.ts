@@ -1,8 +1,8 @@
 import { expect, test } from "@jest/globals";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { createClient } from "@libsql/client";
-import { SyntheticEmbeddings } from "@langchain/core/utils/testing";
+import { SyntheticEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 import fs from "node:fs";
 import { LibSQLVectorStore, LibSQLVectorStoreArgs } from "../libsql.js";
 

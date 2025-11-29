@@ -1,8 +1,8 @@
 import { Ratelimit } from "@upstash/ratelimit";
-import { Serialized } from "@langchain/core/load/serializable";
-import { LLMResult } from "@langchain/core/outputs";
-import { ChainValues } from "@langchain/core/utils/types";
-import { BaseCallbackHandler } from "@langchain/core/callbacks/base";
+import { Serialized } from "@doc-raven/langchain-core/load/serializable";
+import { LLMResult } from "@doc-raven/langchain-core/outputs";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
+import { BaseCallbackHandler } from "@doc-raven/langchain-core/callbacks/base";
 
 /**
  * Upstash Ratelimit Error

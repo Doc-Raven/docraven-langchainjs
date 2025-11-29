@@ -1,4 +1,4 @@
-import { AgentStep } from "@langchain/core/agents";
+import { AgentStep } from "@doc-raven/langchain-core/agents";
 
 export function formatXml(intermediateSteps: AgentStep[]) {
   let log = "";

@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { AIMessage } from "@langchain/core/messages";
-import { tool } from "@langchain/core/tools";
+import { AIMessage } from "@doc-raven/langchain-core/messages";
+import { tool } from "@doc-raven/langchain-core/tools";
 import { MemorySaver } from "@langchain/langgraph-checkpoint";
 
 import { FakeToolCallingChatModel } from "../../tests/utils.js";

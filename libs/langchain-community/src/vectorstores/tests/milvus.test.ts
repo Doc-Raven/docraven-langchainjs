@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { jest, test, expect, beforeEach } from "@jest/globals";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
-import { Document } from "@langchain/core/documents";
+import { FakeEmbeddings } from "@doc-raven/langchain-core/utils/testing";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { ErrorCode } from "@zilliz/milvus2-sdk-node";
 
 import { Milvus } from "../milvus.js";

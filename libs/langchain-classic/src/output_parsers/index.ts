@@ -2,7 +2,7 @@ export {
   ListOutputParser,
   CustomListOutputParser,
   CommaSeparatedListOutputParser,
-} from "@langchain/core/output_parsers";
+} from "@doc-raven/langchain-core/output_parsers";
 
 export { RegexParser } from "./regex.js";
 export {

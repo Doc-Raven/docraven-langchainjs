@@ -8,7 +8,7 @@ import weaviate, {
 import dotenv from "dotenv";
 
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 
 import { WeaviateStore } from "../vectorstores.js";
 

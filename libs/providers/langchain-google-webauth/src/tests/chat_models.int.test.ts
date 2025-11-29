@@ -1,4 +1,4 @@
-import { StructuredTool, tool } from "@langchain/core/tools";
+import { StructuredTool, tool } from "@doc-raven/langchain-core/tools";
 import { z } from "zod/v3";
 import { afterEach, expect, jest, test } from "@jest/globals";
 import {
@@ -13,9 +13,9 @@ import {
   SystemMessage,
   ToolMessage,
   MessageContentImageUrl,
-} from "@langchain/core/messages";
-import { BaseLanguageModelInput } from "@langchain/core/language_models/base";
-import { ChatPromptValue } from "@langchain/core/prompt_values";
+} from "@doc-raven/langchain-core/messages";
+import { BaseLanguageModelInput } from "@doc-raven/langchain-core/language_models/base";
+import { ChatPromptValue } from "@doc-raven/langchain-core/prompt_values";
 import {
   MediaManager,
   SimpleWebBlobStore,
@@ -26,15 +26,15 @@ import {
   GoogleRequestLogger,
   GoogleRequestRecorder,
 } from "@langchain/google-common";
-import { BaseCallbackHandler } from "@langchain/core/callbacks/base";
-import { concat } from "@langchain/core/utils/stream";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { BaseCallbackHandler } from "@doc-raven/langchain-core/callbacks/base";
+import { concat } from "@doc-raven/langchain-core/utils/stream";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 import fs from "fs/promises";
 import Fs from "fs";
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
+} from "@doc-raven/langchain-core/prompts";
 import { ChatGoogle, ChatGoogleInput } from "../chat_models.js";
 import { BlobStoreAIStudioFile } from "../media.js";
 import MockedFunction = jest.MockedFunction;

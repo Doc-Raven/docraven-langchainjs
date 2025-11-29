@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 
 import { createMiddleware, createAgent } from "../index.js";
 import { FakeToolCallingModel } from "./utils.js";

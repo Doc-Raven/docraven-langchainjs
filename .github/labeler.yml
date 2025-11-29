@@ -43,7 +43,7 @@ pkg:@langchain/community:
           - libs/langchain-community/**
           - libs/langchain-community/**/*
 
-pkg:@langchain/core:
+pkg:@doc-raven/langchain-core:
   - changed-flies:
       - any-glob-to-any-file:
           - langchain-core/**

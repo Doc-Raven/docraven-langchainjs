@@ -12,14 +12,14 @@ import {
 import {
   AsyncCaller,
   AsyncCallerParams,
-} from "@langchain/core/utils/async_caller";
-import { Document } from "@langchain/core/documents";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { maximalMarginalRelevance } from "@langchain/core/utils/math";
+} from "@doc-raven/langchain-core/utils/async_caller";
+import { Document } from "@doc-raven/langchain-core/documents";
+import type { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
+import { maximalMarginalRelevance } from "@doc-raven/langchain-core/utils/math";
 import {
   MaxMarginalRelevanceSearchOptions,
   VectorStore,
-} from "@langchain/core/vectorstores";
+} from "@doc-raven/langchain-core/vectorstores";
 
 export type CollectionFilter = Record<string, unknown>;
 

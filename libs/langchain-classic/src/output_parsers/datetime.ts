@@ -1,7 +1,7 @@
 import {
   BaseOutputParser,
   OutputParserException,
-} from "@langchain/core/output_parsers";
+} from "@doc-raven/langchain-core/output_parsers";
 
 /**
  * Class to parse the output of an LLM call to a date.

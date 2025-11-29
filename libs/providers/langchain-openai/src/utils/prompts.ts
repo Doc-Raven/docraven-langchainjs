@@ -1,4 +1,4 @@
-import type { BasePromptValue } from "@langchain/core/prompt_values";
+import type { BasePromptValue } from "@doc-raven/langchain-core/prompt_values";
 import type { OpenAI } from "openai";
 import { convertMessagesToCompletionsMessageParams } from "../converters/completions.js";
 

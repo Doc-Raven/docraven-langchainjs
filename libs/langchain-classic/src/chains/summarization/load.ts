@@ -1,5 +1,5 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { BasePromptTemplate } from "@langchain/core/prompts";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
+import { BasePromptTemplate } from "@doc-raven/langchain-core/prompts";
 import { LLMChain } from "../llm_chain.js";
 import {
   StuffDocumentsChain,

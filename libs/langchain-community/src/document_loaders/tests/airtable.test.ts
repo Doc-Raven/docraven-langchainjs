@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { expect, jest } from "@jest/globals";
 import { AirtableLoader } from "../web/airtable.js";
 

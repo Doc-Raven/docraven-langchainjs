@@ -158,7 +158,7 @@ This example shows how you can manage your own MCP client and use it to get Lang
 The example below requires some prerequisites:
 
 ```bash
-npm install @langchain/mcp-adapters @langchain/langgraph @langchain/core @langchain/openai
+npm install @langchain/mcp-adapters @langchain/langgraph @doc-raven/langchain-core @langchain/openai
 
 export OPENAI_API_KEY=<your_api_key>
 ```
@@ -351,7 +351,7 @@ The `useStandardContentBlocks` field determines how individual MCP content block
 
 ### Standardizing the Format of Tool Outputs
 
-In `@langchain/core` version 0.3.48 we created a new set of content block types that offer a standardized structure for multimodal inputs. As you might guess from the name, the `useStandardContentBlocks` setting determines whether `@langchain/mcp-adapters` converts tool outputs to this format. For backward compatibility with older versions of `@langchain/mcp-adapters`, it also determines whether tool message artifacts are converted. See the conversion rules below for more info.
+In `@doc-raven/langchain-core` version 0.3.48 we created a new set of content block types that offer a standardized structure for multimodal inputs. As you might guess from the name, the `useStandardContentBlocks` setting determines whether `@langchain/mcp-adapters` converts tool outputs to this format. For backward compatibility with older versions of `@langchain/mcp-adapters`, it also determines whether tool message artifacts are converted. See the conversion rules below for more info.
 
 > [!IMPORTANT] > `ToolMessage.content` and `ToolMessage.artifact` will always be arrays of content block objects as described by the rules below, except in one special case. When the `outputHandling` option routes `text` output to the `ToolMessage.content` field and the only content block produced by a tool call is a `text` block, `ToolMessage.content` will be a `string` containing the text content produced by the tool.
 

@@ -1,5 +1,5 @@
 import { expect, test } from "@jest/globals";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { BM25Retriever } from "../bm25.js";
 import { getTermFrequency } from "../../utils/@furkantoprak/bm25/BM25.js";
 

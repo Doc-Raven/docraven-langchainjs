@@ -3,9 +3,9 @@ import { expect, test } from "vitest";
 import {
   LengthBasedExampleSelector,
   SemanticSimilarityExampleSelector,
-} from "@langchain/core/example_selectors";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+} from "@doc-raven/langchain-core/example_selectors";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { FakeEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 
 import { MemoryVectorStore } from "../../vectorstores/memory.js";
 

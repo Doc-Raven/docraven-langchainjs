@@ -17,6 +17,8 @@ yarn.lock
 
 .idea/
 
+.npmrc
+
 .DS_Store
 
 Chinook.db

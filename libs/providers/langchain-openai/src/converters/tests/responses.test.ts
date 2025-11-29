@@ -5,7 +5,7 @@ import {
   AIMessageChunk,
   HumanMessage,
   ToolCallChunk,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import {
   convertResponsesDeltaToChatGenerationChunk,
   convertResponsesUsageToUsageMetadata,

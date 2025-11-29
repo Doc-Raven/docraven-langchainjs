@@ -3,8 +3,8 @@ import * as uuid from "uuid";
 import {
   type VectorStoreInterface,
   type VectorStoreRetrieverInterface,
-} from "@langchain/core/vectorstores";
-import { Document } from "@langchain/core/documents";
+} from "@doc-raven/langchain-core/vectorstores";
+import { Document } from "@doc-raven/langchain-core/documents";
 import {
   TextSplitter,
   TextSplitterChunkHeaderOptions,

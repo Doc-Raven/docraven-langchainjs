@@ -16,10 +16,10 @@ import { ChatOpenAI } from "@langchain/openai";
 import {
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
-} from "@langchain/core/prompts";
+} from "@doc-raven/langchain-core/prompts";
 import { OpenAI } from "@langchain/openai";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
 import { MemoryVectorStore } from "@langchain/classic/vectorstores/memory";
 
 export interface Env {

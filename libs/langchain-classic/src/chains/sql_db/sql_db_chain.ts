@@ -1,20 +1,20 @@
 import type {
   BaseLanguageModel,
   BaseLanguageModelInterface,
-} from "@langchain/core/language_models/base";
+} from "@doc-raven/langchain-core/language_models/base";
 import type { OpenAI, TiktokenModel } from "@langchain/openai";
-import { ChainValues } from "@langchain/core/utils/types";
-import { BasePromptTemplate, PromptTemplate } from "@langchain/core/prompts";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
+import { BasePromptTemplate, PromptTemplate } from "@doc-raven/langchain-core/prompts";
 import {
   calculateMaxTokens,
   getModelContextSize,
-} from "@langchain/core/language_models/base";
-import { CallbackManagerForChainRun } from "@langchain/core/callbacks/manager";
+} from "@doc-raven/langchain-core/language_models/base";
+import { CallbackManagerForChainRun } from "@doc-raven/langchain-core/callbacks/manager";
 import {
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+} from "@doc-raven/langchain-core/runnables";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
 import {
   DEFAULT_SQL_DATABASE_PROMPT,
   SQL_PROMPTS_MAP,

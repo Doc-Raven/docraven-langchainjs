@@ -1,7 +1,7 @@
 import { test, expect } from "vitest";
 
 import { OpenAI, ChatOpenAI } from "@langchain/openai";
-import { SystemMessage } from "@langchain/core/messages";
+import { SystemMessage } from "@doc-raven/langchain-core/messages";
 
 import { ConversationSummaryBufferMemory } from "../summary_buffer.js";
 

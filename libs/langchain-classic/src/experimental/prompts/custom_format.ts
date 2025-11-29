@@ -1,10 +1,10 @@
-import type { InputValues } from "@langchain/core/utils/types";
+import type { InputValues } from "@doc-raven/langchain-core/utils/types";
 import {
   type ParsedFStringNode,
   PromptTemplate,
   type PromptTemplateInput,
   TypedPromptInputValues,
-} from "@langchain/core/prompts";
+} from "@doc-raven/langchain-core/prompts";
 
 export type CustomFormatPromptTemplateInput<RunInput extends InputValues> =
   Omit<PromptTemplateInput<RunInput, string>, "templateFormat"> & {

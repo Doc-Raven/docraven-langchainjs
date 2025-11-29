@@ -1,4 +1,4 @@
 export {
   type LengthBasedExampleSelectorInput,
   LengthBasedExampleSelector,
-} from "@langchain/core/example_selectors";
+} from "@doc-raven/langchain-core/example_selectors";

@@ -1,8 +1,8 @@
-import { Document, type DocumentInterface } from "@langchain/core/documents";
+import { Document, type DocumentInterface } from "@doc-raven/langchain-core/documents";
 import {
   BaseDocumentLoader,
   type DocumentLoader,
-} from "@langchain/core/document_loaders/base";
+} from "@doc-raven/langchain-core/document_loaders/base";
 import {
   Browserbase,
   type LoadOptions,

@@ -1,14 +1,14 @@
-import type { VectorStoreRetrieverInterface } from "@langchain/core/vectorstores";
+import type { VectorStoreRetrieverInterface } from "@doc-raven/langchain-core/vectorstores";
 import {
   BaseChatPromptTemplate,
   SerializedBasePromptTemplate,
-} from "@langchain/core/prompts";
+} from "@doc-raven/langchain-core/prompts";
 import {
   BaseMessage,
   HumanMessage,
   SystemMessage,
-} from "@langchain/core/messages";
-import { PartialValues } from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/messages";
+import { PartialValues } from "@doc-raven/langchain-core/utils/types";
 import { getPrompt } from "./prompt_generator.js";
 import { ObjectTool } from "./schema.js";
 

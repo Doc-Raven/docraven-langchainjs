@@ -1,11 +1,11 @@
 import { v4 as uuidv4 } from "uuid";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
+import type { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
 import {
   VectorStore,
   MaxMarginalRelevanceSearchOptions,
-} from "@langchain/core/vectorstores";
-import { Document } from "@langchain/core/documents";
-import { maximalMarginalRelevance } from "@langchain/core/utils/math";
+} from "@doc-raven/langchain-core/vectorstores";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { maximalMarginalRelevance } from "@doc-raven/langchain-core/utils/math";
 
 import {
   CassandraClientArgs,

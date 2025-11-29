@@ -1,8 +1,8 @@
 import fs from "fs";
 import { expect, beforeAll } from "@jest/globals";
-import { sha256 } from "@langchain/core/utils/hash";
-import { Document } from "@langchain/core/documents";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { sha256 } from "@doc-raven/langchain-core/utils/hash";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { FakeEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 import {
   VectaraFile,
   VectaraLibArgs,

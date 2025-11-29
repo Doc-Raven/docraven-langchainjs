@@ -8,8 +8,8 @@ import type {
 } from "openai/resources/shared";
 
 import { TiktokenModel } from "js-tiktoken/lite";
-import type { BaseLanguageModelCallOptions } from "@langchain/core/language_models/base";
-import { InteropZodObject } from "@langchain/core/utils/types";
+import type { BaseLanguageModelCallOptions } from "@doc-raven/langchain-core/language_models/base";
+import { InteropZodObject } from "@doc-raven/langchain-core/utils/types";
 
 // reexport this type from the included package so we can easily override and extend it if needed in the future
 // also makes it easier for folks to import this type without digging around into the dependent packages

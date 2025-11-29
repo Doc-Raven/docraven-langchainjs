@@ -1,10 +1,10 @@
-import { Embeddings } from "@langchain/core/embeddings";
+import { Embeddings } from "@doc-raven/langchain-core/embeddings";
 import {
   AsyncCaller,
   AsyncCallerCallOptions,
-} from "@langchain/core/utils/async_caller";
-import { chunkArray } from "@langchain/core/utils/chunk_array";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@doc-raven/langchain-core/utils/async_caller";
+import { chunkArray } from "@doc-raven/langchain-core/utils/chunk_array";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 
 import { GoogleAIConnection } from "./connection.js";
 import { ApiKeyGoogleAuth, GoogleAbstractedClient } from "./auth.js";

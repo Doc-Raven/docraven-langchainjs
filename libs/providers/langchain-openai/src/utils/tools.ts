@@ -1,15 +1,15 @@
 import { OpenAI as OpenAIClient } from "openai";
 
-import { ToolDefinition } from "@langchain/core/language_models/base";
-import { BindToolsInput } from "@langchain/core/language_models/chat_models";
+import { ToolDefinition } from "@doc-raven/langchain-core/language_models/base";
+import { BindToolsInput } from "@doc-raven/langchain-core/language_models/chat_models";
 import {
   convertToOpenAITool as formatToOpenAITool,
   isLangChainTool,
-} from "@langchain/core/utils/function_calling";
-import { DynamicTool, StructuredToolInterface } from "@langchain/core/tools";
-import { isInteropZodSchema } from "@langchain/core/utils/types";
-import { toJsonSchema } from "@langchain/core/utils/json_schema";
-import { ToolCall } from "@langchain/core/messages/tool";
+} from "@doc-raven/langchain-core/utils/function_calling";
+import { DynamicTool, StructuredToolInterface } from "@doc-raven/langchain-core/tools";
+import { isInteropZodSchema } from "@doc-raven/langchain-core/utils/types";
+import { toJsonSchema } from "@doc-raven/langchain-core/utils/json_schema";
+import { ToolCall } from "@doc-raven/langchain-core/messages/tool";
 
 /**
  * Formats a tool in either OpenAI format, or LangChain structured tool format

@@ -5,7 +5,7 @@ const chat = new ChatOpenAI({
   temperature: 0.2,
 });
 
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 
 await chat.invoke([
   new HumanMessage(
@@ -15,7 +15,7 @@ await chat.invoke([
 
 await chat.invoke([new HumanMessage("What did you just say?")]);
 
-import { AIMessage } from "@langchain/core/messages";
+import { AIMessage } from "@doc-raven/langchain-core/messages";
 
 await chat.invoke([
   new HumanMessage(
@@ -28,7 +28,7 @@ await chat.invoke([
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
+} from "@doc-raven/langchain-core/prompts";
 
 const prompt = ChatPromptTemplate.fromMessages([
   [
@@ -141,11 +141,11 @@ console.log(
   })
 );
 
-import type { BaseMessage } from "@langchain/core/messages";
+import type { BaseMessage } from "@doc-raven/langchain-core/messages";
 import {
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
+} from "@doc-raven/langchain-core/runnables";
 
 const parseRetrieverInput = (params: { messages: BaseMessage[] }) => {
   return params.messages[params.messages.length - 1].content as string;
@@ -191,8 +191,8 @@ console.log(await retriever.invoke("how can langsmith help with testing?"));
 
 console.log(await retriever.invoke("tell me more about that!"));
 
-import { RunnableBranch } from "@langchain/core/runnables";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { RunnableBranch } from "@doc-raven/langchain-core/runnables";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
 
 const queryTransformPrompt = ChatPromptTemplate.fromMessages([
   new MessagesPlaceholder("messages"),

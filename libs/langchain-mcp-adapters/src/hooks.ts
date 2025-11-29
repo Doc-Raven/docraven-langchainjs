@@ -1,9 +1,9 @@
 import { z } from "zod/v3";
 import type { Command } from "@langchain/langgraph";
 import type { EmbeddedResource } from "@modelcontextprotocol/sdk/types.js";
-import type { ContentBlock } from "@langchain/core/messages";
-import type { RunnableConfig } from "@langchain/core/runnables";
-import type { ToolMessage } from "@langchain/core/messages";
+import type { ContentBlock } from "@doc-raven/langchain-core/messages";
+import type { RunnableConfig } from "@doc-raven/langchain-core/runnables";
+import type { ToolMessage } from "@doc-raven/langchain-core/messages";
 
 /**
  * state messages

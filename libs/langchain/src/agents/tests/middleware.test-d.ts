@@ -1,8 +1,8 @@
 import { describe, it, expectTypeOf } from "vitest";
 import { z } from "zod/v3";
-import { HumanMessage, BaseMessage, AIMessage } from "@langchain/core/messages";
-import { tool } from "@langchain/core/tools";
-import type { ServerTool, ClientTool } from "@langchain/core/tools";
+import { HumanMessage, BaseMessage, AIMessage } from "@doc-raven/langchain-core/messages";
+import { tool } from "@doc-raven/langchain-core/tools";
+import type { ServerTool, ClientTool } from "@doc-raven/langchain-core/tools";
 
 import { createAgent, createMiddleware } from "../index.js";
 import type { AgentBuiltInState } from "../runtime.js";

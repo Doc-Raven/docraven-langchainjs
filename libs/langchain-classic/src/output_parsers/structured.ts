@@ -7,17 +7,17 @@ import {
   type JsonSchema7StringType,
   type JsonSchema7NumberType,
   type JsonSchema7NullableType,
-} from "@langchain/core/utils/json_schema";
+} from "@doc-raven/langchain-core/utils/json_schema";
 import {
   BaseOutputParser,
   FormatInstructionsOptions,
   OutputParserException,
-} from "@langchain/core/output_parsers";
+} from "@doc-raven/langchain-core/output_parsers";
 import {
   interopParseAsync,
   type InferInteropZodOutput,
   type InteropZodType,
-} from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/types";
 
 export type JsonMarkdownStructuredOutputParserInput = {
   interpolationDepth?: number;

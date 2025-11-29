@@ -1,6 +1,6 @@
 import { test, expect } from "@jest/globals";
-import { Document } from "@langchain/core/documents";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { FakeEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 import { USearch } from "../usearch.js";
 
 test("Test USearch.fromTexts + addVectors", async () => {

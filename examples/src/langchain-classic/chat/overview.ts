@@ -6,8 +6,8 @@ import {
   HumanMessagePromptTemplate,
   MessagesPlaceholder,
   SystemMessagePromptTemplate,
-} from "@langchain/core/prompts";
-import { HumanMessage, SystemMessage } from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/prompts";
+import { HumanMessage, SystemMessage } from "@doc-raven/langchain-core/messages";
 
 export const run = async () => {
   const chat = new ChatOpenAI({ model: "gpt-4o-mini", temperature: 0 });

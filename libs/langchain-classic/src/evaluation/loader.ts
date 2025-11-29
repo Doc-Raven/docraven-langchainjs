@@ -1,6 +1,6 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import type { StructuredToolInterface } from "@langchain/core/tools";
-import { BaseChatModel } from "@langchain/core/language_models/chat_models";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
+import type { StructuredToolInterface } from "@doc-raven/langchain-core/tools";
+import { BaseChatModel } from "@doc-raven/langchain-core/language_models/chat_models";
 import {
   CriteriaLike,
   CriteriaEvalChain,

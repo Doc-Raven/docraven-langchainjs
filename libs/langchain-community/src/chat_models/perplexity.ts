@@ -6,42 +6,42 @@ import {
   ChatMessageChunk,
   HumanMessageChunk,
   SystemMessageChunk,
-} from "@langchain/core/messages";
-import { concat } from "@langchain/core/utils/stream";
+} from "@doc-raven/langchain-core/messages";
+import { concat } from "@doc-raven/langchain-core/utils/stream";
 import {
   BaseChatModel,
   BaseChatModelParams,
   BaseChatModelCallOptions,
-} from "@langchain/core/language_models/chat_models";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+} from "@doc-raven/langchain-core/language_models/chat_models";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
 import {
   ChatGeneration,
   ChatGenerationChunk,
   ChatResult,
-} from "@langchain/core/outputs";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@doc-raven/langchain-core/outputs";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 import OpenAI from "openai";
-import { NewTokenIndices } from "@langchain/core/callbacks/base";
+import { NewTokenIndices } from "@doc-raven/langchain-core/callbacks/base";
 import {
   RunnableSequence,
   Runnable,
   RunnablePassthrough,
-} from "@langchain/core/runnables";
-import { toJsonSchema } from "@langchain/core/utils/json_schema";
+} from "@doc-raven/langchain-core/runnables";
+import { toJsonSchema } from "@doc-raven/langchain-core/utils/json_schema";
 import {
   BaseLanguageModelInput,
   StructuredOutputMethodOptions,
   TokenUsage,
-} from "@langchain/core/language_models/base";
+} from "@doc-raven/langchain-core/language_models/base";
 import {
   InteropZodType,
   isInteropZodSchema,
-} from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/types";
 import {
   JsonOutputParser,
   StructuredOutputParser,
   type BaseLLMOutputParser,
-} from "@langchain/core/output_parsers";
+} from "@doc-raven/langchain-core/output_parsers";
 import {
   ReasoningJsonOutputParser,
   ReasoningStructuredOutputParser,

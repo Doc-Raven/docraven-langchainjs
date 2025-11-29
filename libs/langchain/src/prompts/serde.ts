@@ -2,4 +2,4 @@ export {
   type SerializedPromptTemplate,
   type SerializedFewShotTemplate,
   type SerializedBasePromptTemplate,
-} from "@langchain/core/prompts";
+} from "@doc-raven/langchain-core/prompts";

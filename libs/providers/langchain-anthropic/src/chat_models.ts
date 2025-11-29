@@ -2,38 +2,38 @@ import { Anthropic, type ClientOptions } from "@anthropic-ai/sdk";
 import type { Stream } from "@anthropic-ai/sdk/streaming";
 import { transformJSONSchema } from "@anthropic-ai/sdk/lib/transform-json-schema.js";
 
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { AIMessageChunk, type BaseMessage } from "@langchain/core/messages";
-import { ChatGenerationChunk, type ChatResult } from "@langchain/core/outputs";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
+import { AIMessageChunk, type BaseMessage } from "@doc-raven/langchain-core/messages";
+import { ChatGenerationChunk, type ChatResult } from "@doc-raven/langchain-core/outputs";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 import {
   BaseChatModel,
   BaseChatModelCallOptions,
   LangSmithParams,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
+} from "@doc-raven/langchain-core/language_models/chat_models";
 import {
   type StructuredOutputMethodOptions,
   type BaseLanguageModelInput,
   isOpenAITool,
-} from "@langchain/core/language_models/base";
-import { ModelProfile } from "@langchain/core/language_models/profile";
-import { toJsonSchema } from "@langchain/core/utils/json_schema";
+} from "@doc-raven/langchain-core/language_models/base";
+import { ModelProfile } from "@doc-raven/langchain-core/language_models/profile";
+import { toJsonSchema } from "@doc-raven/langchain-core/utils/json_schema";
 import {
   JsonOutputParser,
   StructuredOutputParser,
-} from "@langchain/core/output_parsers";
+} from "@doc-raven/langchain-core/output_parsers";
 import {
   Runnable,
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
+} from "@doc-raven/langchain-core/runnables";
 import {
   InteropZodType,
   isInteropZodSchema,
-} from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/types";
 
-import { isLangChainTool } from "@langchain/core/utils/function_calling";
+import { isLangChainTool } from "@doc-raven/langchain-core/utils/function_calling";
 import { AnthropicToolsOutputParser } from "./output_parsers.js";
 import { handleToolChoice } from "./utils/tools.js";
 import { _convertMessagesToAnthropicPayload } from "./utils/message_inputs.js";
@@ -473,8 +473,8 @@ function extractToken(chunk: AIMessageChunk): string | undefined {
  * <summary><strong>Aggregate Streamed Chunks</strong></summary>
  *
  * ```typescript
- * import { AIMessageChunk } from '@langchain/core/messages';
- * import { concat } from '@langchain/core/utils/stream';
+ * import { AIMessageChunk } from '@doc-raven/langchain-core/messages';
+ * import { concat } from '@doc-raven/langchain-core/utils/stream';
  *
  * const stream = await llm.stream(input);
  * let full: AIMessageChunk | undefined;
@@ -654,7 +654,7 @@ function extractToken(chunk: AIMessageChunk): string | undefined {
  * <summary><strong>Multimodal</strong></summary>
  *
  * ```typescript
- * import { HumanMessage } from '@langchain/core/messages';
+ * import { HumanMessage } from '@doc-raven/langchain-core/messages';
  *
  * const imageUrl = "https://example.com/image.jpg";
  * const imageData = await fetch(imageUrl).then(res => res.arrayBuffer());

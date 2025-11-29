@@ -9,16 +9,16 @@ import {
   RemoveMessage,
   trimMessages,
   HumanMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import {
   BaseLanguageModel,
   getModelContextSize,
-} from "@langchain/core/language_models/base";
+} from "@doc-raven/langchain-core/language_models/base";
 import {
   interopSafeParse,
   InferInteropZodInput,
   InferInteropZodOutput,
-} from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/types";
 import { REMOVE_ALL_MESSAGES } from "@langchain/langgraph";
 import { createMiddleware } from "../middleware.js";
 import { countTokensApproximately } from "./utils.js";

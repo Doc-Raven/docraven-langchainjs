@@ -1,7 +1,7 @@
-import { DocumentInterface } from "@langchain/core/documents";
-import { BaseDocumentCompressor } from "@langchain/core/retrievers/document_compressors";
+import { DocumentInterface } from "@doc-raven/langchain-core/documents";
+import { BaseDocumentCompressor } from "@doc-raven/langchain-core/retrievers/document_compressors";
 import { WatsonXAI } from "@ibm-cloud/watsonx-ai";
-import { AsyncCaller } from "@langchain/core/utils/async_caller";
+import { AsyncCaller } from "@doc-raven/langchain-core/utils/async_caller";
 import { TextRerankParams } from "@ibm-cloud/watsonx-ai/dist/watsonx-ai-ml/vml_v1.js";
 import { WatsonxAuth, WatsonxRerankBasicOptions } from "../types/ibm.js";
 import { authenticateAndSetInstance } from "../utils/ibm.js";

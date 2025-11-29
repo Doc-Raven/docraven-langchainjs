@@ -1,4 +1,4 @@
-import { AIMessage } from "@langchain/core/messages";
+import { AIMessage } from "@doc-raven/langchain-core/messages";
 class MockChatAnthropic {
   lc_kwargs: Record<string, unknown>;
 

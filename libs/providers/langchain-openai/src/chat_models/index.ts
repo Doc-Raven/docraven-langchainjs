@@ -1,8 +1,8 @@
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { AIMessageChunk, type BaseMessage } from "@langchain/core/messages";
-import { ChatGenerationChunk, type ChatResult } from "@langchain/core/outputs";
-import { type BaseLanguageModelInput } from "@langchain/core/language_models/base";
-import { Runnable } from "@langchain/core/runnables";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
+import { AIMessageChunk, type BaseMessage } from "@doc-raven/langchain-core/messages";
+import { ChatGenerationChunk, type ChatResult } from "@doc-raven/langchain-core/outputs";
+import { type BaseLanguageModelInput } from "@doc-raven/langchain-core/language_models/base";
+import { Runnable } from "@doc-raven/langchain-core/runnables";
 import { type OpenAICallOptions, type OpenAIChatInput } from "../types.js";
 import {
   _convertToOpenAITool,
@@ -194,8 +194,8 @@ export interface ChatOpenAIFields extends BaseChatOpenAIFields {
  * <summary><strong>Aggregate Streamed Chunks</strong></summary>
  *
  * ```typescript
- * import { AIMessageChunk } from '@langchain/core/messages';
- * import { concat } from '@langchain/core/utils/stream';
+ * import { AIMessageChunk } from '@doc-raven/langchain-core/messages';
+ * import { concat } from '@doc-raven/langchain-core/utils/stream';
  *
  * const stream = await llm.stream(input);
  * let full: AIMessageChunk | undefined;
@@ -346,7 +346,7 @@ export interface ChatOpenAIFields extends BaseChatOpenAIFields {
  * <summary><strong>Multimodal</strong></summary>
  *
  * ```typescript
- * import { HumanMessage } from '@langchain/core/messages';
+ * import { HumanMessage } from '@doc-raven/langchain-core/messages';
  *
  * const imageUrl = "https://example.com/image.jpg";
  * const imageData = await fetch(imageUrl).then(res => res.arrayBuffer());

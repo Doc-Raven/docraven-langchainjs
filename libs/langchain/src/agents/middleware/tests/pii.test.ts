@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { AIMessage, HumanMessage, ToolMessage } from "@langchain/core/messages";
-import { tool } from "@langchain/core/tools";
+import { AIMessage, HumanMessage, ToolMessage } from "@doc-raven/langchain-core/messages";
+import { tool } from "@doc-raven/langchain-core/tools";
 
 import {
   piiMiddleware,

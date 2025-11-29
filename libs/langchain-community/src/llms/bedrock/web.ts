@@ -5,10 +5,10 @@ import { EventStreamCodec } from "@smithy/eventstream-codec";
 import { fromUtf8, toUtf8 } from "@smithy/util-utf8";
 import { Sha256 } from "@aws-crypto/sha256-js";
 
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { GenerationChunk } from "@langchain/core/outputs";
-import { LLM, type BaseLLMParams } from "@langchain/core/language_models/llms";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
+import { GenerationChunk } from "@doc-raven/langchain-core/outputs";
+import { LLM, type BaseLLMParams } from "@doc-raven/langchain-core/language_models/llms";
 
 import {
   BaseBedrockInput,

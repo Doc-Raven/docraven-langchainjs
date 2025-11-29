@@ -1,7 +1,7 @@
-import { BaseLLMOutputParser } from "@langchain/core/output_parsers";
-import { Callbacks } from "@langchain/core/callbacks/manager";
-import { ChatGeneration, Generation } from "@langchain/core/outputs";
-import { MessageContent } from "@langchain/core/messages";
+import { BaseLLMOutputParser } from "@doc-raven/langchain-core/output_parsers";
+import { Callbacks } from "@doc-raven/langchain-core/callbacks/manager";
+import { ChatGeneration, Generation } from "@doc-raven/langchain-core/outputs";
+import { MessageContent } from "@doc-raven/langchain-core/messages";
 import {
   GeminiGroundingChunk,
   GeminiGroundingMetadata,

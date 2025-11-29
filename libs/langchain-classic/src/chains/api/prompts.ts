@@ -1,4 +1,4 @@
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 export const API_URL_RAW_PROMPT_TEMPLATE = `You are given the below API Documentation:
 {api_docs}

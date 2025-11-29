@@ -1,5 +1,5 @@
 import { expect } from "@jest/globals";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { FakeEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 import { HanaDB } from "../hanavector.js";
 
 describe("Sanity check tests", () => {

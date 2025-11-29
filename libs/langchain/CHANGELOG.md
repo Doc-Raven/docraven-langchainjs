@@ -60,7 +60,7 @@
 - f1583cd: allow for model strings in summarization middleware
 - e960f97: check message property when pulling chat models for vercel compat
 - 66fc10c: fix(langchain): don't allow default or optional context schemas
-- 0a8a23b: feat(@langchain/core): support of ToolRuntime
+- 0a8a23b: feat(@doc-raven/langchain-core): support of ToolRuntime
 - b38be50: Add missing ToolMessage in toolStrategy structured output
 - 42930b5: fix(langchain): improved state schema typing
 
@@ -225,7 +225,7 @@ For more information, see the [complete middleware guide](https://docs.langchain
 
 #### Simplified Package
 
-LangChain v1 streamlines the `langchain` package namespace to focus on essential building blocks for agents. The package exposes only the most useful and relevant functionality (most re-exported from `@langchain/core` for convenience).
+LangChain v1 streamlines the `langchain` package namespace to focus on essential building blocks for agents. The package exposes only the most useful and relevant functionality (most re-exported from `@doc-raven/langchain-core` for convenience).
 
 **What's in the core `langchain` package:**
 
@@ -273,7 +273,7 @@ Legacy functionality has moved to [`@langchain/classic`](https://www.npmjs.com/p
 Install the v1 packages:
 
 ```bash
-npm install langchain@1.0.0 @langchain/core@1.0.0
+npm install langchain@1.0.0 @doc-raven/langchain-core@1.0.0
 ```
 
 ### 📚 Additional Resources

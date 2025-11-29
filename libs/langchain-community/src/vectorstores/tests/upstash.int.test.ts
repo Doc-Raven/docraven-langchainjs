@@ -1,10 +1,10 @@
 import { Index } from "@upstash/vector";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import {
   SyntheticEmbeddings,
   FakeEmbeddings,
-} from "@langchain/core/utils/testing";
-import { EmbeddingsInterface } from "@langchain/core/embeddings";
+} from "@doc-raven/langchain-core/utils/testing";
+import { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
 import { UpstashVectorStore } from "../upstash.js";
 import { sleep } from "../../utils/time.js";
 

@@ -1,7 +1,7 @@
 import { google, calendar_v3 } from "googleapis";
-import { Tool } from "@langchain/core/tools";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { BaseLanguageModel } from "@langchain/core/language_models/base";
+import { Tool } from "@doc-raven/langchain-core/tools";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
+import { BaseLanguageModel } from "@doc-raven/langchain-core/language_models/base";
 
 export interface GoogleCalendarAgentParams {
   credentials?: {

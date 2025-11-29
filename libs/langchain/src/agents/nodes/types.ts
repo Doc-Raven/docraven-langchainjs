@@ -1,6 +1,6 @@
-import type { LanguageModelLike } from "@langchain/core/language_models/base";
-import type { BaseMessage, SystemMessage } from "@langchain/core/messages";
-import type { ServerTool, ClientTool } from "@langchain/core/tools";
+import type { LanguageModelLike } from "@doc-raven/langchain-core/language_models/base";
+import type { BaseMessage, SystemMessage } from "@doc-raven/langchain-core/messages";
+import type { ServerTool, ClientTool } from "@doc-raven/langchain-core/tools";
 
 import type { Runtime, AgentBuiltInState } from "../runtime.js";
 

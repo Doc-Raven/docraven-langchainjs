@@ -1,5 +1,5 @@
 import { test, expect, beforeEach, describe } from "vitest";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { CosmosClient } from "@azure/cosmos";
 

@@ -4,20 +4,20 @@ import { EventStreamCodec } from "@smithy/eventstream-codec";
 import { fromUtf8, toUtf8 } from "@smithy/util-utf8";
 import { Sha256 } from "@aws-crypto/sha256-js";
 
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
 import {
   type BaseChatModelParams,
   BaseChatModel,
   LangSmithParams,
   BaseChatModelCallOptions,
   BindToolsInput,
-} from "@langchain/core/language_models/chat_models";
+} from "@doc-raven/langchain-core/language_models/chat_models";
 import {
   BaseLanguageModelInput,
   isOpenAITool,
-} from "@langchain/core/language_models/base";
-import { Runnable } from "@langchain/core/runnables";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@doc-raven/langchain-core/language_models/base";
+import { Runnable } from "@doc-raven/langchain-core/runnables";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 import {
   AIMessageChunk,
   BaseMessage,
@@ -25,18 +25,18 @@ import {
   ChatMessage,
   BaseMessageChunk,
   isAIMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import {
   ChatGeneration,
   ChatGenerationChunk,
   ChatResult,
-} from "@langchain/core/outputs";
+} from "@doc-raven/langchain-core/outputs";
 import {
   isLangChainTool,
   isStructuredTool,
-} from "@langchain/core/utils/function_calling";
-import { toJsonSchema } from "@langchain/core/utils/json_schema";
-import { isInteropZodSchema } from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/function_calling";
+import { toJsonSchema } from "@doc-raven/langchain-core/utils/json_schema";
+import { isInteropZodSchema } from "@doc-raven/langchain-core/utils/types";
 import type { SerializedFields } from "../../load/map_keys.js";
 import {
   BaseBedrockInput,
@@ -350,8 +350,8 @@ export interface BedrockChatFields
  * <summary><strong>Aggregate Streamed Chunks</strong></summary>
  *
  * ```typescript
- * import { AIMessageChunk } from '@langchain/core/messages';
- * import { concat } from '@langchain/core/utils/stream';
+ * import { AIMessageChunk } from '@doc-raven/langchain-core/messages';
+ * import { concat } from '@doc-raven/langchain-core/utils/stream';
  *
  * const stream = await llm.stream(input);
  * let full: AIMessageChunk | undefined;
@@ -398,7 +398,7 @@ export interface BedrockChatFields
  *
  * ```typescript
  * import { z } from 'zod';
- * import { AIMessage } from '@langchain/core/messages';
+ * import { AIMessage } from '@doc-raven/langchain-core/messages';
  *
  * const GetWeather = {
  *   name: "GetWeather",

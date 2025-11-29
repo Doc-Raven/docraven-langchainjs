@@ -1,14 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { z } from "zod/v3";
-import { tool } from "@langchain/core/tools";
+import { tool } from "@doc-raven/langchain-core/tools";
 import {
   HumanMessage,
   AIMessage,
   ToolMessage,
   type BaseMessage,
   type ToolCall,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import { MemorySaver } from "@langchain/langgraph";
 
 import {

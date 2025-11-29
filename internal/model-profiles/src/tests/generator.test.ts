@@ -116,7 +116,7 @@ describe("generator", () => {
 
       // Check for import statement
       expect(content).toContain("import type { ModelProfile }");
-      expect(content).toContain("@langchain/core/language_models/profile");
+      expect(content).toContain("@doc-raven/langchain-core/language_models/profile");
 
       // Check for models variable
       expect(content).toContain("const PROFILES");

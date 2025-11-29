@@ -1,5 +1,5 @@
-import { Document } from "@langchain/core/documents";
-import { BaseDocumentLoader } from "@langchain/core/document_loaders/base";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { BaseDocumentLoader } from "@doc-raven/langchain-core/document_loaders/base";
 import PostgresEngine from "./engine.js";
 import {
   textFormatter,

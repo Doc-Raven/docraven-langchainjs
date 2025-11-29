@@ -1,7 +1,7 @@
 import { test, expect } from "vitest";
 
 import { OpenAI } from "@langchain/openai";
-import { AsyncCaller } from "@langchain/core/utils/async_caller";
+import { AsyncCaller } from "@doc-raven/langchain-core/utils/async_caller";
 
 test("AsyncCaller.call passes on arguments and returns return value", async () => {
   const caller = new AsyncCaller({});

@@ -1,10 +1,10 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
 import {
   InputValues,
   MemoryVariables,
   OutputValues,
-} from "@langchain/core/memory";
-import { getBufferString } from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/memory";
+import { getBufferString } from "@doc-raven/langchain-core/messages";
 import { BaseChatMemory, BaseChatMemoryInput } from "./chat_memory.js";
 
 /**

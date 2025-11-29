@@ -1,32 +1,32 @@
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { UsageMetadata, type BaseMessage } from "@langchain/core/messages";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
+import { UsageMetadata, type BaseMessage } from "@doc-raven/langchain-core/messages";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
 
 import {
   BaseChatModel,
   LangSmithParams,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
-import { ChatGenerationChunk, ChatResult } from "@langchain/core/outputs";
-import { AIMessageChunk } from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/language_models/chat_models";
+import { ChatGenerationChunk, ChatResult } from "@doc-raven/langchain-core/outputs";
+import { AIMessageChunk } from "@doc-raven/langchain-core/messages";
 import {
   BaseLanguageModelInput,
   StructuredOutputMethodOptions,
-} from "@langchain/core/language_models/base";
-import { type ModelProfile } from "@langchain/core/language_models/profile";
+} from "@doc-raven/langchain-core/language_models/base";
+import { type ModelProfile } from "@doc-raven/langchain-core/language_models/profile";
 import {
   Runnable,
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
-import { JsonOutputKeyToolsParser } from "@langchain/core/output_parsers/openai_tools";
-import { BaseLLMOutputParser } from "@langchain/core/output_parsers";
-import { AsyncCaller } from "@langchain/core/utils/async_caller";
-import { concat } from "@langchain/core/utils/stream";
+} from "@doc-raven/langchain-core/runnables";
+import { JsonOutputKeyToolsParser } from "@doc-raven/langchain-core/output_parsers/openai_tools";
+import { BaseLLMOutputParser } from "@doc-raven/langchain-core/output_parsers";
+import { AsyncCaller } from "@doc-raven/langchain-core/utils/async_caller";
+import { concat } from "@doc-raven/langchain-core/utils/stream";
 import {
   InteropZodType,
   isInteropZodSchema,
-} from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/types";
 import {
   GoogleAIBaseLLMInput,
   GoogleAIModelParams,

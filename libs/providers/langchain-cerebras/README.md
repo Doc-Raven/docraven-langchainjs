@@ -5,7 +5,7 @@ This package contains the LangChain.js integrations for Cerebras via the `@cereb
 ## Installation
 
 ```bash npm2yarn
-npm install @langchain/cerebras @langchain/core
+npm install @langchain/cerebras @doc-raven/langchain-core
 ```
 
 ## Chat models
@@ -20,7 +20,7 @@ export CEREBRAS_API_KEY=
 
 ```typescript
 import { ChatCerebras } from "@langchain/cerebras";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 
 const model = new ChatCerebras({
   apiKey: process.env.CEREBRAS_API_KEY, // Default value.

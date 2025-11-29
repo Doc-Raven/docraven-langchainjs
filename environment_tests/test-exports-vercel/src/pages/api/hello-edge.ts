@@ -10,10 +10,10 @@ import { ChatOpenAI } from "@langchain/openai";
 import {
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
-} from "@langchain/core/prompts";
+} from "@doc-raven/langchain-core/prompts";
 import { OpenAI } from "@langchain/openai";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { CallbackManager } from "@langchain/core/callbacks/manager";
+import { CallbackManager } from "@doc-raven/langchain-core/callbacks/manager";
 
 import { NextRequest, NextResponse } from "next/server";
 

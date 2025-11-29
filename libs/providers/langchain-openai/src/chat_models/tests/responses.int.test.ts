@@ -13,9 +13,9 @@ import {
   ToolMessage,
   isAIMessage,
   isAIMessageChunk,
-} from "@langchain/core/messages";
-import { tool } from "@langchain/core/tools";
-import { BaseLanguageModelInput } from "@langchain/core/language_models/base";
+} from "@doc-raven/langchain-core/messages";
+import { tool } from "@doc-raven/langchain-core/tools";
+import { BaseLanguageModelInput } from "@doc-raven/langchain-core/language_models/base";
 import { ChatOpenAI } from "../index.js";
 import { REASONING_OUTPUT_MESSAGES } from "../../tests/data/computer-use-inputs.js";
 import { ChatOpenAIReasoningSummary } from "../../types.js";

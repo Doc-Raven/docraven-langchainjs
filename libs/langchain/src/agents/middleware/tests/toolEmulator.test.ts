@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { z } from "zod/v3";
-import { tool } from "@langchain/core/tools";
-import { HumanMessage, AIMessage, ToolMessage } from "@langchain/core/messages";
-import type { BaseChatModel } from "@langchain/core/language_models/chat_models";
+import { tool } from "@doc-raven/langchain-core/tools";
+import { HumanMessage, AIMessage, ToolMessage } from "@doc-raven/langchain-core/messages";
+import type { BaseChatModel } from "@doc-raven/langchain-core/language_models/chat_models";
 
 import { toolEmulatorMiddleware } from "../toolEmulator.js";
 import { createAgent } from "../../index.js";

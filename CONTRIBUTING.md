@@ -29,7 +29,7 @@ You can also check out the [guides on extending LangChain.js](https://js.langcha
 
 #### Integration packages
 
-Integrations should generally reside in the `libs/langchain-community` workspace and be imported as `@langchain/community/module/name`. More in-depth integrations or suites of integrations may also reside in separate packages that depend on and extend `@langchain/core`. See [`@langchain/google-genai`](https://github.com/langchain-ai/langchainjs/blob/main/libs/langchain-google-genai) for an example.
+Integrations should generally reside in the `libs/langchain-community` workspace and be imported as `@langchain/community/module/name`. More in-depth integrations or suites of integrations may also reside in separate packages that depend on and extend `@doc-raven/langchain-core`. See [`@langchain/google-genai`](https://github.com/langchain-ai/langchainjs/blob/main/libs/langchain-google-genai) for an example.
 
 ### Want to add a feature that's already in Python?
 

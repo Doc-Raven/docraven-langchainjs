@@ -1,10 +1,10 @@
 import {
   BaseRetriever,
   type BaseRetrieverInput,
-} from "@langchain/core/retrievers";
-import type { VectorStoreInterface } from "@langchain/core/vectorstores";
-import { Document } from "@langchain/core/documents";
-import { BaseStore, type BaseStoreInterface } from "@langchain/core/stores";
+} from "@doc-raven/langchain-core/retrievers";
+import type { VectorStoreInterface } from "@doc-raven/langchain-core/vectorstores";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { BaseStore, type BaseStoreInterface } from "@doc-raven/langchain-core/stores";
 import { createDocumentStoreFromByteStore } from "../storage/encoder_backed.js";
 
 /**

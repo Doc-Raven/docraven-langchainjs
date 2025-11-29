@@ -1,13 +1,13 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import type { InteropZodOptional } from "@langchain/core/utils/types";
-import type { InteropZodDefault } from "@langchain/core/utils/types";
+import type { InteropZodOptional } from "@doc-raven/langchain-core/utils/types";
+import type { InteropZodDefault } from "@doc-raven/langchain-core/utils/types";
 import type {
   Runtime as LangGraphRuntime,
   PregelOptions,
   StreamMode,
 } from "@langchain/langgraph";
-import type { BaseMessage } from "@langchain/core/messages";
-import type { BaseCallbackConfig } from "@langchain/core/callbacks/manager";
+import type { BaseMessage } from "@doc-raven/langchain-core/messages";
+import type { BaseCallbackConfig } from "@doc-raven/langchain-core/callbacks/manager";
 
 import type { ResponseFormatUndefined } from "./responses.js";
 

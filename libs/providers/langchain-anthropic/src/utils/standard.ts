@@ -3,7 +3,7 @@ import type {
   BaseMessage,
   ContentBlock,
   ResponseMetadata,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import { iife } from "./index.js";
 
 function _isStandardAnnotation(

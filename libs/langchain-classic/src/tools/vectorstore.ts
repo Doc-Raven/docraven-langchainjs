@@ -1,6 +1,6 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import type { VectorStoreInterface } from "@langchain/core/vectorstores";
-import { Tool } from "@langchain/core/tools";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
+import type { VectorStoreInterface } from "@doc-raven/langchain-core/vectorstores";
+import { Tool } from "@doc-raven/langchain-core/tools";
 import { VectorDBQAChain } from "../chains/vector_db_qa.js";
 
 /**

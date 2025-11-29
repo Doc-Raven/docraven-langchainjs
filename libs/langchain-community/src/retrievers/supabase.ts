@@ -1,14 +1,14 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { Document } from "@langchain/core/documents";
+import type { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
+import { Document } from "@doc-raven/langchain-core/documents";
 import {
   BaseRetriever,
   type BaseRetrieverInput,
-} from "@langchain/core/retrievers";
+} from "@doc-raven/langchain-core/retrievers";
 import {
   CallbackManagerForRetrieverRun,
   Callbacks,
-} from "@langchain/core/callbacks/manager";
+} from "@doc-raven/langchain-core/callbacks/manager";
 
 interface SearchEmbeddingsParams {
   query_embedding: number[];

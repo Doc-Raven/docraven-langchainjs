@@ -2,7 +2,7 @@ import type Anthropic from "@anthropic-ai/sdk";
 import {
   parseBase64DataUrl,
   type StandardContentBlockConverter,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 
 export function _isAnthropicThinkingBlock(
   block: unknown

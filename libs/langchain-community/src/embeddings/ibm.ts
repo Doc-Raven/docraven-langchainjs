@@ -1,7 +1,7 @@
-import { Embeddings, EmbeddingsParams } from "@langchain/core/embeddings";
+import { Embeddings, EmbeddingsParams } from "@doc-raven/langchain-core/embeddings";
 
 import { WatsonXAI } from "@ibm-cloud/watsonx-ai";
-import { AsyncCaller } from "@langchain/core/utils/async_caller";
+import { AsyncCaller } from "@doc-raven/langchain-core/utils/async_caller";
 import { CreateEmbeddingsParams, Gateway } from "@ibm-cloud/watsonx-ai/gateway";
 import {
   WatsonxAuth,

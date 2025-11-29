@@ -1,6 +1,6 @@
-import { IterableReadableStream } from "@langchain/core/utils/stream";
-import type { StringWithAutocomplete } from "@langchain/core/utils/types";
-import { BaseLanguageModelCallOptions } from "@langchain/core/language_models/base";
+import { IterableReadableStream } from "@doc-raven/langchain-core/utils/stream";
+import type { StringWithAutocomplete } from "@doc-raven/langchain-core/utils/types";
+import { BaseLanguageModelCallOptions } from "@doc-raven/langchain-core/language_models/base";
 
 export interface OllamaInput {
   embeddingOnly?: boolean;

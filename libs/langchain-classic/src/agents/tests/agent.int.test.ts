@@ -1,10 +1,10 @@
 import { expect, test } from "vitest";
 import { OpenAI, OpenAIEmbeddings, ChatOpenAI } from "@langchain/openai";
-import { Tool } from "@langchain/core/tools";
-import { RunnableSequence } from "@langchain/core/runnables";
-import { OutputParserException } from "@langchain/core/output_parsers";
-import { AIMessage } from "@langchain/core/messages";
-import { AgentStep } from "@langchain/core/agents";
+import { Tool } from "@doc-raven/langchain-core/tools";
+import { RunnableSequence } from "@doc-raven/langchain-core/runnables";
+import { OutputParserException } from "@doc-raven/langchain-core/output_parsers";
+import { AIMessage } from "@doc-raven/langchain-core/messages";
+import { AgentStep } from "@doc-raven/langchain-core/agents";
 import { ChatMessageHistory } from "../../stores/message/in_memory.js";
 import { AgentExecutor, ZeroShotAgent } from "../index.js";
 import { SerpAPI } from "../../util/testing/tools/serpapi.js";

@@ -1,6 +1,6 @@
-import { StructuredTool } from "@langchain/core/tools";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { InferInteropZodOutput } from "@langchain/core/utils/types";
+import { StructuredTool } from "@doc-raven/langchain-core/tools";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
+import { InferInteropZodOutput } from "@doc-raven/langchain-core/utils/types";
 import { z } from "zod/v3";
 
 /**

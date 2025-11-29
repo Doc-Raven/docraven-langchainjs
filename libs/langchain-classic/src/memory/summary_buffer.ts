@@ -1,9 +1,9 @@
-import { getBufferString } from "@langchain/core/messages";
+import { getBufferString } from "@doc-raven/langchain-core/messages";
 import {
   InputValues,
   MemoryVariables,
   OutputValues,
-} from "@langchain/core/memory";
+} from "@doc-raven/langchain-core/memory";
 import {
   BaseConversationSummaryMemory,
   BaseConversationSummaryMemoryInput,

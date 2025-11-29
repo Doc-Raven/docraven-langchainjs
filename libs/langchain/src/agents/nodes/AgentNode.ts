@@ -1,23 +1,23 @@
 /* eslint-disable no-instanceof/no-instanceof */
-import { Runnable, RunnableConfig } from "@langchain/core/runnables";
+import { Runnable, RunnableConfig } from "@doc-raven/langchain-core/runnables";
 import {
   BaseMessage,
   AIMessage,
   ToolMessage,
   SystemMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import { Command, type LangGraphRunnableConfig } from "@langchain/langgraph";
-import { type LanguageModelLike } from "@langchain/core/language_models/base";
-import { type BaseChatModelCallOptions } from "@langchain/core/language_models/chat_models";
+import { type LanguageModelLike } from "@doc-raven/langchain-core/language_models/base";
+import { type BaseChatModelCallOptions } from "@doc-raven/langchain-core/language_models/chat_models";
 import {
   InteropZodObject,
   getSchemaDescription,
   interopParse,
   interopZodObjectPartial,
-} from "@langchain/core/utils/types";
-import { raceWithSignal } from "@langchain/core/runnables";
-import type { ToolCall } from "@langchain/core/messages/tool";
-import type { ClientTool, ServerTool } from "@langchain/core/tools";
+} from "@doc-raven/langchain-core/utils/types";
+import { raceWithSignal } from "@doc-raven/langchain-core/runnables";
+import type { ToolCall } from "@doc-raven/langchain-core/messages/tool";
+import type { ClientTool, ServerTool } from "@doc-raven/langchain-core/tools";
 
 import { initChatModel } from "../../chat_models/universal.js";
 import { MultipleStructuredOutputsError } from "../errors.js";

@@ -1,15 +1,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable import/no-extraneous-dependencies */
 import { expect } from "vitest";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
 import {
   BaseChatModel,
   BaseChatModelParams,
   BaseChatModelCallOptions,
   BindToolsInput,
   ToolChoice,
-} from "@langchain/core/language_models/chat_models";
-import { StructuredTool } from "@langchain/core/tools";
+} from "@doc-raven/langchain-core/language_models/chat_models";
+import { StructuredTool } from "@doc-raven/langchain-core/tools";
 import {
   BaseMessage,
   AIMessage,
@@ -18,21 +18,21 @@ import {
   AIMessageFields,
   ToolMessage,
   ToolMessageFields,
-} from "@langchain/core/messages";
-import { ChatResult } from "@langchain/core/outputs";
+} from "@doc-raven/langchain-core/messages";
+import { ChatResult } from "@doc-raven/langchain-core/outputs";
 import {
   Runnable,
   RunnableConfig,
   RunnableLambda,
   RunnableBinding,
-} from "@langchain/core/runnables";
+} from "@doc-raven/langchain-core/runnables";
 import {
   MemorySaver,
   Checkpoint,
   CheckpointMetadata,
   type BaseCheckpointSaver,
 } from "@langchain/langgraph-checkpoint";
-import { LanguageModelLike } from "@langchain/core/language_models/base";
+import { LanguageModelLike } from "@doc-raven/langchain-core/language_models/base";
 import { z } from "zod/v3";
 
 export class _AnyIdAIMessage extends AIMessage {

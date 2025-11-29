@@ -1,8 +1,8 @@
 import { CohereClient, Cohere as CohereTypes } from "cohere-ai";
 
-import { LLM, type BaseLLMParams } from "@langchain/core/language_models/llms";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import type { BaseLanguageModelCallOptions } from "@langchain/core/language_models/base";
+import { LLM, type BaseLLMParams } from "@doc-raven/langchain-core/language_models/llms";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
+import type { BaseLanguageModelCallOptions } from "@doc-raven/langchain-core/language_models/base";
 import { CohereClientOptions, getCohereClient } from "./client.js";
 
 /**

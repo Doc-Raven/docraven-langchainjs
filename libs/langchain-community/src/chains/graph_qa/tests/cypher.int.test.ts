@@ -1,5 +1,5 @@
 import { OpenAI } from "@langchain/openai";
-import { ChainValues } from "@langchain/core/utils/types";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
 import { Neo4jGraph } from "../../../graphs/neo4j_graph.js";
 import { GraphCypherQAChain, INTERMEDIATE_STEPS_KEY } from "../cypher.js";
 

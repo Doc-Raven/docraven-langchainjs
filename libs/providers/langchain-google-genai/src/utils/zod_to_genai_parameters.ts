@@ -5,11 +5,11 @@ import {
 import {
   InteropZodType,
   isInteropZodSchema,
-} from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/types";
 import {
   type JsonSchema7Type,
   toJsonSchema,
-} from "@langchain/core/utils/json_schema";
+} from "@doc-raven/langchain-core/utils/json_schema";
 
 export interface GenerativeAIJsonSchema extends Record<string, unknown> {
   properties?: Record<string, GenerativeAIJsonSchema>;

@@ -1,9 +1,9 @@
 import { test, expect } from "vitest";
-import { BaseLLM } from "@langchain/core/language_models/llms";
-import { LLMResult } from "@langchain/core/outputs";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { VectorStoreRetriever } from "@langchain/core/vectorstores";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { BaseLLM } from "@doc-raven/langchain-core/language_models/llms";
+import { LLMResult } from "@doc-raven/langchain-core/outputs";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { VectorStoreRetriever } from "@doc-raven/langchain-core/vectorstores";
+import { FakeEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 import { LLMChain } from "../llm_chain.js";
 import { SimpleSequentialChain } from "../sequential_chain.js";
 import { AnalyzeDocumentChain } from "../analyze_documents_chain.js";

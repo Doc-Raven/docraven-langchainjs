@@ -4,11 +4,11 @@ import fs from "node:fs/promises";
 import url from "node:url";
 import path from "node:path";
 
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
 import {
   BytesOutputParser,
   StringOutputParser,
-} from "@langchain/core/output_parsers";
+} from "@doc-raven/langchain-core/output_parsers";
 
 import { Ollama } from "../llms.js";
 

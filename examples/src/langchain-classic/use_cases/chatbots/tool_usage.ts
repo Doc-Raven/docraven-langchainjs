@@ -11,7 +11,7 @@ const chat = new ChatOpenAI({
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
+} from "@doc-raven/langchain-core/prompts";
 
 // Adapted from https://smith.langchain.com/hub/hwchase17/openai-tools-agent
 const prompt = ChatPromptTemplate.fromMessages([
@@ -36,7 +36,7 @@ const agent = await createOpenAIToolsAgent({
 
 const agentExecutor = new AgentExecutor({ agent, tools });
 
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 
 console.log(
   await agentExecutor.invoke({ messages: [new HumanMessage("I'm Nemo!")] })
@@ -52,7 +52,7 @@ console.log(
   })
 );
 
-import { AIMessage } from "@langchain/core/messages";
+import { AIMessage } from "@doc-raven/langchain-core/messages";
 
 console.log(
   await agentExecutor.invoke({
@@ -84,7 +84,7 @@ const agent2 = await createOpenAIToolsAgent({
 const agentExecutor2 = new AgentExecutor({ agent: agent2, tools });
 
 import { ChatMessageHistory } from "@langchain/community/stores/message/in_memory";
-import { RunnableWithMessageHistory } from "@langchain/core/runnables";
+import { RunnableWithMessageHistory } from "@doc-raven/langchain-core/runnables";
 
 const demoEphemeralChatMessageHistory = new ChatMessageHistory();
 

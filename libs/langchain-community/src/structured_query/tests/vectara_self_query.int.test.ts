@@ -1,7 +1,7 @@
 import { test } from "@jest/globals";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { OpenAI } from "@langchain/openai";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { FakeEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 import { AttributeInfo } from "@langchain/classic/chains/query_constructor";
 import { SelfQueryRetriever } from "@langchain/classic/retrievers/self_query";
 import { VectaraStore } from "../../vectorstores/vectara.js";

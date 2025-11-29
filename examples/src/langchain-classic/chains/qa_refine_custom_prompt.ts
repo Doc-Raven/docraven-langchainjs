@@ -1,6 +1,6 @@
 import { loadQARefineChain } from "@langchain/classic/chains";
 import { OpenAI, OpenAIEmbeddings } from "@langchain/openai";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
 import { TextLoader } from "@langchain/classic/document_loaders/fs/text";
 import { MemoryVectorStore } from "@langchain/classic/vectorstores/memory";

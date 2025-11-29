@@ -3,11 +3,11 @@ import {
   type OpenAIChatModelId,
   OpenAIClient,
 } from "@langchain/openai";
-import { StructuredTool, StructuredToolInterface } from "@langchain/core/tools";
-import { Runnable, RunnableConfig } from "@langchain/core/runnables";
-import { isInteropZodSchema } from "@langchain/core/utils/types";
-import { toJsonSchema } from "@langchain/core/utils/json_schema";
-import { ToolDefinition } from "@langchain/core/language_models/base";
+import { StructuredTool, StructuredToolInterface } from "@doc-raven/langchain-core/tools";
+import { Runnable, RunnableConfig } from "@doc-raven/langchain-core/runnables";
+import { isInteropZodSchema } from "@doc-raven/langchain-core/utils/types";
+import { toJsonSchema } from "@doc-raven/langchain-core/utils/json_schema";
+import { ToolDefinition } from "@doc-raven/langchain-core/language_models/base";
 import { sleep } from "../../util/time.js";
 import type {
   OpenAIAssistantFinish,

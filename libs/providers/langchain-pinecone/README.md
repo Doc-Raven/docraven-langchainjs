@@ -5,7 +5,7 @@ This package contains the LangChain.js integrations for Pinecone through their S
 ## Installation
 
 ```bash npm2yarn
-npm install @langchain/pinecone @langchain/core @pinecone-database/pinecone
+npm install @langchain/pinecone @doc-raven/langchain-core @pinecone-database/pinecone
 ```
 
 ## Development

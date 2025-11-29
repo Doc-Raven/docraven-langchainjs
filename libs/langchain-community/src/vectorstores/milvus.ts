@@ -10,10 +10,10 @@ import {
   keyValueObj,
 } from "@zilliz/milvus2-sdk-node";
 
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { VectorStore } from "@langchain/core/vectorstores";
-import { Document } from "@langchain/core/documents";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import type { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
+import { VectorStore } from "@doc-raven/langchain-core/vectorstores";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 
 /**
  * Interface for the arguments required by the Milvus class constructor.

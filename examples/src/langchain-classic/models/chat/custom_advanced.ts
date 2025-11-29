@@ -1,11 +1,11 @@
-import { AIMessage, BaseMessage } from "@langchain/core/messages";
-import { ChatResult } from "@langchain/core/outputs";
+import { AIMessage, BaseMessage } from "@doc-raven/langchain-core/messages";
+import { ChatResult } from "@doc-raven/langchain-core/outputs";
 import {
   BaseChatModel,
   BaseChatModelCallOptions,
   BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+} from "@doc-raven/langchain-core/language_models/chat_models";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
 
 export interface AdvancedCustomChatModelOptions
   extends BaseChatModelCallOptions {}

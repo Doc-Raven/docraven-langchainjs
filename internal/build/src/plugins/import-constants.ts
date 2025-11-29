@@ -83,7 +83,7 @@ export interface ImportConstantsPluginOptions {
  * ## Package name handling
  *
  * The plugin automatically handles package naming:
- * - For `@langchain/core`: generates `langchain/...` imports
+ * - For `@doc-raven/langchain-core`: generates `langchain/...` imports
  * - For `@langchain/community`: generates `langchain_community/...` imports
  * - For `@langchain/openai`: generates `langchain_openai/...` imports
  *

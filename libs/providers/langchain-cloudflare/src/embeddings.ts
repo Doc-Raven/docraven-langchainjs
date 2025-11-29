@@ -1,6 +1,6 @@
 import { Ai } from "@cloudflare/workers-types";
-import { Embeddings, EmbeddingsParams } from "@langchain/core/embeddings";
-import { chunkArray } from "@langchain/core/utils/chunk_array";
+import { Embeddings, EmbeddingsParams } from "@doc-raven/langchain-core/embeddings";
+import { chunkArray } from "@doc-raven/langchain-core/utils/chunk_array";
 
 type AiTextEmbeddingsInput = {
   text: string | string[];

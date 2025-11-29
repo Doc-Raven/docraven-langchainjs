@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { CallbackManager } from "@langchain/core/callbacks/manager";
+import { CallbackManager } from "@doc-raven/langchain-core/callbacks/manager";
 import { HTTPClient } from "@mistralai/mistralai/lib/http.js";
 import { MistralAI } from "../llms.js";
 

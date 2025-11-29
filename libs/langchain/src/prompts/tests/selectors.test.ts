@@ -1,7 +1,7 @@
 import { expect, test } from "vitest";
 
-import { LengthBasedExampleSelector } from "@langchain/core/example_selectors";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { LengthBasedExampleSelector } from "@doc-raven/langchain-core/example_selectors";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 test("Test using LengthBasedExampleSelector", async () => {
   const prompt = new PromptTemplate({

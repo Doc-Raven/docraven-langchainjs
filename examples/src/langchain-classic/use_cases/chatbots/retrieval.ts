@@ -40,7 +40,7 @@ import { createStuffDocumentsChain } from "@langchain/classic/chains/combine_doc
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
+} from "@doc-raven/langchain-core/prompts";
 
 const SYSTEM_TEMPLATE = `Answer the user's questions based on the below context. 
 If the context doesn't contain any relevant information to the question, don't make something up and just say "I don't know":
@@ -60,7 +60,7 @@ const documentChain = await createStuffDocumentsChain({
   prompt: questionAnsweringPrompt,
 });
 
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@doc-raven/langchain-core/messages";
 
 console.log(
   await documentChain.invoke({
@@ -80,11 +80,11 @@ console.log(
   })
 );
 
-import type { BaseMessage } from "@langchain/core/messages";
+import type { BaseMessage } from "@doc-raven/langchain-core/messages";
 import {
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
+} from "@doc-raven/langchain-core/runnables";
 
 const parseRetrieverInput = (params: { messages: BaseMessage[] }) => {
   return params.messages[params.messages.length - 1].content;
@@ -128,8 +128,8 @@ console.log(
   })
 );
 
-import { RunnableBranch } from "@langchain/core/runnables";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { RunnableBranch } from "@doc-raven/langchain-core/runnables";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
 
 const queryTransformingRetrieverChain = RunnableBranch.from([
   [

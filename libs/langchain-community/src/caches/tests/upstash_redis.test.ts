@@ -1,6 +1,6 @@
 import { test, expect, jest } from "@jest/globals";
-import { sha256 } from "@langchain/core/utils/hash";
-import { StoredGeneration } from "@langchain/core/messages";
+import { sha256 } from "@doc-raven/langchain-core/utils/hash";
+import { StoredGeneration } from "@doc-raven/langchain-core/messages";
 
 import { UpstashRedisCache } from "../upstash_redis.js";
 

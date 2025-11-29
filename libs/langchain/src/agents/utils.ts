@@ -6,28 +6,28 @@ import {
   SystemMessage,
   MessageContent,
   ToolMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import { isCommand } from "@langchain/langgraph";
 import {
   type InteropZodObject,
   interopParse,
-} from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/types";
 import {
   BaseChatModel,
   type BaseChatModelCallOptions,
-} from "@langchain/core/language_models/chat_models";
+} from "@doc-raven/langchain-core/language_models/chat_models";
 import {
   LanguageModelLike,
   BaseLanguageModelInput,
-} from "@langchain/core/language_models/base";
+} from "@doc-raven/langchain-core/language_models/base";
 import {
   Runnable,
   RunnableLike,
   RunnableConfig,
   RunnableSequence,
   RunnableBinding,
-} from "@langchain/core/runnables";
-import type { ClientTool, ServerTool } from "@langchain/core/tools";
+} from "@doc-raven/langchain-core/runnables";
+import type { ClientTool, ServerTool } from "@doc-raven/langchain-core/tools";
 
 import { isBaseChatModel, isConfigurableModel } from "./model.js";
 import { MultipleToolsBoundError } from "./errors.js";

@@ -3,8 +3,8 @@ import type {
   FeatureExtractionPipelineOptions,
   FeatureExtractionPipeline,
 } from "@huggingface/transformers";
-import { Embeddings, type EmbeddingsParams } from "@langchain/core/embeddings";
-import { chunkArray } from "@langchain/core/utils/chunk_array";
+import { Embeddings, type EmbeddingsParams } from "@doc-raven/langchain-core/embeddings";
+import { chunkArray } from "@doc-raven/langchain-core/utils/chunk_array";
 
 export interface HuggingFaceTransformersEmbeddingsParams
   extends EmbeddingsParams {

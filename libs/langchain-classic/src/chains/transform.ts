@@ -1,8 +1,8 @@
 import {
   CallbackManagerForChainRun,
   Callbacks,
-} from "@langchain/core/callbacks/manager";
-import { ChainValues } from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/callbacks/manager";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
 import { ChainInputs, BaseChain } from "./base.js";
 
 /**

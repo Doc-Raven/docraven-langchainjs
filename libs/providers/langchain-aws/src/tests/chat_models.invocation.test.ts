@@ -1,5 +1,5 @@
 import { describe, expect, test, vi } from "vitest";
-import { HumanMessage, SystemMessage } from "@langchain/core/messages";
+import { HumanMessage, SystemMessage } from "@doc-raven/langchain-core/messages";
 import { ChatBedrockConverse } from "../chat_models.js";
 import type {
   ConverseCommandInput,

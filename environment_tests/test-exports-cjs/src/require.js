@@ -3,13 +3,13 @@ const { OpenAI } = require("@langchain/openai");
 const { ChatOllama } = require("@langchain/ollama");
 const { ChatGoogle } = require("@langchain/google-gauth");
 const { LLMChain } = require("@langchain/classic/chains");
-const { ChatPromptTemplate } = require("@langchain/core/prompts");
+const { ChatPromptTemplate } = require("@doc-raven/langchain-core/prompts");
 const { MemoryVectorStore } = require("@langchain/classic/vectorstores/memory");
 const {
   HuggingFaceTransformersEmbeddings,
 } = require("@langchain/community/embeddings/huggingface_transformers");
-const { Document } = require("@langchain/core/documents");
-const { RunnableLambda } = require("@langchain/core/runnables");
+const { Document } = require("@doc-raven/langchain-core/documents");
+const { RunnableLambda } = require("@doc-raven/langchain-core/runnables");
 
 async function test() {
   // Test exports

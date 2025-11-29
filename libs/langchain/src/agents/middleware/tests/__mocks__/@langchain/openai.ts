@@ -1,6 +1,6 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { vi } from "vitest";
-import { AIMessage } from "@langchain/core/messages";
+import { AIMessage } from "@doc-raven/langchain-core/messages";
 
 export const ChatOpenAI = class MockChatOpenAI {
   lc_kwargs: Record<string, unknown>;

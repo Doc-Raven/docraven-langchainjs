@@ -6,8 +6,8 @@ import {
   ToolMessage,
   type MessageStructure,
   type MessageType,
-} from "@langchain/core/messages";
-import type { BaseMessage } from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
+import type { BaseMessage } from "@doc-raven/langchain-core/messages";
 import {
   contextEditingMiddleware,
   ClearToolUsesEdit,

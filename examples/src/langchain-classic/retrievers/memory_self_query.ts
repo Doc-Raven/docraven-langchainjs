@@ -1,8 +1,8 @@
 import { MemoryVectorStore } from "@langchain/classic/vectorstores/memory";
 import { OpenAIEmbeddings, OpenAI } from "@langchain/openai";
 import { SelfQueryRetriever } from "@langchain/classic/retrievers/self_query";
-import { FunctionalTranslator } from "@langchain/core/structured_query";
-import { Document } from "@langchain/core/documents";
+import { FunctionalTranslator } from "@doc-raven/langchain-core/structured_query";
+import { Document } from "@doc-raven/langchain-core/documents";
 import type { AttributeInfo } from "@langchain/classic/chains/query_constructor";
 
 /**

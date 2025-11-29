@@ -2,4 +2,4 @@ export {
   type TranslatorOpts,
   BaseTranslator,
   BasicTranslator,
-} from "@langchain/core/structured_query";
+} from "@doc-raven/langchain-core/structured_query";

@@ -1,6 +1,6 @@
-import { StructuredOutputMethodOptions } from "@langchain/core/language_models/base";
-import type { Serialized } from "@langchain/core/load/serializable";
-import { LangSmithParams } from "@langchain/core/language_models/chat_models";
+import { StructuredOutputMethodOptions } from "@doc-raven/langchain-core/language_models/base";
+import type { Serialized } from "@doc-raven/langchain-core/load/serializable";
+import { LangSmithParams } from "@doc-raven/langchain-core/language_models/chat_models";
 import { ChatOpenAI, ChatOpenAICallOptions } from "../../chat_models/index.js";
 import { AzureOpenAIChatInput } from "../../types.js";
 import {
@@ -165,8 +165,8 @@ import { AzureChatOpenAIResponses } from "./responses.js";
  * <summary><strong>Aggregate Streamed Chunks</strong></summary>
  *
  * ```typescript
- * import { AIMessageChunk } from '@langchain/core/messages';
- * import { concat } from '@langchain/core/utils/stream';
+ * import { AIMessageChunk } from '@doc-raven/langchain-core/messages';
+ * import { concat } from '@doc-raven/langchain-core/utils/stream';
  *
  * const stream = await llm.stream(input);
  * let full: AIMessageChunk | undefined;
@@ -309,7 +309,7 @@ import { AzureChatOpenAIResponses } from "./responses.js";
  * <summary><strong>Multimodal</strong></summary>
  *
  * ```typescript
- * import { HumanMessage } from '@langchain/core/messages';
+ * import { HumanMessage } from '@doc-raven/langchain-core/messages';
  *
  * const imageUrl = "https://example.com/image.jpg";
  * const imageData = await fetch(imageUrl).then(res => res.arrayBuffer());

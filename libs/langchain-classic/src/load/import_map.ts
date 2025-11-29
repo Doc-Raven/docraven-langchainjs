@@ -91,7 +91,7 @@ export * as chains from "../chains/index.js";
 export * as agents__format_scratchpad__openai_functions from "../agents/format_scratchpad/openai_functions.js";
 export * as evaluation from "../evaluation/index.js";
 export * as retrievers__contextual_compression from "../retrievers/contextual_compression.js";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
 const schema__output_parser = {
   StringOutputParser,
 };

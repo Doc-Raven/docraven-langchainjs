@@ -1,9 +1,9 @@
 import { test, expect } from "vitest";
 
-import { LLMResult } from "@langchain/core/outputs";
-import { BaseLLM } from "@langchain/core/language_models/llms";
-import { AIMessage, HumanMessage } from "@langchain/core/messages";
-import { InMemoryChatMessageHistory as ChatMessageHistory } from "@langchain/core/chat_history";
+import { LLMResult } from "@doc-raven/langchain-core/outputs";
+import { BaseLLM } from "@doc-raven/langchain-core/language_models/llms";
+import { AIMessage, HumanMessage } from "@doc-raven/langchain-core/messages";
+import { InMemoryChatMessageHistory as ChatMessageHistory } from "@doc-raven/langchain-core/chat_history";
 
 import { EntityMemory } from "../entity_memory.js";
 

@@ -3,11 +3,11 @@ import {
   SystemMessagePromptTemplate,
   HumanMessagePromptTemplate,
   PromptTemplate,
-} from "@langchain/core/prompts";
+} from "@doc-raven/langchain-core/prompts";
 import {
   ConditionalPromptSelector,
   isChatModel,
-} from "@langchain/core/example_selectors";
+} from "@doc-raven/langchain-core/example_selectors";
 
 export const DEFAULT_QA_PROMPT = /*#__PURE__*/ new PromptTemplate({
   template:

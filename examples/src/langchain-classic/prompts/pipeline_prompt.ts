@@ -1,7 +1,7 @@
 import {
   PromptTemplate,
   PipelinePromptTemplate,
-} from "@langchain/core/prompts";
+} from "@doc-raven/langchain-core/prompts";
 
 const fullPrompt = PromptTemplate.fromTemplate(`{introduction}
 

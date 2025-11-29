@@ -1,8 +1,8 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { Callbacks } from "@langchain/core/callbacks/manager";
-import { AgentAction, AgentFinish } from "@langchain/core/agents";
-import { OutputParserException } from "@langchain/core/output_parsers";
-import { renderTemplate } from "@langchain/core/prompts";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
+import { Callbacks } from "@doc-raven/langchain-core/callbacks/manager";
+import { AgentAction, AgentFinish } from "@doc-raven/langchain-core/agents";
+import { OutputParserException } from "@doc-raven/langchain-core/output_parsers";
+import { renderTemplate } from "@doc-raven/langchain-core/prompts";
 import { AgentActionOutputParser } from "../types.js";
 import {
   AGENT_ACTION_FORMAT_INSTRUCTIONS,

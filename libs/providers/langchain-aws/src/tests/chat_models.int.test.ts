@@ -9,9 +9,9 @@ import {
   MessageContentComplex,
   SystemMessage,
   ToolMessage,
-} from "@langchain/core/messages";
-import { tool } from "@langchain/core/tools";
-import { concat } from "@langchain/core/utils/stream";
+} from "@doc-raven/langchain-core/messages";
+import { tool } from "@doc-raven/langchain-core/tools";
+import { concat } from "@doc-raven/langchain-core/utils/stream";
 
 import { ChatBedrockConverse } from "../chat_models.js";
 import { concatenateLangchainReasoningBlocks } from "../utils/message_inputs.js";

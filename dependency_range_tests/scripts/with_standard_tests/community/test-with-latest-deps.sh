@@ -37,7 +37,7 @@ cd "$monorepo_community_dir"
 
 # Clean and reinstall to avoid dependency conflicts
 pnpm install --no-frozen-lockfile
-pnpm add @langchain/core
+pnpm add @doc-raven/langchain-core
 
 # Approve builds for transient dependencies 
 pnpm approve-builds

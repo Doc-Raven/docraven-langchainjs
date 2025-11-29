@@ -1,5 +1,5 @@
-import type { LanguageModelLike } from "@langchain/core/language_models/base";
-import type { BaseChatModel } from "@langchain/core/language_models/chat_models";
+import type { LanguageModelLike } from "@doc-raven/langchain-core/language_models/base";
+import type { BaseChatModel } from "@doc-raven/langchain-core/language_models/chat_models";
 
 export interface ConfigurableModelInterface {
   _queuedMethodOperations: Record<string, unknown>;

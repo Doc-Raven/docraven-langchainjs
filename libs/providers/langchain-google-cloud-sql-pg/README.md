@@ -29,7 +29,7 @@ Before you use the PostgresVectorStore you will need to create a postgres connec
 
 ```javascript
 import { Column, PostgresEngine, PostgresEngineArgs, PostgresVectorStore, VectorStoreTableArgs } from "@langchain/google-cloud-sql-pg";
-import { SyntheticEmbeddings } from "@langchain/core/utils/testing";
+import { SyntheticEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 
 const pgArgs: PostgresEngineArgs = {
     user: "db-user",

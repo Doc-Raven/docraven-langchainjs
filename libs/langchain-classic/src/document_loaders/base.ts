@@ -1,1 +1,1 @@
-export * from "@langchain/core/document_loaders/base";
+export * from "@doc-raven/langchain-core/document_loaders/base";

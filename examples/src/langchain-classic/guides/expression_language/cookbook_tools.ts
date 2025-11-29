@@ -1,5 +1,5 @@
-import { PromptTemplate } from "@langchain/core/prompts";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
 import { ChatAnthropic } from "@langchain/anthropic";
 import { SerpAPI } from "@langchain/community/tools/serpapi";
 

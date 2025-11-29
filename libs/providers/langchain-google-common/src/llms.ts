@@ -1,12 +1,12 @@
-import { CallbackManager, Callbacks } from "@langchain/core/callbacks/manager";
-import { BaseLLM, LLM } from "@langchain/core/language_models/llms";
+import { CallbackManager, Callbacks } from "@doc-raven/langchain-core/callbacks/manager";
+import { BaseLLM, LLM } from "@doc-raven/langchain-core/language_models/llms";
 import {
   type BaseLanguageModelCallOptions,
   BaseLanguageModelInput,
-} from "@langchain/core/language_models/base";
-import { BaseMessage, MessageContent } from "@langchain/core/messages";
-import { GenerationChunk } from "@langchain/core/outputs";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@doc-raven/langchain-core/language_models/base";
+import { BaseMessage, MessageContent } from "@doc-raven/langchain-core/messages";
+import { GenerationChunk } from "@doc-raven/langchain-core/outputs";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 
 import { AbstractGoogleLLMConnection } from "./connection.js";
 import {

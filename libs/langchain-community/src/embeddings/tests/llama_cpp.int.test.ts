@@ -1,5 +1,5 @@
 import { test, expect } from "@jest/globals";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 import { LlamaCppEmbeddings } from "../llama_cpp.js";
 
 const llamaPath = getEnvironmentVariable("LLAMA_PATH")!;

@@ -1,12 +1,12 @@
-import { BaseChatModel } from "@langchain/core/language_models/chat_models";
-import { BaseFunctionCallOptions } from "@langchain/core/language_models/base";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { InteropZodObject } from "@langchain/core/utils/types";
-import type { AIMessageChunk } from "@langchain/core/messages";
+import { BaseChatModel } from "@doc-raven/langchain-core/language_models/chat_models";
+import { BaseFunctionCallOptions } from "@doc-raven/langchain-core/language_models/base";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { InteropZodObject } from "@doc-raven/langchain-core/utils/types";
+import type { AIMessageChunk } from "@doc-raven/langchain-core/messages";
 import {
   type JsonSchema7ObjectType,
   toJsonSchema,
-} from "@langchain/core/utils/json_schema";
+} from "@doc-raven/langchain-core/utils/json_schema";
 import {
   FunctionParameters,
   JsonKeyOutputFunctionsParser,

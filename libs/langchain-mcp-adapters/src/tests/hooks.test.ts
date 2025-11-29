@@ -1,9 +1,9 @@
 import { describe, test, expect, beforeEach, afterEach } from "vitest";
 import { Server } from "node:http";
 import { join } from "node:path";
-import { ToolMessage, BaseMessage } from "@langchain/core/messages";
+import { ToolMessage, BaseMessage } from "@doc-raven/langchain-core/messages";
 import { createAgent, FakeToolCallingModel } from "langchain";
-import type { RunnableConfig } from "@langchain/core/runnables";
+import type { RunnableConfig } from "@doc-raven/langchain-core/runnables";
 
 import { createDummyHttpServer } from "./fixtures/dummy-http-server.js";
 import { MultiServerMCPClient } from "../client.js";

@@ -1,6 +1,6 @@
 import { test, expect, beforeEach, describe } from "vitest";
 import { MongoClient } from "mongodb";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { OpenAIEmbeddings } from "@langchain/openai";
 
 import { AzureCosmosDBMongoDBVectorStore } from "../azure_cosmosdb_mongodb.js";

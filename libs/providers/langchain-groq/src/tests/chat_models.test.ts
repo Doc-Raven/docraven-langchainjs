@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { ChatMessage } from "@langchain/core/messages";
+import { ChatMessage } from "@doc-raven/langchain-core/messages";
 import { ChatGroq, messageToGroqRole } from "../chat_models.js";
 
 test("Serialization", () => {

@@ -1,6 +1,6 @@
 import { AgentExecutor, createReactAgent } from "@langchain/classic/agents";
 import { pull } from "langchain/hub";
-import type { PromptTemplate } from "@langchain/core/prompts";
+import type { PromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 import { OpenAI } from "@langchain/openai";
 

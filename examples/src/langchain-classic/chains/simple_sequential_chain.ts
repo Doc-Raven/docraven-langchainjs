@@ -1,6 +1,6 @@
 import { SimpleSequentialChain, LLMChain } from "@langchain/classic/chains";
 import { OpenAI } from "@langchain/openai";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 // This is an LLMChain to write a synopsis given a title of a play.
 const llm = new OpenAI({ temperature: 0 });

@@ -57,36 +57,36 @@
   "types": "./dist/index.d.cts",
   "exports": {
     ".": {
-      "input": "./src/index.ts",
+      "input": "./src\\index.ts",
       "require": {
-        "types": "./dist/index.d.cts",
-        "default": "./dist/index.cjs"
+        "types": "./dist\\index.d.cts",
+        "default": "./dist\\index.cjs"
       },
       "import": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.js"
+        "types": "./dist\\index.d.ts",
+        "default": "./dist\\index.js"
       }
     },
     "./types": {
-      "input": "./src/types.ts",
+      "input": "./src\\types.ts",
       "require": {
-        "types": "./dist/types.d.cts",
-        "default": "./dist/types.cjs"
+        "types": "./dist\\types.d.cts",
+        "default": "./dist\\types.cjs"
       },
       "import": {
-        "types": "./dist/types.d.ts",
-        "default": "./dist/types.js"
+        "types": "./dist\\types.d.ts",
+        "default": "./dist\\types.js"
       }
     },
     "./utils": {
-      "input": "./src/utils.ts",
+      "input": "./src\\utils.ts",
       "require": {
-        "types": "./dist/utils.d.cts",
-        "default": "./dist/utils.cjs"
+        "types": "./dist\\utils.d.cts",
+        "default": "./dist\\utils.cjs"
       },
       "import": {
-        "types": "./dist/utils.d.ts",
-        "default": "./dist/utils.js"
+        "types": "./dist\\utils.d.ts",
+        "default": "./dist\\utils.js"
       }
     },
     "./package.json": "./package.json"

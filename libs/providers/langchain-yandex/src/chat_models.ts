@@ -1,8 +1,8 @@
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { AIMessage, BaseMessage } from "@langchain/core/messages";
-import { ChatResult, ChatGeneration } from "@langchain/core/outputs";
-import { BaseChatModel } from "@langchain/core/language_models/chat_models";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
+import { AIMessage, BaseMessage } from "@doc-raven/langchain-core/messages";
+import { ChatResult, ChatGeneration } from "@doc-raven/langchain-core/outputs";
+import { BaseChatModel } from "@doc-raven/langchain-core/language_models/chat_models";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 
 import { YandexGPTInputs } from "./llms.js";
 

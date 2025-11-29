@@ -1,5 +1,5 @@
 import { z } from "zod/v3";
-import { tool } from "@langchain/core/tools";
+import { tool } from "@doc-raven/langchain-core/tools";
 import { initChatModel } from "@langchain/classic/chat_models/universal";
 
 const GetWeather = z

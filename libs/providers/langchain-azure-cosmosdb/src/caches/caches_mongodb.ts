@@ -2,11 +2,11 @@ import {
   BaseCache,
   deserializeStoredGeneration,
   serializeGeneration,
-} from "@langchain/core/caches";
-import { Generation } from "@langchain/core/outputs";
-import { Document } from "@langchain/core/documents";
-import { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@doc-raven/langchain-core/caches";
+import { Generation } from "@doc-raven/langchain-core/outputs";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 import { MongoClient } from "mongodb";
 import {
   AzureCosmosDBMongoDBConfig,

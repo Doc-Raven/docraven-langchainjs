@@ -1,4 +1,4 @@
-# @langchain/core
+# @doc-raven/langchain-core
 
 ## 1.1.0
 
@@ -36,7 +36,7 @@
 
 ### Patch Changes
 
-- 0a8a23b: feat(@langchain/core): support of ToolRuntime
+- 0a8a23b: feat(@doc-raven/langchain-core): support of ToolRuntime
 
 ## 1.0.2
 
@@ -101,7 +101,7 @@ Improvements to the core message types:
 
 ### 📦 Package Changes
 
-The `@langchain/core` package remains focused on essential abstractions:
+The `@doc-raven/langchain-core` package remains focused on essential abstractions:
 
 - Core message types and content blocks
 - Base runnable abstractions
@@ -117,10 +117,10 @@ The `@langchain/core` package remains focused on essential abstractions:
 
 **New Features**: To take advantage of new features like content blocks and middleware:
 
-1. Update to `@langchain/core@next`:
+1. Update to `@doc-raven/langchain-core@next`:
 
    ```bash
-   npm install @langchain/core@1.0.0
+   npm install @doc-raven/langchain-core@1.0.0
    ```
 
 2. Use the new `contentBlocks` property to access rich content:
@@ -134,7 +134,7 @@ The `@langchain/core` package remains focused on essential abstractions:
 3. For middleware and `createAgent`, install `langchain@next`:
 
    ```bash
-   npm install langchain@1.0.0 @langchain/core@1.0.0
+   npm install langchain@1.0.0 @doc-raven/langchain-core@1.0.0
    ```
 
 ### 📚 Additional Resources

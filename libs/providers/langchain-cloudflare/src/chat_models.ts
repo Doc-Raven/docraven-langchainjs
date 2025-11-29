@@ -2,16 +2,16 @@ import {
   LangSmithParams,
   SimpleChatModel,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
-import type { BaseLanguageModelCallOptions } from "@langchain/core/language_models/base";
+} from "@doc-raven/langchain-core/language_models/chat_models";
+import type { BaseLanguageModelCallOptions } from "@doc-raven/langchain-core/language_models/base";
 import {
   AIMessageChunk,
   BaseMessage,
   ChatMessage,
-} from "@langchain/core/messages";
-import { ChatGenerationChunk } from "@langchain/core/outputs";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+} from "@doc-raven/langchain-core/messages";
+import { ChatGenerationChunk } from "@doc-raven/langchain-core/outputs";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
 
 import type { CloudflareWorkersAIInput } from "./llms.js";
 import { convertEventStreamToIterableReadableDataStream } from "./utils/event_source_parse.js";

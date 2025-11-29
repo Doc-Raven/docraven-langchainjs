@@ -1,7 +1,7 @@
 import { test } from "vitest";
 import { OpenAI } from "@langchain/openai";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { Document } from "@langchain/core/documents";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { Document } from "@doc-raven/langchain-core/documents";
 import {
   loadQAMapReduceChain,
   loadQARefineChain,

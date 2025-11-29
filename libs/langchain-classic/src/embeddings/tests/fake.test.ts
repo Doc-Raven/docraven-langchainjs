@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { SyntheticEmbeddings } from "@langchain/core/utils/testing";
+import { SyntheticEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 
 test("Synthetic basic", async () => {
   const embed = new SyntheticEmbeddings({ vectorSize: 5 });

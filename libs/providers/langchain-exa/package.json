@@ -32,10 +32,10 @@
     "exa-js": "^1.0.12"
   },
   "peerDependencies": {
-    "@langchain/core": "^1.0.0"
+    "@doc-raven/langchain-core": "^1.0.0"
   },
   "devDependencies": {
-    "@langchain/core": "workspace:*",
+    "@doc-raven/langchain-core": "workspace:*",
     "@langchain/eslint": "workspace:*",
     "@tsconfig/recommended": "^1.0.3",
     "@types/uuid": "^9",
@@ -55,14 +55,14 @@
   "types": "./dist/index.d.cts",
   "exports": {
     ".": {
-      "input": "./src/index.ts",
+      "input": "./src\\index.ts",
       "require": {
-        "types": "./dist/index.d.cts",
-        "default": "./dist/index.cjs"
+        "types": "./dist\\index.d.cts",
+        "default": "./dist\\index.cjs"
       },
       "import": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.js"
+        "types": "./dist\\index.d.ts",
+        "default": "./dist\\index.js"
       }
     },
     "./package.json": "./package.json"

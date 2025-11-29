@@ -1,6 +1,6 @@
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 
-import { Embeddings, type EmbeddingsParams } from "@langchain/core/embeddings";
+import { Embeddings, type EmbeddingsParams } from "@doc-raven/langchain-core/embeddings";
 
 import { encodeApiKey } from "../utils/zhipuai.js";
 

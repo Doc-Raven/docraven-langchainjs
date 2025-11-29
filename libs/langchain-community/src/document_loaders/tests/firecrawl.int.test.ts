@@ -1,5 +1,5 @@
 import { test } from "@jest/globals";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { FireCrawlLoader } from "../web/firecrawl.js";
 
 test("Test FireCrawlLoader load method with scrape mode", async () => {

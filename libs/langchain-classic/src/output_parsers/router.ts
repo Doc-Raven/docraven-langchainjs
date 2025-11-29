@@ -1,8 +1,8 @@
-import { OutputParserException } from "@langchain/core/output_parsers";
+import { OutputParserException } from "@doc-raven/langchain-core/output_parsers";
 import {
   type InferInteropZodOutput,
   type InteropZodType,
-} from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/types";
 import { JsonMarkdownStructuredOutputParser } from "./structured.js";
 
 /**

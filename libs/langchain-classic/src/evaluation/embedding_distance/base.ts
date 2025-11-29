@@ -1,10 +1,10 @@
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { ChainValues } from "@langchain/core/utils/types";
+import type { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
 import {
   CallbackManagerForChainRun,
   Callbacks,
   BaseCallbackConfig,
-} from "@langchain/core/callbacks/manager";
+} from "@doc-raven/langchain-core/callbacks/manager";
 import {
   PairwiseStringEvaluator,
   PairwiseStringEvaluatorArgs,

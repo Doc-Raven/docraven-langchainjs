@@ -1,6 +1,6 @@
 import { expect, test } from "vitest";
 import { OpenAI, ChatOpenAI } from "@langchain/openai";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
 import { LLMChain } from "../llm_chain.js";
 import { SequentialChain } from "../sequential_chain.js";
 

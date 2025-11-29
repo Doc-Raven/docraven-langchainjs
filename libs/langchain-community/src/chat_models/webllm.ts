@@ -1,11 +1,11 @@
 import {
   SimpleChatModel,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
-import type { BaseLanguageModelCallOptions } from "@langchain/core/language_models/base";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { BaseMessage, AIMessageChunk } from "@langchain/core/messages";
-import { ChatGenerationChunk } from "@langchain/core/outputs";
+} from "@doc-raven/langchain-core/language_models/chat_models";
+import type { BaseLanguageModelCallOptions } from "@doc-raven/langchain-core/language_models/base";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
+import { BaseMessage, AIMessageChunk } from "@doc-raven/langchain-core/messages";
+import { ChatGenerationChunk } from "@doc-raven/langchain-core/outputs";
 import * as webllm from "@mlc-ai/web-llm";
 import { ChatCompletionMessageParam } from "@mlc-ai/web-llm/lib/openai_api_protocols";
 

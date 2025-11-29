@@ -1,6 +1,6 @@
 import { test, expect } from "vitest";
 
-import { FakeStreamingLLM } from "@langchain/core/utils/testing";
+import { FakeStreamingLLM } from "@doc-raven/langchain-core/utils/testing";
 
 import { HttpResponseOutputParser } from "../http_response.js";
 

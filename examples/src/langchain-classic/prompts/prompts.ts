@@ -3,7 +3,7 @@ import {
   HumanMessagePromptTemplate,
   PromptTemplate,
   SystemMessagePromptTemplate,
-} from "@langchain/core/prompts";
+} from "@doc-raven/langchain-core/prompts";
 
 export const run = async () => {
   // A `PromptTemplate` consists of a template string and a list of input variables.

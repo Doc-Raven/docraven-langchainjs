@@ -1,12 +1,12 @@
-import { AgentAction, AgentFinish, AgentStep } from "@langchain/core/agents";
+import { AgentAction, AgentFinish, AgentStep } from "@doc-raven/langchain-core/agents";
 import {
   AIMessage,
   BaseMessage,
   isBaseMessage,
-} from "@langchain/core/messages";
-import { OutputParserException } from "@langchain/core/output_parsers";
-import { ChatGeneration } from "@langchain/core/outputs";
-import { ToolCall } from "@langchain/core/messages/tool";
+} from "@doc-raven/langchain-core/messages";
+import { OutputParserException } from "@doc-raven/langchain-core/output_parsers";
+import { ChatGeneration } from "@doc-raven/langchain-core/outputs";
+import { ToolCall } from "@doc-raven/langchain-core/messages/tool";
 import { AgentMultiActionOutputParser } from "../types.js";
 
 /**

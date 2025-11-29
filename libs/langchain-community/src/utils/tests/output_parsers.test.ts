@@ -1,6 +1,6 @@
 import { describe, expect, test } from "@jest/globals";
 import { z } from "zod/v3";
-import { OutputParserException } from "@langchain/core/output_parsers";
+import { OutputParserException } from "@doc-raven/langchain-core/output_parsers";
 import {
   ReasoningStructuredOutputParser,
   ReasoningJsonOutputParser,

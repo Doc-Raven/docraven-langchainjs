@@ -15,7 +15,7 @@ export {
   type ContentBlock,
   filterMessages,
   trimMessages,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 
 /**
  * Universal Chat Model
@@ -32,7 +32,7 @@ export {
   DynamicTool,
   StructuredTool,
   DynamicStructuredTool,
-} from "@langchain/core/tools";
+} from "@doc-raven/langchain-core/tools";
 
 /**
  * LangChain Agents
@@ -47,9 +47,9 @@ export * from "./agents/middleware/index.js";
 /**
  * LangChain Stores
  */
-export { InMemoryStore } from "@langchain/core/stores";
+export { InMemoryStore } from "@doc-raven/langchain-core/stores";
 
 /**
  * LangChain Documents
  */
-export { type DocumentInput, Document } from "@langchain/core/documents";
+export { type DocumentInput, Document } from "@doc-raven/langchain-core/documents";

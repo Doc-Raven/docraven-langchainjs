@@ -1,4 +1,4 @@
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { WatsonxRerank } from "../ibm.js";
 
 const query = "What is the capital of the United States?";

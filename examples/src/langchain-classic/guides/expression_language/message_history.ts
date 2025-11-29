@@ -1,9 +1,9 @@
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
+} from "@doc-raven/langchain-core/prompts";
 import { ChatAnthropic } from "@langchain/anthropic";
-import { RunnableWithMessageHistory } from "@langchain/core/runnables";
+import { RunnableWithMessageHistory } from "@doc-raven/langchain-core/runnables";
 import { UpstashRedisChatMessageHistory } from "@langchain/community/stores/message/upstash_redis";
 // For demos, you can also use an in-memory store:
 // import { ChatMessageHistory } from "@langchain/classic/stores/message/in_memory";

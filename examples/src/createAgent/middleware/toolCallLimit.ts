@@ -8,7 +8,7 @@
 import { z } from "zod";
 import { createAgent, tool, toolCallLimitMiddleware } from "langchain";
 import { ChatOpenAI } from "@langchain/openai";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 import { MemorySaver } from "@langchain/langgraph";
 const config = { configurable: { thread_id: "demo-thread" } };
 

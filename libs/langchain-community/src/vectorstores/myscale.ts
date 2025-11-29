@@ -1,9 +1,9 @@
 import * as uuid from "uuid";
 import { ClickHouseClient, createClient } from "@clickhouse/client";
 
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { VectorStore } from "@langchain/core/vectorstores";
-import { Document } from "@langchain/core/documents";
+import type { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
+import { VectorStore } from "@doc-raven/langchain-core/vectorstores";
+import { Document } from "@doc-raven/langchain-core/documents";
 
 /**
  * Arguments for the MyScaleStore class, which include the host, port,

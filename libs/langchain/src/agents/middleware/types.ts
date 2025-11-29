@@ -5,17 +5,17 @@ import type {
   InteropZodOptional,
   InferInteropZodInput,
   InferInteropZodOutput,
-} from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/types";
 import type { InteropZodToStateDefinition } from "@langchain/langgraph/zod";
 import type { AnnotationRoot } from "@langchain/langgraph";
 import type {
   AIMessage,
   SystemMessage,
   ToolMessage,
-} from "@langchain/core/messages";
-import type { ToolCall } from "@langchain/core/messages/tool";
+} from "@doc-raven/langchain-core/messages";
+import type { ToolCall } from "@doc-raven/langchain-core/messages/tool";
 import type { Command } from "@langchain/langgraph";
-import type { ClientTool, ServerTool } from "@langchain/core/tools";
+import type { ClientTool, ServerTool } from "@doc-raven/langchain-core/tools";
 
 import type { JumpToTarget } from "../constants.js";
 import type { Runtime, AgentBuiltInState } from "../runtime.js";

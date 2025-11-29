@@ -1,6 +1,6 @@
 import { Client } from "typesense";
-import { Document } from "@langchain/core/documents";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { FakeEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 import { Typesense } from "../typesense.js";
 
 test("documentsToTypesenseRecords should return the correct typesense records", async () => {

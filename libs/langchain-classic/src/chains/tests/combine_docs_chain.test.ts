@@ -1,7 +1,7 @@
 import { test, expect } from "vitest";
-import { Document } from "@langchain/core/documents";
-import { BaseLLM } from "@langchain/core/language_models/llms";
-import { LLMResult } from "@langchain/core/outputs";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { BaseLLM } from "@doc-raven/langchain-core/language_models/llms";
+import { LLMResult } from "@doc-raven/langchain-core/outputs";
 import { loadQAMapReduceChain } from "../question_answering/load.js";
 import { loadSummarizationChain } from "../index.js";
 

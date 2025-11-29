@@ -4,7 +4,7 @@ import {
   AIMessage,
   ContentBlock,
   HumanMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import { anthropicResponseToChatMessages } from "../utils/message_outputs.js";
 import { _convertMessagesToAnthropicPayload } from "../utils/message_inputs.js";
 

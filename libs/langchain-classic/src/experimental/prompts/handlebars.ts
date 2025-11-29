@@ -1,6 +1,6 @@
 import Handlebars from "handlebars";
-import { type ParsedFStringNode } from "@langchain/core/prompts";
-import type { InputValues } from "@langchain/core/utils/types";
+import { type ParsedFStringNode } from "@doc-raven/langchain-core/prompts";
+import type { InputValues } from "@doc-raven/langchain-core/utils/types";
 import {
   CustomFormatPromptTemplate,
   CustomFormatPromptTemplateInput,

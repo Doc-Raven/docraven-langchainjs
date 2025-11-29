@@ -5,8 +5,8 @@ import Exa, {
   SearchResult,
 } from "exa-js";
 
-import { BaseRetriever, BaseRetrieverInput } from "@langchain/core/retrievers";
-import { Document } from "@langchain/core/documents";
+import { BaseRetriever, BaseRetrieverInput } from "@doc-raven/langchain-core/retrievers";
+import { Document } from "@doc-raven/langchain-core/documents";
 
 /**
  * Interface for the fields required during the initialization of a

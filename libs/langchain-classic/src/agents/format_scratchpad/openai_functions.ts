@@ -3,9 +3,9 @@ import {
   type BaseMessage,
   HumanMessage,
   FunctionMessage,
-} from "@langchain/core/messages";
-import type { AgentStep } from "@langchain/core/agents";
-import { renderTemplate } from "@langchain/core/prompts";
+} from "@doc-raven/langchain-core/messages";
+import type { AgentStep } from "@doc-raven/langchain-core/agents";
+import { renderTemplate } from "@doc-raven/langchain-core/prompts";
 import { TEMPLATE_TOOL_RESPONSE } from "../chat_convo/prompt.js";
 
 /**

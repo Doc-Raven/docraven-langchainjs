@@ -1,1 +1,1 @@
-export * from "@langchain/core/structured_query";
+export * from "@doc-raven/langchain-core/structured_query";

@@ -2,10 +2,10 @@ import { test, expect, describe, it } from "vitest";
 
 import { z } from "zod/v3";
 
-import { toJsonSchema } from "@langchain/core/utils/json_schema";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { AIMessage, AIMessageChunk } from "@langchain/core/messages";
-import { concat } from "@langchain/core/utils/stream";
+import { toJsonSchema } from "@doc-raven/langchain-core/utils/json_schema";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { AIMessage, AIMessageChunk } from "@doc-raven/langchain-core/messages";
+import { concat } from "@doc-raven/langchain-core/utils/stream";
 
 import { ChatOpenAI } from "../index.js";
 

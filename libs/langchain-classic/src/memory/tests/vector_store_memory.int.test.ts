@@ -1,7 +1,7 @@
 import { test, expect } from "vitest";
 
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 
 import { VectorStoreRetrieverMemory } from "../vector_store.js";
 import { MemoryVectorStore } from "../../vectorstores/memory.js";

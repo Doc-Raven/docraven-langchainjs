@@ -2,11 +2,11 @@ import pg, { type Pool, type PoolClient, type PoolConfig } from "pg";
 import {
   MaxMarginalRelevanceSearchOptions,
   VectorStore,
-} from "@langchain/core/vectorstores";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { Document } from "@langchain/core/documents";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { maximalMarginalRelevance } from "@langchain/core/utils/math";
+} from "@doc-raven/langchain-core/vectorstores";
+import type { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
+import { maximalMarginalRelevance } from "@doc-raven/langchain-core/utils/math";
 
 /**
  * Strict metadata filter type that supports various filtering operations.
@@ -165,7 +165,7 @@ export interface PGVectorStoreArgs {
  * <summary><strong>Add documents</strong></summary>
  *
  * ```typescript
- * import type { Document } from '@langchain/core/documents';
+ * import type { Document } from '@doc-raven/langchain-core/documents';
  *
  * const document1 = { pageContent: "foo", metadata: { baz: "bar", num: 4 } };
  * const document2 = { pageContent: "thud", metadata: { bar: "baz" } };

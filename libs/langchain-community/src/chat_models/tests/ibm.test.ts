@@ -1,15 +1,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable dot-notation */
 import { z } from "zod";
-import { DynamicStructuredTool } from "@langchain/core/tools";
+import { DynamicStructuredTool } from "@doc-raven/langchain-core/tools";
 import { jest } from "@jest/globals";
 import { Gateway } from "@ibm-cloud/watsonx-ai/gateway";
 import {
   transformStreamToObjectStream,
   WatsonXAI,
 } from "@ibm-cloud/watsonx-ai";
-import { AIMessage, AIMessageChunk } from "@langchain/core/messages";
-import { IterableReadableStream } from "@langchain/core/utils/stream";
+import { AIMessage, AIMessageChunk } from "@doc-raven/langchain-core/messages";
+import { IterableReadableStream } from "@doc-raven/langchain-core/utils/stream";
 import {
   ChatWatsonx,
   ChatWatsonxConstructor,

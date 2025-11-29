@@ -1,5 +1,5 @@
 import { BaseClient } from "@xata.io/client";
-import { AIMessage, HumanMessage } from "@langchain/core/messages";
+import { AIMessage, HumanMessage } from "@doc-raven/langchain-core/messages";
 import { XataChatMessageHistory } from "../message/xata.js";
 
 describe("XataChatMessageHistory", () => {

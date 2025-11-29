@@ -1,13 +1,13 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { describe, it, test, expect } from "vitest";
-import { tool } from "@langchain/core/tools";
+import { tool } from "@doc-raven/langchain-core/tools";
 import { z } from "zod/v3";
 
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { RunLogPatch, StreamEvent } from "@langchain/core/tracers/log_stream";
-import { AIMessageChunk } from "@langchain/core/messages";
-import { concat } from "@langchain/core/utils/stream";
-import { awaitAllCallbacks } from "@langchain/core/callbacks/promises";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { RunLogPatch, StreamEvent } from "@doc-raven/langchain-core/tracers/log_stream";
+import { AIMessageChunk } from "@doc-raven/langchain-core/messages";
+import { concat } from "@doc-raven/langchain-core/utils/stream";
+import { awaitAllCallbacks } from "@doc-raven/langchain-core/callbacks/promises";
 
 import { createAgent } from "../../agents/index.js";
 import { initChatModel } from "../universal.js";

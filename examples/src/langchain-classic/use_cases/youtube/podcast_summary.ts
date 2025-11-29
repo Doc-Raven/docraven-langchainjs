@@ -1,7 +1,7 @@
 import { loadSummarizationChain } from "@langchain/classic/chains";
 import { SearchApiLoader } from "@langchain/community/document_loaders/web/searchapi";
 import { TokenTextSplitter } from "@langchain/textsplitters";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
 import { ChatAnthropic } from "@langchain/anthropic";
 
 const loader = new SearchApiLoader({

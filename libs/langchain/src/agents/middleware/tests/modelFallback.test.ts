@@ -1,6 +1,6 @@
 import { expect, describe, it, vi } from "vitest";
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
-import { LanguageModelLike } from "@langchain/core/language_models/base";
+import { HumanMessage, AIMessage } from "@doc-raven/langchain-core/messages";
+import { LanguageModelLike } from "@doc-raven/langchain-core/language_models/base";
 
 import { createAgent } from "../../index.js";
 import { modelFallbackMiddleware } from "../modelFallback.js";

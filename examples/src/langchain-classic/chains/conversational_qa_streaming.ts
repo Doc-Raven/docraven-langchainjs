@@ -3,9 +3,9 @@ import { HNSWLib } from "@langchain/community/vectorstores/hnswlib";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
 import * as fs from "fs";
 import { formatDocumentsAsString } from "@langchain/classic/util/document";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { StringOutputParser } from "@langchain/core/output_parsers";
-import { RunnableSequence } from "@langchain/core/runnables";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
+import { RunnableSequence } from "@doc-raven/langchain-core/runnables";
 
 /* Initialize the LLM & set streaming to true */
 const model = new ChatOpenAI({

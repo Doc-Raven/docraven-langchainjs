@@ -11,7 +11,7 @@ import {
   BaseMessage,
   SystemMessage,
   AIMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import { FakeToolCallingChatModel } from "./utils.js";
 
 import { createAgent, createMiddleware } from "../index.js";

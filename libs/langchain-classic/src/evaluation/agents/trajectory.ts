@@ -1,15 +1,15 @@
-import type { StructuredToolInterface } from "@langchain/core/tools";
-import { BaseLLMOutputParser } from "@langchain/core/output_parsers";
+import type { StructuredToolInterface } from "@doc-raven/langchain-core/tools";
+import { BaseLLMOutputParser } from "@doc-raven/langchain-core/output_parsers";
 
-import { AgentStep } from "@langchain/core/agents";
-import { ChainValues } from "@langchain/core/utils/types";
-import { ChatGeneration, Generation, RUN_KEY } from "@langchain/core/outputs";
-import { BasePromptTemplate } from "@langchain/core/prompts";
+import { AgentStep } from "@doc-raven/langchain-core/agents";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
+import { ChatGeneration, Generation, RUN_KEY } from "@doc-raven/langchain-core/outputs";
+import { BasePromptTemplate } from "@doc-raven/langchain-core/prompts";
 import {
   Callbacks,
   BaseCallbackConfig,
-} from "@langchain/core/callbacks/manager";
-import { BaseChatModel } from "@langchain/core/language_models/chat_models";
+} from "@doc-raven/langchain-core/callbacks/manager";
+import { BaseChatModel } from "@doc-raven/langchain-core/language_models/chat_models";
 import {
   AgentTrajectoryEvaluator,
   EvalOutputType,

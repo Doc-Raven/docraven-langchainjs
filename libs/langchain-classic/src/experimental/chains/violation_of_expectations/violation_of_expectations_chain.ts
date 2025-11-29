@@ -1,13 +1,13 @@
-import type { BaseRetrieverInterface } from "@langchain/core/retrievers";
+import type { BaseRetrieverInterface } from "@doc-raven/langchain-core/retrievers";
 import { ChatOpenAI } from "@langchain/openai";
 import {
   BaseMessage,
   HumanMessage,
   isBaseMessage,
-} from "@langchain/core/messages";
-import { ChainValues } from "@langchain/core/utils/types";
-import { StringOutputParser } from "@langchain/core/output_parsers";
-import { CallbackManagerForChainRun } from "@langchain/core/callbacks/manager";
+} from "@doc-raven/langchain-core/messages";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
+import { CallbackManagerForChainRun } from "@doc-raven/langchain-core/callbacks/manager";
 import { JsonOutputFunctionsParser } from "../../../output_parsers/openai_functions.js";
 import { BaseChain, ChainInputs } from "../../../chains/base.js";
 import {

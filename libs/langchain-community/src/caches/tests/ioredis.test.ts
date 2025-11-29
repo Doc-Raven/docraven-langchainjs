@@ -1,5 +1,5 @@
 import { test, expect, jest } from "@jest/globals";
-import { sha256 } from "@langchain/core/utils/hash";
+import { sha256 } from "@doc-raven/langchain-core/utils/hash";
 
 import { RedisCache } from "../ioredis.js";
 

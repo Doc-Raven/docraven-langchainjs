@@ -28,7 +28,7 @@ export default getBuildConfig({
         {
           modules: ["PromptTemplate"],
           alias: ["prompts", "prompt"],
-          path: "@langchain/core/prompts",
+          path: "@doc-raven/langchain-core/prompts",
         },
         {
           modules: [
@@ -48,7 +48,7 @@ export default getBuildConfig({
             "ToolMessageChunk",
           ],
           alias: ["schema"],
-          path: "@langchain/core/messages",
+          path: "@doc-raven/langchain-core/messages",
         },
         {
           modules: [
@@ -60,22 +60,22 @@ export default getBuildConfig({
             "SystemMessagePromptTemplate",
           ],
           alias: ["prompts", "chat"],
-          path: "@langchain/core/prompts",
+          path: "@doc-raven/langchain-core/prompts",
         },
         {
           modules: ["ImagePromptTemplate"],
           alias: ["prompts", "image"],
-          path: "@langchain/core/prompts",
+          path: "@doc-raven/langchain-core/prompts",
         },
         {
           modules: ["PipelinePromptTemplate"],
           alias: ["prompts", "pipeline"],
-          path: "@langchain/core/prompts",
+          path: "@doc-raven/langchain-core/prompts",
         },
         {
           modules: ["StringPromptValue"],
           alias: ["prompts", "base"],
-          path: "@langchain/core/prompt_values",
+          path: "@doc-raven/langchain-core/prompt_values",
         },
         {
           modules: [
@@ -94,12 +94,12 @@ export default getBuildConfig({
             "RunnableWithMessageHistory",
           ],
           alias: ["schema", "runnable"],
-          path: "@langchain/core/runnables",
+          path: "@doc-raven/langchain-core/runnables",
         },
         {
           modules: ["ChatGenerationChunk", "GenerationChunk"],
           alias: ["schema", "output"],
-          path: "@langchain/core/outputs",
+          path: "@doc-raven/langchain-core/outputs",
         },
       ],
       omitFromImportMap: ["hub/index", "hub/node", "load/index"],

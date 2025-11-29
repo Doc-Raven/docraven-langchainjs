@@ -1,6 +1,6 @@
 import { ChatTogetherAI } from "@langchain/community/chat_models/togetherai";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { convertToOpenAITool } from "@langchain/core/utils/function_calling";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { convertToOpenAITool } from "@doc-raven/langchain-core/utils/function_calling";
 import { Calculator } from "@langchain/community/tools/calculator";
 
 // Use a pre-built tool

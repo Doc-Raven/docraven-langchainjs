@@ -1,8 +1,8 @@
 import { describe, expect, test } from "vitest";
 import { QdrantClient } from "@qdrant/js-client-rest";
 import { faker } from "@faker-js/faker";
-import { Document } from "@langchain/core/documents";
-import { SyntheticEmbeddings } from "@langchain/core/utils/testing";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { SyntheticEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 import { v4 } from "uuid";
 import { QdrantVectorStore } from "../vectorstores.js";
 

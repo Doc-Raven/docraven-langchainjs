@@ -1,5 +1,5 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import type { ToolInterface } from "@langchain/core/tools";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
+import type { ToolInterface } from "@doc-raven/langchain-core/tools";
 import { Agent } from "./agent.js";
 import { loadFromHub } from "../util/hub.js";
 import { FileLoader, loadFromFile } from "../util/load.js";

@@ -2,12 +2,12 @@
 import { z } from "zod";
 import { describe, it, expect } from "vitest";
 import { ChatOpenAI } from "@langchain/openai";
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@doc-raven/langchain-core/messages";
 import { MemorySaver } from "@langchain/langgraph-checkpoint";
 import { Command } from "@langchain/langgraph";
-import { ToolMessage } from "@langchain/core/messages";
+import { ToolMessage } from "@doc-raven/langchain-core/messages";
 
-import { tool } from "@langchain/core/tools";
+import { tool } from "@doc-raven/langchain-core/tools";
 import { createAgent, type Interrupt } from "../../index.js";
 import {
   type HITLRequest,

@@ -1,4 +1,4 @@
-import { GenerationChunk } from "@langchain/core/outputs";
+import { GenerationChunk } from "@doc-raven/langchain-core/outputs";
 
 export interface AbstractStream {
   /**

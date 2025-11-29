@@ -2,7 +2,7 @@ import { test, expect } from "@jest/globals";
 import { createClient } from "@supabase/supabase-js";
 
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { SupabaseVectorStore, SupabaseFilterRPCCall } from "../supabase.js";
 
 test("SupabaseVectorStore with external ids", async () => {

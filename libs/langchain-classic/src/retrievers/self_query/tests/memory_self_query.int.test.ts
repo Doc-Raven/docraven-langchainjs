@@ -1,6 +1,6 @@
 import { expect, test } from "vitest";
 
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { OpenAIEmbeddings, ChatOpenAI } from "@langchain/openai";
 
 import { AttributeInfo } from "../../../chains/query_constructor/index.js";

@@ -1,4 +1,4 @@
-import { Embeddings, type EmbeddingsParams } from "@langchain/core/embeddings";
+import { Embeddings, type EmbeddingsParams } from "@doc-raven/langchain-core/embeddings";
 import {
   EmbeddingsList,
   Pinecone,

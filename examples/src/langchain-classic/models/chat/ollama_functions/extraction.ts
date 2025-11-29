@@ -1,8 +1,8 @@
 import { z } from "zod/v3";
 
 import { ChatOllama } from "@langchain/ollama";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { JsonOutputFunctionsParser } from "@langchain/core/output_parsers/openai_functions";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { JsonOutputFunctionsParser } from "@doc-raven/langchain-core/output_parsers/openai_functions";
 
 const EXTRACTION_TEMPLATE = `Extract and save the relevant entities mentioned in the following passage together with their properties.
 

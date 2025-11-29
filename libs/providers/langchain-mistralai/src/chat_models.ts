@@ -31,56 +31,56 @@ import {
   ChatMessageChunk,
   FunctionMessageChunk,
   isAIMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import type {
   BaseLanguageModelInput,
   BaseLanguageModelCallOptions,
   StructuredOutputMethodOptions,
   FunctionDefinition,
-} from "@langchain/core/language_models/base";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+} from "@doc-raven/langchain-core/language_models/base";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
 import {
   type BaseChatModelParams,
   BaseChatModel,
   BindToolsInput,
   LangSmithParams,
-} from "@langchain/core/language_models/chat_models";
+} from "@doc-raven/langchain-core/language_models/chat_models";
 
 import {
   ChatGeneration,
   ChatGenerationChunk,
   ChatResult,
-} from "@langchain/core/outputs";
-import { AsyncCaller } from "@langchain/core/utils/async_caller";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { NewTokenIndices } from "@langchain/core/callbacks/base";
+} from "@doc-raven/langchain-core/outputs";
+import { AsyncCaller } from "@doc-raven/langchain-core/utils/async_caller";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
+import { NewTokenIndices } from "@doc-raven/langchain-core/callbacks/base";
 import {
   type BaseLLMOutputParser,
   JsonOutputParser,
   StructuredOutputParser,
-} from "@langchain/core/output_parsers";
+} from "@doc-raven/langchain-core/output_parsers";
 import {
   JsonOutputKeyToolsParser,
   convertLangChainToolCallToOpenAI,
   makeInvalidToolCall,
   parseToolCall,
-} from "@langchain/core/output_parsers/openai_tools";
+} from "@doc-raven/langchain-core/output_parsers/openai_tools";
 import {
   Runnable,
   RunnablePassthrough,
   RunnableSequence,
   RunnableBinding,
-} from "@langchain/core/runnables";
+} from "@doc-raven/langchain-core/runnables";
 import {
   JsonSchema7Type,
   toJsonSchema,
-} from "@langchain/core/utils/json_schema";
-import { ToolCallChunk } from "@langchain/core/messages/tool";
-import { isLangChainTool } from "@langchain/core/utils/function_calling";
+} from "@doc-raven/langchain-core/utils/json_schema";
+import { ToolCallChunk } from "@doc-raven/langchain-core/messages/tool";
+import { isLangChainTool } from "@doc-raven/langchain-core/utils/function_calling";
 import {
   InteropZodType,
   isInteropZodSchema,
-} from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/types";
 import {
   _convertToolCallIdToMistralCompatible,
   _mistralContentChunkToMessageContentComplex,
@@ -772,8 +772,8 @@ function _convertToolToMistralTool(
  * <summary><strong>Aggregate Streamed Chunks</strong></summary>
  *
  * ```typescript
- * import { AIMessageChunk } from '@langchain/core/messages';
- * import { concat } from '@langchain/core/utils/stream';
+ * import { AIMessageChunk } from '@doc-raven/langchain-core/messages';
+ * import { concat } from '@doc-raven/langchain-core/utils/stream';
  *
  * const stream = await llm.stream(input);
  * let full: AIMessageChunk | undefined;

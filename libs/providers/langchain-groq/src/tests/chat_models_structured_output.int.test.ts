@@ -1,8 +1,8 @@
 import { test, expect } from "vitest";
 import { z } from "zod/v3";
-import { toJsonSchema } from "@langchain/core/utils/json_schema";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { AIMessage } from "@langchain/core/messages";
+import { toJsonSchema } from "@doc-raven/langchain-core/utils/json_schema";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { AIMessage } from "@doc-raven/langchain-core/messages";
 import { ChatGroq } from "../chat_models.js";
 
 test("withStructuredOutput zod schema function calling", async () => {

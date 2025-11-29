@@ -1,14 +1,14 @@
 import * as uuid from "uuid";
 import flatten from "flat";
 import { GoogleAuth, GoogleAuthOptions } from "google-auth-library";
-import { VectorStore } from "@langchain/core/vectorstores";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { Document, DocumentInput } from "@langchain/core/documents";
+import { VectorStore } from "@doc-raven/langchain-core/vectorstores";
+import type { EmbeddingsInterface } from "@doc-raven/langchain-core/embeddings";
+import { Document, DocumentInput } from "@doc-raven/langchain-core/documents";
 import {
   AsyncCaller,
   AsyncCallerCallOptions,
   AsyncCallerParams,
-} from "@langchain/core/utils/async_caller";
+} from "@doc-raven/langchain-core/utils/async_caller";
 
 import { GoogleVertexAIConnection } from "../utils/googlevertexai-connection.js";
 import { Docstore } from "../stores/doc/base.js";

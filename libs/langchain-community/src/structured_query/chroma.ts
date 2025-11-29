@@ -10,7 +10,7 @@ import {
   Visitor,
   isFilterEmpty,
   castValue,
-} from "@langchain/core/structured_query";
+} from "@doc-raven/langchain-core/structured_query";
 import { Chroma } from "../vectorstores/chroma.js";
 
 /**

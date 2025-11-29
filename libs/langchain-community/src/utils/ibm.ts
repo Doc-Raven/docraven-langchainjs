@@ -9,16 +9,16 @@ import {
 import {
   JsonOutputKeyToolsParserParamsInterop,
   JsonOutputToolsParser,
-} from "@langchain/core/output_parsers/openai_tools";
-import { OutputParserException } from "@langchain/core/output_parsers";
+} from "@doc-raven/langchain-core/output_parsers/openai_tools";
+import { OutputParserException } from "@doc-raven/langchain-core/output_parsers";
 import { z } from "zod/v3";
-import { ChatGeneration } from "@langchain/core/outputs";
-import { AIMessageChunk } from "@langchain/core/messages";
-import { ToolCall } from "@langchain/core/messages/tool";
+import { ChatGeneration } from "@doc-raven/langchain-core/outputs";
+import { AIMessageChunk } from "@doc-raven/langchain-core/messages";
+import { ToolCall } from "@doc-raven/langchain-core/messages/tool";
 import {
   InteropZodType,
   interopSafeParseAsync,
-} from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/types";
 import { Gateway } from "@ibm-cloud/watsonx-ai/gateway";
 import { WatsonxAuth, WatsonxInit } from "../types/ibm.js";
 

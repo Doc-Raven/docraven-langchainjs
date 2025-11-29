@@ -5,11 +5,11 @@ import {
   isInteropZodSchema,
   InteropZodType,
   isInteropZodObject,
-} from "@langchain/core/utils/types";
-import { type AIMessage } from "@langchain/core/messages";
-import { type LanguageModelLike } from "@langchain/core/language_models/base";
-import { toJsonSchema, Validator } from "@langchain/core/utils/json_schema";
-import { type FunctionDefinition } from "@langchain/core/language_models/base";
+} from "@doc-raven/langchain-core/utils/types";
+import { type AIMessage } from "@doc-raven/langchain-core/messages";
+import { type LanguageModelLike } from "@doc-raven/langchain-core/language_models/base";
+import { toJsonSchema, Validator } from "@doc-raven/langchain-core/utils/json_schema";
+import { type FunctionDefinition } from "@doc-raven/langchain-core/language_models/base";
 
 import {
   StructuredOutputParsingError,

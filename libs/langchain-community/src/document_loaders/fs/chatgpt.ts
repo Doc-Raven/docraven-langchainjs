@@ -1,4 +1,4 @@
-import { Document } from "@langchain/core/documents";
+import { Document } from "@doc-raven/langchain-core/documents";
 import { TextLoader } from "@langchain/classic/document_loaders/fs/text";
 
 interface ChatGPTMessage {

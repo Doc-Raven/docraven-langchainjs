@@ -1,5 +1,5 @@
-import { XMLOutputParser } from "@langchain/core/output_parsers";
-import { FakeStreamingLLM } from "@langchain/core/utils/testing";
+import { XMLOutputParser } from "@doc-raven/langchain-core/output_parsers";
+import { FakeStreamingLLM } from "@doc-raven/langchain-core/utils/testing";
 
 const XML_EXAMPLE = `<?xml version="1.0" encoding="UTF-8"?>
 <userProfile>

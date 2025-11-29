@@ -1,7 +1,7 @@
-import { LLM, type BaseLLMParams } from "@langchain/core/language_models/llms";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { GenerationChunk } from "@langchain/core/outputs";
+import { LLM, type BaseLLMParams } from "@doc-raven/langchain-core/language_models/llms";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
+import { CallbackManagerForLLMRun } from "@doc-raven/langchain-core/callbacks/manager";
+import { GenerationChunk } from "@doc-raven/langchain-core/outputs";
 
 import { convertEventStreamToIterableReadableDataStream } from "./utils/event_source_parse.js";
 

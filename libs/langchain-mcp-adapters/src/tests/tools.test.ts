@@ -3,7 +3,7 @@ import type { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import {
   StructuredTool,
   ToolInputParsingException,
-} from "@langchain/core/tools";
+} from "@doc-raven/langchain-core/tools";
 import type {
   EmbeddedResource,
   ImageContent,
@@ -13,7 +13,7 @@ import type {
   AIMessage,
   MessageContentComplex,
   ToolMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 
 import { loadMcpTools } from "../tools.js";
 

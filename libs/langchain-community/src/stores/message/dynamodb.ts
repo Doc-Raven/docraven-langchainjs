@@ -10,13 +10,13 @@ import {
   AttributeValue,
 } from "@aws-sdk/client-dynamodb";
 
-import { BaseListChatMessageHistory } from "@langchain/core/chat_history";
+import { BaseListChatMessageHistory } from "@doc-raven/langchain-core/chat_history";
 import {
   BaseMessage,
   StoredMessage,
   mapChatMessagesToStoredMessages,
   mapStoredMessagesToChatMessages,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 
 /**
  * Interface defining the fields required to create an instance of

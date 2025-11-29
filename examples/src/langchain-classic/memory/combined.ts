@@ -5,7 +5,7 @@ import {
   ConversationSummaryMemory,
 } from "@langchain/classic/memory";
 import { ConversationChain } from "@langchain/classic/chains";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 // buffer memory
 const bufferMemory = new BufferMemory({

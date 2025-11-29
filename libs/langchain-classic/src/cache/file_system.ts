@@ -5,8 +5,8 @@ import {
   BaseCache,
   serializeGeneration,
   deserializeStoredGeneration,
-} from "@langchain/core/caches";
-import { Generation } from "@langchain/core/outputs";
+} from "@doc-raven/langchain-core/caches";
+import { Generation } from "@doc-raven/langchain-core/outputs";
 
 /**
  * A cache that uses the local filesystem as the backing store.

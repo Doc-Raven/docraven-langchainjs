@@ -5,11 +5,11 @@ This package contains the LangChain.js integrations for MongoDB through their SD
 ## Installation
 
 ```bash npm2yarn
-npm install @langchain/mongodb @langchain/core
+npm install @langchain/mongodb @doc-raven/langchain-core
 ```
 
-This package, along with the main LangChain package, depends on [`@langchain/core`](https://npmjs.com/package/@langchain/core/).
-If you are using this package with other LangChain packages, you should make sure that all of the packages depend on the same instance of @langchain/core.
+This package, along with the main LangChain package, depends on [`@doc-raven/langchain-core`](https://npmjs.com/package/@doc-raven/langchain-core/).
+If you are using this package with other LangChain packages, you should make sure that all of the packages depend on the same instance of @doc-raven/langchain-core.
 You can do so by adding appropriate field to your project's `package.json` like this:
 
 ```json
@@ -17,18 +17,18 @@ You can do so by adding appropriate field to your project's `package.json` like 
   "name": "your-project",
   "version": "0.0.0",
   "dependencies": {
-    "@langchain/core": "^0.3.0",
+    "@doc-raven/langchain-core": "^0.3.0",
     "@langchain/mongodb": "^0.0.0"
   },
   "resolutions": {
-    "@langchain/core": "^0.3.0"
+    "@doc-raven/langchain-core": "^0.3.0"
   },
   "overrides": {
-    "@langchain/core": "^0.3.0"
+    "@doc-raven/langchain-core": "^0.3.0"
   },
   "pnpm": {
     "overrides": {
-      "@langchain/core": "^0.3.0"
+      "@doc-raven/langchain-core": "^0.3.0"
     }
   }
 }

@@ -1,4 +1,4 @@
-import { tool } from "@langchain/core/tools";
+import { tool } from "@doc-raven/langchain-core/tools";
 import { ChatOllama } from "@langchain/ollama";
 import { z } from "zod/v3";
 

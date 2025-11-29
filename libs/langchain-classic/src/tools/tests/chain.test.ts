@@ -1,8 +1,8 @@
 import { test, expect, vi } from "vitest";
 
-import { LLM } from "@langchain/core/language_models/llms";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { LLM } from "@doc-raven/langchain-core/language_models/llms";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { FakeEmbeddings } from "@doc-raven/langchain-core/utils/testing";
 
 import { ChainTool } from "../chain.js";
 import { LLMChain } from "../../chains/llm_chain.js";

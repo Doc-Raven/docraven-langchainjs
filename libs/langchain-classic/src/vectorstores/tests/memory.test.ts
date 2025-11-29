@@ -1,8 +1,8 @@
 import { test, expect } from "vitest";
 
-import { Document, DocumentInterface } from "@langchain/core/documents";
-import { SyntheticEmbeddings } from "@langchain/core/utils/testing";
-import { Embeddings } from "@langchain/core/embeddings";
+import { Document, DocumentInterface } from "@doc-raven/langchain-core/documents";
+import { SyntheticEmbeddings } from "@doc-raven/langchain-core/utils/testing";
+import { Embeddings } from "@doc-raven/langchain-core/embeddings";
 
 import { MemoryVectorStore } from "../memory.js";
 import { cosine } from "../../util/ml-distance/similarities.js";

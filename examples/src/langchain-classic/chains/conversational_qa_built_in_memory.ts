@@ -5,10 +5,10 @@ import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
 import { BufferMemory } from "@langchain/classic/memory";
 import * as fs from "fs";
 import { formatDocumentsAsString } from "@langchain/classic/util/document";
-import { Document } from "@langchain/core/documents";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { RunnableSequence } from "@langchain/core/runnables";
-import { BaseMessage } from "@langchain/core/messages";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { RunnableSequence } from "@doc-raven/langchain-core/runnables";
+import { BaseMessage } from "@doc-raven/langchain-core/messages";
 
 const text = fs.readFileSync("state_of_the_union.txt", "utf8");
 

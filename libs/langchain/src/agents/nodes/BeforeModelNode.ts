@@ -1,5 +1,5 @@
 import { z } from "zod/v3";
-import { RunnableConfig } from "@langchain/core/runnables";
+import { RunnableConfig } from "@doc-raven/langchain-core/runnables";
 import { MiddlewareNode, type MiddlewareNodeOptions } from "./middleware.js";
 import type { AgentMiddleware, MiddlewareResult } from "../middleware/types.js";
 import type { AgentBuiltInState, Runtime } from "../runtime.js";

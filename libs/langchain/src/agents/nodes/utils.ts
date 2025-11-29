@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { z } from "zod/v3";
-import { type BaseMessage } from "@langchain/core/messages";
+import { type BaseMessage } from "@doc-raven/langchain-core/messages";
 import {
   interopSafeParseAsync,
   interopZodObjectMakeFieldsOptional,
-} from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/utils/types";
 import { type ZodIssue } from "zod/v3";
 import { END } from "@langchain/langgraph";
 

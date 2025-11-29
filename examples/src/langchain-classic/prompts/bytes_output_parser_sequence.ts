@@ -1,6 +1,6 @@
 import { ChatOpenAI } from "@langchain/openai";
-import { BytesOutputParser } from "@langchain/core/output_parsers";
-import { RunnableSequence } from "@langchain/core/runnables";
+import { BytesOutputParser } from "@doc-raven/langchain-core/output_parsers";
+import { RunnableSequence } from "@doc-raven/langchain-core/runnables";
 
 const chain = RunnableSequence.from([
   new ChatOpenAI({ model: "gpt-4o-mini", temperature: 0 }),

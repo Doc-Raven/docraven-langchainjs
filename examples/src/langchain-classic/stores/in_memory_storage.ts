@@ -1,5 +1,5 @@
-import { InMemoryStore } from "@langchain/core/stores";
-import { AIMessage, BaseMessage, HumanMessage } from "@langchain/core/messages";
+import { InMemoryStore } from "@doc-raven/langchain-core/stores";
+import { AIMessage, BaseMessage, HumanMessage } from "@doc-raven/langchain-core/messages";
 
 // Instantiate the store using the `fromPath` method.
 const store = new InMemoryStore<BaseMessage>();

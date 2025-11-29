@@ -1,11 +1,11 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { Callbacks } from "@langchain/core/callbacks/manager";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
+import { Callbacks } from "@doc-raven/langchain-core/callbacks/manager";
 import {
   BaseOutputParser,
   OutputParserException,
-} from "@langchain/core/output_parsers";
-import { BasePromptTemplate } from "@langchain/core/prompts";
-import { Runnable } from "@langchain/core/runnables";
+} from "@doc-raven/langchain-core/output_parsers";
+import { BasePromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { Runnable } from "@doc-raven/langchain-core/runnables";
 import { LLMChain } from "../chains/llm_chain.js";
 import { NAIVE_FIX_PROMPT } from "./prompts.js";
 

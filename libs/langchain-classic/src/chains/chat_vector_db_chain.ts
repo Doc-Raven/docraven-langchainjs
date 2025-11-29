@@ -1,8 +1,8 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import type { VectorStoreInterface } from "@langchain/core/vectorstores";
-import { ChainValues } from "@langchain/core/utils/types";
-import { CallbackManagerForChainRun } from "@langchain/core/callbacks/manager";
-import { PromptTemplate } from "@langchain/core/prompts";
+import type { BaseLanguageModelInterface } from "@doc-raven/langchain-core/language_models/base";
+import type { VectorStoreInterface } from "@doc-raven/langchain-core/vectorstores";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
+import { CallbackManagerForChainRun } from "@doc-raven/langchain-core/callbacks/manager";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
 import { SerializedChatVectorDBQAChain } from "./serde.js";
 import { BaseChain, ChainInputs } from "./base.js";
 import { LLMChain } from "./llm_chain.js";

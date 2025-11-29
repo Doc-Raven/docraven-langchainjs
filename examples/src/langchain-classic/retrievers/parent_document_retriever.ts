@@ -3,7 +3,7 @@ import { MemoryVectorStore } from "@langchain/classic/vectorstores/memory";
 import { ParentDocumentRetriever } from "@langchain/classic/retrievers/parent_document";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
 import { TextLoader } from "@langchain/classic/document_loaders/fs/text";
-import { InMemoryStore } from "@langchain/core/stores";
+import { InMemoryStore } from "@doc-raven/langchain-core/stores";
 
 const vectorstore = new MemoryVectorStore(new OpenAIEmbeddings());
 const byteStore = new InMemoryStore<Uint8Array>();

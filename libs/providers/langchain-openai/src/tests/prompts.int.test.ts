@@ -1,6 +1,6 @@
 import { test, expect } from "vitest";
 import OpenAI from "openai";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 import { convertPromptToOpenAI } from "../utils/prompts.js";
 

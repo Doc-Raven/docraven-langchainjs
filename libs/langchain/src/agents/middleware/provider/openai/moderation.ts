@@ -1,7 +1,7 @@
-import type { BaseMessage } from "@langchain/core/messages";
-import { AIMessage, HumanMessage, ToolMessage } from "@langchain/core/messages";
-import type { BaseChatModel } from "@langchain/core/language_models/chat_models";
-import { BaseLanguageModel } from "@langchain/core/language_models/base";
+import type { BaseMessage } from "@doc-raven/langchain-core/messages";
+import { AIMessage, HumanMessage, ToolMessage } from "@doc-raven/langchain-core/messages";
+import type { BaseChatModel } from "@doc-raven/langchain-core/language_models/chat_models";
+import { BaseLanguageModel } from "@doc-raven/langchain-core/language_models/base";
 
 import { initChatModel } from "../../../../chat_models/universal.js";
 import { createMiddleware } from "../../../middleware.js";

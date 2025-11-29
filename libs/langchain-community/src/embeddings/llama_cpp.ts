@@ -1,5 +1,5 @@
 import { LlamaModel, LlamaContext, getLlama } from "node-llama-cpp";
-import { Embeddings, type EmbeddingsParams } from "@langchain/core/embeddings";
+import { Embeddings, type EmbeddingsParams } from "@doc-raven/langchain-core/embeddings";
 import {
   LlamaBaseCppInputs,
   createLlamaModel,

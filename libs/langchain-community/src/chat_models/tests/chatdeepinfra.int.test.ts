@@ -1,7 +1,7 @@
 import { test } from "@jest/globals";
 import { z } from "zod/v3";
-import { toJsonSchema } from "@langchain/core/utils/json_schema";
-import { HumanMessage } from "@langchain/core/messages";
+import { toJsonSchema } from "@doc-raven/langchain-core/utils/json_schema";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 import { ChatDeepInfra } from "../deepinfra.js";
 
 describe("ChatDeepInfra", () => {

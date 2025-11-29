@@ -3,9 +3,9 @@ import { Server } from "node:http";
 import { join } from "node:path";
 import type { OAuthClientProvider } from "@modelcontextprotocol/sdk/client/auth.js";
 import type { OAuthTokens } from "@modelcontextprotocol/sdk/shared/auth.js";
-import type { ContentBlock } from "@langchain/core/messages";
-import type { ToolCall } from "@langchain/core/messages";
-import type { StructuredToolInterface } from "@langchain/core/tools";
+import type { ContentBlock } from "@doc-raven/langchain-core/messages";
+import type { ToolCall } from "@doc-raven/langchain-core/messages";
+import type { StructuredToolInterface } from "@doc-raven/langchain-core/tools";
 
 import { createDummyHttpServer } from "./fixtures/dummy-http-server.js";
 import { MultiServerMCPClient } from "../client.js";

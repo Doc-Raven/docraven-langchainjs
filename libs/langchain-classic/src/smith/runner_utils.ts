@@ -1,20 +1,20 @@
-import { BaseLanguageModel } from "@langchain/core/language_models/base";
-import { Serialized } from "@langchain/core/load/serializable";
-import { mapStoredMessagesToChatMessages } from "@langchain/core/messages";
+import { BaseLanguageModel } from "@doc-raven/langchain-core/language_models/base";
+import { Serialized } from "@doc-raven/langchain-core/load/serializable";
+import { mapStoredMessagesToChatMessages } from "@doc-raven/langchain-core/messages";
 import {
   Runnable,
   RunnableConfig,
   RunnableLambda,
   getCallbackManagerForConfig,
-} from "@langchain/core/runnables";
-import { LangChainTracer } from "@langchain/core/tracers/tracer_langchain";
-import { BaseTracer } from "@langchain/core/tracers/base";
-import { ChainValues } from "@langchain/core/utils/types";
-import { AsyncCaller } from "@langchain/core/utils/async_caller";
+} from "@doc-raven/langchain-core/runnables";
+import { LangChainTracer } from "@doc-raven/langchain-core/tracers/tracer_langchain";
+import { BaseTracer } from "@doc-raven/langchain-core/tracers/base";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
+import { AsyncCaller } from "@doc-raven/langchain-core/utils/async_caller";
 import type {
   CallbackManager,
   CallbackManagerForChainRun,
-} from "@langchain/core/callbacks/manager";
+} from "@doc-raven/langchain-core/callbacks/manager";
 import {
   Client,
   Example,

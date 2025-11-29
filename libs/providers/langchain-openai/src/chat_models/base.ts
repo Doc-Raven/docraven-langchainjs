@@ -1,38 +1,38 @@
 import { type ClientOptions, OpenAI as OpenAIClient } from "openai";
-import { AIMessageChunk, type BaseMessage } from "@langchain/core/messages";
-import { type ChatGeneration } from "@langchain/core/outputs";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { AIMessageChunk, type BaseMessage } from "@doc-raven/langchain-core/messages";
+import { type ChatGeneration } from "@doc-raven/langchain-core/outputs";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 import {
   BaseChatModel,
   type LangSmithParams,
   type BaseChatModelParams,
   BaseChatModelCallOptions,
-} from "@langchain/core/language_models/chat_models";
+} from "@doc-raven/langchain-core/language_models/chat_models";
 import {
   isOpenAITool as isOpenAIFunctionTool,
   type BaseFunctionCallOptions,
   type BaseLanguageModelInput,
   type FunctionDefinition,
   type StructuredOutputMethodOptions,
-} from "@langchain/core/language_models/base";
-import { ModelProfile } from "@langchain/core/language_models/profile";
+} from "@doc-raven/langchain-core/language_models/base";
+import { ModelProfile } from "@doc-raven/langchain-core/language_models/profile";
 import {
   Runnable,
   RunnableLambda,
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
+} from "@doc-raven/langchain-core/runnables";
 import {
   JsonOutputParser,
   StructuredOutputParser,
-} from "@langchain/core/output_parsers";
-import { JsonOutputKeyToolsParser } from "@langchain/core/output_parsers/openai_tools";
+} from "@doc-raven/langchain-core/output_parsers";
+import { JsonOutputKeyToolsParser } from "@doc-raven/langchain-core/output_parsers/openai_tools";
 import {
   getSchemaDescription,
   InteropZodType,
   isInteropZodSchema,
-} from "@langchain/core/utils/types";
-import { toJsonSchema } from "@langchain/core/utils/json_schema";
+} from "@doc-raven/langchain-core/utils/types";
+import { toJsonSchema } from "@doc-raven/langchain-core/utils/json_schema";
 import {
   type OpenAICallOptions,
   type OpenAIChatInput,

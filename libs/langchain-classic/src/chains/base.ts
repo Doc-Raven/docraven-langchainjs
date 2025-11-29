@@ -1,17 +1,17 @@
-import { BaseMemory } from "@langchain/core/memory";
-import { ChainValues } from "@langchain/core/utils/types";
-import { RUN_KEY } from "@langchain/core/outputs";
+import { BaseMemory } from "@doc-raven/langchain-core/memory";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
+import { RUN_KEY } from "@doc-raven/langchain-core/outputs";
 import {
   CallbackManagerForChainRun,
   CallbackManager,
   Callbacks,
   parseCallbackConfigArg,
-} from "@langchain/core/callbacks/manager";
-import { ensureConfig, type RunnableConfig } from "@langchain/core/runnables";
+} from "@doc-raven/langchain-core/callbacks/manager";
+import { ensureConfig, type RunnableConfig } from "@doc-raven/langchain-core/runnables";
 import {
   BaseLangChain,
   BaseLangChainParams,
-} from "@langchain/core/language_models/base";
+} from "@doc-raven/langchain-core/language_models/base";
 import { SerializedBaseChain } from "./serde.js";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

@@ -14,7 +14,7 @@ The model-profiles generator simplifies the process of maintaining model capabil
 - 📝 **TypeScript AST Generation**: Uses TypeScript compiler API for type-safe code generation
 - 🎨 **Prettier Integration**: Automatically formats generated code using your project's Prettier config
 - 📦 **Monorepo Friendly**: Works seamlessly with pnpm workspaces and `--filter` commands
-- ✅ **Type Safety**: Generates code that matches the `ModelProfile` interface from `@langchain/core`
+- ✅ **Type Safety**: Generates code that matches the `ModelProfile` interface from `@doc-raven/langchain-core`
 
 ## Architecture
 

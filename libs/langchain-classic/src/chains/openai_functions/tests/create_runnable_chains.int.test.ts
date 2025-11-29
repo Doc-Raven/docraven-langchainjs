@@ -1,5 +1,5 @@
 import { z } from "zod/v3";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
 import { ChatOpenAI } from "@langchain/openai";
 import { expect, test } from "vitest";
 import { JsonOutputFunctionsParser } from "../../../output_parsers/openai_functions.js";

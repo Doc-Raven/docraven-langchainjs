@@ -6,10 +6,10 @@ import { MemoryVectorStore } from "@langchain/classic/vectorstores/memory";
 import {
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
-import { StringOutputParser } from "@langchain/core/output_parsers";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import type { Document } from "@langchain/core/documents";
+} from "@doc-raven/langchain-core/runnables";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
+import type { Document } from "@doc-raven/langchain-core/documents";
 
 const formatDocumentsAsString = (documents: Document[]) => {
   return documents.map((document) => document.pageContent).join("\n\n");

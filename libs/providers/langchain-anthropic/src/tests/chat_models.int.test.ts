@@ -9,20 +9,20 @@ import {
   HumanMessage,
   SystemMessage,
   ToolMessage,
-} from "@langchain/core/messages";
-import { ChatPromptValue } from "@langchain/core/prompt_values";
+} from "@doc-raven/langchain-core/messages";
+import { ChatPromptValue } from "@doc-raven/langchain-core/prompt_values";
 import {
   PromptTemplate,
   ChatPromptTemplate,
   AIMessagePromptTemplate,
   HumanMessagePromptTemplate,
   SystemMessagePromptTemplate,
-} from "@langchain/core/prompts";
-import { CallbackManager } from "@langchain/core/callbacks/manager";
-import { concat } from "@langchain/core/utils/stream";
+} from "@doc-raven/langchain-core/prompts";
+import { CallbackManager } from "@doc-raven/langchain-core/callbacks/manager";
+import { concat } from "@doc-raven/langchain-core/utils/stream";
 import { AnthropicVertex } from "@anthropic-ai/vertex-sdk";
-import { BaseLanguageModelInput } from "@langchain/core/language_models/base";
-import { tool } from "@langchain/core/tools";
+import { BaseLanguageModelInput } from "@doc-raven/langchain-core/language_models/base";
+import { tool } from "@doc-raven/langchain-core/tools";
 import { z } from "zod/v3";
 import { ChatAnthropic } from "../chat_models.js";
 import {
@@ -721,7 +721,7 @@ These prompt templates are used to format a single string, and generally are use
 For example, a common way to construct and use a PromptTemplate is as follows:
 
 \`\`\`typescript
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 const promptTemplate = PromptTemplate.fromTemplate(
   "Tell me a joke about {topic}"
@@ -736,7 +736,7 @@ These prompt templates are used to format an array of messages. These "templates
 For example, a common way to construct and use a ChatPromptTemplate is as follows:
 
 \`\`\`typescript
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 const promptTemplate = ChatPromptTemplate.fromMessages([
   ["system", "You are a helpful assistant"],
@@ -763,8 +763,8 @@ This is how you use MessagesPlaceholder.
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
-import { HumanMessage } from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/prompts";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 
 const promptTemplate = ChatPromptTemplate.fromMessages([
   ["system", "You are a helpful assistant"],

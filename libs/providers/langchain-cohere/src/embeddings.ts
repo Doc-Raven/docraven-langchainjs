@@ -1,8 +1,8 @@
 import { CohereClient } from "cohere-ai";
 import type { EmbedRequest } from "cohere-ai/api/client/index.js";
 
-import { Embeddings, EmbeddingsParams } from "@langchain/core/embeddings";
-import { chunkArray } from "@langchain/core/utils/chunk_array";
+import { Embeddings, EmbeddingsParams } from "@doc-raven/langchain-core/embeddings";
+import { chunkArray } from "@doc-raven/langchain-core/utils/chunk_array";
 import { CohereClientOptions, getCohereClient } from "./client.js";
 
 /**

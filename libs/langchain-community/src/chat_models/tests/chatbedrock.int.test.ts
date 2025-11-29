@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { test, expect } from "@jest/globals";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@doc-raven/langchain-core/messages";
 import { AgentExecutor, createToolCallingAgent } from "langchain/agents";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { concat } from "@langchain/core/utils/stream";
+import { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { concat } from "@doc-raven/langchain-core/utils/stream";
 import { z } from "zod/v3";
-import { toJsonSchema } from "@langchain/core/utils/json_schema";
+import { toJsonSchema } from "@doc-raven/langchain-core/utils/json_schema";
 import { ChatOpenAI } from "@langchain/openai";
 import { BedrockChat as BedrockChatWeb } from "../bedrock/web.js";
 import { TavilySearchResults } from "../../tools/tavily_search.js";

@@ -29,15 +29,15 @@ import {
   convertToProviderContentBlock,
   isDataContentBlock,
   InputTokenDetails,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import {
   ChatGeneration,
   ChatGenerationChunk,
   ChatResult,
-} from "@langchain/core/outputs";
-import { isLangChainTool } from "@langchain/core/utils/function_calling";
-import { isOpenAITool } from "@langchain/core/language_models/base";
-import { ToolCallChunk } from "@langchain/core/messages/tool";
+} from "@doc-raven/langchain-core/outputs";
+import { isLangChainTool } from "@doc-raven/langchain-core/utils/function_calling";
+import { isOpenAITool } from "@doc-raven/langchain-core/language_models/base";
+import { ToolCallChunk } from "@doc-raven/langchain-core/messages/tool";
 import { v4 as uuidv4 } from "uuid";
 import {
   jsonSchemaToGeminiParameters,

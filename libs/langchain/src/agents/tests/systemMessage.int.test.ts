@@ -2,7 +2,7 @@ import { describe, it, expect, vi } from "vitest";
 import { ChatOpenAI } from "@langchain/openai";
 
 import { createAgent, createMiddleware } from "../index.js";
-import { SystemMessage } from "@langchain/core/messages";
+import { SystemMessage } from "@doc-raven/langchain-core/messages";
 
 describe("systemMessage", () => {
   it("should set system message correctly", async () => {

@@ -1,10 +1,10 @@
 import { test } from "@jest/globals";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
 import {
   SystemMessage,
   AIMessage,
   HumanMessage,
-} from "@langchain/core/messages";
+} from "@doc-raven/langchain-core/messages";
 import { ChatLlamaCpp } from "../llama_cpp.js";
 
 const llamaPath = getEnvironmentVariable("LLAMA_PATH")!;

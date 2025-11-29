@@ -1,7 +1,7 @@
 import { test, expect } from "vitest";
 
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
-import { InMemoryChatMessageHistory as ChatMessageHistory } from "@langchain/core/chat_history";
+import { HumanMessage, AIMessage } from "@doc-raven/langchain-core/messages";
+import { InMemoryChatMessageHistory as ChatMessageHistory } from "@doc-raven/langchain-core/chat_history";
 
 import { BufferWindowMemory } from "../buffer_window_memory.js";
 

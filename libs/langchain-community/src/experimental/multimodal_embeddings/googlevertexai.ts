@@ -1,6 +1,6 @@
 import { GoogleAuth, GoogleAuthOptions } from "google-auth-library";
-import { Embeddings, EmbeddingsParams } from "@langchain/core/embeddings";
-import { AsyncCallerCallOptions } from "@langchain/core/utils/async_caller";
+import { Embeddings, EmbeddingsParams } from "@doc-raven/langchain-core/embeddings";
+import { AsyncCallerCallOptions } from "@doc-raven/langchain-core/utils/async_caller";
 import {
   GoogleVertexAIBaseLLMInput,
   GoogleVertexAIBasePrediction,

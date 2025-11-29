@@ -4,8 +4,8 @@ import {
   BaseCache,
   deserializeStoredGeneration,
   serializeGeneration,
-} from "@langchain/core/caches";
-import { Generation } from "@langchain/core/outputs";
+} from "@doc-raven/langchain-core/caches";
+import { Generation } from "@doc-raven/langchain-core/outputs";
 
 /**
  * Represents the type of the Redis client used to interact with the Redis

@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { BaseMessage } from "@langchain/core/messages";
+import { BaseMessage } from "@doc-raven/langchain-core/messages";
 import { z } from "zod/v3";
 import {
   Messages,
@@ -10,7 +10,7 @@ import {
 import { withLangGraph, schemaMetaRegistry } from "@langchain/langgraph/zod";
 
 import type { AgentMiddleware, AnyAnnotationRoot } from "./middleware/types.js";
-import { InteropZodObject } from "@langchain/core/utils/types";
+import { InteropZodObject } from "@doc-raven/langchain-core/utils/types";
 
 export function createAgentAnnotationConditional<
   TStateSchema extends

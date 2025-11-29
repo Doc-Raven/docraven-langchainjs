@@ -5,9 +5,9 @@ import { BufferMemory } from "@langchain/classic/memory";
 import * as fs from "fs";
 import { LLMChain } from "@langchain/classic/chains";
 import { formatDocumentsAsString } from "@langchain/classic/util/document";
-import { RunnableBranch, RunnableSequence } from "@langchain/core/runnables";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { RunnableBranch, RunnableSequence } from "@doc-raven/langchain-core/runnables";
+import { PromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { StringOutputParser } from "@doc-raven/langchain-core/output_parsers";
 
 export const run = async () => {
   /* Initialize the LLM to use to answer the question */

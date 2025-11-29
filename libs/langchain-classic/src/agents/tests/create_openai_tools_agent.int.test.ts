@@ -1,10 +1,10 @@
 import { test, expect } from "vitest";
 import { ChatOpenAI } from "@langchain/openai";
-import type { ChatPromptTemplate } from "@langchain/core/prompts";
-import { RunnableLambda } from "@langchain/core/runnables";
-import { LangChainTracer } from "@langchain/core/tracers/tracer_langchain";
-import { AsyncLocalStorageProviderSingleton } from "@langchain/core/singletons";
-import { tool } from "@langchain/core/tools";
+import type { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
+import { RunnableLambda } from "@doc-raven/langchain-core/runnables";
+import { LangChainTracer } from "@doc-raven/langchain-core/tracers/tracer_langchain";
+import { AsyncLocalStorageProviderSingleton } from "@doc-raven/langchain-core/singletons";
+import { tool } from "@doc-raven/langchain-core/tools";
 import { z } from "zod";
 import { AsyncLocalStorage } from "async_hooks";
 import { TavilySearchResults } from "../../util/testing/tools/tavily_search.js";

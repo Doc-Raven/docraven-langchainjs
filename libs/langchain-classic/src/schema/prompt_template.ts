@@ -1,5 +1,5 @@
-import { Document } from "@langchain/core/documents";
-import { BasePromptTemplate } from "@langchain/core/prompts";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { BasePromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 /**
  * Formats a document using a given prompt template.

@@ -1,6 +1,6 @@
-import type { DocumentInterface } from "@langchain/core/documents";
-import { BaseDocumentTransformer } from "@langchain/core/documents";
-import { Callbacks } from "@langchain/core/callbacks/manager";
+import type { DocumentInterface } from "@doc-raven/langchain-core/documents";
+import { BaseDocumentTransformer } from "@doc-raven/langchain-core/documents";
+import { Callbacks } from "@doc-raven/langchain-core/callbacks/manager";
 
 /**
  * Base Document Compression class. All compressors should extend this class.

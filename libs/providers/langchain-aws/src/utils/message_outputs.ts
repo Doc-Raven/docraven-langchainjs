@@ -1,9 +1,9 @@
-import type { ContentBlock, UsageMetadata } from "@langchain/core/messages";
-import { AIMessage, AIMessageChunk } from "@langchain/core/messages";
-import type { ToolCall } from "@langchain/core/messages/tool";
+import type { ContentBlock, UsageMetadata } from "@doc-raven/langchain-core/messages";
+import { AIMessage, AIMessageChunk } from "@doc-raven/langchain-core/messages";
+import type { ToolCall } from "@doc-raven/langchain-core/messages/tool";
 import type * as Bedrock from "@aws-sdk/client-bedrock-runtime";
 import type { DocumentType as __DocumentType } from "@smithy/types";
-import { ChatGenerationChunk } from "@langchain/core/outputs";
+import { ChatGenerationChunk } from "@doc-raven/langchain-core/outputs";
 import {
   MessageContentReasoningBlock,
   MessageContentReasoningBlockReasoningTextPartial,

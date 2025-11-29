@@ -1,26 +1,26 @@
-import type { StructuredToolInterface } from "@langchain/core/tools";
+import type { StructuredToolInterface } from "@doc-raven/langchain-core/tools";
 import {
   isOpenAITool,
   type BaseLanguageModel,
   type BaseLanguageModelInterface,
   type ToolDefinition,
-} from "@langchain/core/language_models/base";
-import { RunnablePassthrough } from "@langchain/core/runnables";
-import type { BasePromptTemplate } from "@langchain/core/prompts";
+} from "@doc-raven/langchain-core/language_models/base";
+import { RunnablePassthrough } from "@doc-raven/langchain-core/runnables";
+import type { BasePromptTemplate } from "@doc-raven/langchain-core/prompts";
 import {
   BaseMessagePromptTemplate,
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
   SystemMessagePromptTemplate,
   PromptTemplate,
-} from "@langchain/core/prompts";
-import { AgentStep } from "@langchain/core/agents";
-import { isStructuredTool } from "@langchain/core/utils/function_calling";
-import { isInteropZodSchema } from "@langchain/core/utils/types";
+} from "@doc-raven/langchain-core/prompts";
+import { AgentStep } from "@doc-raven/langchain-core/agents";
+import { isStructuredTool } from "@doc-raven/langchain-core/utils/function_calling";
+import { isInteropZodSchema } from "@doc-raven/langchain-core/utils/types";
 import {
   type JsonSchema7Type,
   toJsonSchema,
-} from "@langchain/core/utils/json_schema";
+} from "@doc-raven/langchain-core/utils/json_schema";
 import { LLMChain } from "../../chains/llm_chain.js";
 import { Optional } from "../../types/type-utils.js";
 import {
@@ -273,8 +273,8 @@ export type CreateStructuredChatAgentParams = {
  * ```typescript
  * import { AgentExecutor, createStructuredChatAgent } from "langchain/agents";
  * import { pull } from "langchain/hub";
- * import type { ChatPromptTemplate } from "@langchain/core/prompts";
- * import { AIMessage, HumanMessage } from "@langchain/core/messages";
+ * import type { ChatPromptTemplate } from "@doc-raven/langchain-core/prompts";
+ * import { AIMessage, HumanMessage } from "@doc-raven/langchain-core/messages";
  *
  * import { ChatOpenAI } from "@langchain/openai";
  *

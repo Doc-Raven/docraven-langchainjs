@@ -2,7 +2,7 @@ import {
   ListKeyOptions,
   RecordManager,
   UpdateOptions,
-} from "@langchain/core/indexing";
+} from "@doc-raven/langchain-core/indexing";
 
 interface MemoryRecord {
   updatedAt: number;

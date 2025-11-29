@@ -1,5 +1,5 @@
-import { AgentAction, AgentFinish } from "@langchain/core/agents";
-import { OutputParserException } from "@langchain/core/output_parsers";
+import { AgentAction, AgentFinish } from "@doc-raven/langchain-core/agents";
+import { OutputParserException } from "@doc-raven/langchain-core/output_parsers";
 import { AgentActionOutputParser } from "../types.js";
 
 /**

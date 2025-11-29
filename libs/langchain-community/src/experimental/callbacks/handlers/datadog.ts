@@ -1,9 +1,9 @@
-import { BaseCallbackHandlerInput } from "@langchain/core/callbacks/base";
-import { BaseTracer, Run } from "@langchain/core/tracers/base";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { Document } from "@langchain/core/documents";
-import { BaseMessage, isAIMessage } from "@langchain/core/messages";
-import { ChatGeneration } from "@langchain/core/outputs";
+import { BaseCallbackHandlerInput } from "@doc-raven/langchain-core/callbacks/base";
+import { BaseTracer, Run } from "@doc-raven/langchain-core/tracers/base";
+import { getEnvironmentVariable } from "@doc-raven/langchain-core/utils/env";
+import { Document } from "@doc-raven/langchain-core/documents";
+import { BaseMessage, isAIMessage } from "@doc-raven/langchain-core/messages";
+import { ChatGeneration } from "@doc-raven/langchain-core/outputs";
 import { KVMap } from "langsmith/schemas";
 
 export type DatadogLLMObsSpanKind =

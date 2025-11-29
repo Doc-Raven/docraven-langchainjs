@@ -4,8 +4,8 @@ import type {
   ContentBlock,
   ToolMessage,
   MessageStructure,
-} from "@langchain/core/messages";
-import type { RunnableConfig } from "@langchain/core/runnables";
+} from "@doc-raven/langchain-core/messages";
+import type { RunnableConfig } from "@doc-raven/langchain-core/runnables";
 import type { Command, CommandParams } from "@langchain/langgraph";
 
 import { toolHooksSchema, type ToolHooks } from "./hooks.js";

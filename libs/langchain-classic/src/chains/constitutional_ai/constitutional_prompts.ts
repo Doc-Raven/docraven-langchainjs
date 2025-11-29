@@ -1,4 +1,4 @@
-import { FewShotPromptTemplate, PromptTemplate } from "@langchain/core/prompts";
+import { FewShotPromptTemplate, PromptTemplate } from "@doc-raven/langchain-core/prompts";
 
 const constitutionalPrompt = `Human: {input_prompt}
 Model: {output_from_model}

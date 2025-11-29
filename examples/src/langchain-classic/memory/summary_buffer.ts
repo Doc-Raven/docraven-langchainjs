@@ -6,7 +6,7 @@ import {
   HumanMessagePromptTemplate,
   MessagesPlaceholder,
   SystemMessagePromptTemplate,
-} from "@langchain/core/prompts";
+} from "@doc-raven/langchain-core/prompts";
 
 // summary buffer memory
 const memory = new ConversationSummaryBufferMemory({

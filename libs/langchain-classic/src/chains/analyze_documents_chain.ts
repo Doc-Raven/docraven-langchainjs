@@ -1,5 +1,5 @@
-import { ChainValues } from "@langchain/core/utils/types";
-import { CallbackManagerForChainRun } from "@langchain/core/callbacks/manager";
+import { ChainValues } from "@doc-raven/langchain-core/utils/types";
+import { CallbackManagerForChainRun } from "@doc-raven/langchain-core/callbacks/manager";
 import {
   TextSplitter,
   RecursiveCharacterTextSplitter,

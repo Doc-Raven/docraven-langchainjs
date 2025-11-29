@@ -1,5 +1,5 @@
 import { DataAPIClient, Db } from "@datastax/astra-db-ts";
-import { AIMessage, HumanMessage } from "@langchain/core/messages";
+import { AIMessage, HumanMessage } from "@doc-raven/langchain-core/messages";
 import { AstraDBChatMessageHistory } from "../message/astradb.js";
 
 let db: Db;
