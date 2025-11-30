@@ -1,6 +1,6 @@
 {
   "name": "@doc-raven/langchain",
-  "version": "1.1.5",
+  "version": "1.1.6-beta.0",
   "description": "DocRaven Version for Typescript bindings for langchain",
   "author": "LangChain",
   "license": "MIT",

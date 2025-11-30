@@ -11,7 +11,7 @@ describe("Todo Changes detection mechanism", () => {
         "state-updation-todo-list": false,
         "changed-todo-list-point": false,
         "new-element-todo-list": false,
-        "finished-todo-list": false
+        "completed-todo-list": false
     }
     let eventsRegister: Record<TodoListDetectionEvents, boolean> = {
         ...falsyRegister
@@ -41,8 +41,8 @@ describe("Todo Changes detection mechanism", () => {
         eventsRegister["new-element-todo-list"] = true;
       })
       
-      detector.listen("finished-todo-list", () => {
-        eventsRegister["finished-todo-list"] = true;
+      detector.listen("completed-todo-list", () => {
+        eventsRegister["completed-todo-list"] = true;
       })
       
       detector.detect([]);
@@ -158,8 +158,8 @@ describe("Todo Changes detection mechanism", () => {
             }
         ]);
 
-        detector.listen("finished-todo-list", () => {
-            eventsRegister["finished-todo-list"] = true;
+        detector.listen("completed-todo-list", () => {
+            eventsRegister["completed-todo-list"] = true;
         });
         detector.detect([
             {
@@ -170,7 +170,7 @@ describe("Todo Changes detection mechanism", () => {
 
         const expectations: Record<TodoListDetectionEvents, boolean> = {
             ...falsyRegister,
-            "finished-todo-list": true,
+            "completed-todo-list": true,
         };
         expect(_.isEqual(eventsRegister, expectations)).toBeTruthy();
     })
@@ -197,8 +197,8 @@ describe("Todo Changes detection mechanism", () => {
             eventsRegister["state-updation-todo-list"] = true;
         })
 
-        detector.listen("finished-todo-list", () => {
-            eventsRegister["finished-todo-list"] = true;
+        detector.listen("completed-todo-list", () => {
+            eventsRegister["completed-todo-list"] = true;
         })
 
         // Updation: state updation and new element added
@@ -230,5 +230,39 @@ describe("Todo Changes detection mechanism", () => {
         );
         expect(_.isEqual(eventsRegister, expectations)).toBeTruthy();
     });
+
+    it("detector.complete: Should manually complete events and invoke coplete event", () => {
+        detector = new TodoListEventsDetector([
+            {
+                content: "todo-pin-1",
+                status: "in_progress"
+            },
+            {
+                content: "todo-pin-1.5",
+                status: "completed"
+            },
+            {
+                content: "todo-pin-2",
+                status: "pending"
+            }
+        ]);
+
+        // listens
+        let isCalled = false;
+        detector.listen("completed-todo-list", todos => {
+            expect(todos).toBeInstanceOf(Array);
+            
+            const isEveryCompleted = todos.every(todo => todo.status === "completed");
+            expect(isEveryCompleted).toBeTruthy();
+
+            isCalled = true;
+        })
+
+        // Completes
+        detector.complete();
+
+        // Has to be called
+        expect(isCalled).toBeTruthy();
+    })
   })
 })

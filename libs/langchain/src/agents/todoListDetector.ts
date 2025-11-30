@@ -1,12 +1,17 @@
 import { TodoSchemaType } from "./middleware/todoListMiddleware";
 
-export type TodoListDetectionEvents = "created-todo-list" | "state-updation-todo-list" | "changed-todo-list-point" | "new-element-todo-list" | "finished-todo-list";
+// TODO: Add deletion event
+export type TodoListDetectionEvents = "created-todo-list" | "state-updation-todo-list" | "changed-todo-list-point" | "new-element-todo-list" | "completed-todo-list";
 
+// * TODO: Add the list with todos are suspect of event as 2nd param
+/**
+ * @param todo - is the list with new todos provided by agentic-llm; it's not the list with only todos are suspect of trigger but rather the all events are now actual
+*/
 type EventsListener = (todo: TodoSchemaType[]) => Promise<void> | void;
 
 /**
  * Is prepared to be used in onProgress function of todo middleware params
- */
+*/
 export class TodoListEventsDetector {
   baseTodoList: TodoSchemaType[] = [];
   private listeners: Map<TodoListDetectionEvents, Set<EventsListener>> = new Map();
@@ -64,7 +69,7 @@ export class TodoListEventsDetector {
 
     // Check if all todos are completed
     if (todos.length > 0 && todos.every(t => t.status === "completed")) {
-      this.emit("finished-todo-list", todos);
+      this.emit("completed-todo-list", todos);
     }
 
     // Updates base list
@@ -91,6 +96,14 @@ export class TodoListEventsDetector {
     if (this.listeners.has(event)) {
       this.listeners.get(event)!.delete(callback);
     }
+  }
+
+  /** 
+   * Completes the todolist manually: marks each point as completed, overrides with completed list the internal **baseTodoList**, invokes the "finished-todo-list" event with completed todolist points 
+  */
+  complete() {
+    this.baseTodoList = this.baseTodoList.map(listPin => ({ ...listPin, status: "completed" }));
+    this.emit("completed-todo-list", this.baseTodoList);
   }
 
   /**
