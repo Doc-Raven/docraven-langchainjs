@@ -88,6 +88,11 @@ export interface ToolParams extends BaseLangChainParams {
    * Metadata for the tool.
    */
   metadata?: Record<string, unknown>;
+
+  /**
+   * Is the function triggers information about tool use
+  */
+  infoFn?: ToolInfoFn
 }
 
 export type ToolRunnableConfig<
@@ -326,7 +331,10 @@ export interface DynamicToolInput<ToolOutputT = ToolOutputType>
     runManager?: CallbackManagerForToolRun,
     config?: ToolRunnableConfig
   ) => Promise<ToolOutputT>;
+  infoFn?: ToolInfoFn
 }
+
+export type ToolInfoFn = <T extends string | ToolInputSchemaOutputType<JSONSchema>>(toolName: string, toolInput?: T) => Promise<void> | void
 
 /**
  * Interface for the input parameters of the DynamicStructuredTool class.
@@ -353,6 +361,7 @@ export interface DynamicStructuredToolInput<
     config?: RunnableConfig
   ) => Promise<ToolOutputT>;
   schema: SchemaT;
+  infoFn?: ToolInfoFn
 }
 
 /**

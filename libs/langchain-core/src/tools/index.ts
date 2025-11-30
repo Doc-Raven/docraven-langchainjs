@@ -57,6 +57,7 @@ import type {
   ToolInterface,
   ToolOutputType,
   ToolRuntime,
+  ToolInfoFn,
 } from "./types.js";
 import { type JSONSchema, validatesOnlyStrings } from "../utils/json_schema.js";
 
@@ -74,6 +75,7 @@ export type {
   ToolReturnType,
   ToolRunnableConfig,
   ToolInputSchemaBase as ToolSchemaBase,
+  ToolInfoFn
 } from "./types.js";
 
 export {
@@ -136,6 +138,11 @@ export abstract class StructuredTool<
    */
   defaultConfig?: ToolRunnableConfig;
 
+  /**
+   * Is the function informs about tool call
+  */
+  infoFn?: ToolInfoFn
+
   constructor(fields?: ToolParams) {
     super(fields ?? {});
 
@@ -154,6 +161,7 @@ export abstract class StructuredTool<
 
   /**
    * Invokes the tool with the provided input and configuration.
+   * If the class had passed **infoFn** in constructor it will be invoked here
    * @param input The input for the tool.
    * @param config Optional configuration for the tool.
    * @returns A Promise that resolves with the tool's output.
@@ -169,6 +177,11 @@ export abstract class StructuredTool<
       StructuredToolCallInput<SchemaT, SchemaInputT>,
       ToolCall
     >;
+
+    // Informs about tool call
+    if (this.infoFn) {
+      this.infoFn(this.name, input);
+    }
 
     let enrichedConfig: ToolRunnableConfig = ensureConfig(
       mergeConfigs(this.defaultConfig, config)
@@ -397,6 +410,7 @@ export class DynamicTool<
     this.name = fields.name;
     this.description = fields.description;
     this.func = fields.func;
+    this.infoFn = fields.infoFn;
     this.returnDirect = fields.returnDirect ?? this.returnDirect;
   }
 
@@ -449,12 +463,10 @@ export class DynamicStructuredTool<
   }
 
   name: string;
-
   description: string;
-
   func: DynamicStructuredToolInput<SchemaT, SchemaOutputT, ToolOutputT>["func"];
-
   schema: SchemaT;
+  infoFn?: ToolInfoFn;
 
   constructor(
     fields: DynamicStructuredToolInput<SchemaT, SchemaOutputT, ToolOutputT>
@@ -465,6 +477,7 @@ export class DynamicStructuredTool<
     this.func = fields.func;
     this.returnDirect = fields.returnDirect ?? this.returnDirect;
     this.schema = fields.schema;
+    this.infoFn = fields.infoFn;
   }
 
   /**
@@ -556,8 +569,6 @@ interface ToolWrapperParams<RunInput = ToolInputSchemaBase | undefined>
    */
   returnDirect?: boolean;
 }
-
-type ToolInfoFn = <T extends string | ToolInputSchemaOutputType<JSONSchema>>(toolName: string, toolTask?: T) => Promise<void>
 
 /**
  * Creates a new StructuredTool instance with the provided function, name, description, and schema.
@@ -755,13 +766,7 @@ export function tool<
       ...fields,
       description: fields.description ?? (fields.schema as { description?: string } | undefined)?.description ?? `${fields.name} tool`,
       func: async (input, runManager, config) => {
-        // fields.name
-        
         return new Promise<ToolOutputT>((resolve, reject) => {
-          if (infoFn) {
-            infoFn(fields.name, input);
-          }
-          
           const childConfig = patchConfig(config, {
             callbacks: runManager?.getChild(),
           });
@@ -780,6 +785,8 @@ export function tool<
           );
         });
       },
+      // Informs regard tool usage
+      infoFn
     });
   }
 
@@ -801,11 +808,6 @@ export function tool<
     schema,
     func: async (input, runManager, config) => {
       return new Promise<ToolOutputT>((resolve, reject) => {
-        // Informs regard tool usage
-        if (infoFn) {
-          infoFn(fields.name, input);
-        }
-        
         let listener: (() => void) | undefined;
         const cleanup = () => {
           if (config?.signal && listener) {
@@ -851,6 +853,8 @@ export function tool<
         );
       });
     },
+    // Informs regard tool usage
+    infoFn 
   }) as DynamicStructuredTool<
     SchemaT,
     SchemaOutputT,

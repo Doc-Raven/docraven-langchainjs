@@ -5,7 +5,9 @@ import { z as z4 } from "zod/v4";
 import {
   DynamicStructuredTool,
   DynamicTool,
+  StructuredTool,
   StructuredToolParams,
+  ToolInfoFn,
   ToolInputParsingException,
   isStructuredToolParams,
   tool,
@@ -504,3 +506,74 @@ describe("DynamicTool", () => {
     });
   });
 });
+
+describe("Tool usage informing", () => {
+  let isToolCalled = false;
+  let incremented = 0;
+  const testSchema = z.object({
+    inputField: z.string()
+  })
+  const infoFn: ToolInfoFn = (name, input) => {
+    expect(name).toBeTypeOf("string");
+    expect(name.length).toBeGreaterThan(1);
+
+    //
+    expect(input).toBeTypeOf("object");
+
+    // 
+    isToolCalled = true;
+    incremented = 0;
+  }
+  afterAll(() => {
+    isToolCalled = false;
+  })
+  
+  it("DynamicStructured tool: informs, passes tool name and input", async () => {
+    const dynamicStructureTool = new DynamicStructuredTool({
+      name: "DynamicStructuredTest",
+      description: "Is the test",
+      async func() {
+        incremented += 1;
+      },
+      schema: testSchema,
+      infoFn
+    })
+
+    const run = await dynamicStructureTool.invoke({
+      inputField: "Test"
+    })
+    expect(isToolCalled).toBeTruthy();
+    expect(incremented).toStrictEqual(1);
+  })
+
+  it("Dynamic tool: informs, passes tool name and input", async () => {
+    const dynamicTool = new DynamicTool({
+      name: "DynamicTest",
+      description: "Is the test",
+      async func() {
+        incremented += 1;
+      },
+      infoFn
+    });
+
+    const run = await dynamicTool.invoke({ hello: "string" });
+    expect(isToolCalled).toBeTruthy();
+    expect(incremented).toStrictEqual(1);
+  })
+
+  it("Tool Function: informs, passes tool name and input", async () => {
+    const toolFn = tool(
+      () => {
+        incremented += 1; 
+      },  
+      {
+        name: "ToolFnTest",
+      },
+      infoFn
+    );
+
+    const run = await toolFn.invoke({ test: "test value" });
+    expect(isToolCalled).toBeTruthy();
+    expect(incremented).toStrictEqual(1);
+  })
+})
