@@ -4,7 +4,8 @@ import { BaseChatModel } from "@doc-raven/langchain-core/language_models/chat_mo
 import { ChatOpenAI } from "@langchain/openai";
 
 import { createAgent } from "../../index.js";
-import { todoListMiddleware } from "../todoListMiddleware.js";
+import { todoListMiddleware, createTodoListTool, type TodoListMiddlewareOptions, type TodoSchemaType } from "../todoListMiddleware";
+import _ from "lodash";
 
 function createMockModel(name = "ChatAnthropic", modelType = "anthropic") {
   // Mock Chat model extending BaseChatModel
@@ -163,4 +164,30 @@ describe("todoListMiddleware", () => {
       { content: "Complete the requested task", status: "in_progress" },
     ]);
   });
+
+  it("Should inform about progress on todo list", async () => {
+    let wasCalled = false;
+    const exampleTodoList = [
+      {
+        content: "test1",
+        status: "pending"
+      }
+    ] satisfies TodoSchemaType[];
+
+    const onProgress: TodoListMiddlewareOptions["onProgress"] = async (todos) => {
+      wasCalled = true;
+      expect(todos).toBeInstanceOf(Array);
+      expect(todos.length).toStrictEqual(exampleTodoList.length);
+      expect(_.isEqual(todos, exampleTodoList)).toBeTruthy()
+    }
+    const todoListTool = createTodoListTool({
+      toolDescription: "The todo list tool - used to make, update and refine todolist",
+      onProgress
+    })
+
+    // Has to wait
+    await todoListTool.invoke({ todos: exampleTodoList as any })
+
+    expect(wasCalled).toBeTruthy();
+  })
 });

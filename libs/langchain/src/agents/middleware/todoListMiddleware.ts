@@ -248,6 +248,7 @@ const stateSchema = z.object({
   todos: z.array(TodoSchema).default([]),
 });
 export type TodoMiddlewareState = z.infer<typeof stateSchema>;
+export type TodoSchemaType = z.infer<typeof TodoSchema>
 
 export interface TodoListMiddlewareOptions {
   /**
@@ -260,6 +261,43 @@ export interface TodoListMiddlewareOptions {
    * If not provided, uses the default {@link WRITE_TODOS_DESCRIPTION}.
    */
   toolDescription?: string;
+  /** 
+   * Trigger while is progress on todo-list
+   * @param todos - is a list with actual todos - contains todos with keept and/or updated state
+  */
+  onProgress?: (todos: TodoSchemaType[]) => Promise<void> | void
+}
+
+/**
+ * Write todos tool - manages todo list with Command return
+*/
+export function createTodoListTool(options?: TodoListMiddlewareOptions) {
+  return tool(
+    async ({ todos }, config) => {
+      if (options?.onProgress) {
+        await options.onProgress(todos);
+      }
+      
+      return new Command({
+        update: {
+          todos,
+          messages: [
+            new ToolMessage({
+              content: `Updated todo list to ${JSON.stringify(todos)}`,
+              tool_call_id: config.toolCall?.id as string,
+            }),
+          ],
+        },
+      });
+    },
+    {
+      name: "write_todos",
+      description: options?.toolDescription ?? WRITE_TODOS_DESCRIPTION,
+      schema: z.object({
+        todos: z.array(TodoSchema).describe("List of todo items to update"),
+      }),
+    }
+  );
 }
 
 /**
@@ -299,28 +337,7 @@ export function todoListMiddleware(options?: TodoListMiddlewareOptions) {
   /**
    * Write todos tool - manages todo list with Command return
    */
-  const writeTodos = tool(
-    ({ todos }, config) => {
-      return new Command({
-        update: {
-          todos,
-          messages: [
-            new ToolMessage({
-              content: `Updated todo list to ${JSON.stringify(todos)}`,
-              tool_call_id: config.toolCall?.id as string,
-            }),
-          ],
-        },
-      });
-    },
-    {
-      name: "write_todos",
-      description: options?.toolDescription ?? WRITE_TODOS_DESCRIPTION,
-      schema: z.object({
-        todos: z.array(TodoSchema).describe("List of todo items to update"),
-      }),
-    }
-  );
+  const writeTodos = createTodoListTool(options);
 
   return createMiddleware({
     name: "todoListMiddleware",

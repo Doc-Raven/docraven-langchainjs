@@ -731,9 +731,15 @@ importers:
       '@langchain/langgraph-checkpoint':
         specifier: ^1.0.0
         version: 1.0.0(@langchain/core@1.1.0(@opentelemetry/api@1.9.0)(openai@5.12.2(ws@8.18.3(bufferutil@4.0.9)(utf-8-validate@6.0.5))(zod@3.25.76)))
+      '@types/lodash':
+        specifier: ^4.17.20
+        version: 4.17.20
       langsmith:
         specifier: ~0.3.74
         version: 0.3.74(@opentelemetry/api@1.9.0)(openai@5.12.2(ws@8.18.3(bufferutil@4.0.9)(utf-8-validate@6.0.5))(zod@3.25.76))
+      lodash:
+        specifier: ^4.17.21
+        version: 4.17.21
       uuid:
         specifier: ^10.0.0
         version: 10.0.0
@@ -21530,8 +21536,8 @@ snapshots:
     dependencies:
       '@langchain/core': 1.1.0(@opentelemetry/api@1.9.0)(openai@5.12.2(ws@8.18.3(bufferutil@4.0.9)(utf-8-validate@6.0.5))(zod@3.25.76))
       js-tiktoken: 1.0.21
-      openai: 6.9.0(ws@8.18.3(bufferutil@4.0.9)(utf-8-validate@6.0.5))(zod@4.1.12)
-      zod: 4.1.12
+      openai: 6.9.0(ws@8.18.3(bufferutil@4.0.9)(utf-8-validate@6.0.5))(zod@4.1.13)
+      zod: 4.1.13
     transitivePeerDependencies:
       - ws
     optional: true
@@ -23767,7 +23773,6 @@ snapshots:
   '@types/node@24.10.1':
     dependencies:
       undici-types: 7.16.0
-    optional: true
 
   '@types/node@24.6.1':
     dependencies:
@@ -23839,7 +23844,7 @@ snapshots:
 
   '@types/sqlite3@3.1.11':
     dependencies:
-      '@types/node': 22.18.8
+      '@types/node': 24.10.1
 
   '@types/ssh2-streams@0.1.12':
     dependencies:
@@ -30644,6 +30649,12 @@ snapshots:
     optionalDependencies:
       ws: 8.18.3(bufferutil@4.0.9)(utf-8-validate@6.0.5)
       zod: 4.1.12
+
+  openai@6.9.0(ws@8.18.3(bufferutil@4.0.9)(utf-8-validate@6.0.5))(zod@4.1.13):
+    optionalDependencies:
+      ws: 8.18.3(bufferutil@4.0.9)(utf-8-validate@6.0.5)
+      zod: 4.1.13
+    optional: true
 
   openapi-types@12.1.3: {}
 
