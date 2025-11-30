@@ -439,3 +439,7 @@ export type {
 } from "./middleware/types.js";
 export { FakeToolCallingModel } from "./tests/utils.js";
 export type { ReactAgent } from "./ReactAgent.js";
+export {
+  TodoListEventsDetector,
+  type TodoListDetectionEvents
+} from "./todoListDetector.js"
