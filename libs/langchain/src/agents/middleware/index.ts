@@ -54,6 +54,7 @@ export {
   todoListMiddleware,
   createTodoListTool,
   type TodoListMiddlewareOptions,
+  type TodoSchemaType
 } from "./todoListMiddleware.js";
 export {
   modelCallLimitMiddleware,
